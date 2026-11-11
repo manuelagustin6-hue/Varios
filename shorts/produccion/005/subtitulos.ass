@@ -8,6 +8,7 @@ WrapStyle: 2
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Sub,Liberation Sans,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,5,60,60,0,1
 Style: Titulo,Liberation Sans,74,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,22,0,8,70,70,0,1
+Style: Gancho,Liberation Sans,104,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,28,0,5,50,50,0,1
 Style: Marca,Liberation Sans,40,&H50FFFFFF,&H50FFFFFF,&H64000000,&H00000000,-1,0,0,0,100,100,1,0,1,2,0,8,0,0,0,1
 
 [Events]
@@ -126,7 +127,7 @@ Dialogue: 1,0:00:39.98,0:00:40.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}¿TÚ LO {\c&
 Dialogue: 1,0:00:40.30,0:00:40.77,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}HECHO{\c&H00FFFFFF&}
 Dialogue: 1,0:00:41.14,0:00:41.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}POR{\c&H00FFFFFF&} 800 DÓLARES?
 Dialogue: 1,0:00:41.28,0:00:42.48,Sub,,0,0,0,,{\pos(540,1260)\fs92}POR {\c&H0000D7FF&}800 DÓLARES?{\c&H00FFFFFF&}
-Dialogue: 2,0:00:00.00,0:00:05.38,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}10% DE APPLE\N= $800
+Dialogue: 2,0:00:00.00,0:00:05.38,Gancho,,0,0,0,,{\pos(540,780)\fscx135\fscy135\t(0,140,\fscx100\fscy100)\fad(0,150)}10% DE APPLE\N= $800
 Dialogue: 2,0:00:05.38,0:00:15.20,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}1976 · 3 FUNDADORES
 Dialogue: 2,0:00:16.94,0:00:20.74,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}EL PRIMER LOGO
 Dialogue: 2,0:00:21.96,0:00:28.42,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}EL RIESGO
