@@ -8,7 +8,8 @@ Objetivo: producir **7 videos por semana** en ~12–15 horas, trabajando por lot
 |---|---|
 | Investigación, verificación de datos y guion | Claude (en este repositorio) |
 | Títulos, textos y hashtags | Claude |
-| Generar la voz, editar y publicar | Vos |
+| Generar la voz con ElevenLabs (2 tomas por guion, en `audios/NNN/`) | Claude |
+| Elegir la toma, editar y publicar | Vos |
 | Análisis de métricas y ajustes | Claude, con los datos que compartas |
 
 ## Semana tipo
@@ -16,19 +17,20 @@ Objetivo: producir **7 videos por semana** en ~12–15 horas, trabajando por lot
 | Día | Tarea | Tiempo estimado |
 |---|---|---|
 | Lunes | Revisar y aprobar los 7 guiones de la semana | 1 h |
-| Martes | Generar las 7 voces y buscar el material visual | 3–4 h |
+| Martes | Buscar el material visual (las voces ya están generadas) | 2–3 h |
 | Miércoles y jueves | Editar los 7 videos | 6–8 h |
 | Viernes | Miniaturas, programación de publicaciones | 1–2 h |
 | Diario | Responder comentarios | 15 min |
 
 ## Paso a paso por video
 
-### 1. Voz (10 min)
-- Herramienta recomendada: **ElevenLabs**, con un plan pago que incluya **licencia de uso comercial**.
-- Elegir **una voz en español latinoamericano neutro** y usarla siempre (identidad del canal).
-- Configuración inicial sugerida: estabilidad media (~40–50 %), velocidad levemente acelerada. Ajustar a gusto y mantenerla fija.
-- Para controlar el ritmo: usar puntos suspensivos (…) en las pausas dramáticas y escribir los números en letras cuando la voz los pronuncie mal.
-- Exportar en MP3 o WAV de alta calidad.
+### 1. Voz (la genera Claude)
+- **Voz del canal:** «Carlos – Premium Latin American Spanish Narrator (Español Neutro)», de la biblioteca de ElevenLabs (ID `Y4HwpMNrBWN5dFKi5Lw8`). Usarla siempre.
+- **Modelo:** Eleven v4.
+- Claude genera 2 tomas por guion y las guarda en `audios/NNN/toma-1.mp3` y `toma-2.mp3`. Vos elegís la que mejor suene.
+- **Costo de referencia:** ~714 créditos por toma de 50 s (≈ US$ 0,14 según lo informado por ElevenLabs).
+- Para controlar el ritmo, el texto se escribe con puntos suspensivos (…) en las pausas dramáticas y con los números en letras.
+- Si la locución supera los 50 s, acelerarla un 5–10 % en la edición.
 
 ### 2. Material visual (20 min)
 - Fuentes libres: Pexels, Pixabay, Wikimedia Commons (revisar la licencia de cada imagen).

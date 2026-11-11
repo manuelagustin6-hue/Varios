@@ -11,6 +11,7 @@ shorts/
 ├── ideas.md               ← banco de 30 ideas
 ├── calendario-mes-1.md    ← calendario de publicación del primer mes
 ├── flujo-de-produccion.md ← proceso paso a paso con voz por IA
+├── audios/                ← voces en off generadas (una carpeta por guion)
 ├── guiones/               ← guiones listos para producir
 │   ├── 001-blockbuster-netflix.md
 │   ├── 002-kodak-camara-digital.md

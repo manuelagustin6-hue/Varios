@@ -4,7 +4,7 @@
 |---|---|
 | Serie | Errores de mil millones |
 | Duración objetivo | ~45 s (las tres plataformas) |
-| Estado | Guion |
+| Estado | Voz generada (`audios/001/`) |
 
 ## Guion
 
