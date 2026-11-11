@@ -9,9 +9,11 @@
 
 ## Locución final
 
-> En 2015, un hombre compró google.com por solo doce dólares. Sanmay Ved, un exempleado de Google, revisaba dominios disponibles en Google Domains cuando vio algo imposible: google.com aparecía a la venta. Lo compró con su tarjeta. Durante un minuto fue el dueño del sitio más visitado del planeta y empezó a recibir mensajes de administración de la empresa. Google canceló la compra y le devolvió el dinero, pero además le dio una recompensa: seis mil seis dólares con trece centavos. Mira el número: seis, cero, cero, seis, uno, tres. Se lee Google. Él donó el dinero a una fundación en la India y Google duplicó la donación. Todo por doce dólares.
+> En 2015, un hombre compró google.com por solo doce dólares. Sanmay Ved, un exempleado de Google, revisaba dominios disponibles en Google Domains cuando vio algo imposible: google.com aparecía a la venta. Lo compró con su tarjeta. Durante un minuto fue el dueño del sitio más visitado del planeta y empezó a recibir mensajes de administración de la empresa. Google canceló la compra y le devolvió el dinero, pero además le dio una recompensa: seis mil seis dólares con trece centavos. Mira el número: seis, cero, cero, seis, uno, tres. Se lee Google. Él donó el dinero a una fundación en la India y Google duplicó la donación. Y todo empezó porque
 
 ## Cambios respecto del guion original
+
+**Bucle:** termina con una frase cortada que empalma con el gancho del inicio, como en el guion original. El video se corta justo después de la última palabra.
 
 Se mantuvo la historia. Se agregó que Google le devolvió los 12 dólares, que la recompensa fue de su programa de seguridad y el remate de la donación duplicada (dato real que mejora el cierre).
 

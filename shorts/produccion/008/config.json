@@ -27,7 +27,7 @@
     },
     {
       "imagen": "img/1.jpg",
-      "desde": "Todo por doce"
+      "desde": "Y todo empezó porque"
     }
   ],
   "textos": [
@@ -59,12 +59,13 @@
     {
       "texto": "DONACIÓN x2",
       "desde": "Él donó",
-      "hasta": "Todo por doce"
+      "hasta": "Y todo empezó"
     }
   ],
   "reemplazos": {
     "doce dólares": "12 dólares",
     "seis mil seis dólares con trece centavos": "6.006,13 dólares",
     "seis cero cero seis uno tres": "6-0-0-6-1-3"
-  }
+  },
+  "bucle": true
 }

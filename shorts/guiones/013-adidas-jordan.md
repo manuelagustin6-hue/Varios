@@ -13,6 +13,8 @@
 
 ## Cambios respecto del guion original
 
+**Pendiente:** rehacer la voz con el final en bucle cuando se renueven los créditos de ElevenLabs (texto listo en `pendientes-bucle.md`).
+
 Ajustes menores: Nike le ofreció una **zapatilla** propia (no una línea de ropa) y un porcentaje por par vendido; el motivo de Adidas se presenta como «según se cuenta». Se cambió «el peor error de la historia» por una frase menos absoluta. Las cifras (meta de 3 millones en 4 años y 126 millones el primer año) se mantienen porque son las más citadas.
 
 ## Fuentes a verificar

@@ -13,6 +13,8 @@
 
 ## Cambios respecto del guion original
 
+**Pendiente:** rehacer la voz con el final en bucle cuando se renueven los créditos de ElevenLabs (texto listo en `pendientes-bucle.md`).
+
 **Cambio importante:** se eliminó «perdió 100 millones de dólares», que no tiene fuente. Se corrigió que el pedido lo hicieron los productores (no consta que fuera Spielberg en persona), que el motivo («asustar a los niños») es la versión más difundida y no un hecho confirmado, y que Hershey's ya era una gran empresa (no se volvió «gigante de la repostería» por la película). Se mantuvo el +65 % en dos semanas, citado por la prensa de 1982, y se agregó que Hershey's no pagó por aparecer.
 
 ## Fuentes a verificar

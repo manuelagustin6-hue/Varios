@@ -28,6 +28,10 @@
     {
       "imagen": "img/6.jpg",
       "desde": "Hoy vende"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "Por eso"
     }
   ],
   "textos": [
@@ -59,10 +63,12 @@
     {
       "texto": "+12.000 MILLONES\nDE LATAS AL AÑO",
       "desde": "Hoy vende",
-      "hasta": "FIN"
+      "hasta": "Por eso"
     }
   ],
   "reemplazos": {
-    "doce mil millones": "12.000 millones"
-  }
+    "doce mil millones": "12.000 millones",
+    "12 mil millones": "12.000 millones"
+  },
+  "bucle": true
 }

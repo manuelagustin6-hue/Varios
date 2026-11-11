@@ -13,6 +13,8 @@
 
 ## Cambios respecto del guion original
 
+**Pendiente:** rehacer la voz con el final en bucle cuando se renueven los créditos de ElevenLabs (texto listo en `pendientes-bucle.md`).
+
 **Cambios importantes:** Ford no le pagó 30 millones: le pagó 10,2 millones (1990); Chrysler fue condenada a pagar otros 18,7 millones (1992). Los casi 30 millones son la suma de ambos. Tampoco fueron «30 años en tribunales» ni «meses después»: Ford lanzó su sistema en 1969 y los juicios empezaron en 1978. Se agregó que en el juicio contra Chrysler se defendió solo y que su historia llegó al cine (*Flash of Genius*, 2008).
 
 ## Fuentes a verificar

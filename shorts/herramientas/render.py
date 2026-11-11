@@ -190,6 +190,9 @@ def main(carpeta):
     audio = os.path.normpath(os.path.join(carpeta, cfg["audio"]))
     duracion = float(subprocess.check_output(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", audio]))
+    if cfg.get("bucle"):
+        # Corta justo después de la última palabra para que el salto al inicio no se note.
+        duracion = min(duracion, palabras[-1]["end"] + 0.12)
 
     # Tiempos de inicio de cada escena, según la frase en la que empieza.
     inicios, cursor = [], 0

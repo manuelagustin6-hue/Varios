@@ -13,6 +13,8 @@
 
 ## Cambios respecto del guion original
 
+**Pendiente:** rehacer la voz con el final en bucle cuando se renueven los créditos de ElevenLabs (texto listo en `pendientes-bucle.md`).
+
 **Cambio importante:** se eliminó «el 20 % de lo que compras no lo necesitabas», que no tiene fuente verificable, y el tono de «trampa secreta para obligarte». Ahora el guion explica el diseño citando al profesor Alan Penn (University College London), que estudió estos recorridos, y cierra con un consejo útil para el espectador.
 
 ## Fuentes a verificar
