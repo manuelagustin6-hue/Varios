@@ -3,7 +3,7 @@
 | Campo | Valor |
 |---|---|
 | Serie | |
-| Duración objetivo | 45 s (YouTube / IG) · 61–70 s (TikTok) |
+| Duración objetivo | 35–50 s |
 | Estado | Idea / Guion / Grabado / Editado / Publicado |
 
 ## Gancho (0–3 s)
@@ -21,7 +21,7 @@
 | 45–55 s | | | |
 | Cierre | | | |
 
-## Extensión para TikTok (> 60 s)
+## Versión extendida (opcional)
 
 ## Publicación
 - **Título YouTube:**

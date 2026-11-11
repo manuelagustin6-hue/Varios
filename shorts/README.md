@@ -1,12 +1,16 @@
 # Shorts — Canal de videos cortos monetizable
 
-Proyecto para crear videos verticales (9:16, 30–75 s) para **YouTube Shorts, TikTok e Instagram Reels**, con el objetivo de construir audiencia y monetizarla.
+Proyecto para crear videos verticales (9:16, 35–50 s) para **YouTube Shorts, TikTok e Instagram Reels**, con el objetivo de construir audiencia y monetizarla.
 
 ## Estructura
 
 ```
 shorts/
 ├── README.md              ← este documento: análisis y estrategia
+├── nombre-del-canal.md    ← propuestas de nombre
+├── ideas.md               ← banco de 30 ideas
+├── calendario-mes-1.md    ← calendario de publicación del primer mes
+├── flujo-de-produccion.md ← proceso paso a paso con voz por IA
 ├── guiones/               ← guiones listos para producir
 │   ├── 001-blockbuster-netflix.md
 │   ├── 002-kodak-camara-digital.md
@@ -29,7 +33,7 @@ Para elegir el nicho evalué cuatro criterios: **potencial viral**, **valor por 
 | **Historias de negocios y dinero** | **Alta** | **Alto** | **Fácil** | **Muy alto** |
 | Humor / sketches | Muy alta | Bajo | Difícil (requiere actuar) | Depende del talento |
 
-### Recomendación: «Historias de negocios y dinero en 60 segundos», en español
+### Recomendación: «Historias de negocios y dinero en 60 segundos», en español neutro
 
 Ejemplos: *la empresa que rechazó comprar Netflix*, *el error que quebró a Kodak*, *el hombre que pagó dos pizzas con 10.000 bitcoins*.
 
@@ -39,6 +43,8 @@ Ejemplos: *la empresa que rechazó comprar Netflix*, *el error que quebró a Kod
 3. **No requiere mostrar el rostro:** se produce con voz en off, imágenes de archivo, gráficos y textos en pantalla.
 4. **Abre la puerta a productos derivados:** newsletter, videos largos, afiliados de libros, cursos o aplicaciones financieras.
 5. **Menor competencia en español** que en inglés para este formato con buena calidad.
+
+**Idioma: español neutro (tuteo), no rioplatense.** Aunque el canal se produzca desde Argentina, el voseo reduce el alcance en México, Colombia, España y el público hispano de EE. UU., que son los mercados más grandes y donde los anunciantes pagan más. Las voces de IA, además, suenan más naturales en español neutro.
 
 ---
 
@@ -59,7 +65,7 @@ Cada guion sigue esta estructura de retención:
 - Subtítulos grandes, centrados, palabra por palabra resaltada.
 - Texto del gancho visible en pantalla desde el primer fotograma.
 - Música de fondo baja (−20 a −25 dB respecto de la voz), con licencia.
-- Duración: 35–60 s para YouTube e Instagram; **más de 60 s para TikTok** (requisito del programa de monetización).
+- Duración: **35–50 s** en las tres plataformas (ver sección 7).
 
 ---
 
@@ -104,8 +110,8 @@ Cada guion sigue esta estructura de retención:
 - [ ] Definir nombre del canal y crear cuentas con el mismo usuario en las tres plataformas.
 - [ ] Diseñar identidad visual mínima: logo, paleta de colores, tipografía de subtítulos.
 - [ ] Producir los 3 guiones de `guiones/` y publicarlos.
-- [ ] Ritmo: **1 video por día** (el mismo video en las tres plataformas, adaptando la duración para TikTok).
-- [ ] Banco de 30 ideas para no quedarse sin contenido.
+- [ ] Ritmo: **1 video por día** (el mismo video en las tres plataformas).
+- [x] Banco de 30 ideas (`ideas.md`) y calendario del primer mes (`calendario-mes-1.md`).
 
 ### Fase 2 — Optimización (meses 2 y 3)
 - [ ] Revisar métricas semanalmente (ver abajo) y duplicar los temas que mejor funcionen.
@@ -127,11 +133,37 @@ Cada guion sigue esta estructura de retención:
 
 ---
 
-## 6. Decisiones pendientes
+## 6. Decisiones tomadas
 
-Para ajustar la estrategia necesito definir:
-1. **País de residencia** (afecta la elegibilidad de TikTok y los programas de afiliados).
-2. **¿Voz propia o voz sintética?** (Recomiendo voz propia: mejor retención y menor riesgo de desmonetización).
-3. **¿Mostrar el rostro o canal anónimo?** (La propuesta actual es anónima).
-4. **Horas por semana disponibles** para producción.
-5. **Nombre del canal.**
+| Tema | Decisión |
+|---|---|
+| País de residencia | Argentina |
+| Voz | Generada por IA (ver `flujo-de-produccion.md`) |
+| Rostro | Canal anónimo |
+| Dedicación | Según lo que requiera el plan: ~12–15 h por semana para 1 video diario |
+| Nombre | Propuestas en `nombre-del-canal.md` (pendiente de elección) |
+
+---
+
+## 7. Monetización desde Argentina
+
+> ⚠️ Información a verificar en las páginas oficiales: la disponibilidad por país cambia con frecuencia. Para la parte impositiva, consultar con un contador.
+
+| Vía | Situación para Argentina |
+|---|---|
+| **YouTube Partner Program** | ✅ Disponible. Es la **vía principal** de ingresos por anuncios. El pago se hace a través de Google AdSense, en dólares, por transferencia bancaria internacional. |
+| **TikTok Creator Rewards** | ❌ Argentina no figura entre los países habilitados según la información disponible. TikTok se usa para **crecer y derivar audiencia** a YouTube, no para cobrar directamente. |
+| **Instagram** | ❌ Sin pago directo por Reels. Útil para alcance y acuerdos con marcas. |
+| **Afiliados** | ✅ Amazon Afiliados (tienda de EE. UU., apto para público internacional), Hotmart (productos digitales). Verificar programas de afiliados de plataformas regionales. |
+| **Patrocinios** | ✅ Las marcas pagan en función de la audiencia, no del país del creador. Con público de México, España y EE. UU. el valor de cada acuerdo aumenta. |
+
+**Aspectos impositivos a consultar con un contador:** encuadre fiscal (monotributo o responsable inscripto), facturación de servicios al exterior y tratamiento de los dólares que se ingresen. Conviene resolverlo antes de recibir el primer pago.
+
+**Consecuencia para la estrategia:** como TikTok no paga en Argentina, no es necesario estirar los videos a más de 60 segundos. Se prioriza el formato óptimo de **35–50 segundos** en las tres plataformas, con YouTube como plataforma principal.
+
+### Uso de voz por IA: reglas para no perder la monetización
+- **Guiones originales** y con punto de vista propio: es lo que diferencia un canal monetizable de uno de «contenido producido en masa».
+- **Una sola voz, siempre la misma:** construye identidad de marca.
+- **No imitar voces de personas reales** (famosos, periodistas, personajes históricos).
+- **Usar un plan con licencia comercial** en la herramienta de voz (los planes gratuitos suelen no permitir uso comercial).
+- Si un video muestra escenas realistas generadas con IA, marcar la opción de **contenido alterado o sintético** al subirlo a YouTube.
