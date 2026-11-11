@@ -13,6 +13,8 @@
 
 ## Cambios respecto del guion original
 
+**Arranque:** el audio se recorta para empezar en «Un hombre compró google.com…» (sin «En 2015»), según la regla de la primera frase. El año queda en la descripción.
+
 **Bucle:** termina con una frase cortada que empalma con el gancho del inicio, como en el guion original. El video se corta justo después de la última palabra.
 
 Se mantuvo la historia. Se agregó que Google le devolvió los 12 dólares, que la recompensa fue de su programa de seguridad y el remate de la donación duplicada (dato real que mejora el cierre).

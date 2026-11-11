@@ -200,6 +200,14 @@ def main(carpeta):
     audio = os.path.normpath(os.path.join(carpeta, cfg["audio"]))
     duracion = float(subprocess.check_output(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", audio]))
+    inicio_audio = 0.0
+    if cfg.get("empezar_en"):
+        # Recorta el comienzo de la locución para que arranque directo en la frase de curiosidad.
+        idx = buscar(palabras, cfg["empezar_en"])
+        inicio_audio = max(0.0, palabras[idx]["start"] - 0.03)
+        palabras = [dict(p, start=p["start"] - inicio_audio, end=p["end"] - inicio_audio)
+                    for p in palabras[idx:]]
+        duracion -= inicio_audio
     if cfg.get("bucle"):
         # Corta justo después de la última palabra para que el salto al inicio no se note.
         duracion = min(duracion, palabras[-1]["end"] + 0.12)
@@ -260,7 +268,7 @@ def main(carpeta):
 
         salida = os.path.join(carpeta, "video.mp4")
         subprocess.run([
-            "ffmpeg", "-y", "-loglevel", "error", "-i", fondo, "-i", audio,
+            "ffmpeg", "-y", "-loglevel", "error", "-i", fondo, "-ss", f"{inicio_audio:.3f}", "-i", audio,
             "-vf", f"ass={ass}:fontsdir={DIR_FUENTES}",
             "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
             "-map", "0:v", "-map", "1:a", "-t", f"{duracion:.2f}",

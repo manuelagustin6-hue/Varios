@@ -7,6 +7,9 @@
 | Estado | Idea / Guion / Grabado / Editado / Publicado |
 
 ## Gancho (0–3 s)
+
+> **Regla del canal — la primera frase:** tiene que generar curiosidad por sí sola (paradoja, contradicción, cifra impactante o pregunta). Nunca empezar con una fecha, un lugar o contexto («En el año 2000…», «En 1975…»). El contexto va en la segunda frase.
+
 **Voz:**
 **Texto en pantalla:**
 **Visual:**
