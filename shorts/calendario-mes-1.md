@@ -7,7 +7,7 @@
 
 | Día | Serie | Video | Horario |
 |---|---|---|---|
-| 1 | A | A1 · Blockbuster y Netflix | 12:00 |
+| 1 | A | A1 · Blockbuster y Netflix ✅ | 12:00 |
 | 2 | B | B1 · La pizza de los 10.000 bitcoins | 20:00 |
 | 3 | A | A2 · Kodak y la cámara digital | 12:00 |
 | 4 | D | D1 · Post-it | 20:00 |
