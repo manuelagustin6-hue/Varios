@@ -49,3 +49,10 @@
 
 - **TikTok:** frase-gancho con paradoja o contradicción, sin «¿Sabías que…?» y sin contar el final.
 - **YouTube:** título de curiosidad, sin nombrar la marca al principio (como «El peor error en la historia de los negocios…»).
+
+## Revisión 0c — 12/11 (TikTok, tarde)
+
+- 002 Kodak: 519 vistas, 30 likes (pasó la prueba inicial y sigue creciendo).
+- 001 Blockbuster: frenado en 32 vistas (no pasó la prueba inicial).
+- Causa probable: la primera frase de la voz es una fecha («En el año dos mil…») y el texto del post adelanta la historia.
+- **Regla nueva:** la primera frase siempre genera curiosidad; nunca una fecha o contexto. Aplicada al 008 (se recortó «En 2015»).

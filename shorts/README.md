@@ -61,6 +61,10 @@ Cada guion sigue esta estructura de retención:
 | **Remate** | 45–55 s | La consecuencia o la lección. |
 | **Cierre en bucle** | últimos 2–3 s | Una frase que conecte con el inicio para que el video se vuelva a reproducir. |
 
+> **Regla del canal — la primera frase:** tiene que generar curiosidad por sí sola (paradoja, contradicción, cifra impactante o pregunta). Nunca empezar con una fecha, un lugar o contexto («En el año 2000…», «En 1975…»). El contexto va en la segunda frase.
+
+**Ejemplos:** ✅ «La empresa que inventó la cámara digital quebró por culpa de la cámara digital». ❌ «En el año 2000, Netflix se ofreció en venta…».
+
 **Reglas de edición:**
 - Corte o cambio visual cada 1,5–3 segundos.
 - Subtítulos grandes, centrados, palabra por palabra resaltada.
