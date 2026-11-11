@@ -1,5 +1,7 @@
 # Flujo de producción con voz por IA
 
+> **Actualización:** Claude ya entrega el video terminado en `produccion/NNN/video.mp4` (ver `produccion/README.md`). Los pasos de edición manual de abajo quedan como referencia por si se quiere editar a mano en CapCut.
+
 Objetivo: producir **7 videos por semana** en ~12–15 horas, trabajando por lotes.
 
 ## División del trabajo
@@ -9,7 +11,8 @@ Objetivo: producir **7 videos por semana** en ~12–15 horas, trabajando por lot
 | Investigación, verificación de datos y guion | Claude (en este repositorio) |
 | Títulos, textos y hashtags | Claude |
 | Generar la voz con ElevenLabs (2 tomas por guion, en `audios/NNN/`) | Claude |
-| Elegir la toma, editar y publicar | Vos |
+| Imágenes de fondo (ElevenLabs), subtítulos y montaje del video final (`produccion/NNN/video.mp4`) | Claude |
+| Revisar el video y publicarlo en las tres plataformas | Vos |
 | Análisis de métricas y ajustes | Claude, con los datos que compartas |
 
 ## Semana tipo

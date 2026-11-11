@@ -1,0 +1,66 @@
+{
+  "audio": "../../audios/004/toma-1.mp3",
+  "escenas": [
+    {
+      "imagen": "img/1.jpg",
+      "desde": "INICIO"
+    },
+    {
+      "imagen": "img/2.jpg",
+      "desde": "En 1968"
+    },
+    {
+      "imagen": "img/3.jpg",
+      "desde": "Durante años"
+    },
+    {
+      "imagen": "img/4.jpg",
+      "desde": "hasta que su colega"
+    },
+    {
+      "imagen": "img/5.jpg",
+      "desde": "Les puso"
+    },
+    {
+      "imagen": "img/6.jpg",
+      "desde": "En 1980"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "A veces"
+    }
+  ],
+  "textos": [
+    {
+      "texto": "UN PEGAMENTO\nQUE NO PEGABA",
+      "desde": "INICIO",
+      "hasta": "En 1968"
+    },
+    {
+      "texto": "1968 · 3M",
+      "desde": "En 1968",
+      "hasta": "Consiguió"
+    },
+    {
+      "texto": "¿PARA QUÉ SIRVE?",
+      "desde": "Durante años",
+      "hasta": "hasta que"
+    },
+    {
+      "texto": "EL PROBLEMA\nDE ART FRY",
+      "desde": "hasta que su colega",
+      "hasta": "Les puso"
+    },
+    {
+      "texto": "1980: LANZAMIENTO",
+      "desde": "En 1980",
+      "hasta": "Hoy están"
+    },
+    {
+      "texto": "EN CASI TODAS\nLAS OFICINAS",
+      "desde": "Hoy están",
+      "hasta": "A veces"
+    }
+  ],
+  "reemplazos": {}
+}

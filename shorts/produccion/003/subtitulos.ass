@@ -1,0 +1,124 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Liberation Sans,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,5,60,60,0,1
+Style: Titulo,Liberation Sans,74,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,22,0,8,70,70,0,1
+Style: Marca,Liberation Sans,40,&H50FFFFFF,&H50FFFFFF,&H64000000,&H00000000,-1,0,0,0,100,100,1,0,1,2,0,8,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:39.63,Marca,,0,0,0,,{\pos(540,150)}@datomillonario
+Dialogue: 1,0:00:00.06,0:00:00.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ESTE{\c&H00FFFFFF&} HOMBRE PAGÓ
+Dialogue: 1,0:00:00.32,0:00:00.64,Sub,,0,0,0,,{\pos(540,1260)\fs92}ESTE {\c&H0000D7FF&}HOMBRE{\c&H00FFFFFF&} PAGÓ
+Dialogue: 1,0:00:00.64,0:00:01.08,Sub,,0,0,0,,{\pos(540,1260)\fs92}ESTE HOMBRE {\c&H0000D7FF&}PAGÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:01.08,0:00:01.38,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DOS{\c&H00FFFFFF&} PIZZAS CON
+Dialogue: 1,0:00:01.38,0:00:02.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}DOS {\c&H0000D7FF&}PIZZAS{\c&H00FFFFFF&} CON
+Dialogue: 1,0:00:02.18,0:00:02.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}DOS PIZZAS {\c&H0000D7FF&}CON{\c&H00FFFFFF&}
+Dialogue: 1,0:00:02.44,0:00:03.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}BITCOINS{\c&H00FFFFFF&} QUE
+Dialogue: 1,0:00:03.02,0:00:03.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}BITCOINS {\c&H0000D7FF&}QUE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:03.14,0:00:03.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LLEGARON{\c&H00FFFFFF&} A VALER
+Dialogue: 1,0:00:03.50,0:00:03.58,Sub,,0,0,0,,{\pos(540,1260)\fs92}LLEGARON {\c&H0000D7FF&}A{\c&H00FFFFFF&} VALER
+Dialogue: 1,0:00:03.58,0:00:03.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}LLEGARON A {\c&H0000D7FF&}VALER{\c&H00FFFFFF&}
+Dialogue: 1,0:00:03.94,0:00:04.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}MÁS{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:04.16,0:00:04.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}MÁS {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:04.44,0:00:05.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}1.000 MILLONES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:05.28,0:00:05.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DE{\c&H00FFFFFF&} DÓLARES
+Dialogue: 1,0:00:05.40,0:00:06.07,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE {\c&H0000D7FF&}DÓLARES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:06.34,0:00:06.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EL{\c&H00FFFFFF&} 22 DE
+Dialogue: 1,0:00:06.50,0:00:06.88,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL {\c&H0000D7FF&}22{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:06.88,0:00:07.00,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL 22 {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:07.00,0:00:07.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}MAYO{\c&H00FFFFFF&} DE 2010
+Dialogue: 1,0:00:07.28,0:00:07.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}MAYO {\c&H0000D7FF&}DE{\c&H00FFFFFF&} 2010
+Dialogue: 1,0:00:07.54,0:00:08.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}MAYO DE {\c&H0000D7FF&}2010{\c&H00FFFFFF&}
+Dialogue: 1,0:00:08.28,0:00:08.38,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}UN{\c&H00FFFFFF&} PROGRAMADOR
+Dialogue: 1,0:00:08.38,0:00:08.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}UN {\c&H0000D7FF&}PROGRAMADOR{\c&H00FFFFFF&}
+Dialogue: 1,0:00:08.92,0:00:09.04,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DE{\c&H00FFFFFF&} FLORIDA
+Dialogue: 1,0:00:09.04,0:00:09.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE {\c&H0000D7FF&}FLORIDA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:09.50,0:00:10.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LLAMADO{\c&H00FFFFFF&} LASZLO
+Dialogue: 1,0:00:10.02,0:00:10.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}LLAMADO {\c&H0000D7FF&}LASZLO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:10.42,0:00:10.98,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}HANYECZ{\c&H00FFFFFF&} PUBLICÓ
+Dialogue: 1,0:00:10.98,0:00:11.36,Sub,,0,0,0,,{\pos(540,1260)\fs92}HANYECZ {\c&H0000D7FF&}PUBLICÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:11.36,0:00:11.48,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} UN FORO
+Dialogue: 1,0:00:11.48,0:00:11.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}UN{\c&H00FFFFFF&} FORO
+Dialogue: 1,0:00:11.62,0:00:12.08,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN UN {\c&H0000D7FF&}FORO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:12.08,0:00:12.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}«PAGO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:12.40,0:00:13.56,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}10.000 BITCOINS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:13.56,0:00:13.66,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}A{\c&H00FFFFFF&} QUIEN ME
+Dialogue: 1,0:00:13.66,0:00:13.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}A {\c&H0000D7FF&}QUIEN{\c&H00FFFFFF&} ME
+Dialogue: 1,0:00:13.80,0:00:13.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}A QUIEN {\c&H0000D7FF&}ME{\c&H00FFFFFF&}
+Dialogue: 1,0:00:13.92,0:00:14.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CONSIGA{\c&H00FFFFFF&} DOS
+Dialogue: 1,0:00:14.50,0:00:14.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}CONSIGA {\c&H0000D7FF&}DOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:14.76,0:00:15.56,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PIZZAS»{\c&H00FFFFFF&}
+Dialogue: 1,0:00:15.56,0:00:15.66,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}UN{\c&H00FFFFFF&} USUARIO
+Dialogue: 1,0:00:15.66,0:00:16.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}UN {\c&H0000D7FF&}USUARIO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:16.02,0:00:16.70,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ACEPTÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:16.70,0:00:16.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LE{\c&H00FFFFFF&} COMPRÓ DOS
+Dialogue: 1,0:00:16.80,0:00:17.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}LE {\c&H0000D7FF&}COMPRÓ{\c&H00FFFFFF&} DOS
+Dialogue: 1,0:00:17.20,0:00:17.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}LE COMPRÓ {\c&H0000D7FF&}DOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:17.44,0:00:18.00,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PIZZAS{\c&H00FFFFFF&} Y SE
+Dialogue: 1,0:00:18.00,0:00:18.10,Sub,,0,0,0,,{\pos(540,1260)\fs92}PIZZAS {\c&H0000D7FF&}Y{\c&H00FFFFFF&} SE
+Dialogue: 1,0:00:18.10,0:00:18.22,Sub,,0,0,0,,{\pos(540,1260)\fs92}PIZZAS Y {\c&H0000D7FF&}SE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:18.22,0:00:18.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}QUEDÓ{\c&H00FFFFFF&} CON LOS
+Dialogue: 1,0:00:18.50,0:00:18.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUEDÓ {\c&H0000D7FF&}CON{\c&H00FFFFFF&} LOS
+Dialogue: 1,0:00:18.62,0:00:18.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUEDÓ CON {\c&H0000D7FF&}LOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:18.80,0:00:19.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}BITCOINS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:19.54,0:00:19.64,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} ESE MOMENTO
+Dialogue: 1,0:00:19.64,0:00:19.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}ESE{\c&H00FFFFFF&} MOMENTO
+Dialogue: 1,0:00:19.84,0:00:20.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN ESE {\c&H0000D7FF&}MOMENTO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:20.28,0:00:20.64,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}VALÍAN{\c&H00FFFFFF&} UNOS
+Dialogue: 1,0:00:20.64,0:00:20.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}VALÍAN {\c&H0000D7FF&}UNOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:20.94,0:00:22.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}40 DÓLARES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:22.18,0:00:22.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}FUE{\c&H00FFFFFF&} UNA DE
+Dialogue: 1,0:00:22.32,0:00:22.48,Sub,,0,0,0,,{\pos(540,1260)\fs92}FUE {\c&H0000D7FF&}UNA{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:22.48,0:00:22.58,Sub,,0,0,0,,{\pos(540,1260)\fs92}FUE UNA {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:22.58,0:00:22.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LAS{\c&H00FFFFFF&} PRIMERAS
+Dialogue: 1,0:00:22.84,0:00:23.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}LAS {\c&H0000D7FF&}PRIMERAS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:23.44,0:00:23.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}COMPRAS{\c&H00FFFFFF&} REALES
+Dialogue: 1,0:00:23.84,0:00:24.24,Sub,,0,0,0,,{\pos(540,1260)\fs92}COMPRAS {\c&H0000D7FF&}REALES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:24.24,0:00:24.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CON{\c&H00FFFFFF&} BITCOIN
+Dialogue: 1,0:00:24.42,0:00:25.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}CON {\c&H0000D7FF&}BITCOIN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:25.16,0:00:25.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}AÑOS{\c&H00FFFFFF&} DESPUÉS
+Dialogue: 1,0:00:25.40,0:00:26.00,Sub,,0,0,0,,{\pos(540,1260)\fs92}AÑOS {\c&H0000D7FF&}DESPUÉS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:26.00,0:00:26.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EL{\c&H00FFFFFF&} PRECIO SE
+Dialogue: 1,0:00:26.20,0:00:26.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL {\c&H0000D7FF&}PRECIO{\c&H00FFFFFF&} SE
+Dialogue: 1,0:00:26.52,0:00:26.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL PRECIO {\c&H0000D7FF&}SE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:26.62,0:00:27.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DISPARÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:27.30,0:00:27.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} 2025
+Dialogue: 1,0:00:27.54,0:00:28.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}2025{\c&H00FFFFFF&}
+Dialogue: 1,0:00:28.62,0:00:28.88,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}UN{\c&H00FFFFFF&} SOLO BITCOIN
+Dialogue: 1,0:00:28.88,0:00:29.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}UN {\c&H0000D7FF&}SOLO{\c&H00FFFFFF&} BITCOIN
+Dialogue: 1,0:00:29.14,0:00:29.58,Sub,,0,0,0,,{\pos(540,1260)\fs92}UN SOLO {\c&H0000D7FF&}BITCOIN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:29.58,0:00:29.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SUPERÓ{\c&H00FFFFFF&} LOS
+Dialogue: 1,0:00:29.92,0:00:30.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}SUPERÓ {\c&H0000D7FF&}LOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:30.14,0:00:31.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}100.000 DÓLARES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:31.44,0:00:31.86,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}HOY{\c&H00FFFFFF&}
+Dialogue: 1,0:00:31.86,0:00:32.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CADA{\c&H00FFFFFF&} 22 DE
+Dialogue: 1,0:00:32.16,0:00:32.56,Sub,,0,0,0,,{\pos(540,1260)\fs92}CADA {\c&H0000D7FF&}22{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:32.56,0:00:32.68,Sub,,0,0,0,,{\pos(540,1260)\fs92}CADA 22 {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:32.68,0:00:32.98,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}MAYO{\c&H00FFFFFF&} SE CELEBRA
+Dialogue: 1,0:00:32.98,0:00:33.12,Sub,,0,0,0,,{\pos(540,1260)\fs92}MAYO {\c&H0000D7FF&}SE{\c&H00FFFFFF&} CELEBRA
+Dialogue: 1,0:00:33.12,0:00:33.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}MAYO SE {\c&H0000D7FF&}CELEBRA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:33.62,0:00:33.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EL{\c&H00FFFFFF&} BITCOIN PIZZA
+Dialogue: 1,0:00:33.84,0:00:34.36,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL {\c&H0000D7FF&}BITCOIN{\c&H00FFFFFF&} PIZZA
+Dialogue: 1,0:00:34.36,0:00:34.68,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL BITCOIN {\c&H0000D7FF&}PIZZA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:34.68,0:00:35.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DAY{\c&H00FFFFFF&}
+Dialogue: 1,0:00:35.16,0:00:35.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}¿ERROR{\c&H00FFFFFF&} O MOMENTO
+Dialogue: 1,0:00:35.82,0:00:35.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}¿ERROR {\c&H0000D7FF&}O{\c&H00FFFFFF&} MOMENTO
+Dialogue: 1,0:00:35.94,0:00:36.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}¿ERROR O {\c&H0000D7FF&}MOMENTO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:36.30,0:00:37.06,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}HISTÓRICO?{\c&H00FFFFFF&}
+Dialogue: 1,0:00:37.06,0:00:37.22,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}TÚ{\c&H00FFFFFF&} DECIDES
+Dialogue: 1,0:00:37.22,0:00:38.12,Sub,,0,0,0,,{\pos(540,1260)\fs92}TÚ {\c&H0000D7FF&}DECIDES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:38.12,0:00:38.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PERO{\c&H00FFFFFF&} ESAS DOS
+Dialogue: 1,0:00:38.32,0:00:38.60,Sub,,0,0,0,,{\pos(540,1260)\fs92}PERO {\c&H0000D7FF&}ESAS{\c&H00FFFFFF&} DOS
+Dialogue: 1,0:00:38.60,0:00:38.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}PERO ESAS {\c&H0000D7FF&}DOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:38.84,0:00:39.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PIZZAS{\c&H00FFFFFF&}
+Dialogue: 2,0:00:00.00,0:00:06.34,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}2 PIZZAS =\N+$1.000 MILLONES
+Dialogue: 2,0:00:12.08,0:00:15.56,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}22/05/2010\N10.000 BTC
+Dialogue: 2,0:00:19.54,0:00:22.18,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}VALOR: ~$40
+Dialogue: 2,0:00:27.30,0:00:31.44,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}1 BTC > $100.000
+Dialogue: 2,0:00:32.98,0:00:35.16,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}#BITCOINPIZZADAY

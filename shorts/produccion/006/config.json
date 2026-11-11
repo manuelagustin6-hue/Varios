@@ -1,0 +1,71 @@
+{
+  "audio": "../../audios/006/toma-1.mp3",
+  "escenas": [
+    {
+      "imagen": "img/1.jpg",
+      "desde": "INICIO"
+    },
+    {
+      "imagen": "img/2.jpg",
+      "desde": "París 1925"
+    },
+    {
+      "imagen": "img/3.jpg",
+      "desde": "Victor Lustig"
+    },
+    {
+      "imagen": "img/4.jpg",
+      "desde": "Un comerciante"
+    },
+    {
+      "imagen": "img/5.jpg",
+      "desde": "Así que Lustig"
+    },
+    {
+      "imagen": "img/6.jpg",
+      "desde": "Años después"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "pero no por la torre"
+    }
+  ],
+  "textos": [
+    {
+      "texto": "VENDIÓ LA\nTORRE EIFFEL",
+      "desde": "INICIO",
+      "hasta": "París 1925"
+    },
+    {
+      "texto": "PARÍS, 1925",
+      "desde": "París 1925",
+      "hasta": "Victor"
+    },
+    {
+      "texto": "VICTOR LUSTIG",
+      "desde": "Victor Lustig",
+      "hasta": "Les dijo"
+    },
+    {
+      "texto": "«SE VENDE\nCOMO CHATARRA»",
+      "desde": "Les dijo",
+      "hasta": "Un comerciante"
+    },
+    {
+      "texto": "NUNCA LO DENUNCIÓ",
+      "desde": "Poisson sintió",
+      "hasta": "Así que"
+    },
+    {
+      "texto": "SEGUNDO INTENTO",
+      "desde": "Así que",
+      "hasta": "Años después"
+    },
+    {
+      "texto": "ALCATRAZ",
+      "desde": "Años después",
+      "hasta": "FIN"
+    }
+  ],
+  "reemplazos": {}
+}

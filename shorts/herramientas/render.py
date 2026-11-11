@@ -121,7 +121,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         if b_i + 1 < len(bloques):
             prox = bloques[b_i + 1][0]["start"]
             fin_bloque = prox if prox - fin_bloque < 0.4 else fin_bloque + 0.15
-        textos_b = [p["text"].upper() for p in bloque]
+        # Sin comas, puntos ni comillas rectas: en pantalla se lee más limpio.
+        textos_b = [re.sub(r'[,.;:"]+$', "", p["text"].replace('"', "")).upper() for p in bloque]
         for j, p in enumerate(bloque):
             ini = p["start"]
             fin = bloque[j + 1]["start"] if j + 1 < len(bloque) else fin_bloque
