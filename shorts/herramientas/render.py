@@ -107,6 +107,7 @@ WrapStyle: 2
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Sub,{FUENTE},92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,5,60,60,0,1
 Style: Titulo,{FUENTE},74,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,22,0,8,70,70,0,1
+Style: Gancho,{FUENTE},104,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,28,0,5,50,50,0,1
 Style: Marca,{FUENTE},40,&H50FFFFFF,&H50FFFFFF,&H64000000,&H00000000,-1,0,0,0,100,100,1,0,1,2,0,8,0,0,0,1
 
 [Events]
@@ -142,6 +143,13 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     # Títulos destacados en la parte superior.
     for t in textos:
         texto = t["texto"].replace("\n", "\\N")
+        if t.get("gancho"):
+            # Gancho: grande y centrado, aparece de golpe para frenar el deslizamiento.
+            eventos.append(
+                f"Dialogue: 2,{tiempo_ass(t['ini'])},{tiempo_ass(t['fin'])},Gancho,,0,0,0,,"
+                f"{{\\pos(540,780)\\fscx135\\fscy135\\t(0,140,\\fscx100\\fscy100)\\fad(0,150)}}{texto}"
+            )
+            continue
         eventos.append(
             f"Dialogue: 2,{tiempo_ass(t['ini'])},{tiempo_ass(t['fin'])},Titulo,,0,0,0,,"
             f"{{\\pos(540,330)\\fad(120,120)\\fscx85\\fscy85\\t(0,120,\\fscx100\\fscy100)}}{texto}"
@@ -166,7 +174,9 @@ def preparar_imagen(origen, destino):
 
 def renderizar_plano(imagen, duracion, variante, destino):
     n = max(1, round(duracion * FPS))
-    if variante % 2 == 0:   # acercamiento lento desde el plano general
+    if variante == 0:       # primer plano: alejamiento marcado para dar movimiento desde el inicio
+        z = f"1.28-0.24*on/{n}"
+    elif variante % 2 == 0:  # acercamiento lento desde el plano general
         z = f"1+0.10*on/{n}"
     else:                   # alejamiento desde un plano más cerrado
         z = f"1.30-0.10*on/{n}"
@@ -216,7 +226,7 @@ def main(carpeta):
             i1 = buscar(palabras, t["hasta"], i0 + 1)
             fin = palabras[i1]["start"]
         cursor = i0
-        textos.append({"texto": t["texto"], "ini": ini, "fin": fin})
+        textos.append({"texto": t["texto"], "ini": ini, "fin": fin, "gancho": t["desde"] == "INICIO"})
 
     tmp = tempfile.mkdtemp(prefix="render_")
     try:

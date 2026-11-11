@@ -8,6 +8,7 @@ WrapStyle: 2
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
 Style: Sub,Liberation Sans,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,5,60,60,0,1
 Style: Titulo,Liberation Sans,74,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,22,0,8,70,70,0,1
+Style: Gancho,Liberation Sans,104,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,28,0,5,50,50,0,1
 Style: Marca,Liberation Sans,40,&H50FFFFFF,&H50FFFFFF,&H64000000,&H00000000,-1,0,0,0,100,100,1,0,1,2,0,8,0,0,0,1
 
 [Events]
@@ -144,7 +145,7 @@ Dialogue: 1,0:00:46.14,0:00:46.34,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fsc
 Dialogue: 1,0:00:46.34,0:00:47.38,Sub,,0,0,0,,{\pos(540,1260)\fs92}LOS {\c&H0000D7FF&}PEORES «NO»{\c&H00FFFFFF&}
 Dialogue: 1,0:00:47.38,0:00:47.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DE{\c&H00FFFFFF&} MARS
 Dialogue: 1,0:00:47.52,0:00:47.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE {\c&H0000D7FF&}MARS{\c&H00FFFFFF&}
-Dialogue: 2,0:00:00.00,0:00:07.50,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}RECHAZÓ SALIR\NEN E.T.
+Dialogue: 2,0:00:00.00,0:00:07.50,Gancho,,0,0,0,,{\pos(540,780)\fscx135\fscy135\t(0,140,\fscx100\fscy100)\fad(0,150)}RECHAZÓ SALIR\NEN E.T.
 Dialogue: 2,0:00:14.44,0:00:22.82,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}MARS DIJO QUE NO
 Dialogue: 2,0:00:24.86,0:00:31.84,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}PLAN B:\NREESE'S PIECES
 Dialogue: 2,0:00:31.84,0:00:36.22,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}1982: ESTRENO
