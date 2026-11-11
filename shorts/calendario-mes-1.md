@@ -1,52 +1,55 @@
-# Calendario — Mes 1
+# Calendario de publicación — Mes 1
 
-**Ritmo:** 1 video por día, publicado en YouTube Shorts, TikTok e Instagram Reels.
-**Horario de prueba (hora de Argentina):** alternar **12:00** y **20:00** durante las primeras dos semanas y quedarse con el que mejor funcione. A las 20:00 de Argentina es la tarde en México y Colombia.
+**Ritmo:** 1 video por día en YouTube Shorts, TikTok e Instagram Reels.
+**Horario de prueba (hora de Argentina):** alternar **12:00** y **20:00** hasta el 22/11; después quedarse con el que mejor funcione.
+**Textos de cada video:** `publicacion.md`.
 
-> Semana 0 (antes de publicar): elegir el nombre, crear las cuentas, definir la identidad visual, elegir la voz de IA y producir **7 videos por adelantado** para tener margen.
+## Videos listos
 
-| Día | Serie | Video | Horario |
+| Día | Fecha | Video | Horario | Estado |
+|---|---|---|---|---|
+| 1 | — | 001 · Blockbuster y Netflix | — | ✅ Publicado |
+| 2 | — | 002 · Kodak y la cámara digital | — | ✅ Publicado |
+| 3 | Jue 12/11 | 003 · La pizza de los 10.000 bitcoins | 12:00 | Listo |
+| 4 | Vie 13/11 | 004 · El Post-it | 20:00 | Listo |
+| 5 | Sáb 14/11 | 005 · Ronald Wayne y Apple | 12:00 | Listo |
+| 6 | Dom 15/11 | 006 · El hombre que vendió la Torre Eiffel | 20:00 | Listo |
+| 7 | Lun 16/11 | 007 · El logo de Nike | 12:00 | Listo |
+| — | Lun 16/11 | **Revisión de métricas n.º 1** (001 a 005) | — | — |
+| 8 | Mar 17/11 | 008 · Google.com por 12 dólares | 20:00 | Listo (con bucle) |
+| 9 | Mié 18/11 | 009 · Red Bull y las latas en la basura | 12:00 | Listo (con bucle) |
+| 10 | Jue 19/11 | 010 · M&M's rechazó aparecer en E.T. | 20:00 | Listo (bucle pendiente) |
+| 11 | Vie 20/11 | 011 · Kearns contra Ford y Chrysler | 12:00 | Listo (bucle pendiente) |
+| 12 | Sáb 21/11 | 012 · El recorrido de IKEA | 20:00 | Listo (bucle pendiente) |
+| 13 | Dom 22/11 | 013 · Adidas dejó ir a Michael Jordan | 12:00 | Listo (bucle pendiente) |
+| — | Dom 22/11 | **Revisión de métricas n.º 2** y elección de horario | — | — |
+
+> 010–013: si se renuevan los créditos de ElevenLabs antes de su fecha, se publican con el final en bucle (`guiones/pendientes-bucle.md`). Si no, se publican como están.
+
+## Próxima tanda (requiere créditos de ElevenLabs)
+
+| Día | Fecha | Video | Estado |
 |---|---|---|---|
-| 1 | A | A1 · Blockbuster y Netflix ✅ | 12:00 |
-| 2 | B | B1 · La pizza de los 10.000 bitcoins | 20:00 |
-| 3 | A | A2 · Kodak y la cámara digital | 12:00 |
-| 4 | D | D1 · Post-it | 20:00 |
-| 5 | A | A3 · Ronald Wayne y Apple | 12:00 |
-| 6 | C | C5 · El hombre que vendió la Torre Eiffel | 20:00 |
-| 7 | B | B3 · El logo de Nike de 35 dólares | 12:00 |
-| 8 | B | 008 · Google.com por 12 dólares | 20:00 |
-| 9 | F | 009 · Red Bull y las latas en la basura | 12:00 |
-| 10 | A | 010 · M&M's rechazó aparecer en E.T. | 20:00 |
-| 11 | B | 011 · Kearns contra Ford y Chrysler | 12:00 |
-| 12 | F | 012 · El recorrido de IKEA | 20:00 |
-| 13 | A | 013 · Adidas dejó ir a Michael Jordan | 12:00 |
-| 14 | D | D2 · Plástico de burbujas | 20:00 |
-| 15 | — | **Revisión de métricas** (ver abajo) + A5 · Nokia | ganador |
-| 16 | C | C3 · Theranos | ganador |
-| 17 | B | B2 · Instagram por 1.000 millones | ganador |
-| 18 | E | E2 · Adidas y Puma | ganador |
-| 19 | A | A8 · Brian Acton y WhatsApp | ganador |
-| 20 | D | D5 · Nutella | ganador |
-| 21 | C | C2 · Bernie Madoff | ganador |
-| 22 | B | B5 · Airbnb y las cajas de cereal | ganador |
-| 23 | A | A6 · New Coke | ganador |
-| 24 | E | E4 · Dyson | ganador |
-| 25 | D | D3 · Play-Doh | ganador |
-| 26 | C | C4 · FTX | ganador |
-| 27 | B | B7 · Mercado Libre | ganador |
-| 28 | E | E3 · Lego | ganador |
-| 29–30 | — | **Revisión del mes** y planificación del mes 2 | — |
+| 14 | Lun 23/11 | 014 · Yahoo pudo comprar Google | Guion por escribir |
+| 15 | Mar 24/11 | 015 · Charles Ponzi | Guion por escribir |
+| 16 | Mié 25/11 | 016 · Lamborghini contra Ferrari | Guion por escribir |
+| 17 | Jue 26/11 | 017 · El disco duro con 8.000 bitcoins | Guion por escribir |
+| 18 | Vie 27/11 | 018 · Mansa Musa | Guion por escribir |
+| 19 | Sáb 28/11 | 019 · Monopoly | Guion por escribir |
+| 20 | Dom 29/11 | 020 · Nokia | Guion por escribir |
 
-> Los días 8 a 13 se cubren con los guiones del PDF (videos 008–013, ya producidos). Las ideas A4, D4, C1, B4, E1 y A7 pasan al mes 2. Serie nueva **F — Marketing y psicología del consumo**.
+El orden de la próxima tanda se ajusta según las métricas: se priorizan las series que mejor funcionen.
 
-## Revisión del día 15 y del día 29
-1. Ordenar los videos por **porcentaje medio visto** y por **compartidos + guardados**.
-2. Identificar la serie ganadora y **duplicar su frecuencia** en el mes 2.
-3. Revisar los primeros 3 segundos de los 3 peores videos: ¿el gancho falló, la imagen inicial era débil o el tema no interesó?
-4. Ajustar el horario según los datos.
+## Qué mirar en cada revisión
+
+1. **Retención a los 3 segundos** (cuánta gente no desliza): si es baja, el problema es el gancho.
+2. **Porcentaje medio visto:** si es bajo, la historia se hace lenta en el medio.
+3. **Compartidos y guardados:** el mejor indicador de qué temas repetir.
+4. **Horario:** comparar el rendimiento de las 12:00 contra el de las 20:00.
 
 ## Reglas de publicación
-- Mismo título y texto en las tres plataformas, adaptando los hashtags.
-- Subir a TikTok e Instagram **sin marca de agua** de otra aplicación (exportar el archivo original de la edición).
-- Responder los primeros comentarios durante la primera hora.
-- Fijar un comentario con una pregunta para generar conversación.
+
+- Etiqueta de contenido generado con IA en las tres plataformas.
+- Música desde la biblioteca de cada plataforma, a volumen bajo.
+- Portada: el primer fotograma, con el título amarillo.
+- Fijar como primer comentario la pregunta de la descripción y responder los comentarios de la primera hora.
