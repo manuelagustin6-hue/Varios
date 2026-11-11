@@ -25,10 +25,11 @@ Objetivo: producir **7 videos por semana** en ~12–15 horas, trabajando por lot
 ## Paso a paso por video
 
 ### 1. Voz (la genera Claude)
-- **Voz del canal:** «Carlos – Premium Latin American Spanish Narrator (Español Neutro)», de la biblioteca de ElevenLabs (ID `Y4HwpMNrBWN5dFKi5Lw8`). Usarla siempre.
+- **Voz del canal:** «BRIAN – Voz para redes sociales», de ElevenLabs (ID `U9TSK9KHMlMU2qkeXlQP`). Usarla siempre.
+- Voz alternativa probada: «Carlos – Español Neutro» (ID `Y4HwpMNrBWN5dFKi5Lw8`), más pausada.
 - **Modelo:** Eleven v4.
-- Claude genera 2 tomas por guion y las guarda en `audios/NNN/toma-1.mp3` y `toma-2.mp3`. Vos elegís la que mejor suene.
-- **Costo de referencia:** ~714 créditos por toma de 50 s (≈ US$ 0,14 según lo informado por ElevenLabs).
+- Claude genera 2 tomas por guion y las guarda en `audios/NNN/brian-toma-1.mp3` y `brian-toma-2.mp3`. Vos elegís la que mejor suene.
+- **Costo de referencia:** ~714 créditos por toma de un guion de ~45 s (≈ US$ 0,14 según lo informado por ElevenLabs). Con Brian, el guion 001 dura 41,6 s.
 - Para controlar el ritmo, el texto se escribe con puntos suspensivos (…) en las pausas dramáticas y con los números en letras.
 - Si la locución supera los 50 s, acelerarla un 5–10 % en la edición.
 
