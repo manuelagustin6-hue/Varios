@@ -10,7 +10,7 @@ Criterios: corto, fácil de pronunciar y recordar, que comunique **dinero + hist
 | **Capital Oculto** | @capitaloculto | Suena a misterio y a secretos del dinero. | Puede sonar a conspiración o a estafa financiera. |
 | **Jugada Millonaria** | @jugadamillonaria | Transmite decisión y riesgo. | Puede asociarse con apuestas o casinos. |
 
-## Recomendación: **Dato Millonario**
+## ✅ Nombre elegido: **Dato Millonario**
 
 - Abarca todo el contenido previsto: errores, éxitos, estafas, inventos y fortunas.
 - Funciona como firma al final de cada video: *«Esto fue un Dato Millonario»*.

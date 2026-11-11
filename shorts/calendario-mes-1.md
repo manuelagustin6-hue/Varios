@@ -12,7 +12,7 @@
 | 3 | A | A2 · Kodak y la cámara digital | 12:00 |
 | 4 | D | D1 · Post-it | 20:00 |
 | 5 | A | A3 · Ronald Wayne y Apple | 12:00 |
-| 6 | C | C5 · La Torre Eiffel vendida dos veces | 20:00 |
+| 6 | C | C5 · El hombre que vendió la Torre Eiffel | 20:00 |
 | 7 | B | B3 · El logo de Nike de 35 dólares | 12:00 |
 | 8 | A | A4 · Yahoo pudo comprar Google | 20:00 |
 | 9 | D | D4 · Monopoly | 12:00 |

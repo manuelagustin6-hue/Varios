@@ -1,4 +1,4 @@
-# Shorts — Canal de videos cortos monetizable
+# Shorts — «Dato Millonario»
 
 Proyecto para crear videos verticales (9:16, 35–50 s) para **YouTube Shorts, TikTok e Instagram Reels**, con el objetivo de construir audiencia y monetizarla.
 
@@ -142,7 +142,8 @@ Cada guion sigue esta estructura de retención:
 | Voz | Generada por IA (ver `flujo-de-produccion.md`) |
 | Rostro | Canal anónimo |
 | Dedicación | Según lo que requiera el plan: ~12–15 h por semana para 1 video diario |
-| Nombre | Propuestas en `nombre-del-canal.md` (pendiente de elección) |
+| Nombre | **Dato Millonario** (@datomillonario) |
+| Voz del canal | «BRIAN – Voz para redes sociales» (ElevenLabs) |
 
 ---
 
