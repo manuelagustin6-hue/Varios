@@ -31,3 +31,21 @@
 ### Próxima revisión
 
 16/11: comparar el porcentaje de «siguieron mirando» del 003 en adelante (con el gancho nuevo) contra el del 001 y el 002.
+
+## Revisión 0b — 12/11 (TikTok)
+
+| Video | Texto publicado | Vistas | Likes | Likes / vistas |
+|---|---|---|---|---|
+| 002 Kodak | «La empresa que inventó la cámara digital quebró por culpa de la cámara digital 📸» | 146 | 17 | 11,6 % |
+| 001 Blockbuster | «¿Sabías que en el año 2000 Netflix le ofreció su empresa a Blockbuster por solo 50 millo…» | 32 | 3 | 9,4 % |
+
+### Lectura
+
+- **Resultados cruzados:** en YouTube ganó Blockbuster (238 contra 4) y en TikTok ganó Kodak (146 contra 32). Con tan pocos videos, gran parte es azar de la distribución inicial; no hay que sacar conclusiones fuertes todavía.
+- **El porcentaje de likes es muy bueno en los dos** (10–12 %; un Short promedio ronda el 4–6 %). El contenido gusta.
+- **El texto de TikTok importa:** el de Kodak es una **paradoja** que genera curiosidad; el de Blockbuster empieza con «¿Sabías que…?» y adelanta toda la historia.
+
+### Regla para los próximos textos
+
+- **TikTok:** frase-gancho con paradoja o contradicción, sin «¿Sabías que…?» y sin contar el final.
+- **YouTube:** título de curiosidad, sin nombrar la marca al principio (como «El peor error en la historia de los negocios…»).
