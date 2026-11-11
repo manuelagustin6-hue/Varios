@@ -1,0 +1,64 @@
+{
+  "audio": "../../audios/012/voz-final.mp3",
+  "escenas": [
+    {
+      "imagen": "img/1.jpg",
+      "desde": "INICIO"
+    },
+    {
+      "imagen": "img/2.jpg",
+      "desde": "Muchas de sus tiendas"
+    },
+    {
+      "imagen": "img/3.jpg",
+      "desde": "Allan Penn"
+    },
+    {
+      "imagen": "img/4.jpg",
+      "desde": "Además"
+    },
+    {
+      "imagen": "img/5.jpg",
+      "desde": "Y en la zona"
+    },
+    {
+      "imagen": "img/6.jpg",
+      "desde": "No es magia"
+    }
+  ],
+  "textos": [
+    {
+      "texto": "¿POR QUÉ COMPRAS\nDE MÁS EN IKEA?",
+      "desde": "INICIO",
+      "hasta": "Muchas"
+    },
+    {
+      "texto": "UN RECORRIDO\nSERPENTEANTE",
+      "desde": "recorrido largo",
+      "hasta": "Allan Penn"
+    },
+    {
+      "texto": "DESORIENTARTE\nTE HACE COMPRAR",
+      "desde": "cuando un recorrido",
+      "hasta": "Además"
+    },
+    {
+      "texto": "PRODUCTOS BARATOS\nEN EL CAMINO",
+      "desde": "Además",
+      "hasta": "Y en la zona"
+    },
+    {
+      "texto": "ZONA DE CAJAS",
+      "desde": "Y en la zona",
+      "hasta": "No es magia"
+    },
+    {
+      "texto": "TRUCO: LISTA\n+ ATAJOS",
+      "desde": "La próxima vez",
+      "hasta": "FIN"
+    }
+  ],
+  "reemplazos": {
+    "allan penn": "Alan Penn"
+  }
+}

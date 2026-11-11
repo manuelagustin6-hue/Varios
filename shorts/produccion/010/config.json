@@ -1,0 +1,65 @@
+{
+  "audio": "../../audios/010/voz-final.mp3",
+  "escenas": [
+    {
+      "imagen": "img/1.jpg",
+      "desde": "INICIO"
+    },
+    {
+      "imagen": "img/2.jpg",
+      "desde": "Los productores"
+    },
+    {
+      "imagen": "img/3.jpg",
+      "desde": "Pero Mars"
+    },
+    {
+      "imagen": "img/4.jpg",
+      "desde": "Entonces fueron"
+    },
+    {
+      "imagen": "img/5.jpg",
+      "desde": "ET se estrenó"
+    },
+    {
+      "imagen": "img/6.jpg",
+      "desde": "Según la prensa"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "Uno de los mejores"
+    }
+  ],
+  "textos": [
+    {
+      "texto": "RECHAZÓ SALIR\nEN E.T.",
+      "desde": "INICIO",
+      "hasta": "Los productores"
+    },
+    {
+      "texto": "MARS DIJO QUE NO",
+      "desde": "Pero Mars",
+      "hasta": "Entonces"
+    },
+    {
+      "texto": "PLAN B:\nREESE'S PIECES",
+      "desde": "Hersheys aceptó",
+      "hasta": "ET se estrenó"
+    },
+    {
+      "texto": "1982: ESTRENO",
+      "desde": "ET se estrenó",
+      "hasta": "Según la prensa"
+    },
+    {
+      "texto": "+65% EN\n2 SEMANAS",
+      "desde": "subieron",
+      "hasta": "Uno de los mejores"
+    }
+  ],
+  "reemplazos": {
+    "sesenta y cinco por ciento": "65%",
+    "dos semanas": "2 semanas",
+    "peores no": "peores «no»"
+  }
+}

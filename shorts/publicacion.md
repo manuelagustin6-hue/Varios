@@ -143,3 +143,117 @@ Sigue a @datomillonario: historias de negocios y dinero en menos de un minuto.
 **TikTok / Instagram:**
 Uno de los logos más famosos del mundo costó 35 dólares ✔️
 #nike #logo #diseño #marketing #datomillonario
+
+---
+
+## 008 — Google.com por 12 dólares
+
+**Título YouTube:** Compró Google.com por 12 dólares 🤯
+
+**Descripción YouTube:**
+En 2015, Sanmay Ved compró el dominio google.com por 12 dólares y fue su dueño durante un minuto. Google canceló la compra y le dio una recompensa de 6.006,13 dólares: un número que se lee «GOOGLE». Él la donó a una fundación en la India, y Google duplicó la donación.
+
+¿Qué habrías hecho tú con google.com? 👇
+
+Sigue a @datomillonario: historias de negocios y dinero en menos de un minuto.
+
+#google #tecnologia #internet #curiosidades #negocios #datomillonario #shorts
+
+**TikTok / Instagram:**
+Fue dueño de google.com durante un minuto… por 12 dólares 🤯
+#google #tecnologia #curiosidades #datomillonario
+
+---
+
+## 009 — Red Bull y las latas en la basura
+
+**Título YouTube:** ¿Red Bull se hizo famoso gracias a la basura? 🥫
+
+**Descripción YouTube:**
+Una de las historias de marketing más contadas dice que, al llegar al Reino Unido, Red Bull dejaba latas vacías en los cestos de basura de bares y discotecas de Londres para que pareciera que todos la tomaban. Nunca se confirmó del todo. Lo que sí es real: creció con estrategias poco tradicionales y hoy vende más de 12.000 millones de latas por año.
+
+¿Leyenda o genialidad? 👇
+
+Sigue a @datomillonario: historias de negocios y dinero en menos de un minuto.
+
+#redbull #marketing #negocios #emprendimiento #estrategia #datomillonario #shorts
+
+**TikTok / Instagram:**
+La jugada de marketing más polémica de Red Bull 🥫 ¿Leyenda o genialidad?
+#redbull #marketing #negocios #datomillonario
+
+---
+
+## 010 — M&M's rechazó aparecer en E.T.
+
+**Título YouTube:** M&M's dijo que no a E.T.… y ganó su competencia 👽
+
+**Descripción YouTube:**
+Los productores de E.T. querían usar M&M's en la película. Mars dijo que no. Hershey's aceptó con sus Reese's Pieces, sin pagar por aparecer, y según la prensa de 1982 sus ventas subieron un 65 % en dos semanas.
+
+¿El peor «no» de la historia del marketing? 👇
+
+Sigue a @datomillonario: historias de negocios y dinero en menos de un minuto.
+
+#marketing #cine #et #negocios #publicidad #datomillonario #shorts
+
+**TikTok / Instagram:**
+Rechazó aparecer en E.T. y le regaló un éxito a su competencia 👽
+#marketing #cine #publicidad #datomillonario
+
+---
+
+## 011 — El inventor que les ganó a Ford y Chrysler
+
+**Título YouTube:** Les ganó a Ford y Chrysler por un limpiaparabrisas 🚗
+
+**Descripción YouTube:**
+Robert Kearns, ingeniero y profesor, inventó el limpiaparabrisas intermitente. Ford no le compró la idea, pero en 1969 lanzó su propia versión. Kearns pasó años en juicios: en 1990 Ford le pagó más de 10 millones de dólares y en 1992 un jurado condenó a Chrysler a pagarle casi 19 millones más.
+
+¿Tú habrías aguantado tantos años de juicio? 👇
+
+Sigue a @datomillonario: historias de negocios y dinero en menos de un minuto.
+
+#inventos #ford #historia #justicia #negocios #datomillonario #shorts
+
+**TikTok / Instagram:**
+Un profesor contra Ford y Chrysler… y ganó 🚗⚖️
+#inventos #historia #negocios #datomillonario
+
+---
+
+## 012 — El recorrido de IKEA
+
+**Título YouTube:** Por qué siempre compras de más en IKEA 🛒
+
+**Descripción YouTube:**
+Muchas tiendas de IKEA tienen un recorrido largo y serpenteante que pasa por casi todas las secciones. Según el profesor de arquitectura Alan Penn, cuando un recorrido te desorienta, tiendes a llevarte las cosas apenas las ves. Consejo: lleva una lista y usa los atajos.
+
+¿Te pasó alguna vez? 👇
+
+Sigue a @datomillonario: historias de negocios y dinero en menos de un minuto.
+
+#ikea #psicologia #compras #marketing #finanzaspersonales #datomillonario #shorts
+
+**TikTok / Instagram:**
+Por esto siempre sales de IKEA con cosas que no ibas a comprar 🛒
+#ikea #psicologia #compras #datomillonario
+
+---
+
+## 013 — Adidas dejó ir a Michael Jordan
+
+**Título YouTube:** Adidas pudo tener a Michael Jordan… y lo dejó ir 🏀
+
+**Descripción YouTube:**
+En 1984, la marca favorita de Michael Jordan era Adidas, pero no le hizo una oferta a la altura. Nike se la jugó: una zapatilla con su nombre y un porcentaje de cada par. Esperaba vender 3 millones de dólares en cuatro años; el primer año, las Air Jordan vendieron 126 millones.
+
+¿El peor error de la historia del deporte? 👇
+
+Sigue a @datomillonario: historias de negocios y dinero en menos de un minuto.
+
+#jordan #nike #adidas #basquet #negocios #datomillonario #shorts
+
+**TikTok / Instagram:**
+Adidas pudo tener a Michael Jordan y lo dejó ir a Nike 🏀
+#jordan #nike #adidas #negocios #datomillonario

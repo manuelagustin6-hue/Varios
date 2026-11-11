@@ -14,12 +14,12 @@
 | 5 | A | A3 · Ronald Wayne y Apple | 12:00 |
 | 6 | C | C5 · El hombre que vendió la Torre Eiffel | 20:00 |
 | 7 | B | B3 · El logo de Nike de 35 dólares | 12:00 |
-| 8 | A | A4 · Yahoo pudo comprar Google | 20:00 |
-| 9 | D | D4 · Monopoly | 12:00 |
-| 10 | C | C1 · Charles Ponzi | 20:00 |
-| 11 | B | B4 · Lamborghini contra Ferrari | 12:00 |
-| 12 | E | E1 · Mansa Musa | 20:00 |
-| 13 | A | A7 · El disco duro en la basura | 12:00 |
+| 8 | B | 008 · Google.com por 12 dólares | 20:00 |
+| 9 | F | 009 · Red Bull y las latas en la basura | 12:00 |
+| 10 | A | 010 · M&M's rechazó aparecer en E.T. | 20:00 |
+| 11 | B | 011 · Kearns contra Ford y Chrysler | 12:00 |
+| 12 | F | 012 · El recorrido de IKEA | 20:00 |
+| 13 | A | 013 · Adidas dejó ir a Michael Jordan | 12:00 |
 | 14 | D | D2 · Plástico de burbujas | 20:00 |
 | 15 | — | **Revisión de métricas** (ver abajo) + A5 · Nokia | ganador |
 | 16 | C | C3 · Theranos | ganador |
@@ -36,6 +36,8 @@
 | 27 | B | B7 · Mercado Libre | ganador |
 | 28 | E | E3 · Lego | ganador |
 | 29–30 | — | **Revisión del mes** y planificación del mes 2 | — |
+
+> Los días 8 a 13 se cubren con los guiones del PDF (videos 008–013, ya producidos). Las ideas A4, D4, C1, B4, E1 y A7 pasan al mes 2. Serie nueva **F — Marketing y psicología del consumo**.
 
 ## Revisión del día 15 y del día 29
 1. Ordenar los videos por **porcentaje medio visto** y por **compartidos + guardados**.

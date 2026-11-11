@@ -1,0 +1,68 @@
+{
+  "audio": "../../audios/009/voz-final.mp3",
+  "escenas": [
+    {
+      "imagen": "img/1.jpg",
+      "desde": "INICIO"
+    },
+    {
+      "imagen": "img/2.jpg",
+      "desde": "Cuando la bebida"
+    },
+    {
+      "imagen": "img/3.jpg",
+      "desde": "Según se cuenta"
+    },
+    {
+      "imagen": "img/4.jpg",
+      "desde": "La idea era simple"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "Nunca se confirmó"
+    },
+    {
+      "imagen": "img/5.jpg",
+      "desde": "como repartir"
+    },
+    {
+      "imagen": "img/6.jpg",
+      "desde": "Hoy vende"
+    }
+  ],
+  "textos": [
+    {
+      "texto": "LA JUGADA DE\nLA BASURA",
+      "desde": "INICIO",
+      "hasta": "Cuando la bebida"
+    },
+    {
+      "texto": "REINO UNIDO\nMEDIADOS DE LOS 90",
+      "desde": "Cuando la bebida",
+      "hasta": "Según se cuenta"
+    },
+    {
+      "texto": "LATAS VACÍAS\nEN LA BASURA",
+      "desde": "dejaba latas",
+      "hasta": "La idea"
+    },
+    {
+      "texto": "¿LEYENDA O REALIDAD?",
+      "desde": "Nunca se confirmó",
+      "hasta": "como repartir"
+    },
+    {
+      "texto": "LATAS GRATIS",
+      "desde": "como repartir",
+      "hasta": "Hoy vende"
+    },
+    {
+      "texto": "+12.000 MILLONES\nDE LATAS AL AÑO",
+      "desde": "Hoy vende",
+      "hasta": "FIN"
+    }
+  ],
+  "reemplazos": {
+    "doce mil millones": "12.000 millones"
+  }
+}

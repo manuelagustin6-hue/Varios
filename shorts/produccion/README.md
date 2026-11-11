@@ -27,6 +27,12 @@ python3 herramientas/render.py produccion/001
 | 005 | Ronald Wayne y Apple | 42,7 s |
 | 006 | El hombre que vendió la Torre Eiffel | 44,5 s |
 | 007 | El logo de Nike | 41,4 s |
+| 008 | Google.com por 12 dólares | 41,6 s |
+| 009 | Red Bull y las latas en la basura | 40,2 s |
+| 010 | M&M's rechazó aparecer en E.T. | 48,2 s |
+| 011 | Kearns contra Ford y Chrysler | 47,2 s |
+| 012 | El recorrido de IKEA | 42,7 s |
+| 013 | Adidas dejó ir a Michael Jordan | 41,5 s |
 
 ## Al publicar
 
