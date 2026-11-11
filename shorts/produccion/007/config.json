@@ -1,0 +1,77 @@
+{
+  "audio": "../../audios/007/toma-1.mp3",
+  "escenas": [
+    {
+      "imagen": "img/1.jpg",
+      "desde": "INICIO"
+    },
+    {
+      "imagen": "img/2.jpg",
+      "desde": "En 1971"
+    },
+    {
+      "imagen": "img/3.jpg",
+      "desde": "Ella diseñó"
+    },
+    {
+      "imagen": "img/4.jpg",
+      "desde": "Knight no quedó"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "Le pagaron"
+    },
+    {
+      "imagen": "img/5.jpg",
+      "desde": "Hoy Nike"
+    },
+    {
+      "imagen": "img/6.jpg",
+      "desde": "En 1983"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "Treinta y cinco dólares y una"
+    }
+  ],
+  "textos": [
+    {
+      "texto": "LOGO = $35",
+      "desde": "INICIO",
+      "hasta": "En 1971"
+    },
+    {
+      "texto": "1971 · PORTLAND",
+      "desde": "En 1971",
+      "hasta": "Ella diseñó"
+    },
+    {
+      "texto": "EL SWOOSH",
+      "desde": "el swoosh",
+      "hasta": "Knight no"
+    },
+    {
+      "texto": "«NO ME ENCANTA»",
+      "desde": "No me encanta",
+      "hasta": "Le pagaron"
+    },
+    {
+      "texto": "$35",
+      "desde": "Le pagaron",
+      "hasta": "Hoy Nike"
+    },
+    {
+      "texto": "UNA DE LAS MARCAS\nMÁS VALIOSAS",
+      "desde": "Hoy Nike",
+      "hasta": "En 1983"
+    },
+    {
+      "texto": "1983: ANILLO\n+ ACCIONES",
+      "desde": "En 1983",
+      "hasta": "FIN"
+    }
+  ],
+  "reemplazos": {
+    "treinta y cinco dólares": "35 dólares"
+  }
+}

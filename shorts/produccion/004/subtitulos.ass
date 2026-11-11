@@ -1,0 +1,134 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Liberation Sans,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,5,60,60,0,1
+Style: Titulo,Liberation Sans,74,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,22,0,8,70,70,0,1
+Style: Marca,Liberation Sans,40,&H50FFFFFF,&H50FFFFFF,&H64000000,&H00000000,-1,0,0,0,100,100,1,0,1,2,0,8,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:41.72,Marca,,0,0,0,,{\pos(540,150)}@datomillonario
+Dialogue: 1,0:00:00.06,0:00:00.22,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EL{\c&H00FFFFFF&} POST-IT NACIÓ
+Dialogue: 1,0:00:00.22,0:00:00.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL {\c&H0000D7FF&}POST-IT{\c&H00FFFFFF&} NACIÓ
+Dialogue: 1,0:00:00.80,0:00:01.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL POST-IT {\c&H0000D7FF&}NACIÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:01.20,0:00:01.36,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DE{\c&H00FFFFFF&} UN ERROR
+Dialogue: 1,0:00:01.36,0:00:01.48,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE {\c&H0000D7FF&}UN{\c&H00FFFFFF&} ERROR
+Dialogue: 1,0:00:01.48,0:00:02.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE UN {\c&H0000D7FF&}ERROR{\c&H00FFFFFF&}
+Dialogue: 1,0:00:02.16,0:00:02.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}UN{\c&H00FFFFFF&} PEGAMENTO QUE
+Dialogue: 1,0:00:02.30,0:00:03.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}UN {\c&H0000D7FF&}PEGAMENTO{\c&H00FFFFFF&} QUE
+Dialogue: 1,0:00:03.02,0:00:03.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}UN PEGAMENTO {\c&H0000D7FF&}QUE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:03.26,0:00:03.46,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}NO{\c&H00FFFFFF&} PEGABA
+Dialogue: 1,0:00:03.46,0:00:04.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}NO {\c&H0000D7FF&}PEGABA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:04.30,0:00:04.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} 1968
+Dialogue: 1,0:00:04.40,0:00:06.10,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}1968{\c&H00FFFFFF&}
+Dialogue: 1,0:00:06.10,0:00:06.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SPENCER{\c&H00FFFFFF&} SILVER
+Dialogue: 1,0:00:06.50,0:00:07.10,Sub,,0,0,0,,{\pos(540,1260)\fs92}SPENCER {\c&H0000D7FF&}SILVER{\c&H00FFFFFF&}
+Dialogue: 1,0:00:07.10,0:00:07.22,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}UN{\c&H00FFFFFF&} CIENTÍFICO DE
+Dialogue: 1,0:00:07.22,0:00:07.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}UN {\c&H0000D7FF&}CIENTÍFICO{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:07.76,0:00:08.12,Sub,,0,0,0,,{\pos(540,1260)\fs92}UN CIENTÍFICO {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:08.12,0:00:08.70,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}3M{\c&H00FFFFFF&}
+Dialogue: 1,0:00:08.70,0:00:09.06,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}BUSCABA{\c&H00FFFFFF&} UN
+Dialogue: 1,0:00:09.06,0:00:09.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}BUSCABA {\c&H0000D7FF&}UN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:09.16,0:00:09.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ADHESIVO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:09.80,0:00:10.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SUPERFUERTE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:10.80,0:00:11.34,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CONSIGUIÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:11.34,0:00:12.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EXACTAMENTE{\c&H00FFFFFF&} LO
+Dialogue: 1,0:00:12.16,0:00:12.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}EXACTAMENTE {\c&H0000D7FF&}LO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:12.28,0:00:13.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CONTRARIO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:13.02,0:00:13.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}UNO{\c&H00FFFFFF&} QUE PEGABA
+Dialogue: 1,0:00:13.20,0:00:13.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}UNO {\c&H0000D7FF&}QUE{\c&H00FFFFFF&} PEGABA
+Dialogue: 1,0:00:13.32,0:00:13.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}UNO QUE {\c&H0000D7FF&}PEGABA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:13.72,0:00:14.22,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}POCO{\c&H00FFFFFF&} Y SE
+Dialogue: 1,0:00:14.22,0:00:14.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}POCO {\c&H0000D7FF&}Y{\c&H00FFFFFF&} SE
+Dialogue: 1,0:00:14.32,0:00:14.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}POCO Y {\c&H0000D7FF&}SE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:14.42,0:00:15.08,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DESPEGABA{\c&H00FFFFFF&} SIN
+Dialogue: 1,0:00:15.08,0:00:15.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}DESPEGABA {\c&H0000D7FF&}SIN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:15.28,0:00:15.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DEJAR{\c&H00FFFFFF&} MARCA
+Dialogue: 1,0:00:15.62,0:00:16.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}DEJAR {\c&H0000D7FF&}MARCA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:16.18,0:00:16.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DURANTE{\c&H00FFFFFF&} AÑOS
+Dialogue: 1,0:00:16.72,0:00:17.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}DURANTE {\c&H0000D7FF&}AÑOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:17.30,0:00:17.66,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}NADIE{\c&H00FFFFFF&} SUPO PARA
+Dialogue: 1,0:00:17.66,0:00:17.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}NADIE {\c&H0000D7FF&}SUPO{\c&H00FFFFFF&} PARA
+Dialogue: 1,0:00:17.94,0:00:18.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}NADIE SUPO {\c&H0000D7FF&}PARA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:18.16,0:00:18.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}QUÉ{\c&H00FFFFFF&} SERVÍA
+Dialogue: 1,0:00:18.30,0:00:18.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUÉ {\c&H0000D7FF&}SERVÍA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:18.96,0:00:19.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}HASTA{\c&H00FFFFFF&} QUE SU
+Dialogue: 1,0:00:19.18,0:00:19.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}HASTA {\c&H0000D7FF&}QUE{\c&H00FFFFFF&} SU
+Dialogue: 1,0:00:19.28,0:00:19.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}HASTA QUE {\c&H0000D7FF&}SU{\c&H00FFFFFF&}
+Dialogue: 1,0:00:19.40,0:00:19.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}COLEGA{\c&H00FFFFFF&} ART FRY
+Dialogue: 1,0:00:19.92,0:00:20.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}COLEGA {\c&H0000D7FF&}ART{\c&H00FFFFFF&} FRY
+Dialogue: 1,0:00:20.18,0:00:20.56,Sub,,0,0,0,,{\pos(540,1260)\fs92}COLEGA ART {\c&H0000D7FF&}FRY{\c&H00FFFFFF&}
+Dialogue: 1,0:00:20.56,0:00:20.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}TUVO{\c&H00FFFFFF&} UN
+Dialogue: 1,0:00:20.76,0:00:20.88,Sub,,0,0,0,,{\pos(540,1260)\fs92}TUVO {\c&H0000D7FF&}UN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:20.88,0:00:21.56,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PROBLEMA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:21.56,0:00:21.70,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LOS{\c&H00FFFFFF&} PAPELITOS
+Dialogue: 1,0:00:21.70,0:00:22.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}LOS {\c&H0000D7FF&}PAPELITOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:22.20,0:00:22.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CON{\c&H00FFFFFF&} LOS QUE
+Dialogue: 1,0:00:22.30,0:00:22.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}CON {\c&H0000D7FF&}LOS{\c&H00FFFFFF&} QUE
+Dialogue: 1,0:00:22.44,0:00:22.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}CON LOS {\c&H0000D7FF&}QUE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:22.54,0:00:22.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}MARCABA{\c&H00FFFFFF&} SU LIBRO
+Dialogue: 1,0:00:22.94,0:00:23.08,Sub,,0,0,0,,{\pos(540,1260)\fs92}MARCABA {\c&H0000D7FF&}SU{\c&H00FFFFFF&} LIBRO
+Dialogue: 1,0:00:23.08,0:00:23.34,Sub,,0,0,0,,{\pos(540,1260)\fs92}MARCABA SU {\c&H0000D7FF&}LIBRO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:23.34,0:00:23.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DE{\c&H00FFFFFF&} CANCIONES EN
+Dialogue: 1,0:00:23.44,0:00:24.00,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE {\c&H0000D7FF&}CANCIONES{\c&H00FFFFFF&} EN
+Dialogue: 1,0:00:24.00,0:00:24.10,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE CANCIONES {\c&H0000D7FF&}EN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:24.10,0:00:24.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EL{\c&H00FFFFFF&} CORO DE
+Dialogue: 1,0:00:24.28,0:00:24.48,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL {\c&H0000D7FF&}CORO{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:24.48,0:00:24.58,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL CORO {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:24.58,0:00:24.66,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LA{\c&H00FFFFFF&} IGLESIA SE
+Dialogue: 1,0:00:24.66,0:00:25.22,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA {\c&H0000D7FF&}IGLESIA{\c&H00FFFFFF&} SE
+Dialogue: 1,0:00:25.22,0:00:25.34,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA IGLESIA {\c&H0000D7FF&}SE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:25.34,0:00:25.48,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LE{\c&H00FFFFFF&} CAÍAN
+Dialogue: 1,0:00:25.48,0:00:26.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}LE {\c&H0000D7FF&}CAÍAN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:26.20,0:00:26.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LES{\c&H00FFFFFF&} PUSO EL
+Dialogue: 1,0:00:26.40,0:00:26.60,Sub,,0,0,0,,{\pos(540,1260)\fs92}LES {\c&H0000D7FF&}PUSO{\c&H00FFFFFF&} EL
+Dialogue: 1,0:00:26.60,0:00:26.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}LES PUSO {\c&H0000D7FF&}EL{\c&H00FFFFFF&}
+Dialogue: 1,0:00:26.72,0:00:27.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PEGAMENTO{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:27.18,0:00:27.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}PEGAMENTO {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:27.32,0:00:28.06,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SILVER{\c&H00FFFFFF&}
+Dialogue: 1,0:00:28.06,0:00:28.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}Y{\c&H00FFFFFF&} FUNCIONARON
+Dialogue: 1,0:00:28.18,0:00:28.88,Sub,,0,0,0,,{\pos(540,1260)\fs92}Y {\c&H0000D7FF&}FUNCIONARON{\c&H00FFFFFF&}
+Dialogue: 1,0:00:28.88,0:00:29.88,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PERFECTO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:29.88,0:00:29.98,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} 1980
+Dialogue: 1,0:00:29.98,0:00:31.27,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}1980{\c&H00FFFFFF&}
+Dialogue: 1,0:00:31.54,0:00:31.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}3M{\c&H00FFFFFF&} LANZÓ LOS
+Dialogue: 1,0:00:31.96,0:00:32.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}3M {\c&H0000D7FF&}LANZÓ{\c&H00FFFFFF&} LOS
+Dialogue: 1,0:00:32.28,0:00:32.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}3M LANZÓ {\c&H0000D7FF&}LOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:32.50,0:00:33.00,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}POST-IT{\c&H00FFFFFF&} EN TODO
+Dialogue: 1,0:00:33.00,0:00:33.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}POST-IT {\c&H0000D7FF&}EN{\c&H00FFFFFF&} TODO
+Dialogue: 1,0:00:33.26,0:00:33.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}POST-IT EN {\c&H0000D7FF&}TODO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:33.50,0:00:33.90,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ESTADOS{\c&H00FFFFFF&} UNIDOS
+Dialogue: 1,0:00:33.90,0:00:34.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}ESTADOS {\c&H0000D7FF&}UNIDOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:34.52,0:00:34.86,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}HOY{\c&H00FFFFFF&} ESTÁN EN
+Dialogue: 1,0:00:34.86,0:00:35.12,Sub,,0,0,0,,{\pos(540,1260)\fs92}HOY {\c&H0000D7FF&}ESTÁN{\c&H00FFFFFF&} EN
+Dialogue: 1,0:00:35.12,0:00:35.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}HOY ESTÁN {\c&H0000D7FF&}EN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:35.30,0:00:35.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CASI{\c&H00FFFFFF&} TODAS LAS
+Dialogue: 1,0:00:35.72,0:00:36.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}CASI {\c&H0000D7FF&}TODAS{\c&H00FFFFFF&} LAS
+Dialogue: 1,0:00:36.02,0:00:36.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}CASI TODAS {\c&H0000D7FF&}LAS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:36.16,0:00:36.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}OFICINAS{\c&H00FFFFFF&} DEL
+Dialogue: 1,0:00:36.62,0:00:36.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}OFICINAS {\c&H0000D7FF&}DEL{\c&H00FFFFFF&}
+Dialogue: 1,0:00:36.80,0:00:37.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}MUNDO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:37.42,0:00:37.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}A{\c&H00FFFFFF&} VECES EL
+Dialogue: 1,0:00:37.50,0:00:38.24,Sub,,0,0,0,,{\pos(540,1260)\fs92}A {\c&H0000D7FF&}VECES{\c&H00FFFFFF&} EL
+Dialogue: 1,0:00:38.24,0:00:38.36,Sub,,0,0,0,,{\pos(540,1260)\fs92}A VECES {\c&H0000D7FF&}EL{\c&H00FFFFFF&}
+Dialogue: 1,0:00:38.36,0:00:38.68,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ERROR{\c&H00FFFFFF&} ES EL
+Dialogue: 1,0:00:38.68,0:00:38.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}ERROR {\c&H0000D7FF&}ES{\c&H00FFFFFF&} EL
+Dialogue: 1,0:00:38.80,0:00:38.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}ERROR ES {\c&H0000D7FF&}EL{\c&H00FFFFFF&}
+Dialogue: 1,0:00:38.94,0:00:39.55,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PRODUCTO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:39.82,0:00:39.98,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}COMO{\c&H00FFFFFF&} EL
+Dialogue: 1,0:00:39.98,0:00:40.10,Sub,,0,0,0,,{\pos(540,1260)\fs92}COMO {\c&H0000D7FF&}EL{\c&H00FFFFFF&}
+Dialogue: 1,0:00:40.10,0:00:40.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PEGAMENTO{\c&H00FFFFFF&} QUE NO
+Dialogue: 1,0:00:40.76,0:00:40.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}PEGAMENTO {\c&H0000D7FF&}QUE{\c&H00FFFFFF&} NO
+Dialogue: 1,0:00:40.96,0:00:41.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}PEGAMENTO QUE {\c&H0000D7FF&}NO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:41.14,0:00:41.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PEGABA{\c&H00FFFFFF&}
+Dialogue: 2,0:00:00.00,0:00:04.30,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}UN PEGAMENTO\NQUE NO PEGABA
+Dialogue: 2,0:00:04.30,0:00:10.80,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}1968 · 3M
+Dialogue: 2,0:00:16.18,0:00:18.96,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}¿PARA QUÉ SIRVE?
+Dialogue: 2,0:00:18.96,0:00:26.20,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}EL PROBLEMA\NDE ART FRY
+Dialogue: 2,0:00:29.88,0:00:34.52,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}1980: LANZAMIENTO
+Dialogue: 2,0:00:34.52,0:00:37.42,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}EN CASI TODAS\NLAS OFICINAS

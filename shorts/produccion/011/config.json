@@ -1,0 +1,71 @@
+{
+  "audio": "../../audios/011/voz-final.mp3",
+  "escenas": [
+    {
+      "imagen": "img/1.jpg",
+      "desde": "INICIO"
+    },
+    {
+      "imagen": "img/6.jpg",
+      "desde": "Robert Kearns"
+    },
+    {
+      "imagen": "img/3.jpg",
+      "desde": "Ford no le compró"
+    },
+    {
+      "imagen": "img/4.jpg",
+      "desde": "Kearns los demandó"
+    },
+    {
+      "imagen": "img/5.jpg",
+      "desde": "En 1990"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "Su historia"
+    }
+  ],
+  "textos": [
+    {
+      "texto": "LES GANÓ A FORD\nY A CHRYSLER",
+      "desde": "INICIO",
+      "hasta": "Robert"
+    },
+    {
+      "texto": "ROBERT KEARNS",
+      "desde": "Robert Kearns",
+      "hasta": "inventó"
+    },
+    {
+      "texto": "LIMPIAPARABRISAS\nINTERMITENTE",
+      "desde": "inventó",
+      "hasta": "Lo patentó"
+    },
+    {
+      "texto": "1969: FORD LO LANZA",
+      "desde": "en 1969",
+      "hasta": "Kearns los"
+    },
+    {
+      "texto": "SE DEFENDIÓ SOLO",
+      "desde": "llegó a defenderse",
+      "hasta": "En 1990"
+    },
+    {
+      "texto": "FORD: +$10 MILLONES",
+      "desde": "En 1990",
+      "hasta": "Dos años"
+    },
+    {
+      "texto": "CHRYSLER:\n~$19 MILLONES",
+      "desde": "Dos años",
+      "hasta": "Su historia"
+    }
+  ],
+  "reemplazos": {
+    "treinta millones": "30 millones",
+    "diez millones": "10 millones",
+    "diecinueve millones": "19 millones"
+  }
+}

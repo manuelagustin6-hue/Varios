@@ -1,0 +1,64 @@
+{
+  "audio": "../../audios/002/toma-1.mp3",
+  "escenas": [
+    {
+      "imagen": "img/1.jpg",
+      "desde": "INICIO"
+    },
+    {
+      "imagen": "img/2.jpg",
+      "desde": "En 1975"
+    },
+    {
+      "imagen": "img/3.jpg",
+      "desde": "Cuando la presentó"
+    },
+    {
+      "imagen": "img/4.jpg",
+      "desde": "Porque Kodak ganaba"
+    },
+    {
+      "imagen": "img/5.jpg",
+      "desde": "Mientras Kodak"
+    },
+    {
+      "imagen": "img/6.jpg",
+      "desde": "En enero de 2012"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "Tener la idea"
+    }
+  ],
+  "textos": [
+    {
+      "texto": "INVENTÓ SU\nPROPIA RUINA",
+      "desde": "INICIO",
+      "hasta": "En 1975"
+    },
+    {
+      "texto": "1975 · ~4 KG\n+20 SEGUNDOS POR FOTO",
+      "desde": "Pesaba",
+      "hasta": "Cuando la presentó"
+    },
+    {
+      "texto": "«NO SE LO\nCUENTES A NADIE»",
+      "desde": "Es bonito",
+      "hasta": "Por qué"
+    },
+    {
+      "texto": "SU NEGOCIO:\nLOS ROLLOS",
+      "desde": "Porque Kodak",
+      "hasta": "Mientras Kodak"
+    },
+    {
+      "texto": "2012: QUIEBRA",
+      "desde": "En enero",
+      "hasta": "Tener la idea"
+    }
+  ],
+  "reemplazos": {
+    "cuatro kilos": "4 kilos",
+    "veinte segundos": "20 segundos"
+  }
+}

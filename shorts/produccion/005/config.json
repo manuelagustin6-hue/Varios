@@ -1,0 +1,70 @@
+{
+  "audio": "../../audios/005/toma-1.mp3",
+  "escenas": [
+    {
+      "imagen": "img/1.jpg",
+      "desde": "INICIO"
+    },
+    {
+      "imagen": "img/2.jpg",
+      "desde": "En abril"
+    },
+    {
+      "imagen": "img/3.jpg",
+      "desde": "Redactó"
+    },
+    {
+      "imagen": "img/4.jpg",
+      "desde": "Pero tenía miedo"
+    },
+    {
+      "imagen": "img/5.jpg",
+      "desde": "A los doce días"
+    },
+    {
+      "imagen": "img/6.jpg",
+      "desde": "Sin contar"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "Wayne asegura"
+    }
+  ],
+  "textos": [
+    {
+      "texto": "10% DE APPLE\n= $800",
+      "desde": "INICIO",
+      "hasta": "En abril"
+    },
+    {
+      "texto": "1976 · 3 FUNDADORES",
+      "desde": "En abril",
+      "hasta": "Redactó"
+    },
+    {
+      "texto": "EL PRIMER LOGO",
+      "desde": "dibujó",
+      "hasta": "Pero tenía"
+    },
+    {
+      "texto": "EL RIESGO",
+      "desde": "Si la empresa",
+      "hasta": "A los doce"
+    },
+    {
+      "texto": "12 DÍAS DESPUÉS",
+      "desde": "A los doce",
+      "hasta": "Sin contar"
+    },
+    {
+      "texto": "HOY: CIENTOS DE\nMILES DE MILLONES",
+      "desde": "hoy valdría",
+      "hasta": "Wayne asegura"
+    }
+  ],
+  "reemplazos": {
+    "ochocientos dólares": "800 dólares",
+    "doce días": "12 días",
+    "cuarenta años": "40 años"
+  }
+}

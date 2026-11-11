@@ -1,0 +1,23 @@
+{
+  "audio": "../../audios/001/voz-final.mp3",
+  "escenas": [
+    {"imagen": "img/1.jpg", "desde": "INICIO"},
+    {"imagen": "img/2.jpg", "desde": "Netflix era entonces"},
+    {"imagen": "img/3.jpg", "desde": "Sus fundadores"},
+    {"imagen": "img/4.jpg", "desde": "Blockbuster tenía"},
+    {"imagen": "img/5.jpg", "desde": "Diez años después"},
+    {"imagen": "img/1.jpg", "desde": "Netflix pasó"},
+    {"imagen": "img/6.jpg", "desde": "Hoy queda"},
+    {"imagen": "img/1.jpg", "desde": "La próxima vez"}
+  ],
+  "textos": [
+    {"texto": "NETFLIX EN VENTA:\n$50 MILLONES", "desde": "INICIO", "hasta": "Netflix era entonces"},
+    {"texto": "DVD POR CORREO", "desde": "alquilaba", "hasta": "Sus fundadores"},
+    {"texto": "DESTINO: DALLAS", "desde": "viajaron", "hasta": "Blockbuster tenía"},
+    {"texto": "MILES DE TIENDAS", "desde": "miles de tiendas", "hasta": "Diez años"},
+    {"texto": "2010: QUIEBRA", "desde": "se declaró", "hasta": "Netflix pasó"},
+    {"texto": "HOY: CIENTOS DE\nMILES DE MILLONES", "desde": "hoy vale", "hasta": "Hoy queda"},
+    {"texto": "LA ÚLTIMA TIENDA:\nOREGÓN", "desde": "una sola tienda", "hasta": "La próxima vez"}
+  ],
+  "reemplazos": {"cincuenta millones": "50 millones"}
+}

@@ -1,0 +1,134 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Liberation Sans,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,5,60,60,0,1
+Style: Titulo,Liberation Sans,74,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,22,0,8,70,70,0,1
+Style: Marca,Liberation Sans,40,&H50FFFFFF,&H50FFFFFF,&H64000000,&H00000000,-1,0,0,0,100,100,1,0,1,2,0,8,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:42.68,Marca,,0,0,0,,{\pos(540,150)}@datomillonario
+Dialogue: 1,0:00:00.10,0:00:00.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}FUE{\c&H00FFFFFF&} DUEÑO DEL
+Dialogue: 1,0:00:00.26,0:00:00.60,Sub,,0,0,0,,{\pos(540,1260)\fs92}FUE {\c&H0000D7FF&}DUEÑO{\c&H00FFFFFF&} DEL
+Dialogue: 1,0:00:00.60,0:00:00.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}FUE DUEÑO {\c&H0000D7FF&}DEL{\c&H00FFFFFF&}
+Dialogue: 1,0:00:00.84,0:00:01.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}10{\c&H00FFFFFF&} % DE
+Dialogue: 1,0:00:01.20,0:00:01.74,Sub,,0,0,0,,{\pos(540,1260)\fs92}10 {\c&H0000D7FF&}%{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:01.74,0:00:01.90,Sub,,0,0,0,,{\pos(540,1260)\fs92}10 % {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:01.90,0:00:02.35,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}APPLE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:02.62,0:00:02.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}Y{\c&H00FFFFFF&} LO VENDIÓ
+Dialogue: 1,0:00:02.72,0:00:02.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}Y {\c&H0000D7FF&}LO{\c&H00FFFFFF&} VENDIÓ
+Dialogue: 1,0:00:02.82,0:00:03.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}Y LO {\c&H0000D7FF&}VENDIÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:03.28,0:00:03.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}POR{\c&H00FFFFFF&} 800 DÓLARES
+Dialogue: 1,0:00:03.54,0:00:05.03,Sub,,0,0,0,,{\pos(540,1260)\fs92}POR {\c&H0000D7FF&}800 DÓLARES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:05.38,0:00:05.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} ABRIL DE
+Dialogue: 1,0:00:05.50,0:00:05.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}ABRIL{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:05.76,0:00:05.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN ABRIL {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:05.92,0:00:07.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}1976{\c&H00FFFFFF&}
+Dialogue: 1,0:00:07.62,0:00:07.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}STEVE{\c&H00FFFFFF&} JOBS
+Dialogue: 1,0:00:07.94,0:00:08.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}STEVE {\c&H0000D7FF&}JOBS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:08.50,0:00:08.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}STEVE{\c&H00FFFFFF&} WOZNIAK Y
+Dialogue: 1,0:00:08.80,0:00:09.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}STEVE {\c&H0000D7FF&}WOZNIAK{\c&H00FFFFFF&} Y
+Dialogue: 1,0:00:09.40,0:00:09.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}STEVE WOZNIAK {\c&H0000D7FF&}Y{\c&H00FFFFFF&}
+Dialogue: 1,0:00:09.54,0:00:09.90,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}RONALD{\c&H00FFFFFF&} WAYNE
+Dialogue: 1,0:00:09.90,0:00:10.34,Sub,,0,0,0,,{\pos(540,1260)\fs92}RONALD {\c&H0000D7FF&}WAYNE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:10.34,0:00:10.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}FUNDARON{\c&H00FFFFFF&} APPLE
+Dialogue: 1,0:00:10.92,0:00:11.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}FUNDARON {\c&H0000D7FF&}APPLE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:11.54,0:00:11.86,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}WAYNE{\c&H00FFFFFF&} TENÍA MÁS
+Dialogue: 1,0:00:11.86,0:00:12.24,Sub,,0,0,0,,{\pos(540,1260)\fs92}WAYNE {\c&H0000D7FF&}TENÍA{\c&H00FFFFFF&} MÁS
+Dialogue: 1,0:00:12.24,0:00:12.46,Sub,,0,0,0,,{\pos(540,1260)\fs92}WAYNE TENÍA {\c&H0000D7FF&}MÁS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:12.46,0:00:12.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DE{\c&H00FFFFFF&} 40 AÑOS
+Dialogue: 1,0:00:12.62,0:00:13.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE {\c&H0000D7FF&}40 AÑOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:13.82,0:00:13.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ERA{\c&H00FFFFFF&} EL ADULTO
+Dialogue: 1,0:00:13.96,0:00:14.08,Sub,,0,0,0,,{\pos(540,1260)\fs92}ERA {\c&H0000D7FF&}EL{\c&H00FFFFFF&} ADULTO
+Dialogue: 1,0:00:14.08,0:00:14.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}ERA EL {\c&H0000D7FF&}ADULTO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:14.42,0:00:14.58,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DEL{\c&H00FFFFFF&} GRUPO
+Dialogue: 1,0:00:14.58,0:00:15.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}DEL {\c&H0000D7FF&}GRUPO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:15.20,0:00:15.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}REDACTÓ{\c&H00FFFFFF&} EL
+Dialogue: 1,0:00:15.52,0:00:15.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}REDACTÓ {\c&H0000D7FF&}EL{\c&H00FFFFFF&}
+Dialogue: 1,0:00:15.62,0:00:16.04,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CONTRATO{\c&H00FFFFFF&} DE LA
+Dialogue: 1,0:00:16.04,0:00:16.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}CONTRATO {\c&H0000D7FF&}DE{\c&H00FFFFFF&} LA
+Dialogue: 1,0:00:16.14,0:00:16.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}CONTRATO DE {\c&H0000D7FF&}LA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:16.26,0:00:16.86,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SOCIEDAD{\c&H00FFFFFF&} Y
+Dialogue: 1,0:00:16.86,0:00:16.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}SOCIEDAD {\c&H0000D7FF&}Y{\c&H00FFFFFF&}
+Dialogue: 1,0:00:16.94,0:00:17.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DIBUJÓ{\c&H00FFFFFF&} EL PRIMER
+Dialogue: 1,0:00:17.26,0:00:17.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}DIBUJÓ {\c&H0000D7FF&}EL{\c&H00FFFFFF&} PRIMER
+Dialogue: 1,0:00:17.42,0:00:17.88,Sub,,0,0,0,,{\pos(540,1260)\fs92}DIBUJÓ EL {\c&H0000D7FF&}PRIMER{\c&H00FFFFFF&}
+Dialogue: 1,0:00:17.88,0:00:18.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LOGO{\c&H00FFFFFF&} DE APPLE
+Dialogue: 1,0:00:18.14,0:00:18.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}LOGO {\c&H0000D7FF&}DE{\c&H00FFFFFF&} APPLE
+Dialogue: 1,0:00:18.30,0:00:18.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}LOGO DE {\c&H0000D7FF&}APPLE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:18.92,0:00:19.24,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ISAAC{\c&H00FFFFFF&} NEWTON
+Dialogue: 1,0:00:19.24,0:00:19.70,Sub,,0,0,0,,{\pos(540,1260)\fs92}ISAAC {\c&H0000D7FF&}NEWTON{\c&H00FFFFFF&}
+Dialogue: 1,0:00:19.70,0:00:20.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}BAJO{\c&H00FFFFFF&} UN ÁRBOL
+Dialogue: 1,0:00:20.02,0:00:20.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}BAJO {\c&H0000D7FF&}UN{\c&H00FFFFFF&} ÁRBOL
+Dialogue: 1,0:00:20.16,0:00:20.74,Sub,,0,0,0,,{\pos(540,1260)\fs92}BAJO UN {\c&H0000D7FF&}ÁRBOL{\c&H00FFFFFF&}
+Dialogue: 1,0:00:20.74,0:00:20.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PERO{\c&H00FFFFFF&} TENÍA
+Dialogue: 1,0:00:20.96,0:00:21.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}PERO {\c&H0000D7FF&}TENÍA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:21.32,0:00:21.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}MIEDO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:21.96,0:00:22.06,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SI{\c&H00FFFFFF&} LA EMPRESA
+Dialogue: 1,0:00:22.06,0:00:22.12,Sub,,0,0,0,,{\pos(540,1260)\fs92}SI {\c&H0000D7FF&}LA{\c&H00FFFFFF&} EMPRESA
+Dialogue: 1,0:00:22.12,0:00:22.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}SI LA {\c&H0000D7FF&}EMPRESA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:22.52,0:00:22.60,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SE{\c&H00FFFFFF&} ENDEUDABA
+Dialogue: 1,0:00:22.60,0:00:23.34,Sub,,0,0,0,,{\pos(540,1260)\fs92}SE {\c&H0000D7FF&}ENDEUDABA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:23.34,0:00:23.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ÉL{\c&H00FFFFFF&} PODÍA PERDER
+Dialogue: 1,0:00:23.50,0:00:23.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}ÉL {\c&H0000D7FF&}PODÍA{\c&H00FFFFFF&} PERDER
+Dialogue: 1,0:00:23.82,0:00:24.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}ÉL PODÍA {\c&H0000D7FF&}PERDER{\c&H00FFFFFF&}
+Dialogue: 1,0:00:24.14,0:00:24.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SUS{\c&H00FFFFFF&} BIENES
+Dialogue: 1,0:00:24.32,0:00:25.08,Sub,,0,0,0,,{\pos(540,1260)\fs92}SUS {\c&H0000D7FF&}BIENES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:25.08,0:00:25.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}JOBS{\c&H00FFFFFF&} Y WOZNIAK
+Dialogue: 1,0:00:25.32,0:00:25.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}JOBS {\c&H0000D7FF&}Y{\c&H00FFFFFF&} WOZNIAK
+Dialogue: 1,0:00:25.42,0:00:25.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}JOBS Y {\c&H0000D7FF&}WOZNIAK{\c&H00FFFFFF&}
+Dialogue: 1,0:00:25.92,0:00:26.06,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} CAMBIO
+Dialogue: 1,0:00:26.06,0:00:26.60,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}CAMBIO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:26.60,0:00:26.86,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CASI{\c&H00FFFFFF&} NO TENÍAN
+Dialogue: 1,0:00:26.86,0:00:27.00,Sub,,0,0,0,,{\pos(540,1260)\fs92}CASI {\c&H0000D7FF&}NO{\c&H00FFFFFF&} TENÍAN
+Dialogue: 1,0:00:27.00,0:00:27.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}CASI NO {\c&H0000D7FF&}TENÍAN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:27.40,0:00:27.68,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}NADA{\c&H00FFFFFF&} QUE PERDER
+Dialogue: 1,0:00:27.68,0:00:27.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}NADA {\c&H0000D7FF&}QUE{\c&H00FFFFFF&} PERDER
+Dialogue: 1,0:00:27.82,0:00:28.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}NADA QUE {\c&H0000D7FF&}PERDER{\c&H00FFFFFF&}
+Dialogue: 1,0:00:28.42,0:00:28.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}A{\c&H00FFFFFF&} LOS 12 DÍAS
+Dialogue: 1,0:00:28.50,0:00:28.68,Sub,,0,0,0,,{\pos(540,1260)\fs92}A {\c&H0000D7FF&}LOS{\c&H00FFFFFF&} 12 DÍAS
+Dialogue: 1,0:00:28.68,0:00:29.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}A LOS {\c&H0000D7FF&}12 DÍAS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:29.44,0:00:29.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}VENDIÓ{\c&H00FFFFFF&} SU PARTE
+Dialogue: 1,0:00:29.72,0:00:29.88,Sub,,0,0,0,,{\pos(540,1260)\fs92}VENDIÓ {\c&H0000D7FF&}SU{\c&H00FFFFFF&} PARTE
+Dialogue: 1,0:00:29.88,0:00:30.22,Sub,,0,0,0,,{\pos(540,1260)\fs92}VENDIÓ SU {\c&H0000D7FF&}PARTE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:30.22,0:00:30.46,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}POR{\c&H00FFFFFF&} 800 DÓLARES
+Dialogue: 1,0:00:30.46,0:00:31.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}POR {\c&H0000D7FF&}800 DÓLARES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:31.96,0:00:32.12,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SIN{\c&H00FFFFFF&} CONTAR LA
+Dialogue: 1,0:00:32.12,0:00:32.38,Sub,,0,0,0,,{\pos(540,1260)\fs92}SIN {\c&H0000D7FF&}CONTAR{\c&H00FFFFFF&} LA
+Dialogue: 1,0:00:32.38,0:00:32.48,Sub,,0,0,0,,{\pos(540,1260)\fs92}SIN CONTAR {\c&H0000D7FF&}LA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:32.48,0:00:33.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DILUCIÓN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:33.20,0:00:33.46,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ESE{\c&H00FFFFFF&} 10 %
+Dialogue: 1,0:00:33.46,0:00:33.74,Sub,,0,0,0,,{\pos(540,1260)\fs92}ESE {\c&H0000D7FF&}10{\c&H00FFFFFF&} %
+Dialogue: 1,0:00:33.74,0:00:34.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}ESE 10 {\c&H0000D7FF&}%{\c&H00FFFFFF&}
+Dialogue: 1,0:00:34.42,0:00:34.60,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}HOY{\c&H00FFFFFF&} VALDRÍA
+Dialogue: 1,0:00:34.60,0:00:35.10,Sub,,0,0,0,,{\pos(540,1260)\fs92}HOY {\c&H0000D7FF&}VALDRÍA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:35.10,0:00:35.60,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CIENTOS{\c&H00FFFFFF&} DE MILES
+Dialogue: 1,0:00:35.60,0:00:35.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}CIENTOS {\c&H0000D7FF&}DE{\c&H00FFFFFF&} MILES
+Dialogue: 1,0:00:35.80,0:00:36.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}CIENTOS DE {\c&H0000D7FF&}MILES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:36.14,0:00:36.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DE{\c&H00FFFFFF&} MILLONES DE
+Dialogue: 1,0:00:36.28,0:00:36.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE {\c&H0000D7FF&}MILLONES{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:36.80,0:00:36.90,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE MILLONES {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:36.90,0:00:37.68,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DÓLARES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:37.68,0:00:38.08,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}WAYNE{\c&H00FFFFFF&} ASEGURA
+Dialogue: 1,0:00:38.08,0:00:38.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}WAYNE {\c&H0000D7FF&}ASEGURA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:38.52,0:00:38.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}QUE{\c&H00FFFFFF&} NO SE
+Dialogue: 1,0:00:38.72,0:00:38.88,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUE {\c&H0000D7FF&}NO{\c&H00FFFFFF&} SE
+Dialogue: 1,0:00:38.88,0:00:38.98,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUE NO {\c&H0000D7FF&}SE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:38.98,0:00:39.78,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ARREPIENTE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:39.78,0:00:39.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}¿TÚ{\c&H00FFFFFF&} LO HABRÍAS
+Dialogue: 1,0:00:39.92,0:00:39.98,Sub,,0,0,0,,{\pos(540,1260)\fs92}¿TÚ {\c&H0000D7FF&}LO{\c&H00FFFFFF&} HABRÍAS
+Dialogue: 1,0:00:39.98,0:00:40.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}¿TÚ LO {\c&H0000D7FF&}HABRÍAS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:40.30,0:00:40.77,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}HECHO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:41.14,0:00:41.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}POR{\c&H00FFFFFF&} 800 DÓLARES?
+Dialogue: 1,0:00:41.28,0:00:42.48,Sub,,0,0,0,,{\pos(540,1260)\fs92}POR {\c&H0000D7FF&}800 DÓLARES?{\c&H00FFFFFF&}
+Dialogue: 2,0:00:00.00,0:00:05.38,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}10% DE APPLE\N= $800
+Dialogue: 2,0:00:05.38,0:00:15.20,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}1976 · 3 FUNDADORES
+Dialogue: 2,0:00:16.94,0:00:20.74,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}EL PRIMER LOGO
+Dialogue: 2,0:00:21.96,0:00:28.42,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}EL RIESGO
+Dialogue: 2,0:00:28.42,0:00:31.96,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}12 DÍAS DESPUÉS
+Dialogue: 2,0:00:34.42,0:00:37.68,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}HOY: CIENTOS DE\NMILES DE MILLONES

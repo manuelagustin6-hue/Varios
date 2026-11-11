@@ -1,0 +1,66 @@
+{
+  "audio": "../../audios/003/toma-1.mp3",
+  "escenas": [
+    {
+      "imagen": "img/1.jpg",
+      "desde": "INICIO"
+    },
+    {
+      "imagen": "img/2.jpg",
+      "desde": "El 22 de mayo"
+    },
+    {
+      "imagen": "img/3.jpg",
+      "desde": "Un usuario aceptó"
+    },
+    {
+      "imagen": "img/4.jpg",
+      "desde": "Fue una de las primeras"
+    },
+    {
+      "imagen": "img/5.jpg",
+      "desde": "Años después"
+    },
+    {
+      "imagen": "img/6.jpg",
+      "desde": "Hoy cada 22"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "Error o momento"
+    }
+  ],
+  "textos": [
+    {
+      "texto": "2 PIZZAS =\n+$1.000 MILLONES",
+      "desde": "INICIO",
+      "hasta": "El 22 de mayo"
+    },
+    {
+      "texto": "22/05/2010\n10.000 BTC",
+      "desde": "Pago diez mil",
+      "hasta": "Un usuario"
+    },
+    {
+      "texto": "VALOR: ~$40",
+      "desde": "En ese momento",
+      "hasta": "Fue una"
+    },
+    {
+      "texto": "1 BTC > $100.000",
+      "desde": "En 2025",
+      "hasta": "Hoy cada"
+    },
+    {
+      "texto": "#BITCOINPIZZADAY",
+      "desde": "se celebra",
+      "hasta": "Error o"
+    }
+  ],
+  "reemplazos": {
+    "diez mil bitcoins": "10.000 bitcoins",
+    "mil millones": "1.000 millones",
+    "cuarenta dólares": "40 dólares",
+    "cien mil dólares": "100.000 dólares"
+  }
+}

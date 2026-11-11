@@ -1,0 +1,76 @@
+{
+  "audio": "../../audios/013/voz-final.mp3",
+  "escenas": [
+    {
+      "imagen": "img/1.jpg",
+      "desde": "INICIO"
+    },
+    {
+      "imagen": "img/2.jpg",
+      "desde": "En 1984"
+    },
+    {
+      "imagen": "img/3.jpg",
+      "desde": "pero Adidas no"
+    },
+    {
+      "imagen": "img/4.jpg",
+      "desde": "Nike que entonces"
+    },
+    {
+      "imagen": "img/5.jpg",
+      "desde": "Nike esperaba"
+    },
+    {
+      "imagen": "img/6.jpg",
+      "desde": "Hoy la marca"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "Todo empezó"
+    }
+  ],
+  "textos": [
+    {
+      "texto": "ADIDAS DEJÓ IR\nA JORDAN",
+      "desde": "INICIO",
+      "hasta": "En 1984"
+    },
+    {
+      "texto": "1984",
+      "desde": "En 1984",
+      "hasta": "pero Adidas"
+    },
+    {
+      "texto": "ADIDAS: NO",
+      "desde": "pero Adidas no",
+      "hasta": "Nike que"
+    },
+    {
+      "texto": "ZAPATILLA PROPIA\n+ % POR PAR",
+      "desde": "Le ofreció",
+      "hasta": "Nike esperaba"
+    },
+    {
+      "texto": "META: $3M EN 4 AÑOS",
+      "desde": "Nike esperaba",
+      "hasta": "En el primer año"
+    },
+    {
+      "texto": "AÑO 1: $126 MILLONES",
+      "desde": "En el primer año",
+      "hasta": "Hoy la marca"
+    },
+    {
+      "texto": "MILES DE MILLONES\nPOR AÑO",
+      "desde": "Hoy la marca",
+      "hasta": "Todo empezó"
+    }
+  ],
+  "reemplazos": {
+    "tres millones": "3 millones",
+    "ciento veintiséis millones": "126 millones",
+    "cuatro años": "4 años",
+    "un no": "un «no»"
+  }
+}

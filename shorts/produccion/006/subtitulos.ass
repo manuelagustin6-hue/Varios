@@ -1,0 +1,138 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Liberation Sans,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,5,60,60,0,1
+Style: Titulo,Liberation Sans,74,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,22,0,8,70,70,0,1
+Style: Marca,Liberation Sans,40,&H50FFFFFF,&H50FFFFFF,&H64000000,&H00000000,-1,0,0,0,100,100,1,0,1,2,0,8,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:44.51,Marca,,0,0,0,,{\pos(540,150)}@datomillonario
+Dialogue: 1,0:00:00.08,0:00:00.38,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ESTE{\c&H00FFFFFF&} HOMBRE
+Dialogue: 1,0:00:00.38,0:00:00.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}ESTE {\c&H0000D7FF&}HOMBRE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:00.76,0:00:01.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}VENDIÓ{\c&H00FFFFFF&} LA TORRE
+Dialogue: 1,0:00:01.20,0:00:01.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}VENDIÓ {\c&H0000D7FF&}LA{\c&H00FFFFFF&} TORRE
+Dialogue: 1,0:00:01.40,0:00:01.66,Sub,,0,0,0,,{\pos(540,1260)\fs92}VENDIÓ LA {\c&H0000D7FF&}TORRE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:01.66,0:00:02.31,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EIFFEL{\c&H00FFFFFF&}
+Dialogue: 1,0:00:02.68,0:00:02.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}Y{\c&H00FFFFFF&} DESPUÉS
+Dialogue: 1,0:00:02.76,0:00:03.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}Y {\c&H0000D7FF&}DESPUÉS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:03.44,0:00:03.90,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}INTENTÓ{\c&H00FFFFFF&} VENDERLA
+Dialogue: 1,0:00:03.90,0:00:04.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}INTENTÓ {\c&H0000D7FF&}VENDERLA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:04.54,0:00:04.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}OTRA{\c&H00FFFFFF&} VEZ
+Dialogue: 1,0:00:04.84,0:00:05.27,Sub,,0,0,0,,{\pos(540,1260)\fs92}OTRA {\c&H0000D7FF&}VEZ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:05.62,0:00:06.34,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PARÍS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:06.34,0:00:07.87,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}1925{\c&H00FFFFFF&}
+Dialogue: 1,0:00:08.14,0:00:08.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LA{\c&H00FFFFFF&} TORRE
+Dialogue: 1,0:00:08.30,0:00:08.58,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA {\c&H0000D7FF&}TORRE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:08.58,0:00:09.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}NECESITABA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:09.18,0:00:09.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}REPARACIONES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:09.84,0:00:10.70,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}COSTOSAS{\c&H00FFFFFF&} Y LOS
+Dialogue: 1,0:00:10.70,0:00:10.78,Sub,,0,0,0,,{\pos(540,1260)\fs92}COSTOSAS {\c&H0000D7FF&}Y{\c&H00FFFFFF&} LOS
+Dialogue: 1,0:00:10.78,0:00:10.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}COSTOSAS Y {\c&H0000D7FF&}LOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:10.96,0:00:11.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DIARIOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:11.44,0:00:12.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DISCUTÍAN{\c&H00FFFFFF&} SU
+Dialogue: 1,0:00:12.02,0:00:12.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}DISCUTÍAN {\c&H0000D7FF&}SU{\c&H00FFFFFF&}
+Dialogue: 1,0:00:12.16,0:00:12.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}FUTURO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:12.96,0:00:13.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}VICTOR{\c&H00FFFFFF&} LUSTIG
+Dialogue: 1,0:00:13.32,0:00:14.06,Sub,,0,0,0,,{\pos(540,1260)\fs92}VICTOR {\c&H0000D7FF&}LUSTIG{\c&H00FFFFFF&}
+Dialogue: 1,0:00:14.06,0:00:14.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}UN{\c&H00FFFFFF&} ESTAFADOR
+Dialogue: 1,0:00:14.14,0:00:14.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}UN {\c&H0000D7FF&}ESTAFADOR{\c&H00FFFFFF&}
+Dialogue: 1,0:00:14.96,0:00:15.08,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SE{\c&H00FFFFFF&} HIZO PASAR
+Dialogue: 1,0:00:15.08,0:00:15.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}SE {\c&H0000D7FF&}HIZO{\c&H00FFFFFF&} PASAR
+Dialogue: 1,0:00:15.30,0:00:15.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}SE HIZO {\c&H0000D7FF&}PASAR{\c&H00FFFFFF&}
+Dialogue: 1,0:00:15.62,0:00:15.78,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}POR{\c&H00FFFFFF&} FUNCIONARIO
+Dialogue: 1,0:00:15.78,0:00:16.34,Sub,,0,0,0,,{\pos(540,1260)\fs92}POR {\c&H0000D7FF&}FUNCIONARIO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:16.34,0:00:16.48,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DEL{\c&H00FFFFFF&} GOBIERNO Y
+Dialogue: 1,0:00:16.48,0:00:17.10,Sub,,0,0,0,,{\pos(540,1260)\fs92}DEL {\c&H0000D7FF&}GOBIERNO{\c&H00FFFFFF&} Y
+Dialogue: 1,0:00:17.10,0:00:17.22,Sub,,0,0,0,,{\pos(540,1260)\fs92}DEL GOBIERNO {\c&H0000D7FF&}Y{\c&H00FFFFFF&}
+Dialogue: 1,0:00:17.22,0:00:17.56,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}REUNIÓ{\c&H00FFFFFF&} EN
+Dialogue: 1,0:00:17.56,0:00:17.70,Sub,,0,0,0,,{\pos(540,1260)\fs92}REUNIÓ {\c&H0000D7FF&}EN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:17.70,0:00:18.12,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SECRETO{\c&H00FFFFFF&} A VARIOS
+Dialogue: 1,0:00:18.12,0:00:18.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}SECRETO {\c&H0000D7FF&}A{\c&H00FFFFFF&} VARIOS
+Dialogue: 1,0:00:18.28,0:00:18.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}SECRETO A {\c&H0000D7FF&}VARIOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:18.62,0:00:19.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}COMERCIANTES{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:19.20,0:00:19.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}COMERCIANTES {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:19.32,0:00:19.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CHATARRA{\c&H00FFFFFF&} EN UN
+Dialogue: 1,0:00:19.92,0:00:20.06,Sub,,0,0,0,,{\pos(540,1260)\fs92}CHATARRA {\c&H0000D7FF&}EN{\c&H00FFFFFF&} UN
+Dialogue: 1,0:00:20.06,0:00:20.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}CHATARRA EN {\c&H0000D7FF&}UN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:20.14,0:00:20.46,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}HOTEL{\c&H00FFFFFF&} DE LUJO
+Dialogue: 1,0:00:20.46,0:00:20.58,Sub,,0,0,0,,{\pos(540,1260)\fs92}HOTEL {\c&H0000D7FF&}DE{\c&H00FFFFFF&} LUJO
+Dialogue: 1,0:00:20.58,0:00:21.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}HOTEL DE {\c&H0000D7FF&}LUJO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:21.18,0:00:21.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LES{\c&H00FFFFFF&} DIJO QUE
+Dialogue: 1,0:00:21.32,0:00:21.56,Sub,,0,0,0,,{\pos(540,1260)\fs92}LES {\c&H0000D7FF&}DIJO{\c&H00FFFFFF&} QUE
+Dialogue: 1,0:00:21.56,0:00:21.66,Sub,,0,0,0,,{\pos(540,1260)\fs92}LES DIJO {\c&H0000D7FF&}QUE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:21.66,0:00:21.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LA{\c&H00FFFFFF&} TORRE IBA
+Dialogue: 1,0:00:21.82,0:00:22.24,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA {\c&H0000D7FF&}TORRE{\c&H00FFFFFF&} IBA
+Dialogue: 1,0:00:22.24,0:00:22.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA TORRE {\c&H0000D7FF&}IBA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:22.40,0:00:22.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}A{\c&H00FFFFFF&} SER
+Dialogue: 1,0:00:22.52,0:00:22.70,Sub,,0,0,0,,{\pos(540,1260)\fs92}A {\c&H0000D7FF&}SER{\c&H00FFFFFF&}
+Dialogue: 1,0:00:22.70,0:00:23.58,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DESMANTELADA{\c&H00FFFFFF&} Y
+Dialogue: 1,0:00:23.58,0:00:23.68,Sub,,0,0,0,,{\pos(540,1260)\fs92}DESMANTELADA {\c&H0000D7FF&}Y{\c&H00FFFFFF&}
+Dialogue: 1,0:00:23.68,0:00:24.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}VENDIDA{\c&H00FFFFFF&} AL MEJOR
+Dialogue: 1,0:00:24.16,0:00:24.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}VENDIDA {\c&H0000D7FF&}AL{\c&H00FFFFFF&} MEJOR
+Dialogue: 1,0:00:24.28,0:00:24.66,Sub,,0,0,0,,{\pos(540,1260)\fs92}VENDIDA AL {\c&H0000D7FF&}MEJOR{\c&H00FFFFFF&}
+Dialogue: 1,0:00:24.66,0:00:25.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}POSTOR{\c&H00FFFFFF&}
+Dialogue: 1,0:00:25.42,0:00:25.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}UN{\c&H00FFFFFF&} COMERCIANTE
+Dialogue: 1,0:00:25.54,0:00:26.46,Sub,,0,0,0,,{\pos(540,1260)\fs92}UN {\c&H0000D7FF&}COMERCIANTE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:26.46,0:00:26.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ANDRÉ{\c&H00FFFFFF&} POISSON
+Dialogue: 1,0:00:26.80,0:00:27.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}ANDRÉ {\c&H0000D7FF&}POISSON{\c&H00FFFFFF&}
+Dialogue: 1,0:00:27.50,0:00:28.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PAGÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:28.18,0:00:28.78,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LUSTIG{\c&H00FFFFFF&} ESCAPÓ
+Dialogue: 1,0:00:28.78,0:00:29.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}LUSTIG {\c&H0000D7FF&}ESCAPÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:29.28,0:00:29.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CON{\c&H00FFFFFF&} EL DINERO
+Dialogue: 1,0:00:29.42,0:00:29.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}CON {\c&H0000D7FF&}EL{\c&H00FFFFFF&} DINERO
+Dialogue: 1,0:00:29.52,0:00:30.12,Sub,,0,0,0,,{\pos(540,1260)\fs92}CON EL {\c&H0000D7FF&}DINERO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:30.12,0:00:30.56,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}POISSON{\c&H00FFFFFF&} SINTIÓ
+Dialogue: 1,0:00:30.56,0:00:31.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}POISSON {\c&H0000D7FF&}SINTIÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:31.02,0:00:31.36,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}TANTA{\c&H00FFFFFF&} VERGÜENZA
+Dialogue: 1,0:00:31.36,0:00:31.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}TANTA {\c&H0000D7FF&}VERGÜENZA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:31.96,0:00:32.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}QUE{\c&H00FFFFFF&} NUNCA LO
+Dialogue: 1,0:00:32.18,0:00:32.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUE {\c&H0000D7FF&}NUNCA{\c&H00FFFFFF&} LO
+Dialogue: 1,0:00:32.50,0:00:32.60,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUE NUNCA {\c&H0000D7FF&}LO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:32.60,0:00:33.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DENUNCIÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:33.42,0:00:33.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ASÍ{\c&H00FFFFFF&} QUE LUSTIG
+Dialogue: 1,0:00:33.62,0:00:33.74,Sub,,0,0,0,,{\pos(540,1260)\fs92}ASÍ {\c&H0000D7FF&}QUE{\c&H00FFFFFF&} LUSTIG
+Dialogue: 1,0:00:33.74,0:00:34.24,Sub,,0,0,0,,{\pos(540,1260)\fs92}ASÍ QUE {\c&H0000D7FF&}LUSTIG{\c&H00FFFFFF&}
+Dialogue: 1,0:00:34.24,0:00:34.66,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}VOLVIÓ{\c&H00FFFFFF&} A PARÍS
+Dialogue: 1,0:00:34.66,0:00:34.78,Sub,,0,0,0,,{\pos(540,1260)\fs92}VOLVIÓ {\c&H0000D7FF&}A{\c&H00FFFFFF&} PARÍS
+Dialogue: 1,0:00:34.78,0:00:35.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}VOLVIÓ A {\c&H0000D7FF&}PARÍS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:35.14,0:00:35.36,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PARA{\c&H00FFFFFF&} REPETIR LA
+Dialogue: 1,0:00:35.36,0:00:35.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}PARA {\c&H0000D7FF&}REPETIR{\c&H00FFFFFF&} LA
+Dialogue: 1,0:00:35.82,0:00:35.90,Sub,,0,0,0,,{\pos(540,1260)\fs92}PARA REPETIR {\c&H0000D7FF&}LA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:35.90,0:00:36.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ESTAFA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:36.62,0:00:36.88,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ESTA{\c&H00FFFFFF&} VEZ
+Dialogue: 1,0:00:36.88,0:00:37.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}ESTA {\c&H0000D7FF&}VEZ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:37.26,0:00:37.38,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LA{\c&H00FFFFFF&} VÍCTIMA FUE
+Dialogue: 1,0:00:37.38,0:00:37.86,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA {\c&H0000D7FF&}VÍCTIMA{\c&H00FFFFFF&} FUE
+Dialogue: 1,0:00:37.86,0:00:38.00,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA VÍCTIMA {\c&H0000D7FF&}FUE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:38.00,0:00:38.08,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}A{\c&H00FFFFFF&} LA POLICÍA
+Dialogue: 1,0:00:38.08,0:00:38.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}A {\c&H0000D7FF&}LA{\c&H00FFFFFF&} POLICÍA
+Dialogue: 1,0:00:38.18,0:00:38.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}A LA {\c&H0000D7FF&}POLICÍA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:38.94,0:00:39.08,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}Y{\c&H00FFFFFF&} ÉL TUVO
+Dialogue: 1,0:00:39.08,0:00:39.34,Sub,,0,0,0,,{\pos(540,1260)\fs92}Y {\c&H0000D7FF&}ÉL{\c&H00FFFFFF&} TUVO
+Dialogue: 1,0:00:39.34,0:00:39.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}Y ÉL {\c&H0000D7FF&}TUVO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:39.62,0:00:39.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}QUE{\c&H00FFFFFF&} HUIR
+Dialogue: 1,0:00:39.76,0:00:40.32,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUE {\c&H0000D7FF&}HUIR{\c&H00FFFFFF&}
+Dialogue: 1,0:00:40.32,0:00:40.56,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}AÑOS{\c&H00FFFFFF&} DESPUÉS
+Dialogue: 1,0:00:40.56,0:00:41.06,Sub,,0,0,0,,{\pos(540,1260)\fs92}AÑOS {\c&H0000D7FF&}DESPUÉS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:41.06,0:00:41.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}TERMINÓ{\c&H00FFFFFF&} PRESO EN
+Dialogue: 1,0:00:41.52,0:00:41.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}TERMINÓ {\c&H0000D7FF&}PRESO{\c&H00FFFFFF&} EN
+Dialogue: 1,0:00:41.80,0:00:41.90,Sub,,0,0,0,,{\pos(540,1260)\fs92}TERMINÓ PRESO {\c&H0000D7FF&}EN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:41.90,0:00:42.63,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ALCATRAZ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:42.98,0:00:43.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PERO{\c&H00FFFFFF&} NO POR
+Dialogue: 1,0:00:43.52,0:00:43.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}PERO {\c&H0000D7FF&}NO{\c&H00FFFFFF&} POR
+Dialogue: 1,0:00:43.72,0:00:43.86,Sub,,0,0,0,,{\pos(540,1260)\fs92}PERO NO {\c&H0000D7FF&}POR{\c&H00FFFFFF&}
+Dialogue: 1,0:00:43.86,0:00:44.00,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LA{\c&H00FFFFFF&} TORRE
+Dialogue: 1,0:00:44.00,0:00:44.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA {\c&H0000D7FF&}TORRE{\c&H00FFFFFF&}
+Dialogue: 2,0:00:00.00,0:00:05.62,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}VENDIÓ LA\NTORRE EIFFEL
+Dialogue: 2,0:00:05.62,0:00:12.96,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}PARÍS, 1925
+Dialogue: 2,0:00:12.96,0:00:21.18,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}VICTOR LUSTIG
+Dialogue: 2,0:00:21.18,0:00:25.42,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}«SE VENDE\NCOMO CHATARRA»
+Dialogue: 2,0:00:30.12,0:00:33.42,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}NUNCA LO DENUNCIÓ
+Dialogue: 2,0:00:33.42,0:00:40.32,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}SEGUNDO INTENTO
+Dialogue: 2,0:00:40.32,0:00:44.51,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}ALCATRAZ

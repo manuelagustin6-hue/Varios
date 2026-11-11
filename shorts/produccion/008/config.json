@@ -1,0 +1,71 @@
+{
+  "audio": "../../audios/008/voz-final.mp3",
+  "escenas": [
+    {
+      "imagen": "img/1.jpg",
+      "desde": "INICIO"
+    },
+    {
+      "imagen": "img/2.jpg",
+      "desde": "Sanmay Ved"
+    },
+    {
+      "imagen": "img/3.jpg",
+      "desde": "Lo compró con su tarjeta"
+    },
+    {
+      "imagen": "img/4.jpg",
+      "desde": "Durante un minuto"
+    },
+    {
+      "imagen": "img/5.jpg",
+      "desde": "Google canceló"
+    },
+    {
+      "imagen": "img/6.jpg",
+      "desde": "Él donó"
+    },
+    {
+      "imagen": "img/1.jpg",
+      "desde": "Y todo empezó porque"
+    }
+  ],
+  "textos": [
+    {
+      "texto": "GOOGLE.COM\nPOR $12",
+      "desde": "INICIO",
+      "hasta": "Sanmay"
+    },
+    {
+      "texto": "SANMAY VED",
+      "desde": "Sanmay Ved",
+      "hasta": "Lo compró"
+    },
+    {
+      "texto": "DUEÑO DE GOOGLE.COM\nPOR 1 MINUTO",
+      "desde": "Durante un minuto",
+      "hasta": "Google canceló"
+    },
+    {
+      "texto": "RECOMPENSA:\n$6.006,13",
+      "desde": "le dio una recompensa",
+      "hasta": "Mira el número"
+    },
+    {
+      "texto": "600613 = GOOGLE",
+      "desde": "Mira el número",
+      "hasta": "Él donó"
+    },
+    {
+      "texto": "DONACIÓN x2",
+      "desde": "Él donó",
+      "hasta": "Y todo empezó"
+    }
+  ],
+  "reemplazos": {
+    "doce dólares": "12 dólares",
+    "seis mil seis dólares con trece centavos": "6.006,13 dólares",
+    "seis cero cero seis uno tres": "6-0-0-6-1-3"
+  },
+  "bucle": true
+}

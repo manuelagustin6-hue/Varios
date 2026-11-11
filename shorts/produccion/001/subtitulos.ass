@@ -1,0 +1,138 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Liberation Sans,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,5,60,60,0,1
+Style: Titulo,Liberation Sans,74,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,22,0,8,70,70,0,1
+Style: Marca,Liberation Sans,40,&H50FFFFFF,&H50FFFFFF,&H64000000,&H00000000,-1,0,0,0,100,100,1,0,1,2,0,8,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:41.72,Marca,,0,0,0,,{\pos(540,150)}@datomillonario
+Dialogue: 1,0:00:00.08,0:00:00.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} EL AÑO
+Dialogue: 1,0:00:00.18,0:00:00.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}EL{\c&H00FFFFFF&} AÑO
+Dialogue: 1,0:00:00.30,0:00:00.66,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN EL {\c&H0000D7FF&}AÑO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:00.66,0:00:01.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}2000{\c&H00FFFFFF&}
+Dialogue: 1,0:00:01.28,0:00:01.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}NETFLIX{\c&H00FFFFFF&} SE
+Dialogue: 1,0:00:01.72,0:00:01.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}NETFLIX {\c&H0000D7FF&}SE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:01.80,0:00:02.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}OFRECIÓ{\c&H00FFFFFF&} EN VENTA
+Dialogue: 1,0:00:02.16,0:00:02.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}OFRECIÓ {\c&H0000D7FF&}EN{\c&H00FFFFFF&} VENTA
+Dialogue: 1,0:00:02.28,0:00:02.64,Sub,,0,0,0,,{\pos(540,1260)\fs92}OFRECIÓ EN {\c&H0000D7FF&}VENTA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:02.64,0:00:02.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}POR{\c&H00FFFFFF&} 50 MILLONES
+Dialogue: 1,0:00:02.82,0:00:03.98,Sub,,0,0,0,,{\pos(540,1260)\fs92}POR {\c&H0000D7FF&}50 MILLONES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:03.98,0:00:04.08,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DE{\c&H00FFFFFF&} DÓLARES
+Dialogue: 1,0:00:04.08,0:00:04.73,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE {\c&H0000D7FF&}DÓLARES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:05.08,0:00:05.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}Y{\c&H00FFFFFF&} LE DIJERON
+Dialogue: 1,0:00:05.18,0:00:05.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}Y {\c&H0000D7FF&}LE{\c&H00FFFFFF&} DIJERON
+Dialogue: 1,0:00:05.28,0:00:05.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}Y LE {\c&H0000D7FF&}DIJERON{\c&H00FFFFFF&}
+Dialogue: 1,0:00:05.72,0:00:05.86,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}QUE{\c&H00FFFFFF&} NO
+Dialogue: 1,0:00:05.86,0:00:06.15,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUE {\c&H0000D7FF&}NO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:06.52,0:00:06.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}NETFLIX{\c&H00FFFFFF&} ERA
+Dialogue: 1,0:00:06.94,0:00:07.06,Sub,,0,0,0,,{\pos(540,1260)\fs92}NETFLIX {\c&H0000D7FF&}ERA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:07.06,0:00:07.58,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ENTONCES{\c&H00FFFFFF&} UNA
+Dialogue: 1,0:00:07.58,0:00:07.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}ENTONCES {\c&H0000D7FF&}UNA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:07.80,0:00:08.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PEQUEÑA{\c&H00FFFFFF&} EMPRESA
+Dialogue: 1,0:00:08.20,0:00:08.66,Sub,,0,0,0,,{\pos(540,1260)\fs92}PEQUEÑA {\c&H0000D7FF&}EMPRESA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:08.66,0:00:08.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}QUE{\c&H00FFFFFF&} ALQUILABA
+Dialogue: 1,0:00:08.72,0:00:09.24,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUE {\c&H0000D7FF&}ALQUILABA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:09.24,0:00:09.68,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DVD{\c&H00FFFFFF&} POR CORREO
+Dialogue: 1,0:00:09.68,0:00:09.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}DVD {\c&H0000D7FF&}POR{\c&H00FFFFFF&} CORREO
+Dialogue: 1,0:00:09.84,0:00:10.46,Sub,,0,0,0,,{\pos(540,1260)\fs92}DVD POR {\c&H0000D7FF&}CORREO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:10.46,0:00:10.58,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}Y{\c&H00FFFFFF&} PERDÍA DINERO
+Dialogue: 1,0:00:10.58,0:00:10.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}Y {\c&H0000D7FF&}PERDÍA{\c&H00FFFFFF&} DINERO
+Dialogue: 1,0:00:10.96,0:00:11.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}Y PERDÍA {\c&H0000D7FF&}DINERO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:11.62,0:00:11.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SUS{\c&H00FFFFFF&} FUNDADORES
+Dialogue: 1,0:00:11.80,0:00:12.64,Sub,,0,0,0,,{\pos(540,1260)\fs92}SUS {\c&H0000D7FF&}FUNDADORES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:12.64,0:00:12.86,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}REED{\c&H00FFFFFF&} HASTINGS Y
+Dialogue: 1,0:00:12.86,0:00:13.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}REED {\c&H0000D7FF&}HASTINGS{\c&H00FFFFFF&} Y
+Dialogue: 1,0:00:13.42,0:00:13.56,Sub,,0,0,0,,{\pos(540,1260)\fs92}REED HASTINGS {\c&H0000D7FF&}Y{\c&H00FFFFFF&}
+Dialogue: 1,0:00:13.56,0:00:13.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}MARC{\c&H00FFFFFF&} RANDOLPH
+Dialogue: 1,0:00:13.82,0:00:14.46,Sub,,0,0,0,,{\pos(540,1260)\fs92}MARC {\c&H0000D7FF&}RANDOLPH{\c&H00FFFFFF&}
+Dialogue: 1,0:00:14.46,0:00:14.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}VIAJARON{\c&H00FFFFFF&} A
+Dialogue: 1,0:00:14.84,0:00:14.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}VIAJARON {\c&H0000D7FF&}A{\c&H00FFFFFF&}
+Dialogue: 1,0:00:14.96,0:00:15.34,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DALLAS{\c&H00FFFFFF&} PARA
+Dialogue: 1,0:00:15.34,0:00:15.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}DALLAS {\c&H0000D7FF&}PARA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:15.52,0:00:16.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PROPONERLE{\c&H00FFFFFF&} A
+Dialogue: 1,0:00:16.02,0:00:16.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}PROPONERLE {\c&H0000D7FF&}A{\c&H00FFFFFF&}
+Dialogue: 1,0:00:16.14,0:00:16.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}BLOCKBUSTER{\c&H00FFFFFF&} QUE
+Dialogue: 1,0:00:16.76,0:00:16.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}BLOCKBUSTER {\c&H0000D7FF&}QUE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:16.84,0:00:16.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LA{\c&H00FFFFFF&} COMPRARA
+Dialogue: 1,0:00:16.96,0:00:17.70,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA {\c&H0000D7FF&}COMPRARA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:17.70,0:00:18.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}BLOCKBUSTER{\c&H00FFFFFF&}
+Dialogue: 1,0:00:18.28,0:00:18.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}TENÍA{\c&H00FFFFFF&} MILES DE
+Dialogue: 1,0:00:18.72,0:00:19.08,Sub,,0,0,0,,{\pos(540,1260)\fs92}TENÍA {\c&H0000D7FF&}MILES{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:19.08,0:00:19.22,Sub,,0,0,0,,{\pos(540,1260)\fs92}TENÍA MILES {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:19.22,0:00:19.58,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}TIENDAS{\c&H00FFFFFF&} EN TODO
+Dialogue: 1,0:00:19.58,0:00:19.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}TIENDAS {\c&H0000D7FF&}EN{\c&H00FFFFFF&} TODO
+Dialogue: 1,0:00:19.80,0:00:20.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}TIENDAS EN {\c&H0000D7FF&}TODO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:20.02,0:00:20.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EL{\c&H00FFFFFF&} MUNDO
+Dialogue: 1,0:00:20.16,0:00:20.70,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL {\c&H0000D7FF&}MUNDO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:20.70,0:00:20.98,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SEGÚN{\c&H00FFFFFF&} RANDOLPH
+Dialogue: 1,0:00:20.98,0:00:21.64,Sub,,0,0,0,,{\pos(540,1260)\fs92}SEGÚN {\c&H0000D7FF&}RANDOLPH{\c&H00FFFFFF&}
+Dialogue: 1,0:00:21.64,0:00:21.74,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} LA REUNIÓN
+Dialogue: 1,0:00:21.74,0:00:21.86,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}LA{\c&H00FFFFFF&} REUNIÓN
+Dialogue: 1,0:00:21.86,0:00:22.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN LA {\c&H0000D7FF&}REUNIÓN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:22.42,0:00:22.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CASI{\c&H00FFFFFF&} SE RÍEN
+Dialogue: 1,0:00:22.72,0:00:22.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}CASI {\c&H0000D7FF&}SE{\c&H00FFFFFF&} RÍEN
+Dialogue: 1,0:00:22.94,0:00:23.24,Sub,,0,0,0,,{\pos(540,1260)\fs92}CASI SE {\c&H0000D7FF&}RÍEN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:23.24,0:00:23.36,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DE{\c&H00FFFFFF&} ELLOS
+Dialogue: 1,0:00:23.36,0:00:24.04,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE {\c&H0000D7FF&}ELLOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:24.04,0:00:24.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DIEZ{\c&H00FFFFFF&} AÑOS
+Dialogue: 1,0:00:24.28,0:00:24.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}DIEZ {\c&H0000D7FF&}AÑOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:24.50,0:00:25.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DESPUÉS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:25.16,0:00:25.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} 2010
+Dialogue: 1,0:00:25.40,0:00:26.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}2010{\c&H00FFFFFF&}
+Dialogue: 1,0:00:26.16,0:00:26.78,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}BLOCKBUSTER{\c&H00FFFFFF&} SE
+Dialogue: 1,0:00:26.78,0:00:26.90,Sub,,0,0,0,,{\pos(540,1260)\fs92}BLOCKBUSTER {\c&H0000D7FF&}SE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:26.90,0:00:27.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DECLARÓ{\c&H00FFFFFF&} EN
+Dialogue: 1,0:00:27.28,0:00:27.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}DECLARÓ {\c&H0000D7FF&}EN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:27.44,0:00:28.06,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}QUIEBRA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:28.06,0:00:28.58,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}NETFLIX{\c&H00FFFFFF&} PASÓ AL
+Dialogue: 1,0:00:28.58,0:00:28.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}NETFLIX {\c&H0000D7FF&}PASÓ{\c&H00FFFFFF&} AL
+Dialogue: 1,0:00:28.84,0:00:29.04,Sub,,0,0,0,,{\pos(540,1260)\fs92}NETFLIX PASÓ {\c&H0000D7FF&}AL{\c&H00FFFFFF&}
+Dialogue: 1,0:00:29.04,0:00:29.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}STREAMING{\c&H00FFFFFF&} Y HOY
+Dialogue: 1,0:00:29.82,0:00:29.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}STREAMING {\c&H0000D7FF&}Y{\c&H00FFFFFF&} HOY
+Dialogue: 1,0:00:29.92,0:00:30.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}STREAMING Y {\c&H0000D7FF&}HOY{\c&H00FFFFFF&}
+Dialogue: 1,0:00:30.26,0:00:30.64,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}VALE{\c&H00FFFFFF&} CIENTOS DE
+Dialogue: 1,0:00:30.64,0:00:31.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}VALE {\c&H0000D7FF&}CIENTOS{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:31.20,0:00:31.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}VALE CIENTOS {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:31.42,0:00:31.78,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}MILES{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:31.78,0:00:31.88,Sub,,0,0,0,,{\pos(540,1260)\fs92}MILES {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:31.88,0:00:32.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}MILLONES{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:32.40,0:00:32.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}MILLONES {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:32.52,0:00:33.24,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DÓLARES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:33.24,0:00:33.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}HOY{\c&H00FFFFFF&} QUEDA UNA
+Dialogue: 1,0:00:33.54,0:00:33.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}HOY {\c&H0000D7FF&}QUEDA{\c&H00FFFFFF&} UNA
+Dialogue: 1,0:00:33.96,0:00:34.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}HOY QUEDA {\c&H0000D7FF&}UNA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:34.18,0:00:34.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}SOLA{\c&H00FFFFFF&} TIENDA
+Dialogue: 1,0:00:34.44,0:00:34.74,Sub,,0,0,0,,{\pos(540,1260)\fs92}SOLA {\c&H0000D7FF&}TIENDA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:34.74,0:00:35.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}BLOCKBUSTER{\c&H00FFFFFF&} EN
+Dialogue: 1,0:00:35.30,0:00:35.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}BLOCKBUSTER {\c&H0000D7FF&}EN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:35.40,0:00:35.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EL{\c&H00FFFFFF&} MUNDO
+Dialogue: 1,0:00:35.54,0:00:36.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL {\c&H0000D7FF&}MUNDO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:36.18,0:00:36.34,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} OREGÓN
+Dialogue: 1,0:00:36.34,0:00:37.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}OREGÓN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:37.02,0:00:37.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LA{\c&H00FFFFFF&} PRÓXIMA VEZ
+Dialogue: 1,0:00:37.14,0:00:37.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA {\c&H0000D7FF&}PRÓXIMA{\c&H00FFFFFF&} VEZ
+Dialogue: 1,0:00:37.54,0:00:37.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA PRÓXIMA {\c&H0000D7FF&}VEZ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:37.76,0:00:37.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}QUE{\c&H00FFFFFF&} ALGO TE
+Dialogue: 1,0:00:37.92,0:00:38.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUE {\c&H0000D7FF&}ALGO{\c&H00FFFFFF&} TE
+Dialogue: 1,0:00:38.14,0:00:38.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUE ALGO {\c&H0000D7FF&}TE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:38.26,0:00:38.70,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PAREZCA{\c&H00FFFFFF&} UNA MALA
+Dialogue: 1,0:00:38.70,0:00:38.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}PAREZCA {\c&H0000D7FF&}UNA{\c&H00FFFFFF&} MALA
+Dialogue: 1,0:00:38.94,0:00:39.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}PAREZCA UNA {\c&H0000D7FF&}MALA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:39.20,0:00:39.63,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}IDEA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:39.98,0:00:40.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}RECUERDA{\c&H00FFFFFF&} LOS
+Dialogue: 1,0:00:40.42,0:00:40.56,Sub,,0,0,0,,{\pos(540,1260)\fs92}RECUERDA {\c&H0000D7FF&}LOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:40.56,0:00:41.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}50 MILLONES{\c&H00FFFFFF&}
+Dialogue: 2,0:00:00.00,0:00:06.52,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}NETFLIX EN VENTA:\N$50 MILLONES
+Dialogue: 2,0:00:08.72,0:00:11.62,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}DVD POR CORREO
+Dialogue: 2,0:00:14.46,0:00:17.70,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}DESTINO: DALLAS
+Dialogue: 2,0:00:18.72,0:00:24.04,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}MILES DE TIENDAS
+Dialogue: 2,0:00:26.78,0:00:28.06,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}2010: QUIEBRA
+Dialogue: 2,0:00:29.92,0:00:33.24,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}HOY: CIENTOS DE\NMILES DE MILLONES
+Dialogue: 2,0:00:33.96,0:00:37.02,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}LA ÚLTIMA TIENDA:\NOREGÓN

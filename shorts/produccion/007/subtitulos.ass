@@ -1,0 +1,126 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Sub,Liberation Sans,92,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,1,7,3,5,60,60,0,1
+Style: Titulo,Liberation Sans,74,&H00000000,&H00000000,&H0000D7FF,&H0000D7FF,-1,0,0,0,100,100,0,0,3,22,0,8,70,70,0,1
+Style: Marca,Liberation Sans,40,&H50FFFFFF,&H50FFFFFF,&H64000000,&H00000000,-1,0,0,0,100,100,1,0,1,2,0,8,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:41.40,Marca,,0,0,0,,{\pos(540,150)}@datomillonario
+Dialogue: 1,0:00:00.08,0:00:00.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}UNO{\c&H00FFFFFF&} DE LOS
+Dialogue: 1,0:00:00.26,0:00:00.36,Sub,,0,0,0,,{\pos(540,1260)\fs92}UNO {\c&H0000D7FF&}DE{\c&H00FFFFFF&} LOS
+Dialogue: 1,0:00:00.36,0:00:00.56,Sub,,0,0,0,,{\pos(540,1260)\fs92}UNO DE {\c&H0000D7FF&}LOS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:00.56,0:00:01.04,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LOGOS{\c&H00FFFFFF&} MÁS
+Dialogue: 1,0:00:01.04,0:00:01.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}LOGOS {\c&H0000D7FF&}MÁS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:01.30,0:00:01.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}FAMOSOS{\c&H00FFFFFF&} DEL
+Dialogue: 1,0:00:01.76,0:00:01.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}FAMOSOS {\c&H0000D7FF&}DEL{\c&H00FFFFFF&}
+Dialogue: 1,0:00:01.94,0:00:02.36,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}MUNDO{\c&H00FFFFFF&} COSTÓ
+Dialogue: 1,0:00:02.36,0:00:02.78,Sub,,0,0,0,,{\pos(540,1260)\fs92}MUNDO {\c&H0000D7FF&}COSTÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:02.78,0:00:04.41,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}35 DÓLARES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:04.72,0:00:04.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} 1971
+Dialogue: 1,0:00:04.84,0:00:06.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}1971{\c&H00FFFFFF&}
+Dialogue: 1,0:00:06.44,0:00:06.66,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PHIL{\c&H00FFFFFF&} KNIGHT
+Dialogue: 1,0:00:06.66,0:00:07.10,Sub,,0,0,0,,{\pos(540,1260)\fs92}PHIL {\c&H0000D7FF&}KNIGHT{\c&H00FFFFFF&}
+Dialogue: 1,0:00:07.10,0:00:07.66,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}NECESITABA{\c&H00FFFFFF&} UN
+Dialogue: 1,0:00:07.66,0:00:07.78,Sub,,0,0,0,,{\pos(540,1260)\fs92}NECESITABA {\c&H0000D7FF&}UN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:07.78,0:00:08.06,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LOGO{\c&H00FFFFFF&} PARA SU
+Dialogue: 1,0:00:08.06,0:00:08.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}LOGO {\c&H0000D7FF&}PARA{\c&H00FFFFFF&} SU
+Dialogue: 1,0:00:08.26,0:00:08.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}LOGO PARA {\c&H0000D7FF&}SU{\c&H00FFFFFF&}
+Dialogue: 1,0:00:08.42,0:00:08.74,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}NUEVA{\c&H00FFFFFF&} MARCA DE
+Dialogue: 1,0:00:08.74,0:00:09.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}NUEVA {\c&H0000D7FF&}MARCA{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:09.02,0:00:09.12,Sub,,0,0,0,,{\pos(540,1260)\fs92}NUEVA MARCA {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:09.12,0:00:10.00,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ZAPATILLAS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:10.00,0:00:10.12,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LE{\c&H00FFFFFF&} PIDIÓ AYUDA
+Dialogue: 1,0:00:10.12,0:00:10.36,Sub,,0,0,0,,{\pos(540,1260)\fs92}LE {\c&H0000D7FF&}PIDIÓ{\c&H00FFFFFF&} AYUDA
+Dialogue: 1,0:00:10.36,0:00:10.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}LE PIDIÓ {\c&H0000D7FF&}AYUDA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:10.80,0:00:10.96,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}A{\c&H00FFFFFF&} CAROLYN
+Dialogue: 1,0:00:10.96,0:00:11.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}A {\c&H0000D7FF&}CAROLYN{\c&H00FFFFFF&}
+Dialogue: 1,0:00:11.40,0:00:12.16,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DAVIDSON{\c&H00FFFFFF&}
+Dialogue: 1,0:00:12.16,0:00:12.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}UNA{\c&H00FFFFFF&} ESTUDIANTE
+Dialogue: 1,0:00:12.28,0:00:12.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}UNA {\c&H0000D7FF&}ESTUDIANTE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:12.80,0:00:12.92,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DE{\c&H00FFFFFF&} DISEÑO
+Dialogue: 1,0:00:12.92,0:00:13.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE {\c&H0000D7FF&}DISEÑO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:13.28,0:00:13.74,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}GRÁFICO{\c&H00FFFFFF&} DE LA
+Dialogue: 1,0:00:13.74,0:00:13.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}GRÁFICO {\c&H0000D7FF&}DE{\c&H00FFFFFF&} LA
+Dialogue: 1,0:00:13.82,0:00:13.90,Sub,,0,0,0,,{\pos(540,1260)\fs92}GRÁFICO DE {\c&H0000D7FF&}LA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:13.90,0:00:14.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}UNIVERSIDAD{\c&H00FFFFFF&}
+Dialogue: 1,0:00:14.54,0:00:14.98,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ESTATAL{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:14.98,0:00:15.14,Sub,,0,0,0,,{\pos(540,1260)\fs92}ESTATAL {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:15.14,0:00:15.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PORTLAND{\c&H00FFFFFF&}
+Dialogue: 1,0:00:15.82,0:00:16.04,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ELLA{\c&H00FFFFFF&} DISEÑÓ UNA
+Dialogue: 1,0:00:16.04,0:00:16.46,Sub,,0,0,0,,{\pos(540,1260)\fs92}ELLA {\c&H0000D7FF&}DISEÑÓ{\c&H00FFFFFF&} UNA
+Dialogue: 1,0:00:16.46,0:00:16.64,Sub,,0,0,0,,{\pos(540,1260)\fs92}ELLA DISEÑÓ {\c&H0000D7FF&}UNA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:16.64,0:00:17.24,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PINCELADA{\c&H00FFFFFF&} SIMPLE
+Dialogue: 1,0:00:17.24,0:00:17.68,Sub,,0,0,0,,{\pos(540,1260)\fs92}PINCELADA {\c&H0000D7FF&}SIMPLE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:17.68,0:00:17.80,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}QUE{\c&H00FFFFFF&} SUGERÍA
+Dialogue: 1,0:00:17.80,0:00:18.28,Sub,,0,0,0,,{\pos(540,1260)\fs92}QUE {\c&H0000D7FF&}SUGERÍA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:18.28,0:00:19.03,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}MOVIMIENTO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:19.30,0:00:19.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EL{\c&H00FFFFFF&} SWOOSH
+Dialogue: 1,0:00:19.52,0:00:20.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL {\c&H0000D7FF&}SWOOSH{\c&H00FFFFFF&}
+Dialogue: 1,0:00:20.26,0:00:20.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}KNIGHT{\c&H00FFFFFF&} NO QUEDÓ
+Dialogue: 1,0:00:20.82,0:00:20.98,Sub,,0,0,0,,{\pos(540,1260)\fs92}KNIGHT {\c&H0000D7FF&}NO{\c&H00FFFFFF&} QUEDÓ
+Dialogue: 1,0:00:20.98,0:00:21.22,Sub,,0,0,0,,{\pos(540,1260)\fs92}KNIGHT NO {\c&H0000D7FF&}QUEDÓ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:21.22,0:00:22.10,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}CONVENCIDO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:22.10,0:00:22.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DIJO{\c&H00FFFFFF&} ALGO ASÍ
+Dialogue: 1,0:00:22.30,0:00:22.46,Sub,,0,0,0,,{\pos(540,1260)\fs92}DIJO {\c&H0000D7FF&}ALGO{\c&H00FFFFFF&} ASÍ
+Dialogue: 1,0:00:22.46,0:00:22.72,Sub,,0,0,0,,{\pos(540,1260)\fs92}DIJO ALGO {\c&H0000D7FF&}ASÍ{\c&H00FFFFFF&}
+Dialogue: 1,0:00:22.72,0:00:23.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}COMO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:23.40,0:00:23.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}«NO{\c&H00FFFFFF&} ME ENCANTA
+Dialogue: 1,0:00:23.54,0:00:23.62,Sub,,0,0,0,,{\pos(540,1260)\fs92}«NO {\c&H0000D7FF&}ME{\c&H00FFFFFF&} ENCANTA
+Dialogue: 1,0:00:23.62,0:00:24.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}«NO ME {\c&H0000D7FF&}ENCANTA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:24.44,0:00:24.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PERO{\c&H00FFFFFF&} QUIZÁS CON
+Dialogue: 1,0:00:24.82,0:00:25.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}PERO {\c&H0000D7FF&}QUIZÁS{\c&H00FFFFFF&} CON
+Dialogue: 1,0:00:25.26,0:00:25.40,Sub,,0,0,0,,{\pos(540,1260)\fs92}PERO QUIZÁS {\c&H0000D7FF&}CON{\c&H00FFFFFF&}
+Dialogue: 1,0:00:25.40,0:00:25.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EL{\c&H00FFFFFF&} TIEMPO ME
+Dialogue: 1,0:00:25.54,0:00:25.82,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL {\c&H0000D7FF&}TIEMPO{\c&H00FFFFFF&} ME
+Dialogue: 1,0:00:25.82,0:00:25.94,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL TIEMPO {\c&H0000D7FF&}ME{\c&H00FFFFFF&}
+Dialogue: 1,0:00:25.94,0:00:26.41,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}GUSTE»{\c&H00FFFFFF&}
+Dialogue: 1,0:00:26.70,0:00:26.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LE{\c&H00FFFFFF&} PAGARON
+Dialogue: 1,0:00:26.84,0:00:27.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}LE {\c&H0000D7FF&}PAGARON{\c&H00FFFFFF&}
+Dialogue: 1,0:00:27.30,0:00:29.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}35 DÓLARES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:29.02,0:00:29.54,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}HOY{\c&H00FFFFFF&}
+Dialogue: 1,0:00:29.54,0:00:29.88,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}NIKE{\c&H00FFFFFF&} ES UNA
+Dialogue: 1,0:00:29.88,0:00:30.02,Sub,,0,0,0,,{\pos(540,1260)\fs92}NIKE {\c&H0000D7FF&}ES{\c&H00FFFFFF&} UNA
+Dialogue: 1,0:00:30.02,0:00:30.18,Sub,,0,0,0,,{\pos(540,1260)\fs92}NIKE ES {\c&H0000D7FF&}UNA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:30.18,0:00:30.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DE{\c&H00FFFFFF&} LAS MARCAS
+Dialogue: 1,0:00:30.26,0:00:30.44,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE {\c&H0000D7FF&}LAS{\c&H00FFFFFF&} MARCAS
+Dialogue: 1,0:00:30.44,0:00:30.98,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE LAS {\c&H0000D7FF&}MARCAS{\c&H00FFFFFF&}
+Dialogue: 1,0:00:30.98,0:00:31.22,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}MÁS{\c&H00FFFFFF&} VALIOSAS DEL
+Dialogue: 1,0:00:31.22,0:00:31.68,Sub,,0,0,0,,{\pos(540,1260)\fs92}MÁS {\c&H0000D7FF&}VALIOSAS{\c&H00FFFFFF&} DEL
+Dialogue: 1,0:00:31.68,0:00:31.84,Sub,,0,0,0,,{\pos(540,1260)\fs92}MÁS VALIOSAS {\c&H0000D7FF&}DEL{\c&H00FFFFFF&}
+Dialogue: 1,0:00:31.84,0:00:32.52,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}PLANETA{\c&H00FFFFFF&}
+Dialogue: 1,0:00:32.52,0:00:32.64,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EN{\c&H00FFFFFF&} 1983
+Dialogue: 1,0:00:32.64,0:00:34.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}EN {\c&H0000D7FF&}1983{\c&H00FFFFFF&}
+Dialogue: 1,0:00:34.20,0:00:34.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}LA{\c&H00FFFFFF&} EMPRESA LE
+Dialogue: 1,0:00:34.26,0:00:34.64,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA {\c&H0000D7FF&}EMPRESA{\c&H00FFFFFF&} LE
+Dialogue: 1,0:00:34.64,0:00:34.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}LA EMPRESA {\c&H0000D7FF&}LE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:34.76,0:00:35.12,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}REGALÓ{\c&H00FFFFFF&} UN ANILLO
+Dialogue: 1,0:00:35.12,0:00:35.24,Sub,,0,0,0,,{\pos(540,1260)\fs92}REGALÓ {\c&H0000D7FF&}UN{\c&H00FFFFFF&} ANILLO
+Dialogue: 1,0:00:35.24,0:00:35.60,Sub,,0,0,0,,{\pos(540,1260)\fs92}REGALÓ UN {\c&H0000D7FF&}ANILLO{\c&H00FFFFFF&}
+Dialogue: 1,0:00:35.60,0:00:35.78,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}DE{\c&H00FFFFFF&} ORO CON
+Dialogue: 1,0:00:35.78,0:00:35.98,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE {\c&H0000D7FF&}ORO{\c&H00FFFFFF&} CON
+Dialogue: 1,0:00:35.98,0:00:36.12,Sub,,0,0,0,,{\pos(540,1260)\fs92}DE ORO {\c&H0000D7FF&}CON{\c&H00FFFFFF&}
+Dialogue: 1,0:00:36.12,0:00:36.30,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}EL{\c&H00FFFFFF&} SWOOSH Y
+Dialogue: 1,0:00:36.30,0:00:36.76,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL {\c&H0000D7FF&}SWOOSH{\c&H00FFFFFF&} Y
+Dialogue: 1,0:00:36.76,0:00:36.86,Sub,,0,0,0,,{\pos(540,1260)\fs92}EL SWOOSH {\c&H0000D7FF&}Y{\c&H00FFFFFF&}
+Dialogue: 1,0:00:36.86,0:00:37.00,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}UN{\c&H00FFFFFF&} PAQUETE DE
+Dialogue: 1,0:00:37.00,0:00:37.36,Sub,,0,0,0,,{\pos(540,1260)\fs92}UN {\c&H0000D7FF&}PAQUETE{\c&H00FFFFFF&} DE
+Dialogue: 1,0:00:37.36,0:00:37.42,Sub,,0,0,0,,{\pos(540,1260)\fs92}UN PAQUETE {\c&H0000D7FF&}DE{\c&H00FFFFFF&}
+Dialogue: 1,0:00:37.42,0:00:38.26,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}ACCIONES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:38.26,0:00:39.95,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}35 DÓLARES{\c&H00FFFFFF&}
+Dialogue: 1,0:00:40.36,0:00:40.50,Sub,,0,0,0,,{\pos(540,1260)\fs92}{\fscx112\fscy112\t(0,90,\fscx100\fscy100)}{\c&H0000D7FF&}Y{\c&H00FFFFFF&} UNA PINCELADA
+Dialogue: 1,0:00:40.50,0:00:40.68,Sub,,0,0,0,,{\pos(540,1260)\fs92}Y {\c&H0000D7FF&}UNA{\c&H00FFFFFF&} PINCELADA
+Dialogue: 1,0:00:40.68,0:00:41.20,Sub,,0,0,0,,{\pos(540,1260)\fs92}Y UNA {\c&H0000D7FF&}PINCELADA{\c&H00FFFFFF&}
+Dialogue: 2,0:00:00.00,0:00:04.72,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}LOGO = $35
+Dialogue: 2,0:00:04.72,0:00:15.82,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}1971 · PORTLAND
+Dialogue: 2,0:00:19.30,0:00:20.26,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}EL SWOOSH
+Dialogue: 2,0:00:23.40,0:00:26.70,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}«NO ME ENCANTA»
+Dialogue: 2,0:00:26.70,0:00:29.02,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}$35
+Dialogue: 2,0:00:29.02,0:00:32.52,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}UNA DE LAS MARCAS\NMÁS VALIOSAS
+Dialogue: 2,0:00:32.52,0:00:41.40,Titulo,,0,0,0,,{\pos(540,330)\fad(120,120)\fscx85\fscy85\t(0,120,\fscx100\fscy100)}1983: ANILLO\N+ ACCIONES
