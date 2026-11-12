@@ -39,6 +39,8 @@ Estado: 💡 idea · 📝 guion · 🎬 producido · ✅ publicado
 | C4 | FTX y Sam Bankman-Fried | «De multimillonario a 25 años de prisión.» | Quiebra de 2022; condena de 2024 | 💡 |
 | C5 | El hombre que vendió la Torre Eiffel | «Vendió la Torre Eiffel… y después intentó venderla otra vez.» | Victor Lustig, 1925. La segunda venta fracasó | 📝 006 |
 
+| C6 | GameStop y WallStreetBets | «Un grupo de usuarios de internet le hizo perder miles de millones a Wall Street… con una tienda de videojuegos.» | Precios de enero de 2021 (antes del desdoblamiento de 2022); pérdidas de Melvin Capital; rescate de US$ 2.750 millones; restricción de compras del 28/01. **Con gráfico animado** | 📝 014 |
+
 ## Serie D — Inventos por accidente
 
 | # | Tema | Gancho | Datos a verificar | Estado |
