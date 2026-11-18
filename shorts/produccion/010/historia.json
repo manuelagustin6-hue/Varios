@@ -1,0 +1,217 @@
+{
+  "audio": "../../audios/010/voz-final.mp3",
+  "reemplazos": {
+    "sesenta y cinco por ciento": "65%",
+    "dos semanas": "2 semanas",
+    "peores no": "peores «no»"
+  },
+  "salida": "video-historia.mp4",
+  "escenas": [
+    {
+      "tipo": "historia",
+      "titulo": "RECHAZÓ SALIR\nEN E.T.",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "ejecutivo",
+          "x": 330,
+          "pose": "pensar"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "claqueta",
+          "x": 790,
+          "y": 820,
+          "escala": 0.5
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "titulo": "LA PROPUESTA",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "productor",
+          "x": 330,
+          "pose": "hablar",
+          "globo": [
+            "¡QUEREMOS\nSUS DULCES!",
+            0.5,
+            6.5
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "caramelos",
+          "x": 790,
+          "y": 840,
+          "escala": 0.45
+        }
+      ],
+      "desde": "Los productores"
+    },
+    {
+      "tipo": "sello",
+      "desde": "Pero Mars",
+      "texto": "NO",
+      "base": {
+        "tipo": "historia",
+        "titulo": "MARS DIJO QUE NO",
+        "decorado": "oficina",
+        "personajes": [
+          {
+            "estilo": "ejecutivo",
+            "x": 540,
+            "pose": "hablar"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "historia",
+      "titulo": "«ASUSTARÍA A\nLOS NIÑOS»",
+      "decorado": "oficina_noche",
+      "personajes": [
+        {
+          "estilo": "ejecutivo",
+          "x": 540,
+          "pose": "nervioso"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "luna",
+          "x": 800,
+          "y": 580,
+          "escala": 0.35
+        }
+      ],
+      "desde": "Según la versión"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "PLAN B:\nREESE'S PIECES",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "ejecutivo2",
+          "x": 330,
+          "pose": "escuchar",
+          "poses": [
+            [
+              2.1,
+              "celebrar"
+            ]
+          ]
+        },
+        {
+          "estilo": "productor",
+          "x": [
+            1300,
+            760,
+            0,
+            1.5
+          ],
+          "pose": "caminar",
+          "mira": -1,
+          "poses": [
+            [
+              1.5,
+              "hablar"
+            ]
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "caramelos",
+          "x": 540,
+          "y": 590,
+          "escala": 0.28,
+          "args": {
+            "colores": [
+              [
+                1,
+                0.55,
+                0.15
+              ],
+              [
+                0.55,
+                0.33,
+                0.18
+              ],
+              [
+                1,
+                0.85,
+                0.2
+              ]
+            ]
+          }
+        }
+      ],
+      "desde": "Entonces fueron"
+    },
+    {
+      "tipo": "icono",
+      "desde": "ET se estrenó",
+      "titulo": "1982: ESTRENO",
+      "icono": "cine",
+      "pie": "un fenómeno mundial"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "Según la prensa",
+      "titulo": "VENTAS",
+      "de": 0,
+      "a": 65,
+      "prefijo": "+",
+      "sufijo": "%",
+      "unidad": "EN 2 SEMANAS",
+      "color": [
+        0.24,
+        0.86,
+        0.52
+      ],
+      "icono": "caramelos",
+      "args": {
+        "colores": [
+          [
+            1,
+            0.55,
+            0.15
+          ],
+          [
+            0.55,
+            0.33,
+            0.18
+          ],
+          [
+            1,
+            0.85,
+            0.2
+          ]
+        ]
+      }
+    },
+    {
+      "tipo": "sello",
+      "desde": "Uno de los mejores",
+      "texto": "NO",
+      "base": {
+        "tipo": "historia",
+        "titulo": "EL PEOR «NO»",
+        "decorado": "oficina",
+        "personajes": [
+          {
+            "estilo": "ejecutivo",
+            "x": 540,
+            "pose": "triste"
+          }
+        ]
+      }
+    }
+  ]
+}

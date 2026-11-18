@@ -23,6 +23,7 @@ import cairo
 
 sys.path.insert(0, os.path.dirname(__file__))
 import render  # noqa: E402  (reutiliza subtítulos, búsqueda de frases y recortes)
+import personajes  # noqa: E402  (personajes animados y escenarios)
 
 W, H, FPS = 1080, 1920, 30
 FUENTE = "Liberation Sans"
@@ -1105,10 +1106,71 @@ def esc_transformar(cr, t, p):
 ESCENAS.update({"barras": esc_barras, "transformar": esc_transformar})
 
 
+
+# ---------- escenas con personajes ----------
+
+def globo(cr, s, x, y, t):
+    """Globo de diálogo con la punta hacia abajo, en (x, y)."""
+    a = ease_out_back(t / 0.3)
+    if a <= 0.01:
+        return
+    lineas = s.split("\n")
+    tam = 46
+    ancho = max(ancho_texto(cr, l, tam) for l in lineas) + 60
+    alto = tam * 1.3 * len(lineas) + 40
+    x = min(max(x, ancho / 2 + 30), W - ancho / 2 - 30)
+    cr.save()
+    cr.translate(x, y)
+    cr.scale(a, a)
+    cr.new_path()
+    rrect(cr, -ancho / 2, -alto, ancho, alto, 30)
+    rellenar(cr, BLANCO)
+    cr.new_path()
+    cr.move_to(-25, -2); cr.line_to(0, 45); cr.line_to(25, -2)
+    rellenar(cr, BLANCO)
+    for i, l in enumerate(lineas):
+        texto(cr, l, 0, -alto + 20 + tam * 1.3 * (i + 0.5), tam, OSCURO)
+    cr.restore()
+
+
+def _valor_en(v, t):
+    """Número fijo o [desde, hasta, t_inicio, t_fin] con movimiento suave."""
+    if isinstance(v, (int, float)):
+        return v
+    a, b, t0, t1 = v
+    return a + (b - a) * ease_in_out((t - t0) / max(0.01, t1 - t0))
+
+
+def esc_historia(cr, t, p):
+    personajes.decorado(cr, p.get("decorado", "calle_paris"), t, W, H, dibujar_icono)
+    for el in p.get("elementos", []):
+        dibujar_icono(cr, el["icono"], t, el["x"], el["y"], el.get("escala", 1.0), **el.get("args", {}))
+    for pj in p["personajes"]:
+        te = t - pj.get("entra", 0)
+        if te < 0 or t > pj.get("sale", 1e9):
+            continue
+        nombre_pose = pj.get("pose", "parado")
+        for tp, ps in pj.get("poses", []):
+            if t >= tp:
+                nombre_pose = ps
+        x = _valor_en(pj.get("x", W / 2), t)
+        esc = pj.get("escala", 0.95)
+        personajes.personaje(cr, pj["estilo"], x, personajes.PISO, esc, pj.get("mira", 1), nombre_pose, te,
+                             pj.get("objeto"))
+        g = pj.get("globo")
+        if g and g[1] <= t <= g[2]:
+            globo(cr, g[0], x + 40 * pj.get("mira", 1), personajes.PISO - 640 * esc, t - g[1])
+    if p.get("rejas"):
+        personajes.rejas(cr, t, W)
+    titular(cr, p.get("titulo", ""), t)
+
+
+ESCENAS["historia"] = esc_historia
+
 # ---------- armado del video ----------
 
-def main(carpeta):
-    cfg = json.load(open(os.path.join(carpeta, "motion.json")))
+def main(carpeta, archivo="motion.json"):
+    cfg = json.load(open(os.path.join(carpeta, archivo)))
     palabras = render.cargar_palabras(os.path.join(carpeta, "palabras.json"))
     audio = os.path.normpath(os.path.join(carpeta, cfg["audio"]))
     duracion = float(subprocess.check_output(
@@ -1166,4 +1228,4 @@ def main(carpeta):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else "motion.json")

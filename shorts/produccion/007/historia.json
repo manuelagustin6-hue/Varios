@@ -1,0 +1,190 @@
+{
+  "audio": "../../audios/007/toma-1.mp3",
+  "reemplazos": {
+    "treinta y cinco dólares": "35 dólares"
+  },
+  "salida": "video-historia.mp4",
+  "escenas": [
+    {
+      "tipo": "cifra",
+      "titulo": "UN LOGO FAMOSO",
+      "de": 0,
+      "a": 35,
+      "prefijo": "$",
+      "unidad": "DÓLARES",
+      "icono": "pincel"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "1971: UNA MARCA\nSIN LOGO",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "knight",
+          "x": 330,
+          "pose": "pensar"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "zapatilla",
+          "x": 790,
+          "y": 1000,
+          "escala": 0.45
+        }
+      ],
+      "desde": "En 1971"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "CAROLYN DAVIDSON",
+      "decorado": "aula",
+      "personajes": [
+        {
+          "estilo": "estudiante",
+          "x": 330,
+          "pose": "escuchar"
+        },
+        {
+          "estilo": "knight",
+          "x": [
+            1300,
+            780,
+            0,
+            1.5
+          ],
+          "pose": "caminar",
+          "mira": -1,
+          "poses": [
+            [
+              1.5,
+              "hablar"
+            ]
+          ],
+          "globo": [
+            "¿ME DISEÑAS\nUN LOGO?",
+            1.6,
+            5.2
+          ]
+        }
+      ],
+      "desde": "Le pidió ayuda"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "UNA PINCELADA\nCON MOVIMIENTO",
+      "decorado": "aula",
+      "personajes": [
+        {
+          "estilo": "estudiante",
+          "x": 330,
+          "pose": "dar",
+          "objeto": "papel"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "pincel",
+          "x": 780,
+          "y": 820,
+          "escala": 0.6
+        }
+      ],
+      "desde": "Ella diseñó"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "«NO ME ENCANTA»",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "knight",
+          "x": 540,
+          "pose": "pensar",
+          "globo": [
+            "NO ME ENCANTA…",
+            3.0,
+            6.4
+          ]
+        }
+      ],
+      "desde": "Knight no quedó"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "LE PAGARON $35",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "estudiante",
+          "x": 330,
+          "pose": "sonreir"
+        },
+        {
+          "estilo": "knight",
+          "x": 760,
+          "pose": "dar",
+          "mira": -1,
+          "objeto": "billetes"
+        }
+      ],
+      "desde": "Le pagaron"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Hoy Nike",
+      "titulo": "UNA DE LAS MARCAS\nMÁS VALIOSAS",
+      "icono": "zapatilla",
+      "args": {
+        "color": [
+          0.85,
+          0.15,
+          0.18
+        ]
+      }
+    },
+    {
+      "tipo": "historia",
+      "titulo": "1983: ANILLO\n+ ACCIONES",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "estudiante",
+          "x": 330,
+          "pose": "sorpresa",
+          "poses": [
+            [
+              1.7,
+              "celebrar"
+            ]
+          ]
+        },
+        {
+          "estilo": "knight",
+          "x": 760,
+          "pose": "dar",
+          "mira": -1
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "anillo",
+          "x": 540,
+          "y": 640,
+          "escala": 0.32
+        }
+      ],
+      "desde": "En 1983"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "Treinta y cinco dólares y una",
+      "titulo": "UN LOGO FAMOSO",
+      "de": 0,
+      "a": 35,
+      "prefijo": "$",
+      "unidad": "DÓLARES",
+      "icono": "pincel"
+    }
+  ]
+}

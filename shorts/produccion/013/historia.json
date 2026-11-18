@@ -1,0 +1,186 @@
+{
+  "audio": "../../audios/013/voz-final.mp3",
+  "reemplazos": {
+    "tres millones": "3 millones",
+    "ciento veintiséis millones": "126 millones",
+    "cuatro años": "4 años",
+    "un no": "un «no»"
+  },
+  "salida": "video-historia.mp4",
+  "escenas": [
+    {
+      "tipo": "historia",
+      "titulo": "ADIDAS DEJÓ IR\nA JORDAN",
+      "decorado": "cancha",
+      "personajes": [
+        {
+          "estilo": "jugador",
+          "x": 540,
+          "pose": "celebrar",
+          "escala": 1.0
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "titulo": "1984: LLEGA\nA LA NBA",
+      "decorado": "cancha",
+      "personajes": [
+        {
+          "estilo": "jugador",
+          "x": [
+            -150,
+            450,
+            0,
+            2.0
+          ],
+          "pose": "caminar",
+          "objeto": "pelota",
+          "poses": [
+            [
+              2.0,
+              "sonreir"
+            ]
+          ],
+          "escala": 1.0
+        }
+      ],
+      "desde": "En 1984"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "SU MARCA FAVORITA",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "jugador",
+          "x": 330,
+          "pose": "hablar",
+          "globo": [
+            "¡QUIERO FIRMAR\nCON USTEDES!",
+            0.3,
+            3.2
+          ]
+        },
+        {
+          "estilo": "ejecutivo",
+          "x": 760,
+          "pose": "escuchar",
+          "mira": -1,
+          "poses": [
+            [
+              3.2,
+              "pensar"
+            ]
+          ]
+        }
+      ],
+      "desde": "Su marca favorita"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Según se cuenta",
+      "titulo": "PREFERÍAN JUGADORES\nMÁS ALTOS",
+      "icono": "regla"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "NIKE SE LA JUGÓ",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "jugador",
+          "x": 330,
+          "pose": "escuchar",
+          "poses": [
+            [
+              3.3,
+              "sorpresa"
+            ],
+            [
+              7.5,
+              "celebrar"
+            ]
+          ]
+        },
+        {
+          "estilo": "ejecutivo2",
+          "x": 760,
+          "pose": "hablar",
+          "mira": -1,
+          "globo": [
+            "¡TU PROPIA\nZAPATILLA!",
+            3.3,
+            7.4
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "zapatilla",
+          "x": 540,
+          "y": 600,
+          "escala": 0.28,
+          "args": {
+            "color": [
+              0.85,
+              0.15,
+              0.18
+            ]
+          }
+        }
+      ],
+      "desde": "Nike que entonces"
+    },
+    {
+      "tipo": "barras",
+      "desde": "Nike esperaba",
+      "titulo": "META VS. REALIDAD",
+      "prefijo": "$",
+      "sufijo": "M",
+      "barras": [
+        [
+          "META 4 AÑOS",
+          3,
+          [
+            0.55,
+            0.6,
+            0.68
+          ]
+        ],
+        [
+          "AÑO 1",
+          126,
+          [
+            0.24,
+            0.86,
+            0.52
+          ]
+        ]
+      ]
+    },
+    {
+      "tipo": "icono",
+      "desde": "Hoy la marca",
+      "titulo": "MILES DE MILLONES\nPOR AÑO",
+      "icono": "dinero"
+    },
+    {
+      "tipo": "sello",
+      "desde": "Todo empezó",
+      "texto": "NO",
+      "base": {
+        "tipo": "historia",
+        "titulo": "TODO EMPEZÓ\nCON UN «NO»",
+        "decorado": "oficina",
+        "personajes": [
+          {
+            "estilo": "ejecutivo",
+            "x": 540,
+            "pose": "triste"
+          }
+        ]
+      }
+    }
+  ]
+}
