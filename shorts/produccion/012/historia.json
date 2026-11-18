@@ -1,0 +1,117 @@
+{
+  "audio": "../../audios/012/voz-final.mp3",
+  "reemplazos": {
+    "allan penn": "Alan Penn"
+  },
+  "salida": "video-historia.mp4",
+  "escenas": [
+    {
+      "tipo": "historia",
+      "titulo": "¿POR QUÉ COMPRAS\nDE MÁS EN IKEA?",
+      "decorado": "tienda_muebles",
+      "personajes": [
+        {
+          "estilo": "compradora",
+          "x": [
+            -150,
+            330,
+            0,
+            1.5
+          ],
+          "pose": "caminar",
+          "poses": [
+            [
+              1.5,
+              "nervioso"
+            ]
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "carrito",
+          "x": 780,
+          "y": 1060,
+          "escala": 0.4
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "titulo": "UN RECORRIDO\nSERPENTEANTE",
+      "decorado": "tienda_muebles",
+      "personajes": [
+        {
+          "estilo": "compradora",
+          "x": [
+            -150,
+            1250,
+            0,
+            8.6
+          ],
+          "pose": "caminar"
+        }
+      ],
+      "desde": "Muchas de sus tiendas"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "ALAN PENN,\nPROFESOR",
+      "decorado": "aula",
+      "personajes": [
+        {
+          "estilo": "profesor",
+          "x": 330,
+          "pose": "hablar",
+          "globo": [
+            "SI TE DESORIENTAS,\nCOMPRAS MÁS",
+            3.4,
+            10.8
+          ]
+        }
+      ],
+      "desde": "Allan Penn"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "PRODUCTOS BARATOS\nEN EL CAMINO",
+      "decorado": "tienda_muebles",
+      "personajes": [
+        {
+          "estilo": "compradora",
+          "x": 330,
+          "pose": "sonreir"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "carrito",
+          "x": 770,
+          "y": 1060,
+          "escala": 0.45
+        }
+      ],
+      "desde": "Además"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Y en la zona",
+      "titulo": "ZONA DE CAJAS",
+      "icono": "caja"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "TRUCO: LISTA\n+ ATAJOS",
+      "decorado": "tienda_muebles",
+      "personajes": [
+        {
+          "estilo": "compradora",
+          "x": 400,
+          "pose": "dar",
+          "objeto": "papel"
+        }
+      ],
+      "desde": "No es magia"
+    }
+  ]
+}

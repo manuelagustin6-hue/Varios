@@ -1,0 +1,179 @@
+{
+  "audio": "../../audios/011/voz-final.mp3",
+  "reemplazos": {
+    "treinta millones": "30 millones",
+    "diez millones": "10 millones",
+    "diecinueve millones": "19 millones"
+  },
+  "salida": "video-historia.mp4",
+  "escenas": [
+    {
+      "tipo": "historia",
+      "titulo": "LES GANÓ A\nFORD Y CHRYSLER",
+      "decorado": "juzgado",
+      "personajes": [
+        {
+          "estilo": "profesor",
+          "x": 330,
+          "pose": "celebrar"
+        },
+        {
+          "estilo": "ejecutivo",
+          "x": 780,
+          "pose": "triste",
+          "mira": -1
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "titulo": "ROBERT KEARNS",
+      "decorado": "garaje",
+      "personajes": [
+        {
+          "estilo": "profesor",
+          "x": 330,
+          "pose": "hablar"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "parabrisas",
+          "x": 790,
+          "y": 800,
+          "escala": 0.45
+        }
+      ],
+      "desde": "Robert Kearns"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "SE LO MOSTRÓ\nA FORD",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "profesor",
+          "x": 330,
+          "pose": "dar",
+          "objeto": "papel"
+        },
+        {
+          "estilo": "ejecutivo",
+          "x": 760,
+          "pose": "escuchar",
+          "mira": -1
+        }
+      ],
+      "desde": "Lo patentó"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "1969: FORD\nLO LANZA",
+      "decorado": "calle",
+      "personajes": [
+        {
+          "estilo": "profesor",
+          "x": 260,
+          "pose": "escuchar",
+          "poses": [
+            [
+              1.7,
+              "sorpresa"
+            ]
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "auto",
+          "x": 760,
+          "y": 1090,
+          "escala": 0.55
+        }
+      ],
+      "desde": "Ford no le compró"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "A JUICIO",
+      "decorado": "juzgado",
+      "personajes": [
+        {
+          "estilo": "profesor",
+          "x": 330,
+          "pose": "hablar",
+          "globo": [
+            "¡ESA IDEA\nES MÍA!",
+            0.3,
+            4.5
+          ]
+        },
+        {
+          "estilo": "ejecutivo",
+          "x": 740,
+          "pose": "nervioso",
+          "mira": -1
+        },
+        {
+          "estilo": "ejecutivo2",
+          "x": 930,
+          "pose": "escuchar",
+          "mira": -1,
+          "escala": 0.85
+        }
+      ],
+      "desde": "Kearns los demandó"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "En 1990",
+      "titulo": "FORD (1990)",
+      "de": 0,
+      "a": 10,
+      "prefijo": "+$",
+      "unidad": "MILLONES",
+      "color": [
+        0.24,
+        0.86,
+        0.52
+      ],
+      "icono": "mazo"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "Dos años después",
+      "titulo": "CHRYSLER (1992)",
+      "de": 0,
+      "a": 19,
+      "prefijo": "~$",
+      "unidad": "MILLONES",
+      "color": [
+        0.24,
+        0.86,
+        0.52
+      ],
+      "icono": "mazo"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "LLEGÓ A HOLLYWOOD",
+      "decorado": "calle",
+      "personajes": [
+        {
+          "estilo": "profesor",
+          "x": 480,
+          "pose": "celebrar"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "claqueta",
+          "x": 840,
+          "y": 640,
+          "escala": 0.3
+        }
+      ],
+      "desde": "Su historia"
+    }
+  ]
+}

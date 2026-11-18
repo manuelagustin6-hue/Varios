@@ -1,0 +1,175 @@
+{
+  "audio": "../../audios/009/voz-final.mp3",
+  "reemplazos": {
+    "doce mil millones": "12.000 millones",
+    "12 mil millones": "12.000 millones"
+  },
+  "bucle": true,
+  "salida": "video-historia.mp4",
+  "escenas": [
+    {
+      "tipo": "historia",
+      "titulo": "LA JUGADA DE\nLA BASURA",
+      "decorado": "calle_noche",
+      "personajes": [
+        {
+          "estilo": "joven2",
+          "x": 330,
+          "pose": "pensar",
+          "objeto": "lata"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "tacho",
+          "x": 780,
+          "y": 1000,
+          "escala": 0.5
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "titulo": "REINO UNIDO, AÑOS 90",
+      "decorado": "calle",
+      "personajes": [
+        {
+          "estilo": "compradora",
+          "x": 380,
+          "pose": "pensar",
+          "objeto": "lata",
+          "poses": [
+            [
+              3.4,
+              "nervioso"
+            ]
+          ],
+          "globo": [
+            "¿TAN CARA?",
+            3.4,
+            7.0
+          ]
+        }
+      ],
+      "desde": "Cuando la bebida"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "LATAS VACÍAS\nEN LA BASURA",
+      "decorado": "calle_noche",
+      "personajes": [
+        {
+          "estilo": "joven2",
+          "x": [
+            150,
+            560,
+            0,
+            2.0
+          ],
+          "pose": "caminar",
+          "objeto": "lata",
+          "poses": [
+            [
+              2.0,
+              "dar"
+            ]
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "tacho",
+          "x": 800,
+          "y": 1000,
+          "escala": 0.5
+        }
+      ],
+      "desde": "Según se cuenta"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "«TODOS LA TOMAN»",
+      "decorado": "discoteca",
+      "personajes": [
+        {
+          "estilo": "joven1",
+          "x": 250,
+          "pose": "celebrar",
+          "objeto": "lata"
+        },
+        {
+          "estilo": "mujer",
+          "x": 540,
+          "pose": "celebrar",
+          "escala": 0.9
+        },
+        {
+          "estilo": "joven2",
+          "x": 820,
+          "pose": "celebrar",
+          "mira": -1,
+          "objeto": "lata"
+        }
+      ],
+      "desde": "La idea era simple"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Nunca se confirmó",
+      "titulo": "¿LEYENDA O\nREALIDAD?",
+      "icono": "pregunta"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "LATAS GRATIS",
+      "decorado": "aula",
+      "personajes": [
+        {
+          "estilo": "joven2",
+          "x": 330,
+          "pose": "dar",
+          "objeto": "lata"
+        },
+        {
+          "estilo": "estudiante",
+          "x": 760,
+          "pose": "celebrar",
+          "mira": -1
+        }
+      ],
+      "desde": "como repartir"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "Hoy vende",
+      "titulo": "HOY VENDE",
+      "de": 0,
+      "a": 12000,
+      "prefijo": "+",
+      "unidad": "MILLONES DE LATAS AL AÑO",
+      "icono": "lata"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "LA JUGADA DE\nLA BASURA",
+      "decorado": "calle_noche",
+      "personajes": [
+        {
+          "estilo": "joven2",
+          "x": 330,
+          "pose": "pensar",
+          "objeto": "lata"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "tacho",
+          "x": 780,
+          "y": 1000,
+          "escala": 0.5
+        }
+      ],
+      "desde": "Por eso"
+    }
+  ]
+}

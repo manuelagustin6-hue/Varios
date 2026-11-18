@@ -27,6 +27,32 @@ ESTILOS = {
                    "peinado": "corto", "sombrero": "policia", "bigote": True},
     "mujer":      {"ropa": (0.85, 0.3, 0.35), "pantalon": (0.85, 0.3, 0.35), "pelo": (0.35, 0.2, 0.1),
                    "peinado": "largo", "falda": True},
+    "joven1":     {"ropa": (0.16, 0.16, 0.2), "pantalon": (0.25, 0.35, 0.6), "pelo": (0.25, 0.15, 0.08),
+                   "peinado": "corto"},
+    "joven2":     {"ropa": (0.55, 0.42, 0.28), "pantalon": (0.25, 0.35, 0.6), "pelo": (0.4, 0.25, 0.12),
+                   "peinado": "corto", "barba": True, "anteojos": True},
+    "wayne":      {"ropa": (0.55, 0.56, 0.6), "pantalon": (0.3, 0.3, 0.34), "pelo": (0.75, 0.75, 0.78),
+                   "peinado": "corto", "corbata": (0.25, 0.25, 0.4), "bigote": True},
+    "estudiante": {"ropa": (0.25, 0.6, 0.55), "pantalon": (0.25, 0.6, 0.55), "pelo": (0.12, 0.08, 0.06),
+                   "peinado": "largo", "falda": True},
+    "knight":     {"ropa": (0.75, 0.32, 0.25), "pantalon": (0.3, 0.28, 0.25), "pelo": (0.45, 0.3, 0.15),
+                   "peinado": "corto"},
+    "programador": {"ropa": (0.3, 0.36, 0.48), "pantalon": (0.2, 0.22, 0.3), "pelo": (0.08, 0.06, 0.05),
+                    "peinado": "corto", "piel": (0.78, 0.58, 0.42)},
+    "productor":  {"ropa": (0.2, 0.3, 0.45), "pantalon": (0.25, 0.25, 0.3), "pelo": (0.3, 0.2, 0.12),
+                   "peinado": "corto", "sombrero": "gorra", "barba": True},
+    "ejecutivo":  {"ropa": (0.12, 0.12, 0.15), "pantalon": (0.1, 0.1, 0.12), "pelo": (0.6, 0.6, 0.62),
+                   "peinado": "corto", "corbata": (0.6, 0.1, 0.15)},
+    "ejecutivo2": {"ropa": (0.35, 0.25, 0.18), "pantalon": (0.25, 0.18, 0.12), "pelo": (0.2, 0.14, 0.08),
+                   "peinado": "corto", "corbata": (0.9, 0.75, 0.2), "bigote": True},
+    "profesor":   {"ropa": (0.4, 0.42, 0.5), "pantalon": (0.28, 0.28, 0.32), "pelo": (0.78, 0.78, 0.8),
+                   "peinado": "calvo", "anteojos": True, "corbata": (0.5, 0.2, 0.2)},
+    "juez":       {"ropa": (0.08, 0.08, 0.1), "pantalon": (0.08, 0.08, 0.1), "pelo": (0.75, 0.75, 0.78),
+                   "peinado": "corto", "falda": True, "anteojos": True},
+    "jugador":    {"ropa": (0.85, 0.15, 0.18), "pantalon": (0.85, 0.15, 0.18), "pelo": (0.05, 0.04, 0.04),
+                   "peinado": "rapado", "piel": (0.5, 0.33, 0.22)},
+    "compradora": {"ropa": (0.3, 0.5, 0.8), "pantalon": (0.3, 0.3, 0.35), "pelo": (0.75, 0.55, 0.25),
+                   "peinado": "largo"},
 }
 
 
@@ -126,6 +152,32 @@ def _objeto(cr, nombre, x, y):
             cr.set_source_rgb(0.25, 0.65, 0.4)
             cr.fill()
             cr.restore()
+    elif nombre == "lata":
+        cr.rectangle(x - 18, y - 50, 36, 80)
+        cr.set_source_rgb(0.85, 0.87, 0.92)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(x - 18, y - 25, 36, 30)
+        cr.set_source_rgb(0.15, 0.3, 0.75)
+        cr.fill()
+    elif nombre == "tarjeta":
+        cr.save()
+        cr.translate(x + 15, y - 20)
+        cr.rotate(-0.3)
+        cr.rectangle(-45, -28, 90, 56)
+        cr.set_source_rgb(0.25, 0.3, 0.85)
+        cr.fill()
+        cr.restore()
+    elif nombre == "pelota":
+        cr.arc(x + 10, y - 30, 45, 0, 2 * math.pi)
+        cr.set_source_rgb(0.95, 0.5, 0.15)
+        cr.fill()
+        cr.new_path()
+        cr.move_to(x - 35, y - 30)
+        cr.line_to(x + 55, y - 30)
+        cr.set_line_width(5)
+        cr.set_source_rgb(0.25, 0.12, 0.05)
+        cr.stroke()
     elif nombre == "papel":
         cr.save()
         cr.translate(x + 15, y - 30)
@@ -174,8 +226,18 @@ def _cara(cr, est, p, t, hx, hy):
             cr.arc(hx + dx, hy + 14, 13, 0, 2 * math.pi)
             cr.set_source_rgba(1, 0.35, 0.35, 0.55)
             cr.fill()
-    # bigote
     my = hy + 22
+    if est.get("barba"):
+        cr.new_path()
+        cr.arc(hx + 18, hy + 18, 50, 0.05 * math.pi, 0.95 * math.pi)
+        cr.close_path()
+        cr.set_source_rgb(*est["pelo"])
+        cr.fill()
+        cr.new_path()
+        cr.arc(hx + 25, my + 6, 13, 0, 2 * math.pi)
+        cr.set_source_rgb(0.85, 0.65, 0.55)
+        cr.fill()
+    # bigote
     if est.get("bigote"):
         cr.new_path()
         cr.move_to(hx + 4, my - 6)
@@ -221,6 +283,11 @@ def _peinado_y_sombrero(cr, est, hx, hy, r):
         cr.fill()
         cr.new_path()
         cr.rectangle(hx - r - 12, hy - 30, 60, 150)
+        cr.set_source_rgb(*pelo)
+        cr.fill()
+    elif est["peinado"] == "rapado":
+        cr.arc(hx, hy, r + 1, math.pi * 1.1, math.pi * 1.9)
+        cr.close_path()
         cr.set_source_rgb(*pelo)
         cr.fill()
     elif est["peinado"] == "calvo":
@@ -271,6 +338,7 @@ def personaje(cr, estilo, x, y, escala, mira, nombre_pose, t, objeto=None):
     cr.translate(x + p["temblor"], y - p["salto"] * escala)
     cr.scale(escala * mira, escala)
     ropa, pant = est["ropa"], est["pantalon"]
+    piel = est.get("piel", PIEL)
     cadera = (0, -230)
     hombro_y = -390
     # sombra en el piso
@@ -285,7 +353,7 @@ def personaje(cr, estilo, x, y, escala, mira, nombre_pose, t, objeto=None):
     _miembro(cr, -8, cadera[1], *p["piernaT"], 112, 112, 38, _sombra(pant), fin=(0.12, 0.1, 0.1), fin_r=22)
     cr.save()
     cr.rotate(math.radians(p["torso"]))
-    _miembro(cr, -20, hombro_y + 12, *p["brazoT"], 98, 92, 30, _sombra(ropa), fin=_sombra(PIEL, 0.9), fin_r=17)
+    _miembro(cr, -20, hombro_y + 12, *p["brazoT"], 98, 92, 30, _sombra(ropa), fin=_sombra(piel, 0.9), fin_r=17)
     cr.restore()
     _miembro(cr, 8, cadera[1], *p["piernaD"], 112, 112, 38, pant, fin=(0.12, 0.1, 0.1), fin_r=22)
     # torso
@@ -324,17 +392,17 @@ def personaje(cr, estilo, x, y, escala, mira, nombre_pose, t, objeto=None):
     hx, hy, r = 8, -62, 66
     cr.new_path()
     cr.arc(hx, hy, r, 0, 2 * math.pi)
-    cr.set_source_rgb(*PIEL)
+    cr.set_source_rgb(*piel)
     cr.fill()
     cr.new_path()
     cr.arc(hx - r + 6, hy + 4, 14, 0, 2 * math.pi)
-    cr.set_source_rgb(*_sombra(PIEL, 0.9))
+    cr.set_source_rgb(*_sombra(piel, 0.9))
     cr.fill()
     _peinado_y_sombrero(cr, est, hx, hy, r)
     _cara(cr, est, p, t, hx, hy)
     cr.restore()
     # brazo de adelante (y objeto en la mano)
-    mano = _miembro(cr, 20, hombro_y + 12, *p["brazoD"], 98, 92, 30, ropa, fin=PIEL, fin_r=17)
+    mano = _miembro(cr, 20, hombro_y + 12, *p["brazoD"], 98, 92, 30, ropa, fin=piel, fin_r=17)
     if objeto:
         _objeto(cr, objeto, *mano)
     cr.restore()
@@ -470,6 +538,224 @@ def decorado(cr, nombre, t, W, H, dibujar_icono):
             cr.rectangle(W / 2 - 100 + i * 50, 560, 10, 150)
             cr.set_source_rgb(0.6, 0.62, 0.66)
             cr.fill()
+    elif nombre == "garaje":
+        cr.rectangle(0, 0, W, PISO)
+        cr.set_source_rgb(0.55, 0.6, 0.66)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(40, 520, 460, PISO - 520)
+        cr.set_source_rgb(0.75, 0.77, 0.8)
+        cr.fill()
+        for y in range(540, PISO, 55):
+            cr.new_path()
+            cr.rectangle(40, y, 460, 8)
+            cr.set_source_rgb(0.62, 0.64, 0.68)
+            cr.fill()
+        cr.new_path()
+        cr.rectangle(560, PISO - 330, 480, 30)
+        cr.set_source_rgb(0.45, 0.3, 0.18)
+        cr.fill()
+        for x in (580, 1000):
+            cr.new_path()
+            cr.rectangle(x, PISO - 300, 22, 300)
+            cr.fill()
+        cr.new_path()
+        cr.rectangle(700, PISO - 520, 230, 170)
+        cr.set_source_rgb(0.85, 0.8, 0.65)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(720, PISO - 500, 190, 120)
+        cr.set_source_rgb(0.2, 0.45, 0.3)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(780, PISO - 350, 70, 20)
+        cr.set_source_rgb(0.3, 0.3, 0.32)
+        cr.fill()
+    elif nombre in ("oficina", "oficina_noche"):
+        cr.rectangle(0, 0, W, PISO)
+        cr.set_source_rgb(0.86, 0.82, 0.74)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(560, 420, 440, 380)
+        cr.set_source_rgb(0.08, 0.1, 0.2) if nombre == "oficina_noche" else cr.set_source_rgb(0.55, 0.75, 0.95)
+        cr.fill()
+        _edificios(cr, rnd, (0.25, 0.3, 0.42), (1, 0.9, 0.55) if nombre == "oficina_noche" else (0.7, 0.85, 1),
+                   800, 120, 300, W)
+        cr.new_path()
+        cr.rectangle(0, 0, 560, PISO)
+        cr.set_source_rgb(0.86, 0.82, 0.74)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(1000, 0, 80, PISO)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(0, 0, W, 420)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(0, 800, W, PISO - 800)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(550, 410, 460, 400)
+        cr.set_line_width(16)
+        cr.set_source_rgb(0.95, 0.95, 0.95)
+        cr.stroke()
+        cr.new_path()
+        cr.rectangle(0, PISO - 230, 360, 30)
+        cr.set_source_rgb(0.45, 0.3, 0.18)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(30, PISO - 200, 300, 200)
+        cr.set_source_rgb(0.4, 0.27, 0.16)
+        cr.fill()
+    elif nombre == "aula":
+        cr.rectangle(0, 0, W, PISO)
+        cr.set_source_rgb(0.72, 0.78, 0.7)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(120, 430, 840, 380)
+        cr.set_source_rgb(0.4, 0.28, 0.16)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(140, 450, 800, 340)
+        cr.set_source_rgb(0.15, 0.3, 0.22)
+        cr.fill()
+        cr.new_path()
+        cr.move_to(220, 650)
+        cr.curve_to(400, 520, 600, 540, 820, 600)
+        cr.set_line_width(10)
+        cr.set_source_rgba(1, 1, 1, 0.7)
+        cr.stroke()
+    elif nombre == "cuarto":
+        cr.rectangle(0, 0, W, PISO)
+        cr.set_source_rgb(0.1, 0.11, 0.18)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(80, 420, 300, 360)
+        cr.set_source_rgb(0.05, 0.07, 0.15)
+        cr.fill()
+        cr.new_path()
+        cr.arc(250, 520, 40, 0, 2 * math.pi)
+        cr.set_source_rgb(0.95, 0.93, 0.8)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(560, PISO - 330, 480, 30)
+        cr.set_source_rgb(0.35, 0.25, 0.16)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(680, PISO - 560, 260, 200)
+        cr.set_source_rgb(0.15, 0.15, 0.18)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(695, PISO - 545, 230, 165)
+        cr.set_source_rgb(0.75, 0.85, 1.0)
+        cr.fill()
+        g = cairo.RadialGradient(810, PISO - 460, 20, 810, PISO - 460, 380)
+        g.add_color_stop_rgba(0, 0.6, 0.75, 1, 0.3)
+        g.add_color_stop_rgba(1, 0.6, 0.75, 1, 0)
+        cr.new_path()
+        cr.arc(810, PISO - 460, 380, 0, 2 * math.pi)
+        cr.set_source(g)
+        cr.fill()
+    elif nombre == "discoteca":
+        cr.rectangle(0, 0, W, PISO)
+        cr.set_source_rgb(0.08, 0.03, 0.12)
+        cr.fill()
+        for i, col in enumerate([(1, 0.2, 0.6), (0.2, 0.6, 1), (0.6, 1, 0.3), (1, 0.8, 0.2)]):
+            ang = math.sin(t * 1.5 + i * 1.7) * 0.6
+            cr.save()
+            cr.translate(W / 2, 380)
+            cr.rotate(ang)
+            cr.new_path()
+            cr.move_to(0, 0)
+            cr.line_to(-120, 1000)
+            cr.line_to(120, 1000)
+            cr.close_path()
+            cr.set_source_rgba(*col, 0.18)
+            cr.fill()
+            cr.restore()
+        cr.new_path()
+        cr.arc(W / 2, 380, 60, 0, 2 * math.pi)
+        cr.set_source_rgb(0.8, 0.82, 0.88)
+        cr.fill()
+    elif nombre == "juzgado":
+        cr.rectangle(0, 0, W, PISO)
+        cr.set_source_rgb(0.42, 0.28, 0.17)
+        cr.fill()
+        for x in range(0, W, 180):
+            cr.new_path()
+            cr.rectangle(x + 20, 420, 140, PISO - 440)
+            cr.set_source_rgb(0.47, 0.32, 0.2)
+            cr.fill()
+        cr.new_path()
+        cr.rectangle(300, PISO - 420, 480, 420)
+        cr.set_source_rgb(0.3, 0.19, 0.11)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(280, PISO - 440, 520, 30)
+        cr.set_source_rgb(0.85, 0.65, 0.3)
+        cr.fill()
+    elif nombre == "tienda_muebles":
+        cr.rectangle(0, 0, W, PISO)
+        cr.set_source_rgb(0.93, 0.93, 0.9)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(60, PISO - 260, 380, 150)
+        cr.set_source_rgb(0.3, 0.5, 0.75)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(40, PISO - 300, 420, 70)
+        cr.set_source_rgb(0.25, 0.42, 0.65)
+        cr.fill()
+        for x in (680, 860):
+            cr.new_path()
+            cr.rectangle(x, 520, 160, PISO - 520)
+            cr.set_source_rgb(0.8, 0.68, 0.5)
+            cr.fill()
+            for y in range(580, PISO - 50, 150):
+                cr.new_path()
+                cr.rectangle(x + 15, y, 130, 90)
+                cr.set_source_rgb(*(rnd.choice([(0.9, 0.4, 0.3), (0.3, 0.6, 0.5), (0.95, 0.8, 0.3)])))
+                cr.fill()
+        cr.new_path()
+        cr.rectangle(0, PISO - 60, W, 60)
+        cr.set_source_rgb(0.8, 0.8, 0.78)
+        cr.fill()
+        for i in range(6):
+            x = ((i * 200 + t * 160) % (W + 200)) - 100
+            cr.new_path()
+            cr.move_to(x, PISO - 45)
+            cr.line_to(x + 60, PISO - 30)
+            cr.line_to(x, PISO - 15)
+            cr.close_path()
+            cr.set_source_rgb(1, 0.82, 0.29)
+            cr.fill()
+    elif nombre == "cancha":
+        cr.rectangle(0, 0, W, PISO)
+        cr.set_source_rgb(0.12, 0.14, 0.22)
+        cr.fill()
+        for y in range(380, 900, 40):
+            for x in range(0, W, 40):
+                if rnd.random() < 0.8:
+                    cr.new_path()
+                    cr.arc(x + rnd.uniform(0, 20), y, 12, 0, 2 * math.pi)
+                    cr.set_source_rgb(*(rnd.choice([(0.3, 0.32, 0.45), (0.4, 0.3, 0.35), (0.35, 0.38, 0.5)])))
+                    cr.fill()
+        cr.new_path()
+        cr.rectangle(0, 900, W, PISO - 900)
+        cr.set_source_rgb(0.8, 0.55, 0.3)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(940, 480, 16, 420)
+        cr.set_source_rgb(0.3, 0.3, 0.35)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(830, 470, 120, 90)
+        cr.set_source_rgb(0.95, 0.95, 0.97)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(790, 560, 90, 10)
+        cr.set_source_rgb(1, 0.4, 0.1)
+        cr.fill()
     # piso (debajo van los subtítulos: oscuro para que se lean)
     cr.new_path()
     cr.rectangle(0, PISO, W, H - PISO)

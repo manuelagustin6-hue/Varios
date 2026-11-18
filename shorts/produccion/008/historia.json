@@ -1,0 +1,169 @@
+{
+  "audio": "../../audios/008/voz-final.mp3",
+  "reemplazos": {
+    "doce dólares": "12 dólares",
+    "seis mil seis dólares con trece centavos": "6.006,13 dólares",
+    "seis cero cero seis uno tres": "6-0-0-6-1-3"
+  },
+  "empezar_en": "un hombre compró",
+  "bucle": true,
+  "salida": "video-historia.mp4",
+  "escenas": [
+    {
+      "tipo": "historia",
+      "titulo": "COMPRÓ GOOGLE.COM\nPOR $12",
+      "decorado": "cuarto",
+      "personajes": [
+        {
+          "estilo": "programador",
+          "x": 330,
+          "pose": "celebrar"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "navegador",
+          "x": 790,
+          "y": 700,
+          "escala": 0.5
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "titulo": "SANMAY VED",
+      "decorado": "cuarto",
+      "personajes": [
+        {
+          "estilo": "programador",
+          "x": 380,
+          "pose": "escuchar",
+          "poses": [
+            [
+              6.9,
+              "sorpresa"
+            ]
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "navegador",
+          "x": 790,
+          "y": 700,
+          "escala": 0.5
+        }
+      ],
+      "desde": "Sanmay Ved"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "COMPRA: $12",
+      "decorado": "cuarto",
+      "personajes": [
+        {
+          "estilo": "programador",
+          "x": 380,
+          "pose": "dar",
+          "objeto": "tarjeta"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "navegador",
+          "x": 790,
+          "y": 700,
+          "escala": 0.5
+        }
+      ],
+      "desde": "Lo compró con su tarjeta"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "DUEÑO POR\n1 MINUTO",
+      "decorado": "cuarto",
+      "personajes": [
+        {
+          "estilo": "programador",
+          "x": 360,
+          "pose": "celebrar"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "reloj",
+          "x": 790,
+          "y": 690,
+          "escala": 0.42,
+          "args": {
+            "seg": 6.5
+          }
+        }
+      ],
+      "desde": "Durante un minuto"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "Google canceló",
+      "titulo": "RECOMPENSA",
+      "de": 0,
+      "a": 6006,
+      "prefijo": "$",
+      "sufijo": ",13",
+      "unidad": "DÓLARES",
+      "icono": "dinero"
+    },
+    {
+      "tipo": "transformar",
+      "desde": "Mira el número",
+      "titulo": "MIRA EL NÚMERO",
+      "de": "600613",
+      "a": "GOOGLE",
+      "espera": 1.2,
+      "pie": "6 = G · 0 = O · 1 = L · 3 = E"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "DONACIÓN x2",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "programador",
+          "x": 330,
+          "pose": "dar",
+          "objeto": "billetes"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "corazon",
+          "x": 780,
+          "y": 760,
+          "escala": 0.45
+        }
+      ],
+      "desde": "Él donó"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "COMPRÓ GOOGLE.COM\nPOR $12",
+      "decorado": "cuarto",
+      "personajes": [
+        {
+          "estilo": "programador",
+          "x": 330,
+          "pose": "celebrar"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "navegador",
+          "x": 790,
+          "y": 700,
+          "escala": 0.5
+        }
+      ],
+      "desde": "Y todo empezó porque"
+    }
+  ]
+}
