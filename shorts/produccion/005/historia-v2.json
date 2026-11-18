@@ -1,0 +1,237 @@
+{
+  "audio": "../../audios/005/toma-1.mp3",
+  "reemplazos": {
+    "ochocientos dólares": "800 dólares",
+    "doce días": "12 días",
+    "cuarenta años": "40 años"
+  },
+  "salida": "video-historia-v2.mp4",
+  "escenas": [
+    {
+      "tipo": "historia",
+      "titulo": "VENDIÓ EL 10 %\nDE APPLE POR $800",
+      "decorado": "garaje",
+      "personajes": [
+        {
+          "estilo": "wayne",
+          "x": 330,
+          "pose": "pensar"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "torta",
+          "x": 790,
+          "y": 700,
+          "escala": 0.5
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "titulo": "1976: NACE APPLE",
+      "decorado": "garaje",
+      "personajes": [
+        {
+          "estilo": "joven1",
+          "x": [
+            -150,
+            250,
+            2.0,
+            3.2
+          ],
+          "pose": "caminar",
+          "entra": 2.0,
+          "poses": [
+            [
+              3.2,
+              "sonreir"
+            ],
+            [
+              5.0,
+              "celebrar"
+            ]
+          ]
+        },
+        {
+          "estilo": "joven2",
+          "x": [
+            1300,
+            520,
+            3.0,
+            4.2
+          ],
+          "pose": "caminar",
+          "entra": 3.0,
+          "mira": -1,
+          "poses": [
+            [
+              4.2,
+              "sonreir"
+            ],
+            [
+              5.0,
+              "celebrar"
+            ]
+          ]
+        },
+        {
+          "estilo": "wayne",
+          "x": [
+            1400,
+            820,
+            3.6,
+            4.8
+          ],
+          "pose": "caminar",
+          "entra": 3.6,
+          "mira": -1,
+          "poses": [
+            [
+              4.8,
+              "sonreir"
+            ]
+          ]
+        }
+      ],
+      "desde": "En abril"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "WAYNE, EL ADULTO\nDEL GRUPO",
+      "decorado": "garaje",
+      "personajes": [
+        {
+          "estilo": "joven1",
+          "x": 230,
+          "pose": "escuchar"
+        },
+        {
+          "estilo": "joven2",
+          "x": 450,
+          "pose": "escuchar"
+        },
+        {
+          "estilo": "wayne",
+          "x": 780,
+          "pose": "hablar",
+          "mira": -1
+        }
+      ],
+      "desde": "Wayne tenía"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "EL CONTRATO Y\nEL PRIMER LOGO",
+      "decorado": "garaje",
+      "personajes": [
+        {
+          "estilo": "wayne",
+          "x": 330,
+          "pose": "dar",
+          "objeto": "papel"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "contrato",
+          "x": 790,
+          "y": 700,
+          "escala": 0.6
+        }
+      ],
+      "desde": "Redactó"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "TENÍA MIEDO",
+      "decorado": "garaje",
+      "personajes": [
+        {
+          "estilo": "wayne",
+          "x": 330,
+          "pose": "nervioso"
+        }
+      ],
+      "elementos": [
+        {
+          "icono": "casa",
+          "x": 780,
+          "y": 700,
+          "escala": 0.6
+        }
+      ],
+      "desde": "Pero tenía miedo"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "ELLOS NO TENÍAN\nNADA QUE PERDER",
+      "decorado": "garaje",
+      "personajes": [
+        {
+          "estilo": "joven1",
+          "x": 360,
+          "pose": "celebrar"
+        },
+        {
+          "estilo": "joven2",
+          "x": 720,
+          "pose": "celebrar",
+          "mira": -1
+        }
+      ],
+      "desde": "Jobs y Wozniak en cambio"
+    },
+    {
+      "tipo": "historia",
+      "titulo": "12 DÍAS DESPUÉS:\nVENDIÓ POR $800",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "wayne",
+          "x": 330,
+          "pose": "sonreir"
+        },
+        {
+          "estilo": "joven1",
+          "x": 760,
+          "pose": "dar",
+          "mira": -1,
+          "objeto": "billetes"
+        }
+      ],
+      "desde": "A los doce días"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Sin contar",
+      "titulo": "HOY VALDRÍA",
+      "icono": "dinero",
+      "pie": "cientos de miles de millones",
+      "color_pie": [
+        0.24,
+        0.86,
+        0.52
+      ]
+    },
+    {
+      "tipo": "historia",
+      "titulo": "¿TÚ LO HABRÍAS\nVENDIDO?",
+      "decorado": "oficina",
+      "personajes": [
+        {
+          "estilo": "wayne",
+          "x": 540,
+          "pose": "sonreir",
+          "globo": [
+            "¡NO ME\nARREPIENTO!",
+            0.3,
+            2.2
+          ]
+        }
+      ],
+      "desde": "Wayne asegura"
+    }
+  ],
+  "v2": true
+}

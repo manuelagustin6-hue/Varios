@@ -27,6 +27,9 @@ import personajes  # noqa: E402  (personajes animados y escenarios)
 
 W, H, FPS = 1080, 1920, 30
 FUENTE = "Liberation Sans"
+PESO = cairo.FONT_WEIGHT_BOLD
+V2 = False  # calidad v2: tipografía propia, cámara, transiciones, viñeta y efectos de sonido
+DIR_FUENTES_V2 = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fuentes")
 
 # Paleta de la marca
 FONDO1 = (0.055, 0.09, 0.15)
@@ -62,7 +65,7 @@ def ease_in_out(t):
 
 
 def texto(cr, s, x, y, tam, color=BLANCO, alinear="centro", alfa=1.0):
-    cr.select_font_face(FUENTE, cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_BOLD)
+    cr.select_font_face(FUENTE, cairo.FONT_SLANT_NORMAL, PESO)
     cr.set_font_size(tam)
     ext = cr.text_extents(s)
     if alinear == "centro":
@@ -79,7 +82,7 @@ def texto(cr, s, x, y, tam, color=BLANCO, alinear="centro", alfa=1.0):
 
 
 def ancho_texto(cr, s, tam):
-    cr.select_font_face(FUENTE, cairo.FONT_SLANT_NORMAL, cairo.FONT_WEIGHT_BOLD)
+    cr.select_font_face(FUENTE, cairo.FONT_SLANT_NORMAL, PESO)
     cr.set_font_size(tam)
     return cr.text_extents(s).width
 
@@ -1142,8 +1145,25 @@ def _valor_en(v, t):
 
 
 def esc_historia(cr, t, p):
+    if V2:  # cámara: acercamiento lento con un leve paneo
+        z = 1 + min(0.08, 0.012 * t)
+        cr.save()
+        cr.translate(W / 2 + math.sin(t * 0.4) * 8, personajes.PISO)
+        cr.scale(z, z)
+        cr.translate(-W / 2, -personajes.PISO)
     personajes.decorado(cr, p.get("decorado", "calle_paris"), t, W, H, dibujar_icono)
     for el in p.get("elementos", []):
+        if V2:  # tarjeta de fondo para que el elemento no se mezcle con el escenario
+            m = 290 * el.get("escala", 1.0)
+            k = ease_out_back(t / 0.4)
+            cr.new_path()
+            rrect(cr, el["x"] - m * k, el["y"] - m * k, 2 * m * k, 2 * m * k, 40)
+            rellenar(cr, FONDO1, 0.92)
+            cr.new_path()
+            rrect(cr, el["x"] - m * k, el["y"] - m * k, 2 * m * k, 2 * m * k, 40)
+            cr.set_line_width(8)
+            cr.set_source_rgb(*DORADO)
+            cr.stroke()
         dibujar_icono(cr, el["icono"], t, el["x"], el["y"], el.get("escala", 1.0), **el.get("args", {}))
     for pj in p["personajes"]:
         te = t - pj.get("entra", 0)
@@ -1162,15 +1182,111 @@ def esc_historia(cr, t, p):
             globo(cr, g[0], x + 40 * pj.get("mira", 1), personajes.PISO - 640 * esc, t - g[1])
     if p.get("rejas"):
         personajes.rejas(cr, t, W)
+    if V2:
+        cr.restore()
     titular(cr, p.get("titulo", ""), t)
 
 
 ESCENAS["historia"] = esc_historia
 
+
+# ---------- calidad v2: transiciones, viñeta y sonido ----------
+
+def vineta(cr):
+    g = cairo.RadialGradient(W / 2, H * 0.42, H * 0.3, W / 2, H * 0.42, H * 0.75)
+    g.add_color_stop_rgba(0, 0, 0, 0, 0)
+    g.add_color_stop_rgba(1, 0, 0, 0, 0.4)
+    cr.new_path()
+    cr.rectangle(0, 0, W, H)
+    cr.set_source(g)
+    cr.fill()
+
+
+def transicion(cr, d):
+    """Barrido dorado que tapa el corte entre escenas (d = segundos respecto del corte)."""
+    q = (d + 0.14) / 0.34
+    if not 0 <= q <= 1:
+        return
+    a = -1.7 * W + 2.8 * W * q
+    cr.new_path()
+    cr.rectangle(a - 60, 0, 1.6 * W + 120, H)
+    rellenar(cr, BLANCO)
+    cr.new_path()
+    cr.rectangle(a, 0, 1.6 * W, H)
+    rellenar(cr, DORADO)
+
+
+def eventos_sonido(cfg, inicios):
+    ev = [("whoosh", c - 0.12) for c in inicios[1:]]
+    for e, ini in zip(cfg["escenas"], inicios):
+        base = e.get("base", e) if e["tipo"] == "sello" else e
+        if e["tipo"] == "sello":
+            ev.append(("golpe", ini + 0.16))
+        if base["tipo"] == "cifra" or base.get("icono") == "dinero":
+            ev.append(("caja", ini + 0.35))
+        for pj in base.get("personajes", []):
+            if pj.get("globo"):
+                ev.append(("pop", ini + pj["globo"][1]))
+            if pj.get("objeto") == "billetes":
+                td = next((tp for tp, ps in pj.get("poses", []) if ps == "dar"), 0.3)
+                ev.append(("caja", ini + td + 0.1))
+    return ev
+
+
+def pista_sonido(eventos, duracion, ruta):
+    """Sintetiza los efectos con numpy y los guarda en un WAV mono de 48 kHz."""
+    import wave
+    import numpy as np
+    sr = 48000
+    pista = np.zeros(int((duracion + 1) * sr))
+    rng = np.random.default_rng(3)
+
+    def tono(f0, f1, dur, caida):
+        t = np.arange(int(dur * sr)) / sr
+        f = f0 + (f1 - f0) * t / dur
+        return np.sin(2 * np.pi * np.cumsum(f) / sr) * np.exp(-t * caida)
+
+    def whoosh():
+        n = int(0.34 * sr)
+        r = rng.standard_normal(n)
+        k = 60
+        suave = np.convolve(r, np.ones(k) / k, mode="same") * 6
+        return suave * np.hanning(n) * 0.35
+
+    sonidos = {
+        "whoosh": whoosh,
+        "pop": lambda: tono(420, 980, 0.09, 30) * 0.3,
+        "golpe": lambda: tono(110, 45, 0.3, 14) * 0.7 + np.pad(rng.standard_normal(600) * 0.15, (0, int(0.3 * sr) - 600)),
+        "caja": lambda: (tono(1568, 1568, 0.5, 9) + np.pad(tono(2093, 2093, 0.42, 9), (int(0.08 * sr), 0))) * 0.16,
+    }
+    for nombre, t0 in eventos:
+        if t0 < 0 or t0 > duracion:
+            continue
+        s = sonidos[nombre]()
+        i = int(t0 * sr)
+        pista[i:i + len(s)] += s[:len(pista) - i]
+    datos = (np.clip(pista, -1, 1) * 32767).astype("<i2")
+    with wave.open(ruta, "wb") as w:
+        w.setnchannels(1)
+        w.setsampwidth(2)
+        w.setframerate(sr)
+        w.writeframes(datos.tobytes())
+
 # ---------- armado del video ----------
 
 def main(carpeta, archivo="motion.json"):
+    global V2, FUENTE, PESO
     cfg = json.load(open(os.path.join(carpeta, archivo)))
+    if cfg.get("v2"):
+        V2 = True
+        personajes.DETALLE = True
+        FUENTE, PESO = "Montserrat ExtraBold", cairo.FONT_WEIGHT_NORMAL
+        destino = os.path.expanduser("~/.fonts")
+        os.makedirs(destino, exist_ok=True)
+        for f in os.listdir(DIR_FUENTES_V2):
+            if f.endswith(".ttf"):
+                shutil.copy(os.path.join(DIR_FUENTES_V2, f), destino)
+        subprocess.run(["fc-cache", "-f"], check=False)
     palabras = render.cargar_palabras(os.path.join(carpeta, "palabras.json"))
     audio = os.path.normpath(os.path.join(carpeta, cfg["audio"]))
     duracion = float(subprocess.check_output(
@@ -1207,6 +1323,10 @@ def main(carpeta, archivo="motion.json"):
             cr = cairo.Context(sup)
             fondo(cr, tg)
             ESCENAS[e["tipo"]](cr, tg - inicios[k], e)
+            if V2:
+                vineta(cr)
+                for c in inicios[1:]:
+                    transicion(cr, tg - c)
             sup.flush()
             ff.stdin.write(bytes(sup.get_data()))
         ff.stdin.close()
@@ -1214,12 +1334,23 @@ def main(carpeta, archivo="motion.json"):
 
         subs = render.aplicar_reemplazos(palabras, cfg.get("reemplazos", {}))
         ass = os.path.join(tmp, "subs.ass")
-        render.generar_ass(subs, [], duracion, ass, y_sub=1350)
+        if V2:
+            render.generar_ass(subs, [], duracion, ass, y_sub=1350, fuente=FUENTE, tam_base=98)
+        else:
+            render.generar_ass(subs, [], duracion, ass, y_sub=1350)
         salida = os.path.join(carpeta, cfg.get("salida", "video-motion.mp4"))
+        if V2:
+            wav = os.path.join(tmp, "efectos.wav")
+            pista_sonido(eventos_sonido(cfg, inicios), duracion, wav)
+            audio_args = ["-i", wav, "-filter_complex",
+                          f"[0:v]ass={ass}:fontsdir={DIR_FUENTES_V2}[v];[1:a]loudnorm=I=-14:TP=-1.5:LRA=11[voz];"
+                          "[voz][2:a]amix=inputs=2:normalize=0[a]", "-map", "[v]", "-map", "[a]"]
+        else:
+            audio_args = ["-vf", f"ass={ass}:fontsdir={render.DIR_FUENTES}", "-af",
+                          "loudnorm=I=-14:TP=-1.5:LRA=11", "-map", "0:v", "-map", "1:a"]
         subprocess.run([
             "ffmpeg", "-y", "-loglevel", "error", "-i", fondo_mp4, "-ss", f"{inicio_audio:.3f}", "-i", audio,
-            "-vf", f"ass={ass}:fontsdir={render.DIR_FUENTES}", "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
-            "-map", "0:v", "-map", "1:a", "-t", f"{duracion:.2f}", "-c:v", "libx264", "-preset", "medium",
+            *audio_args, "-t", f"{duracion:.2f}", "-c:v", "libx264", "-preset", "medium",
             "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
             "-movflags", "+faststart", salida], check=True)
         print(f"Listo: {salida} ({duracion:.1f} s, {len(inicios)} escenas)")

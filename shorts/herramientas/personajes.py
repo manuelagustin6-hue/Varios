@@ -12,6 +12,7 @@ import cairo
 # ---------- estilos de personaje ----------
 
 PIEL = (0.96, 0.8, 0.68)
+DETALLE = False  # True: personajes con más detalle (ojos, nariz, cuello, zapatos, sombreado)
 ESTILOS = {
     "lustig":     {"ropa": (0.28, 0.3, 0.38), "pantalon": (0.2, 0.21, 0.27), "pelo": (0.18, 0.12, 0.08),
                    "peinado": "corto", "bigote": True, "sombrero": "fedora", "corbata": (0.85, 0.15, 0.18)},
@@ -81,7 +82,8 @@ def pose(nombre, t):
                  brazoD=(-50 * s, 80), brazoT=(50 * s, 80), salto=abs(math.cos(f)) * 22, torso=12,
                  boca="o", cejas=1)
     elif nombre == "hablar":
-        p.update(brazoD=(55 + 18 * math.sin(t * 5), 55), boca="hablar", cejas=0.3)
+        p.update(brazoD=(55 + 18 * math.sin(t * 5), 55 + 12 * math.sin(t * 3.1)), boca="hablar", cejas=0.3,
+                 cabeza=3 * math.sin(t * 4.3), brazoT=(-10 + 6 * math.sin(t * 2.7), 25))
     elif nombre == "señalar":
         p.update(brazoD=(95, 0), boca="hablar", cejas=0.3)
     elif nombre == "dar":
@@ -119,14 +121,24 @@ def _segmento(cr, x1, y1, x2, y2, ancho, color):
     cr.stroke()
 
 
-def _miembro(cr, x, y, ang1, ang2, l1, l2, ancho, color, fin=None, fin_r=0):
+def _miembro(cr, x, y, ang1, ang2, l1, l2, ancho, color, fin=None, fin_r=0, zapato=False):
     a1 = math.radians(ang1)
     ex, ey = x + l1 * math.sin(a1), y + l1 * math.cos(a1)
     a2 = math.radians(ang1 + ang2)
     hx, hy = ex + l2 * math.sin(a2), ey + l2 * math.cos(a2)
     _segmento(cr, x, y, ex, ey, ancho, color)
     _segmento(cr, ex, ey, hx, hy, ancho * 0.92, color)
-    if fin:
+    if fin and zapato and DETALLE:
+        cr.save()
+        cr.translate(hx + 14, hy + 6)
+        cr.scale(1.7, 1)
+        cr.new_path()
+        cr.arc(0, 0, fin_r, math.pi, 2 * math.pi)
+        cr.close_path()
+        cr.set_source_rgb(*fin)
+        cr.fill()
+        cr.restore()
+    elif fin:
         cr.new_path()
         cr.arc(hx, hy, fin_r, 0, 2 * math.pi)
         cr.set_source_rgb(*fin)
@@ -198,10 +210,22 @@ def _cara(cr, est, p, t, hx, hy):
     for dx in (8, 40):
         cr.new_path()
         if parp:
-            cr.rectangle(hx + dx - 8, hy - 8, 16, 4)
+            cr.rectangle(hx + dx - 10, hy - 8, 20, 4)
+        elif DETALLE:
+            abre = 13 + 3 * max(0, p["cejas"])
+            cr.arc(hx + dx, hy - 8, abre, 0, 2 * math.pi)
+            cr.set_source_rgb(1, 1, 1)
+            cr.fill()
+            cr.new_path()
+            cr.arc(hx + dx + 4, hy - 7, 6.5, 0, 2 * math.pi)
         else:
             cr.arc(hx + dx, hy - 8, 8, 0, 2 * math.pi)
         cr.set_source_rgb(0.1, 0.1, 0.12)
+        cr.fill()
+    if DETALLE:
+        cr.new_path()
+        cr.arc(hx + 62, hy + 8, 10, 0, 2 * math.pi)
+        cr.set_source_rgb(*_sombra(est.get("piel", PIEL), 0.93))
         cr.fill()
     # cejas
     c = p["cejas"]
@@ -350,12 +374,12 @@ def personaje(cr, estilo, x, y, escala, mira, nombre_pose, t, objeto=None):
     cr.fill()
     cr.restore()
     # miembros de atrás
-    _miembro(cr, -8, cadera[1], *p["piernaT"], 112, 112, 38, _sombra(pant), fin=(0.12, 0.1, 0.1), fin_r=22)
+    _miembro(cr, -8, cadera[1], *p["piernaT"], 112, 112, 38, _sombra(pant), fin=(0.12, 0.1, 0.1), fin_r=22, zapato=True)
     cr.save()
     cr.rotate(math.radians(p["torso"]))
     _miembro(cr, -20, hombro_y + 12, *p["brazoT"], 98, 92, 30, _sombra(ropa), fin=_sombra(piel, 0.9), fin_r=17)
     cr.restore()
-    _miembro(cr, 8, cadera[1], *p["piernaD"], 112, 112, 38, pant, fin=(0.12, 0.1, 0.1), fin_r=22)
+    _miembro(cr, 8, cadera[1], *p["piernaD"], 112, 112, 38, pant, fin=(0.12, 0.1, 0.1), fin_r=22, zapato=True)
     # torso
     cr.save()
     cr.rotate(math.radians(p["torso"]))
@@ -375,7 +399,33 @@ def personaje(cr, estilo, x, y, escala, mira, nombre_pose, t, objeto=None):
         cr.arc(x0 + r, y0 + r, r, math.pi, 3 * math.pi / 2)
         cr.close_path()
     cr.set_source_rgb(*ropa)
-    cr.fill()
+    if DETALLE:
+        cr.fill_preserve()
+        g = cairo.LinearGradient(-70, 0, 70, 0)
+        g.add_color_stop_rgba(0, 0, 0, 0, 0.22)
+        g.add_color_stop_rgba(0.6, 0, 0, 0, 0)
+        g.add_color_stop_rgba(1, 1, 1, 1, 0.08)
+        cr.set_source(g)
+        cr.fill()
+        cr.new_path()
+        cr.rectangle(-16, hombro_y - 34, 40, 40)
+        cr.set_source_rgb(*_sombra(piel, 0.88))
+        cr.fill()
+        if est.get("corbata"):
+            cr.new_path()
+            cr.move_to(-14, hombro_y - 12)
+            cr.line_to(50, hombro_y - 12)
+            cr.line_to(18, hombro_y + 60)
+            cr.close_path()
+            cr.set_source_rgb(0.96, 0.96, 0.98)
+            cr.fill()
+        elif not est.get("falda"):
+            cr.new_path()
+            cr.rectangle(-68, cadera[1] + 4, 136, 14)
+            cr.set_source_rgba(0, 0, 0, 0.3)
+            cr.fill()
+    else:
+        cr.fill()
     if est.get("corbata"):
         cr.new_path()
         cr.move_to(18, hombro_y - 8)
