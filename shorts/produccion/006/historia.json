@@ -1,0 +1,354 @@
+{
+  "audio": "../../audios/006/toma-1.mp3",
+  "salida": "video-historia.mp4",
+  "reemplazos": {},
+  "escenas": [
+    {
+      "tipo": "historia",
+      "titulo": "VENDIÓ LA\nTORRE EIFFEL",
+      "decorado": "calle",
+      "elementos": [
+        {
+          "icono": "torre",
+          "x": 770,
+          "y": 930,
+          "escala": 1.0,
+          "args": {
+            "cartel": "EN VENTA"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "estilo": "lustig",
+          "x": [
+            -150,
+            330,
+            0,
+            1.5
+          ],
+          "pose": "caminar",
+          "poses": [
+            [
+              1.5,
+              "señalar"
+            ]
+          ],
+          "mira": 1
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "desde": "París 1925",
+      "titulo": "PARÍS, 1925",
+      "decorado": "calle_paris",
+      "personajes": [
+        {
+          "estilo": "canillita",
+          "x": 380,
+          "pose": "hablar",
+          "objeto": "papel",
+          "globo": [
+            "¡LA TORRE NECESITA\nREPARACIONES!",
+            0.8,
+            6.5
+          ]
+        },
+        {
+          "estilo": "mujer",
+          "x": [
+            1250,
+            780,
+            0,
+            3.0
+          ],
+          "mira": -1,
+          "pose": "caminar",
+          "poses": [
+            [
+              3.0,
+              "sorpresa"
+            ]
+          ],
+          "escala": 0.9
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "desde": "Victor Lustig",
+      "titulo": "VICTOR LUSTIG,\nESTAFADOR",
+      "decorado": "hotel",
+      "personajes": [
+        {
+          "estilo": "lustig",
+          "x": [
+            -150,
+            320,
+            0,
+            2.2
+          ],
+          "pose": "caminar",
+          "poses": [
+            [
+              2.2,
+              "sonreir"
+            ],
+            [
+              4.3,
+              "hablar"
+            ]
+          ]
+        },
+        {
+          "estilo": "poisson",
+          "x": 640,
+          "mira": -1,
+          "entra": 4.2,
+          "pose": "escuchar",
+          "escala": 0.85
+        },
+        {
+          "estilo": "comerciante",
+          "x": 800,
+          "mira": -1,
+          "entra": 4.5,
+          "pose": "escuchar",
+          "escala": 0.85
+        },
+        {
+          "estilo": "comerciante2",
+          "x": 960,
+          "mira": -1,
+          "entra": 4.8,
+          "pose": "escuchar",
+          "escala": 0.85
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "desde": "Les dijo",
+      "titulo": "LA «OFERTA»",
+      "decorado": "hotel",
+      "personajes": [
+        {
+          "estilo": "lustig",
+          "x": 320,
+          "pose": "hablar",
+          "globo": [
+            "¡LA TORRE SE VENDE\nCOMO CHATARRA!",
+            0.2,
+            4.3
+          ]
+        },
+        {
+          "estilo": "poisson",
+          "x": 640,
+          "mira": -1,
+          "pose": "sorpresa",
+          "escala": 0.85
+        },
+        {
+          "estilo": "comerciante",
+          "x": 800,
+          "mira": -1,
+          "pose": "sorpresa",
+          "escala": 0.85
+        },
+        {
+          "estilo": "comerciante2",
+          "x": 960,
+          "mira": -1,
+          "pose": "pensar",
+          "escala": 0.85
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "desde": "Un comerciante",
+      "titulo": "ANDRÉ POISSON\nPAGÓ",
+      "decorado": "hotel",
+      "personajes": [
+        {
+          "estilo": "lustig",
+          "x": 320,
+          "pose": "sonreir"
+        },
+        {
+          "estilo": "poisson",
+          "x": [
+            820,
+            560,
+            0,
+            1.2
+          ],
+          "mira": -1,
+          "pose": "caminar",
+          "poses": [
+            [
+              1.2,
+              "dar"
+            ]
+          ],
+          "objeto": "billetes",
+          "escala": 0.85
+        },
+        {
+          "estilo": "comerciante",
+          "x": 980,
+          "mira": -1,
+          "pose": "escuchar",
+          "escala": 0.85
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "desde": "Lustig escapó",
+      "titulo": "¡ESCAPÓ CON\nEL DINERO!",
+      "decorado": "calle",
+      "personajes": [
+        {
+          "estilo": "lustig",
+          "x": [
+            150,
+            1300,
+            0,
+            1.9
+          ],
+          "pose": "correr",
+          "objeto": "maletin"
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "desde": "Poisson sintió",
+      "titulo": "NUNCA LO\nDENUNCIÓ",
+      "decorado": "calle_paris",
+      "personajes": [
+        {
+          "estilo": "poisson",
+          "x": 560,
+          "pose": "tapar_cara",
+          "escala": 1.0
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "desde": "Así que Lustig",
+      "titulo": "SEGUNDO INTENTO",
+      "decorado": "hotel",
+      "personajes": [
+        {
+          "estilo": "lustig",
+          "x": [
+            -150,
+            330,
+            0,
+            1.2
+          ],
+          "pose": "caminar",
+          "poses": [
+            [
+              1.2,
+              "hablar"
+            ]
+          ],
+          "globo": [
+            "¡LA TORRE\nSE VENDE!",
+            1.3,
+            3.3
+          ]
+        },
+        {
+          "estilo": "comerciante2",
+          "x": 780,
+          "mira": -1,
+          "pose": "escuchar",
+          "escala": 0.9
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "desde": "Esta vez",
+      "titulo": "ESTA VEZ…\n¡LA POLICÍA!",
+      "decorado": "calle_noche",
+      "personajes": [
+        {
+          "estilo": "comerciante2",
+          "x": 880,
+          "mira": -1,
+          "pose": "señalar",
+          "escala": 0.85
+        },
+        {
+          "estilo": "lustig",
+          "x": [
+            -200,
+            1300,
+            1.4,
+            3.7
+          ],
+          "entra": 1.4,
+          "pose": "correr",
+          "objeto": "maletin"
+        },
+        {
+          "estilo": "policia",
+          "x": [
+            -500,
+            1100,
+            1.8,
+            3.7
+          ],
+          "entra": 1.8,
+          "pose": "correr"
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "desde": "Años después",
+      "titulo": "ALCATRAZ",
+      "decorado": "carcel",
+      "rejas": true,
+      "personajes": [
+        {
+          "estilo": "lustig",
+          "x": 540,
+          "pose": "triste"
+        }
+      ]
+    },
+    {
+      "tipo": "historia",
+      "desde": "pero no por la torre",
+      "titulo": "…PERO NO\nPOR LA TORRE",
+      "decorado": "calle",
+      "elementos": [
+        {
+          "icono": "torre",
+          "x": 770,
+          "y": 930,
+          "escala": 1.0,
+          "args": {
+            "cartel": "EN VENTA"
+          }
+        }
+      ],
+      "personajes": [
+        {
+          "estilo": "lustig",
+          "x": 330,
+          "pose": "pensar"
+        }
+      ]
+    }
+  ]
+}
