@@ -1,0 +1,121 @@
+{
+  "audio": "../../audios/001/voz-final.mp3",
+  "empezar_en": "Netflix se ofreció",
+  "salida": "video-motion.mp4",
+  "reemplazos": {
+    "cincuenta millones": "50 millones"
+  },
+  "escenas": [
+    {
+      "tipo": "cifra",
+      "titulo": "NETFLIX EN VENTA",
+      "prefijo": "$",
+      "unidad": "MILLONES DE DÓLARES",
+      "icono": "dvd",
+      "de": 0,
+      "a": 50
+    },
+    {
+      "tipo": "sello",
+      "desde": "y le dijeron que no",
+      "texto": "RECHAZADO",
+      "base": {
+        "tipo": "cifra",
+        "titulo": "NETFLIX EN VENTA",
+        "prefijo": "$",
+        "unidad": "MILLONES DE DÓLARES",
+        "icono": "dvd",
+        "de": 0,
+        "a": 50
+      }
+    },
+    {
+      "tipo": "icono",
+      "desde": "Netflix era entonces",
+      "titulo": "DVD POR CORREO",
+      "icono": "sobre",
+      "pie": "...y perdía dinero",
+      "color_pie": [
+        1.0,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "tipo": "icono",
+      "desde": "Sus fundadores",
+      "titulo": "DESTINO: DALLAS",
+      "icono": "avion",
+      "pie": "Reed Hastings y Marc Randolph"
+    },
+    {
+      "tipo": "iconos",
+      "desde": "Blockbuster tenía",
+      "titulo": "MILES DE TIENDAS",
+      "icono": "tienda",
+      "cantidad": 12,
+      "columnas": 4,
+      "escala": 0.3
+    },
+    {
+      "tipo": "icono",
+      "desde": "Según Randolph",
+      "titulo": "«CASI SE RÍEN\nDE ELLOS»",
+      "icono": "risa"
+    },
+    {
+      "tipo": "linea_tiempo",
+      "desde": "Diez años después",
+      "titulo": "10 AÑOS DESPUÉS",
+      "anios": [
+        [
+          2000,
+          "LA OFERTA",
+          [
+            1.0,
+            0.82,
+            0.29
+          ]
+        ],
+        [
+          2010,
+          "QUIEBRA",
+          [
+            1.0,
+            0.3,
+            0.3
+          ]
+        ]
+      ]
+    },
+    {
+      "tipo": "icono",
+      "desde": "Netflix pasó",
+      "titulo": "STREAMING",
+      "icono": "pantalla",
+      "pie": "Hoy vale cientos de miles de millones",
+      "color_pie": [
+        0.24,
+        0.86,
+        0.52
+      ]
+    },
+    {
+      "tipo": "icono",
+      "desde": "Hoy queda una sola",
+      "titulo": "LA ÚLTIMA TIENDA",
+      "icono": "tienda_pinos",
+      "pie": "Bend, Oregón (EE. UU.)"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "La próxima vez",
+      "titulo": "NETFLIX EN VENTA",
+      "prefijo": "$",
+      "unidad": "MILLONES DE DÓLARES",
+      "icono": "dvd",
+      "a": 50,
+      "de": 0
+    }
+  ]
+}
