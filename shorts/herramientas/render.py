@@ -96,7 +96,7 @@ def bloques_subtitulos(palabras):
     return bloques
 
 
-def generar_ass(palabras, textos, duracion, ruta, y_sub=1260):
+def generar_ass(palabras, textos, duracion, ruta, y_sub=1260, fuente=None, tam_base=92):
     estilos = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
@@ -133,7 +133,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             ]
             # Achica la letra si el bloque es muy largo para el ancho de pantalla.
             largo = len(" ".join(textos_b))
-            tam = 92 if largo <= 16 else max(60, int(92 * 16 / largo))
+            tam = tam_base if largo <= 16 else max(int(tam_base * 0.65), int(tam_base * 16 / largo))
             pop = "{\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)}" if j == 0 else ""
             eventos.append(
                 f"Dialogue: 1,{tiempo_ass(ini)},{tiempo_ass(fin)},Sub,,0,0,0,,"
@@ -154,6 +154,8 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             f"Dialogue: 2,{tiempo_ass(t['ini'])},{tiempo_ass(t['fin'])},Titulo,,0,0,0,,"
             f"{{\\pos(540,330)\\fad(120,120)\\fscx85\\fscy85\\t(0,120,\\fscx100\\fscy100)}}{texto}"
         )
+    if fuente:  # fuente propia: ya es extra negrita, sin negrita sintética
+        estilos = estilos.replace(FUENTE, fuente).replace(",-1,0,0,0,100,100", ",0,0,0,0,100,100")
     with open(ruta, "w", encoding="utf-8") as f:
         f.write(estilos + "\n".join(eventos) + "\n")
 
