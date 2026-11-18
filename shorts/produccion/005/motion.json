@@ -1,0 +1,85 @@
+{
+  "audio": "../../audios/005/toma-1.mp3",
+  "salida": "video-motion.mp4",
+  "reemplazos": {
+    "ochocientos dólares": "800 dólares",
+    "doce días": "12 días",
+    "cuarenta años": "40 años"
+  },
+  "escenas": [
+    {
+      "tipo": "icono",
+      "titulo": "10 % DE APPLE",
+      "icono": "torta",
+      "pie": "vendido por solo $800",
+      "color_pie": [
+        1.0,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "tipo": "icono",
+      "desde": "En abril",
+      "titulo": "1976 · 3 FUNDADORES",
+      "icono": "personas",
+      "pie": "Jobs, Wozniak y Wayne"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Wayne tenía",
+      "titulo": "EL ADULTO DEL GRUPO",
+      "icono": "personas",
+      "args": {
+        "destacar": 2
+      },
+      "pie": "más de 40 años"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Redactó",
+      "titulo": "EL CONTRATO\nY EL PRIMER LOGO",
+      "icono": "contrato"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Pero tenía miedo",
+      "titulo": "EL RIESGO",
+      "icono": "casa",
+      "pie": "podía perder sus bienes",
+      "color_pie": [
+        1.0,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "tipo": "cifra",
+      "desde": "A los doce días",
+      "titulo": "12 DÍAS DESPUÉS",
+      "de": 0,
+      "a": 800,
+      "prefijo": "$",
+      "unidad": "POR SU 10 %",
+      "icono": "dinero"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Sin contar",
+      "titulo": "HOY VALDRÍA",
+      "icono": "dinero",
+      "pie": "cientos de miles de millones",
+      "color_pie": [
+        0.24,
+        0.86,
+        0.52
+      ]
+    },
+    {
+      "tipo": "icono",
+      "desde": "Wayne asegura",
+      "titulo": "¿TÚ LO HABRÍAS\nVENDIDO?",
+      "icono": "torta"
+    }
+  ]
+}

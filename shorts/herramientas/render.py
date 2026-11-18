@@ -96,7 +96,7 @@ def bloques_subtitulos(palabras):
     return bloques
 
 
-def generar_ass(palabras, textos, duracion, ruta):
+def generar_ass(palabras, textos, duracion, ruta, y_sub=1260):
     estilos = f"""[Script Info]
 ScriptType: v4.00+
 PlayResX: {W}
@@ -137,7 +137,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             pop = "{\\fscx112\\fscy112\\t(0,90,\\fscx100\\fscy100)}" if j == 0 else ""
             eventos.append(
                 f"Dialogue: 1,{tiempo_ass(ini)},{tiempo_ass(fin)},Sub,,0,0,0,,"
-                f"{{\\pos(540,1260)\\fs{tam}}}{pop}{' '.join(partes)}"
+                f"{{\\pos(540,{y_sub})\\fs{tam}}}{pop}{' '.join(partes)}"
             )
 
     # Títulos destacados en la parte superior.

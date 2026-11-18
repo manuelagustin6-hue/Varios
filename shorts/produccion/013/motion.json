@@ -1,0 +1,95 @@
+{
+  "audio": "../../audios/013/voz-final.mp3",
+  "salida": "video-motion.mp4",
+  "reemplazos": {
+    "tres millones": "3 millones",
+    "ciento veintiséis millones": "126 millones",
+    "cuatro años": "4 años",
+    "un no": "un «no»"
+  },
+  "escenas": [
+    {
+      "tipo": "icono",
+      "titulo": "ADIDAS DEJÓ IR\nA JORDAN",
+      "icono": "pelota"
+    },
+    {
+      "tipo": "icono",
+      "desde": "En 1984",
+      "titulo": "1984 · LLEGA A LA NBA",
+      "icono": "pelota"
+    },
+    {
+      "tipo": "sello",
+      "desde": "pero Adidas no",
+      "texto": "NO",
+      "base": {
+        "tipo": "icono",
+        "titulo": "SU MARCA FAVORITA",
+        "icono": "zapatilla"
+      }
+    },
+    {
+      "tipo": "icono",
+      "desde": "Según se cuenta",
+      "titulo": "PREFERÍAN JUGADORES\nMÁS ALTOS",
+      "icono": "regla"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Nike que entonces",
+      "titulo": "ZAPATILLA PROPIA\n+ % POR PAR",
+      "icono": "zapatilla",
+      "args": {
+        "color": [
+          0.85,
+          0.15,
+          0.18
+        ]
+      }
+    },
+    {
+      "tipo": "barras",
+      "desde": "Nike esperaba",
+      "titulo": "META VS. REALIDAD",
+      "prefijo": "$",
+      "sufijo": "M",
+      "barras": [
+        [
+          "META 4 AÑOS",
+          3,
+          [
+            0.55,
+            0.6,
+            0.68
+          ]
+        ],
+        [
+          "AÑO 1",
+          126,
+          [
+            0.24,
+            0.86,
+            0.52
+          ]
+        ]
+      ]
+    },
+    {
+      "tipo": "icono",
+      "desde": "Hoy la marca",
+      "titulo": "MILES DE MILLONES\nPOR AÑO",
+      "icono": "dinero"
+    },
+    {
+      "tipo": "sello",
+      "desde": "Todo empezó",
+      "texto": "NO",
+      "base": {
+        "tipo": "icono",
+        "titulo": "ADIDAS DEJÓ IR\nA JORDAN",
+        "icono": "pelota"
+      }
+    }
+  ]
+}

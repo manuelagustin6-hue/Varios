@@ -1,0 +1,45 @@
+{
+  "audio": "../../audios/012/voz-final.mp3",
+  "salida": "video-motion.mp4",
+  "reemplazos": {
+    "allan penn": "Alan Penn"
+  },
+  "escenas": [
+    {
+      "tipo": "icono",
+      "titulo": "¿POR QUÉ COMPRAS\nDE MÁS EN IKEA?",
+      "icono": "carrito"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Muchas de sus tiendas",
+      "titulo": "UN RECORRIDO\nSERPENTEANTE",
+      "icono": "laberinto"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Allan Penn",
+      "titulo": "DESORIENTARTE\nTE HACE COMPRAR",
+      "icono": "pregunta",
+      "pie": "Alan Penn, profesor de arquitectura"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Además",
+      "titulo": "PRODUCTOS BARATOS\nEN EL CAMINO",
+      "icono": "carrito"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Y en la zona",
+      "titulo": "ZONA DE CAJAS",
+      "icono": "caja"
+    },
+    {
+      "tipo": "icono",
+      "desde": "No es magia",
+      "titulo": "TRUCO: LISTA\n+ ATAJOS",
+      "icono": "lista"
+    }
+  ]
+}

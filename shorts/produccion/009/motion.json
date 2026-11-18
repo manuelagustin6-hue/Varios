@@ -1,0 +1,69 @@
+{
+  "audio": "../../audios/009/voz-final.mp3",
+  "salida": "video-motion.mp4",
+  "reemplazos": {
+    "doce mil millones": "12.000 millones",
+    "12 mil millones": "12.000 millones"
+  },
+  "escenas": [
+    {
+      "tipo": "icono",
+      "titulo": "LA JUGADA DE\nLA BASURA",
+      "icono": "tacho"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Cuando la bebida",
+      "titulo": "REINO UNIDO, AÑOS 90",
+      "icono": "lata",
+      "pie": "cara · pequeña · desconocida"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Según se cuenta",
+      "titulo": "LATAS VACÍAS\nEN LA BASURA",
+      "icono": "tacho"
+    },
+    {
+      "tipo": "iconos",
+      "desde": "La idea era simple",
+      "titulo": "«TODOS LA TOMAN»",
+      "icono": "lata",
+      "cantidad": 12,
+      "columnas": 6,
+      "escala": 0.3
+    },
+    {
+      "tipo": "icono",
+      "desde": "Nunca se confirmó",
+      "titulo": "¿LEYENDA O\nREALIDAD?",
+      "icono": "pregunta"
+    },
+    {
+      "tipo": "iconos",
+      "desde": "como repartir",
+      "titulo": "LATAS GRATIS",
+      "icono": "lata",
+      "cantidad": 6,
+      "columnas": 3,
+      "escala": 0.4
+    },
+    {
+      "tipo": "cifra",
+      "desde": "Hoy vende",
+      "titulo": "HOY VENDE",
+      "de": 0,
+      "a": 12000,
+      "prefijo": "+",
+      "unidad": "MILLONES DE LATAS AL AÑO",
+      "icono": "lata"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Por eso",
+      "titulo": "LA JUGADA DE\nLA BASURA",
+      "icono": "tacho"
+    }
+  ],
+  "bucle": true
+}

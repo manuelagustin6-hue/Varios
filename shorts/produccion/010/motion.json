@@ -1,0 +1,116 @@
+{
+  "audio": "../../audios/010/voz-final.mp3",
+  "salida": "video-motion.mp4",
+  "reemplazos": {
+    "sesenta y cinco por ciento": "65%",
+    "dos semanas": "2 semanas",
+    "peores no": "peores «no»"
+  },
+  "escenas": [
+    {
+      "tipo": "icono",
+      "titulo": "RECHAZÓ SALIR\nEN E.T.",
+      "icono": "claqueta"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Los productores",
+      "titulo": "EL PLAN:\nUN CAMINO DE DULCES",
+      "icono": "caramelos"
+    },
+    {
+      "tipo": "sello",
+      "desde": "Pero Mars",
+      "texto": "NO",
+      "base": {
+        "tipo": "icono",
+        "titulo": "MARS DIJO QUE NO",
+        "icono": "caramelos"
+      }
+    },
+    {
+      "tipo": "icono",
+      "desde": "Según la versión",
+      "titulo": "«ASUSTARÍA\nA LOS NIÑOS»",
+      "icono": "luna"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Entonces fueron",
+      "titulo": "PLAN B:\nREESE'S PIECES",
+      "icono": "caramelos",
+      "args": {
+        "colores": [
+          [
+            1,
+            0.55,
+            0.15
+          ],
+          [
+            0.55,
+            0.33,
+            0.18
+          ],
+          [
+            1,
+            0.85,
+            0.2
+          ]
+        ]
+      },
+      "pie": "sin pagar por aparecer"
+    },
+    {
+      "tipo": "icono",
+      "desde": "ET se estrenó",
+      "titulo": "1982: ESTRENO",
+      "icono": "cine",
+      "pie": "un fenómeno mundial"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "Según la prensa",
+      "titulo": "VENTAS",
+      "de": 0,
+      "a": 65,
+      "prefijo": "+",
+      "sufijo": "%",
+      "unidad": "EN 2 SEMANAS",
+      "color": [
+        0.24,
+        0.86,
+        0.52
+      ],
+      "icono": "caramelos",
+      "args": {
+        "colores": [
+          [
+            1,
+            0.55,
+            0.15
+          ],
+          [
+            0.55,
+            0.33,
+            0.18
+          ],
+          [
+            1,
+            0.85,
+            0.2
+          ]
+        ]
+      }
+    },
+    {
+      "tipo": "sello",
+      "desde": "Uno de los mejores",
+      "texto": "NO",
+      "base": {
+        "tipo": "icono",
+        "titulo": "EL PEOR «NO»",
+        "icono": "claqueta"
+      }
+    }
+  ]
+}

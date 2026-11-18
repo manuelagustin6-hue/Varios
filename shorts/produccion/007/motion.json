@@ -1,0 +1,83 @@
+{
+  "audio": "../../audios/007/toma-1.mp3",
+  "salida": "video-motion.mp4",
+  "reemplazos": {
+    "treinta y cinco dólares": "35 dólares"
+  },
+  "escenas": [
+    {
+      "tipo": "cifra",
+      "titulo": "UN LOGO FAMOSO",
+      "de": 0,
+      "a": 35,
+      "prefijo": "$",
+      "unidad": "DÓLARES",
+      "icono": "pincel"
+    },
+    {
+      "tipo": "icono",
+      "desde": "En 1971",
+      "titulo": "1971 · NUEVA MARCA",
+      "icono": "zapatilla",
+      "pie": "de zapatillas"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Le pidió ayuda",
+      "titulo": "CAROLYN DAVIDSON",
+      "icono": "pincel",
+      "pie": "estudiante de diseño gráfico"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Ella diseñó",
+      "titulo": "UNA PINCELADA\nQUE SUGIERE MOVIMIENTO",
+      "icono": "pincel"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Knight no quedó",
+      "titulo": "«NO ME ENCANTA»",
+      "icono": "duda"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "Le pagaron",
+      "titulo": "LE PAGARON",
+      "de": 0,
+      "a": 35,
+      "prefijo": "$",
+      "unidad": "DÓLARES",
+      "icono": "dinero"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Hoy Nike",
+      "titulo": "UNA DE LAS MARCAS\nMÁS VALIOSAS",
+      "icono": "zapatilla",
+      "args": {
+        "color": [
+          0.85,
+          0.15,
+          0.18
+        ]
+      }
+    },
+    {
+      "tipo": "icono",
+      "desde": "En 1983",
+      "titulo": "1983: ANILLO\n+ ACCIONES",
+      "icono": "anillo"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "Treinta y cinco dólares y una",
+      "titulo": "UN LOGO FAMOSO",
+      "de": 0,
+      "a": 35,
+      "prefijo": "$",
+      "unidad": "DÓLARES",
+      "icono": "pincel"
+    }
+  ]
+}

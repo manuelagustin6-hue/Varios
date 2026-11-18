@@ -1,0 +1,88 @@
+{
+  "audio": "../../audios/011/voz-final.mp3",
+  "salida": "video-motion.mp4",
+  "reemplazos": {
+    "treinta millones": "30 millones",
+    "diez millones": "10 millones",
+    "diecinueve millones": "19 millones"
+  },
+  "escenas": [
+    {
+      "tipo": "cifra",
+      "titulo": "LES GANÓ A\nFORD Y CHRYSLER",
+      "de": 0,
+      "a": 30,
+      "prefijo": "~$",
+      "unidad": "MILLONES DE DÓLARES",
+      "icono": "mazo"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Robert Kearns",
+      "titulo": "ROBERT KEARNS",
+      "icono": "parabrisas",
+      "pie": "limpiaparabrisas intermitente"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Lo patentó",
+      "titulo": "PATENTE · AÑOS 60",
+      "icono": "contrato"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Ford no le compró",
+      "titulo": "1969: FORD LO LANZA",
+      "icono": "auto",
+      "pie": "sin pagarle",
+      "color_pie": [
+        1.0,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "tipo": "icono",
+      "desde": "Kearns los demandó",
+      "titulo": "A JUICIO",
+      "icono": "mazo",
+      "pie": "contra Chrysler se defendió solo"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "En 1990",
+      "titulo": "FORD (1990)",
+      "de": 0,
+      "a": 10,
+      "prefijo": "+$",
+      "unidad": "MILLONES",
+      "color": [
+        0.24,
+        0.86,
+        0.52
+      ],
+      "icono": "mazo"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "Dos años después",
+      "titulo": "CHRYSLER (1992)",
+      "de": 0,
+      "a": 19,
+      "prefijo": "~$",
+      "unidad": "MILLONES",
+      "color": [
+        0.24,
+        0.86,
+        0.52
+      ],
+      "icono": "mazo"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Su historia",
+      "titulo": "LLEGÓ A HOLLYWOOD",
+      "icono": "claqueta"
+    }
+  ]
+}
