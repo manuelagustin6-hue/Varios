@@ -56,3 +56,17 @@
 - 001 Blockbuster: frenado en 32 vistas (no pasó la prueba inicial).
 - Causa probable: la primera frase de la voz es una fecha («En el año dos mil…») y el texto del post adelanta la historia.
 - **Regla nueva:** la primera frase siempre genera curiosidad; nunca una fecha o contexto. Aplicada al 008 (se recortó «En 2015»).
+
+## Revisión 1 — 18/11 (TikTok)
+
+- **001 Blockbuster, versión ilustrada con código** (`produccion/001/video-motion.mp4`), subida como video nuevo: **214 vistas** en pocas horas. La versión original con imágenes de IA se había frenado en 32.
+- Cambios respecto del original: ilustraciones hechas con código (sin imágenes realistas de IA), arranque sin fecha («Netflix se ofreció en venta…») y nueva publicación.
+- Lectura: buena señal para el formato hecho con código y para la regla de la primera frase. Todavía es un solo caso.
+
+### Prueba siguiente (TikTok, 005–013)
+
+Alternar formatos al volver a subir los videos que quedaron en 0, para comparar con más datos:
+- **Impares (005, 007, 009, 011, 013):** historia animada con personajes (`video-historia.mp4`).
+- **Pares (006, 008, 010, 012):** versión ilustrada sin personajes (`video-motion.mp4`).
+
+Comparar a los 7 días: vistas promedio, porcentaje visto completo y likes por vista de cada grupo.
