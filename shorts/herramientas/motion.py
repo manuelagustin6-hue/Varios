@@ -1343,8 +1343,9 @@ def main(carpeta, archivo="motion.json"):
             wav = os.path.join(tmp, "efectos.wav")
             pista_sonido(eventos_sonido(cfg, inicios), duracion, wav)
             audio_args = ["-i", wav, "-filter_complex",
-                          f"[0:v]ass={ass}:fontsdir={DIR_FUENTES_V2}[v];[1:a]loudnorm=I=-14:TP=-1.5:LRA=11[voz];"
-                          "[voz][2:a]amix=inputs=2:normalize=0[a]", "-map", "[v]", "-map", "[a]"]
+                          f"[0:v]ass={ass}:fontsdir={DIR_FUENTES_V2}[v];[1:a]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,apad[voz];"
+                          "[2:a]aresample=48000,apad[fx];"
+                          "[voz][fx]amix=inputs=2:normalize=0:duration=longest[a]", "-map", "[v]", "-map", "[a]"]
         else:
             audio_args = ["-vf", f"ass={ass}:fontsdir={render.DIR_FUENTES}", "-af",
                           "loudnorm=I=-14:TP=-1.5:LRA=11", "-map", "0:v", "-map", "1:a"]
