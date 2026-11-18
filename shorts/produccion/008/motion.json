@@ -1,0 +1,80 @@
+{
+  "audio": "../../audios/008/voz-final.mp3",
+  "salida": "video-motion.mp4",
+  "reemplazos": {
+    "doce dólares": "12 dólares",
+    "seis mil seis dólares con trece centavos": "6.006,13 dólares",
+    "seis cero cero seis uno tres": "6-0-0-6-1-3"
+  },
+  "escenas": [
+    {
+      "tipo": "cifra",
+      "titulo": "GOOGLE.COM\nEN VENTA",
+      "de": 0,
+      "a": 12,
+      "prefijo": "$",
+      "unidad": "DÓLARES",
+      "icono": "navegador"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Sanmay Ved",
+      "titulo": "SANMAY VED",
+      "icono": "navegador",
+      "pie": "ex empleado de Google"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Lo compró con su tarjeta",
+      "titulo": "COMPRA: $12",
+      "icono": "tarjeta"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Durante un minuto",
+      "titulo": "DUEÑO POR\n1 MINUTO",
+      "icono": "reloj",
+      "args": {
+        "seg": 4
+      }
+    },
+    {
+      "tipo": "cifra",
+      "desde": "Google canceló",
+      "titulo": "RECOMPENSA",
+      "de": 0,
+      "a": 6006,
+      "prefijo": "$",
+      "sufijo": ",13",
+      "unidad": "DÓLARES",
+      "icono": "dinero"
+    },
+    {
+      "tipo": "transformar",
+      "desde": "Mira el número",
+      "titulo": "MIRA EL NÚMERO",
+      "de": "600613",
+      "a": "GOOGLE",
+      "espera": 1.2,
+      "pie": "6 = G · 0 = O · 1 = L · 3 = E"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Él donó",
+      "titulo": "DONACIÓN x2",
+      "icono": "corazon"
+    },
+    {
+      "tipo": "cifra",
+      "desde": "Y todo empezó porque",
+      "titulo": "GOOGLE.COM\nEN VENTA",
+      "de": 0,
+      "a": 12,
+      "prefijo": "$",
+      "unidad": "DÓLARES",
+      "icono": "navegador"
+    }
+  ],
+  "empezar_en": "un hombre compró",
+  "bucle": true
+}

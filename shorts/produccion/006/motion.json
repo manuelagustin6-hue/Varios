@@ -1,0 +1,75 @@
+{
+  "audio": "../../audios/006/toma-1.mp3",
+  "salida": "video-motion.mp4",
+  "reemplazos": {},
+  "escenas": [
+    {
+      "tipo": "icono",
+      "titulo": "VENDIÓ LA\nTORRE EIFFEL",
+      "icono": "torre",
+      "cartel": "EN VENTA"
+    },
+    {
+      "tipo": "icono",
+      "desde": "París 1925",
+      "titulo": "PARÍS, 1925",
+      "icono": "diario",
+      "args": {
+        "cabecera": "PARÍS 1925"
+      },
+      "pie": "reparaciones muy costosas"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Victor Lustig",
+      "titulo": "VICTOR LUSTIG",
+      "icono": "estafador",
+      "pie": "se hizo pasar por funcionario"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Les dijo",
+      "titulo": "«SE VENDE\nCOMO CHATARRA»",
+      "icono": "torre",
+      "cartel": "CHATARRA"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Un comerciante",
+      "titulo": "PAGÓ… Y LUSTIG\nESCAPÓ",
+      "icono": "maletin"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Poisson sintió",
+      "titulo": "NUNCA LO DENUNCIÓ",
+      "icono": "candado",
+      "pie": "por vergüenza"
+    },
+    {
+      "tipo": "icono",
+      "desde": "Así que Lustig",
+      "titulo": "SEGUNDO INTENTO",
+      "icono": "sirena",
+      "pie": "esta vez fueron a la policía",
+      "color_pie": [
+        1.0,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "tipo": "icono",
+      "desde": "Años después",
+      "titulo": "ALCATRAZ",
+      "icono": "carcel"
+    },
+    {
+      "tipo": "icono",
+      "desde": "pero no por la torre",
+      "titulo": "…PERO NO\nPOR LA TORRE",
+      "icono": "torre",
+      "cartel": "EN VENTA"
+    }
+  ]
+}
