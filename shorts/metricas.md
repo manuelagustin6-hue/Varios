@@ -70,3 +70,23 @@ Alternar formatos al volver a subir los videos que quedaron en 0, para comparar 
 - **Pares (006, 008, 010, 012):** versión ilustrada sin personajes (`video-motion.mp4`).
 
 Comparar a los 7 días: vistas promedio, porcentaje visto completo y likes por vista de cada grupo.
+
+## Revisión 2 — 19/11 (YouTube Studio, corte 17:35)
+
+| Publicado | Video | Vistas |
+|---|---|---|
+| 11/11 | 001 Blockbuster | 1.211 |
+| 11/11 | 002 Kodak | 1.264 |
+| 11/11 | 003 Pizza de bitcoin | 1.118 |
+| 13/11 | 004 Post-it | 1.244 |
+| 14/11 | 005 Apple | 1.355 |
+| 15/11 | 006 Torre Eiffel | 471 |
+| 16/11 | 007 Logo de Nike | 1.471 |
+| 17/11 | 008 Google | 333 |
+| 18/11 | 009 Red Bull | 441 |
+
+- Total: 8.908 vistas en 9 Shorts (promedio ≈ 990). Suscriptores: 18. Tiempo de visualización: 32,7 h.
+- Último Short (009): 67 % visto en promedio, 15 me gusta en 29 h.
+- 99 % espectadores nuevos; público principal: hombres de 25 a 34 años. 0 comentarios.
+- Los Shorts de 1.100 a 1.500 vistas tienen títulos con marca u objeto muy conocido + cifra chica. Los dos más recientes todavía pueden crecer.
+- Todas estas son las versiones originales (imágenes generadas). Las animadas en YouTube empiezan con 010–013.
