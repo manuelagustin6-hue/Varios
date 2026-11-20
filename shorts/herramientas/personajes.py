@@ -310,20 +310,21 @@ def _peinado_y_sombrero(cr, est, hx, hy, r):
         cr.set_source_rgb(*pelo)
         cr.fill()
     elif est["peinado"] == "rulos":
-        # rulos: racimo de círculos sobre la cabeza, con brillo más claro en algunos
+        # rulos: racimo de círculos sobre la cabeza. Del lado de la cara (mira a la derecha) el pelo
+        # termina arriba de la frente para no tapar los ojos; por detrás baja hasta la nuca.
         claro = tuple(min(1, c * 1.45 + 0.04) for c in pelo)
-        n = 11
-        for capa, (rad, rr) in enumerate(((r + 4, r * 0.34), (r * 0.62, r * 0.36))):
-            for i in range(n - capa * 4):
-                a = math.pi * (1.0 + 1.0 * i / (n - capa * 4 - 1))
+        a0, a1 = math.pi * 0.92, math.pi * 1.72
+        for rad, rr, n, fin, sube in ((r + 5, r * 0.33, 10, a1, 0), (r * 0.7, r * 0.34, 6, math.pi * 1.6, r * 0.22)):
+            for i in range(n):
+                a = a0 + (fin - a0) * i / (n - 1)
                 cr.new_path()
-                cr.arc(hx + rad * math.cos(a), hy + rad * math.sin(a) + (6 if capa == 0 else -2), rr, 0, 2 * math.pi)
+                cr.arc(hx + rad * math.cos(a), hy + rad * math.sin(a) - sube, rr, 0, 2 * math.pi)
                 cr.set_source_rgb(*pelo)
                 cr.fill()
-        for i in range(1, n - 1, 2):
-            a = math.pi * (1.0 + 1.0 * i / (n - 1))
+        for i in range(1, 9, 2):
+            a = a0 + (a1 - a0) * i / 9
             cr.new_path()
-            cr.arc(hx + (r + 6) * math.cos(a), hy + (r + 6) * math.sin(a) + 4, r * 0.13, 0, 2 * math.pi)
+            cr.arc(hx + (r + 8) * math.cos(a), hy + (r + 8) * math.sin(a), r * 0.12, 0, 2 * math.pi)
             cr.set_source_rgb(*claro)
             cr.fill()
     elif est["peinado"] == "rapado":
