@@ -34,9 +34,10 @@ PAUSA = 0.45             # respiro entre frases
 CUENTA_REGRESIVA = 3.0   # solo en el video guía
 PISO = 880
 
-personajes.ESTILOS["presentador"] = {"ropa": (0.62, 0.80, 0.98), "pantalon": (0.1, 0.12, 0.2),
+personajes.ESTILOS["presentador"] = {"ropa": (1.0, 0.76, 0.20), "pantalon": (0.12, 0.16, 0.34),
                                      "pelo": (0.13, 0.09, 0.07), "peinado": "rulos", "barba": "corta",
-                                     "bigote": True, "cuello": (0.86, 0.94, 1.0), "brazo_atras_oculto": True}
+                                     "bigote": True, "cuello": (0.93, 0.66, 0.12), "cordones": True,
+                                     "brazo_atras_oculto": True}
 
 
 def preparar():

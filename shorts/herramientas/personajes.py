@@ -258,8 +258,8 @@ def _cara(cr, est, p, t, hx, hy):
         cr.arc(hx, hy, 66, 0, 2 * math.pi)   # recorte: la barba no se sale de la cabeza
         cr.clip()
         cr.new_path()
-        cr.rectangle(hx - 30, hy + 16, 120, 70)
-        cr.set_source_rgba(*est["pelo"], 0.62)
+        cr.rectangle(hx - 22, hy + 28, 120, 70)
+        cr.set_source_rgba(*est["pelo"], 0.38)
         cr.fill()
         cr.restore()
         cr.new_path()
@@ -471,6 +471,24 @@ def personaje(cr, estilo, x, y, escala, mira, nombre_pose, t, objeto=None):
                 cr.line_to(x_b, hombro_y + 34)
                 cr.close_path()
                 cr.set_source_rgb(*est["cuello"])
+                cr.fill()
+            if est.get("cordones"):
+                # buzo con capucha: bolsillo canguro y dos cordones
+                for x_c in (6, 30):
+                    cr.new_path()
+                    cr.move_to(x_c, hombro_y + 30)
+                    cr.line_to(x_c + (-3 if x_c < 18 else 3), hombro_y + 105)
+                    cr.set_line_width(5)
+                    cr.set_line_cap(cairo.LINE_CAP_ROUND)
+                    cr.set_source_rgb(0.97, 0.97, 0.99)
+                    cr.stroke()
+                cr.new_path()
+                cr.move_to(-38, cadera[1] - 70)
+                cr.line_to(50, cadera[1] - 70)
+                cr.line_to(60, cadera[1] - 12)
+                cr.line_to(-50, cadera[1] - 12)
+                cr.close_path()
+                cr.set_source_rgba(0, 0, 0, 0.12)
                 cr.fill()
         elif not est.get("falda"):
             cr.new_path()
