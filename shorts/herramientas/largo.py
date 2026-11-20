@@ -91,7 +91,9 @@ def tiempos_reales(escenas, reales):
 
 def subtitulo(cr, e, t):
     """Frase actual al pie de la pantalla (versión de publicación)."""
-    i = max(k for k, s in enumerate(e["_fr"]) if s <= t + 1e-6)
+    i = max((k for k, s in enumerate(e["_fr"]) if s <= t + 0.15), default=None)
+    if i is None:
+        return  # todavía no empezó la primera frase
     tam = 40
     lineas = partir(cr, e["frases"][i], tam, 1640)
     alto = 40 + len(lineas) * tam * 1.3
