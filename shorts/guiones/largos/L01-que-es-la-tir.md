@@ -72,16 +72,17 @@ Volvamos al principio. Las inversiones A y B ganaban lo mismo, pero ahora sabes 
   La TIR (tasa interna de retorno; en inglés, IRR o *internal rate of return*) es el número que permite comparar inversiones que ganan lo mismo en plazos distintos. En este video: qué mide, cómo se calcula en Excel o Google Sheets, cómo se aplica a los bonos y cuáles son sus tres limitaciones.
 
   00:00 Dos inversiones, la misma ganancia
-  00:42 El valor del dinero en el tiempo
-  01:05 Qué es la TIR
-  01:33 Un caso con varios cobros
-  02:34 Cómo se calcula en Excel
-  02:52 Para qué sirve
-  03:13 La TIR de un bono
-  03:55 Las tres trampas de la TIR
-  04:26 Resumen
+  00:41 El valor del dinero en el tiempo
+  01:03 Qué es la TIR (IRR)
+  01:35 Un caso con varios cobros
+  01:59 La tasa que deja la cuenta en cero
+  02:33 Cómo se calcula en Excel
+  02:50 Para qué sirve
+  03:09 La TIR de un bono
+  03:46 Las tres trampas de la TIR
+  04:14 Resumen
 
   Contenido educativo. No constituye una recomendación de inversión.
 
   #finanzas #TIR #IRR #inversiones #educacionfinanciera #bonos
-- Los minutos de los capítulos se ajustan cuando esté la voz definitiva.
+- Los capítulos corresponden al video final con la voz grabada (`largos/L01-tir/video.mp4`, 4 min 46 s).
