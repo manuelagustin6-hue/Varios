@@ -5,7 +5,8 @@ Uso: python3 herramientas/alinear_voz.py <carpeta_largo> <carpeta_audio>
 
 En <carpeta_audio> espera `voz-original.mp3` y `stt.json` (transcripción de ElevenLabs con tiempos
 por palabra). Opcional: `cortes.json` = {"tomas_malas": [[palabra_desde, palabra_hasta], ...]} con
-índices de palabras de la transcripción que se eliminan (hasta = primera palabra que se conserva).
+índices de palabras de la transcripción que se eliminan (hasta = primera palabra que se conserva),
+y "cortes_tiempo": [[desde, hasta], ...] en segundos. Al final aplica una reducción suave de ruido.
 
 Hace tres cosas:
   1. Recorta las tomas malas y acorta las pausas largas -> `voz-final.mp3`.
@@ -35,9 +36,12 @@ def main(carpeta, dir_audio):
     stt = json.load(open(os.path.join(dir_audio, "stt.json")))
     pal = [p for p in stt["words"] if p["type"] == "word"]
     ruta_cortes = os.path.join(dir_audio, "cortes.json")
-    malas = json.load(open(ruta_cortes))["tomas_malas"] if os.path.exists(ruta_cortes) else []
+    cfg = json.load(open(ruta_cortes)) if os.path.exists(ruta_cortes) else {}
+    malas = cfg.get("tomas_malas", [])
     quitar = set()
-    cortes = []  # intervalos de audio que se eliminan
+    # intervalos de audio que se eliminan; "cortes_tiempo" = [[desde, hasta]] en segundos, para
+    # tropiezos dentro de una palabra (no cambian la lista de palabras)
+    cortes = [tuple(c) for c in cfg.get("cortes_tiempo", [])]
     for a, b in malas:
         quitar.update(range(a, b))
         cortes.append((pal[a]["start"] - MARGEN, pal[b]["start"] - MARGEN))
@@ -70,7 +74,7 @@ def main(carpeta, dir_audio):
 
     filtro = "".join(f"[0:a]atrim={a:.3f}:{b:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.02,"
                      f"afade=t=out:st={b - a - 0.02:.3f}:d=0.02[s{n}];" for n, (a, b) in enumerate(tramos))
-    filtro += "".join(f"[s{n}]" for n in range(len(tramos))) + f"concat=n={len(tramos)}:v=0:a=1[a]"
+    filtro += "".join(f"[s{n}]" for n in range(len(tramos))) + f"concat=n={len(tramos)}:v=0:a=1,highpass=f=80,afftdn=nr=8:nf=-45[a]"
     salida = os.path.join(dir_audio, "voz-final.mp3")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", os.path.join(dir_audio, "voz-original.mp3"),
                     "-filter_complex", filtro, "-map", "[a]", "-b:a", "160k", salida], check=True)
