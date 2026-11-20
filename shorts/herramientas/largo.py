@@ -27,21 +27,29 @@ import personajes  # noqa: E402
 from motion import (AZUL, BLANCO, DORADO, FONDO1, GRIS, OSCURO, ROJO, VERDE, ancho_texto, clamp,  # noqa: E402
                     ease_in_out, ease_out_back, ease_out_cubic, rellenar, rrect, texto)
 
-GRIS = (0.80, 0.85, 0.94)  # más claro que el de los Shorts: el fondo de los largos es más luminoso
+# Paleta de los videos largos. Regla del canal: nunca combinar azul con amarillo.
+# Fondo violeta y vino, títulos en banda roja con letras blancas, resaltados en durazno.
+GRIS = (0.88, 0.84, 0.92)
+DORADO = (1.0, 0.72, 0.50)    # resaltado (se conserva el nombre de la variable de los Shorts)
+AZUL = (0.74, 0.58, 1.0)      # segunda serie: lila
+ROJO = (1.0, 0.30, 0.36)
+BANDA = (0.86, 0.10, 0.16)    # rojo de la banda de título
+OSCURO = (0.18, 0.07, 0.16)
 W, H, FPS = 1920, 1080, 30
 PALABRAS_POR_SEG = 2.5   # ritmo de lectura (unas 150 palabras por minuto)
 PAUSA = 0.45             # respiro entre frases
 CUENTA_REGRESIVA = 3.0   # solo en el video guía
 PISO = 880
 
-personajes.ESTILOS["presentador"] = {"ropa": (1.0, 0.76, 0.20), "pantalon": (0.12, 0.16, 0.34),
+personajes.ESTILOS["presentador"] = {"ropa": (0.97, 0.97, 0.98), "pantalon": (0.17, 0.16, 0.22),
                                      "pelo": (0.13, 0.09, 0.07), "peinado": "rulos", "barba": "corta",
-                                     "bigote": True, "cuello": (0.93, 0.66, 0.12), "cordones": True,
+                                     "bigote": True, "cuello": (0.86, 0.10, 0.16), "cordones": (0.86, 0.10, 0.16),
                                      "brazo_atras_oculto": True}
 
 
 def preparar():
     motion.W, motion.H = W, H
+    motion.DORADO, motion.FONDO1 = DORADO, (0.20, 0.08, 0.24)  # barrido de transición y cuenta regresiva
     motion.V2 = True
     personajes.DETALLE = True
     motion.FUENTE, motion.PESO = "Montserrat ExtraBold", cairo.FONT_WEIGHT_NORMAL
@@ -96,14 +104,14 @@ def partir(cr, s, tam, ancho):
 
 
 # Fondo de los videos largos: azul vivo con manchas de color que se mueven despacio.
-MANCHAS = [((0.10, 0.75, 0.80), 0.20, 0.25, 520), ((0.62, 0.30, 0.95), 0.85, 0.20, 600),
-           ((0.98, 0.45, 0.55), 0.75, 0.90, 480), ((0.20, 0.55, 1.00), 0.15, 0.85, 560)]
+MANCHAS = [((1.00, 0.45, 0.60), 0.20, 0.25, 520), ((0.66, 0.34, 0.98), 0.85, 0.20, 600),
+           ((1.00, 0.55, 0.32), 0.75, 0.90, 480), ((0.90, 0.25, 0.55), 0.15, 0.85, 560)]
 
 
 def fondo_largo(cr, tg, n_esc=0):
     g = cairo.LinearGradient(0, 0, W, H)
-    g.add_color_stop_rgb(0, 0.13, 0.22, 0.52)
-    g.add_color_stop_rgb(1, 0.20, 0.14, 0.46)
+    g.add_color_stop_rgb(0, 0.34, 0.15, 0.50)
+    g.add_color_stop_rgb(1, 0.46, 0.11, 0.30)
     cr.set_source(g)
     cr.paint()
     for i, (col, fx, fy, rad) in enumerate(MANCHAS):
@@ -126,7 +134,7 @@ def fondo_largo(cr, tg, n_esc=0):
 def tarjeta(cr, x, y, w, h, borde=None, alfa=0.9):
     cr.new_path()
     rrect(cr, x, y, w, h, 30)
-    rellenar(cr, (0.07, 0.10, 0.26), alfa * 0.82)
+    rellenar(cr, (0.17, 0.07, 0.20), alfa * 0.82)
     cr.new_path()
     rrect(cr, x, y, w, h, 30)
     cr.set_line_width(5)
@@ -145,8 +153,8 @@ def encabezado(cr, e, t):
         cr.scale(k, k)
         cr.new_path()
         rrect(cr, 0, -42, w, 84, 16)
-        rellenar(cr, DORADO)
-        texto(cr, s, 30, 0, tam, OSCURO, alinear="izq")
+        rellenar(cr, BANDA)
+        texto(cr, s, 30, 0, tam, BLANCO, alinear="izq")
         cr.restore()
     texto(cr, "@datomillonario", W - 80, 95, 30, GRIS, alinear="derecha", alfa=0.8)
 
@@ -525,7 +533,7 @@ def banda_lectura(cr, e, t, n_esc, total_esc):
 def cuenta(cr, t):
     cr.new_path()
     cr.rectangle(0, 0, W, H)
-    rellenar(cr, FONDO1)
+    rellenar(cr, (0.20, 0.08, 0.24))
     texto(cr, "Video guía para grabar la voz", W / 2, 330, 60, BLANCO)
     texto(cr, "Lee el texto de abajo al ritmo en que se pinta de dorado", W / 2, 420, 38, GRIS)
     texto(cr, str(max(1, math.ceil(CUENTA_REGRESIVA - t))), W / 2, 640, 260, DORADO)

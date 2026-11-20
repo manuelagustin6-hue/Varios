@@ -480,7 +480,7 @@ def personaje(cr, estilo, x, y, escala, mira, nombre_pose, t, objeto=None):
                     cr.line_to(x_c + (-3 if x_c < 18 else 3), hombro_y + 105)
                     cr.set_line_width(5)
                     cr.set_line_cap(cairo.LINE_CAP_ROUND)
-                    cr.set_source_rgb(0.97, 0.97, 0.99)
+                    cr.set_source_rgb(*est["cordones"]) if isinstance(est["cordones"], tuple) else cr.set_source_rgb(0.97, 0.97, 0.99)
                     cr.stroke()
                 cr.new_path()
                 cr.move_to(-38, cadera[1] - 70)
