@@ -428,13 +428,13 @@
     "Por eso se dice que el precio y la TIR de un bono se mueven al revés: cuando uno baja, la otra sube."
    ],
    "pie": {
-    "t": "Bono que paga $100 dentro de un año",
+    "t": "TIR de un bono = rendimiento anual si lo mantienes hasta el vencimiento",
     "color": [
-     1,
-     1,
-     1
+     1.0,
+     0.82,
+     0.29
     ],
-    "en": 2
+    "en": 0
    },
    "columnas": [
     {
@@ -444,8 +444,18 @@
       0.55,
       1.0
      ],
-     "en": 2,
+     "en": 0,
      "filas": [
+      {
+       "t": "Bono que paga $100 en un año",
+       "en": 2,
+       "color": [
+        0.55,
+        0.6,
+        0.68
+       ],
+       "tam": 40
+      },
       {
        "t": "Cobras: $100",
        "en": 2
@@ -473,8 +483,18 @@
       0.86,
       0.52
      ],
-     "en": 3,
+     "en": 0,
      "filas": [
+      {
+       "t": "El mismo bono, más barato",
+       "en": 3,
+       "color": [
+        0.55,
+        0.6,
+        0.68
+       ],
+       "tam": 40
+      },
       {
        "t": "Cobras: $100",
        "en": 3

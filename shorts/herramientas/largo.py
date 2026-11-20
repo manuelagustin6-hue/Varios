@@ -222,7 +222,7 @@ def esc_comparar(cr, e, t):
     if e.get("pie"):
         d = desde(e, e["pie"].get("en", 0), t)
         if d >= 0:
-            texto(cr, e["pie"]["t"], W / 2, 195, 50, tuple(e["pie"].get("color", BLANCO)), alfa=clamp(d / 0.3))
+            texto(cr, e["pie"]["t"], W / 2, 195, ajustar(cr, e["pie"]["t"], 50, W - 240), tuple(e["pie"].get("color", BLANCO)), alfa=clamp(d / 0.3))
 
 
 def esc_flujos(cr, e, t):
@@ -306,9 +306,10 @@ def esc_curva(cr, e, t):
         rellenar(cr, col)
         signo = "+" if v > 0 else "−"
         s1, s2 = (-60, -115) if v > 0 else (115, 60)
-        texto(cr, f"{signo}${abs(v):,.0f}".replace(",", "."), px(m["r"]) + 30, py(v) + s1, 52, col,
-              alinear="izq", alfa=clamp(d / 0.3))
-        texto(cr, m["t"], px(m["r"]) + 30, py(v) + s2, 36, BLANCO, alinear="izq", alfa=clamp(d / 0.3))
+        dx, al = (30, "izq") if v > 0 else (-30, "derecha")
+        texto(cr, f"{signo}${abs(v):,.0f}".replace(",", "."), px(m["r"]) + dx, py(v) + s1, 52, col,
+              alinear=al, alfa=clamp(d / 0.3))
+        texto(cr, m["t"], px(m["r"]) + dx, py(v) + s2, 36, BLANCO, alinear=al, alfa=clamp(d / 0.3))
     if "tir" in e:
         d = desde(e, e["tir"].get("en", 0), t)
         if d >= 0:
