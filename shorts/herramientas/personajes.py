@@ -251,7 +251,22 @@ def _cara(cr, est, p, t, hx, hy):
             cr.set_source_rgba(1, 0.35, 0.35, 0.55)
             cr.fill()
     my = hy + 22
-    if est.get("barba"):
+    if est.get("barba") == "corta":
+        # barba corta: sombra semitransparente en la mandíbula, sin tapar la boca
+        cr.save()
+        cr.new_path()
+        cr.arc(hx, hy, 66, 0, 2 * math.pi)   # recorte: la barba no se sale de la cabeza
+        cr.clip()
+        cr.new_path()
+        cr.rectangle(hx - 30, hy + 16, 120, 70)
+        cr.set_source_rgba(*est["pelo"], 0.62)
+        cr.fill()
+        cr.restore()
+        cr.new_path()
+        cr.arc(hx + 25, my + 4, 15, 0, 2 * math.pi)
+        cr.set_source_rgb(*_sombra(est.get("piel", PIEL), 0.97))
+        cr.fill()
+    elif est.get("barba"):
         cr.new_path()
         cr.arc(hx + 18, hy + 18, 50, 0.05 * math.pi, 0.95 * math.pi)
         cr.close_path()
@@ -440,6 +455,23 @@ def personaje(cr, estilo, x, y, escala, mira, nombre_pose, t, objeto=None):
             cr.close_path()
             cr.set_source_rgb(0.96, 0.96, 0.98)
             cr.fill()
+        elif est.get("cuello"):
+            # camisa de cuello abierto: escote con piel y dos solapas claras
+            cr.new_path()
+            cr.move_to(-8, hombro_y - 12)
+            cr.line_to(44, hombro_y - 12)
+            cr.line_to(18, hombro_y + 44)
+            cr.close_path()
+            cr.set_source_rgb(*_sombra(piel, 0.88))
+            cr.fill()
+            for x_a, x_b in ((-22, 14), (58, 22)):
+                cr.new_path()
+                cr.move_to(x_a, hombro_y - 16)
+                cr.line_to(18, hombro_y - 16)
+                cr.line_to(x_b, hombro_y + 34)
+                cr.close_path()
+                cr.set_source_rgb(*est["cuello"])
+                cr.fill()
         elif not est.get("falda"):
             cr.new_path()
             cr.rectangle(-68, cadera[1] + 4, 136, 14)
