@@ -80,6 +80,30 @@ def tiempos(escenas):
     return t
 
 
+def tiempos_reales(escenas, reales):
+    """Igual que tiempos(), pero con el inicio real de cada frase medido sobre la voz grabada
+    (`tiempos.json`, que genera alinear_voz.py). Cada escena entra un instante antes de su primera frase."""
+    for k, (e, fr) in enumerate(zip(escenas, reales["frases"])):
+        e["_ini"] = 0.0 if k == 0 else max(0.0, fr[0] - 0.3)
+        e["_fr"] = [max(0.0, x - e["_ini"]) for x in fr]
+    return reales["total"]
+
+
+def subtitulo(cr, e, t):
+    """Frase actual al pie de la pantalla (versión de publicación)."""
+    i = max(k for k, s in enumerate(e["_fr"]) if s <= t + 1e-6)
+    tam = 40
+    lineas = partir(cr, e["frases"][i], tam, 1640)
+    alto = 40 + len(lineas) * tam * 1.3
+    cr.new_path()
+    rrect(cr, 110, 1040 - alto, W - 220, alto, 24)
+    rellenar(cr, (0.10, 0.04, 0.12), 0.55)
+    y = 1040 - alto + 20 + tam * 0.65
+    for l in lineas:
+        texto(cr, l, W / 2, y, tam, BLANCO)
+        y += tam * 1.3
+
+
 def desde(e, i, t):
     """Segundos transcurridos desde que empezó la frase i de la escena (negativo si todavía no)."""
     return t - e["_fr"][min(i, len(e["_fr"]) - 1)]
@@ -543,8 +567,12 @@ def main(carpeta, modo="guia", voz=None):
     preparar()
     cfg = json.load(open(os.path.join(carpeta, "largo.json")))
     escenas = cfg["escenas"]
-    total = tiempos(escenas)
     guia = modo == "guia"
+    ruta_t = os.path.join(carpeta, "tiempos.json")
+    if voz and not guia and os.path.exists(ruta_t):
+        total = tiempos_reales(escenas, json.load(open(ruta_t)))
+    else:
+        total = tiempos(escenas)
     pre = CUENTA_REGRESIVA if guia else 0.0
     tmp = tempfile.mkdtemp(prefix="largo_")
     try:
@@ -569,6 +597,8 @@ def main(carpeta, modo="guia", voz=None):
                     motion.transicion(cr, tg - c)
                 if guia:
                     banda_lectura(cr, e, tg - e["_ini"], k + 1, len(escenas))
+                elif cfg.get("subtitulos", True):
+                    subtitulo(cr, e, tg - e["_ini"])
             sup.flush()
             ff.stdin.write(bytes(sup.get_data()))
         ff.stdin.close()
