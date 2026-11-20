@@ -457,7 +457,7 @@ def esc_precio(cr, e, t):
     cr.new_path()
     rrect(cr, -110, -42, 220, 84, 16)
     rellenar(cr, DORADO)
-    texto(cr, f"${val(pos):.0f}", 0, 0, 50, OSCURO)
+    texto(cr, f"${int(val(pos) + 1e-6)}", 0, 0, 50, OSCURO)  # sin redondear hacia arriba: 53,50 se muestra $53
     cr.restore()
     for m in e.get("marcas", []):
         d = desde(e, m.get("en", 0), t)
