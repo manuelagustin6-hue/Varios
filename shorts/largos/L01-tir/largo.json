@@ -172,10 +172,11 @@
    "titulo": "TASA INTERNA DE RETORNO",
    "pose": "hablar",
    "poses": {
-    "2": "señalar"
+    "3": "señalar"
    },
    "frases": [
     "Y eso es lo que mide la TIR, la tasa interna de retorno.",
+    "En inglés la verás como IRR, internal rate of return: es exactamente lo mismo.",
     "Es el rendimiento anual de una inversión, teniendo en cuenta todo lo que pones, todo lo que recibes y, sobre todo, cuándo.",
     "En nuestro ejemplo, la inversión A tiene una TIR del cincuenta por ciento anual.",
     "La B, de apenas ocho coma cuatro por ciento anual.",
@@ -193,6 +194,16 @@
      "en": 0
     },
     {
+     "t": "En inglés: IRR (Internal Rate of Return)",
+     "tam": 44,
+     "color": [
+      1,
+      1,
+      1
+     ],
+     "en": 1
+    },
+    {
      "t": "cuánto pones · cuánto recibes · cuándo",
      "tam": 46,
      "color": [
@@ -200,7 +211,7 @@
       0.6,
       0.68
      ],
-     "en": 1
+     "en": 2
     },
     {
      "t": "INVERSIÓN A: 50 % anual",
@@ -210,7 +221,7 @@
       0.86,
       0.52
      ],
-     "en": 2
+     "en": 3
     },
     {
      "t": "INVERSIÓN B: 8,4 % anual",
@@ -220,7 +231,7 @@
       0.55,
       1.0
      ],
-     "en": 3
+     "en": 4
     }
    ]
   },

@@ -3,6 +3,7 @@
 - **Formato:** 1920x1080, animado con código (`herramientas/largo.py`).
 - **Duración:** unos 5 minutos (702 palabras).
 - **Carpeta de producción:** `largos/L01-tir/` (`largo.json` tiene las escenas y las frases).
+- **Público:** hispanohablante general, de cualquier país: ejemplos en dólares, sin instrumentos ni normas locales, y con el término en inglés (IRR).
 - **Carácter:** educativo. No es una recomendación de inversión (se dice en el video y va en la descripción).
 
 ## Cómo grabar la voz
@@ -27,7 +28,7 @@ Mira estas dos opciones. En la inversión A pones mil dólares hoy y dentro de u
 Esta es la idea más importante de las finanzas: el dinero vale distinto según cuándo lo recibes. Cien dólares hoy valen más que cien dólares dentro de un año, porque los de hoy los puedes poner a trabajar. Por eso, para comparar inversiones no alcanza con mirar cuánto ganas. Hay que mirar cuánto ganas por año.
 
 **4. Definición**
-Y eso es lo que mide la TIR, la tasa interna de retorno. Es el rendimiento anual de una inversión, teniendo en cuenta todo lo que pones, todo lo que recibes y, sobre todo, cuándo. En nuestro ejemplo, la inversión A tiene una TIR del cincuenta por ciento anual. La B, de apenas ocho coma cuatro por ciento anual. Misma ganancia, rendimientos muy distintos.
+Y eso es lo que mide la TIR, la tasa interna de retorno. En inglés la verás como IRR, internal rate of return: es exactamente lo mismo. Es el rendimiento anual de una inversión, teniendo en cuenta todo lo que pones, todo lo que recibes y, sobre todo, cuándo. En nuestro ejemplo, la inversión A tiene una TIR del cincuenta por ciento anual. La B, de apenas ocho coma cuatro por ciento anual. Misma ganancia, rendimientos muy distintos.
 
 **5. Un caso con varios cobros**
 Ahora veamos un caso más real, con varios cobros. Inviertes mil dólares hoy. Y recibes cuatrocientos dólares al final de cada año, durante tres años. En total cobras mil doscientos. ¿Cuál es el rendimiento anual? No es veinte por ciento, ni siete por ciento. La cuenta no es tan directa, porque cada cobro llega en un momento distinto.
@@ -65,10 +66,10 @@ Volvamos al principio. Las inversiones A y B ganaban lo mismo, pero ahora sabes 
 
 ## Publicación (YouTube)
 
-- **Título:** ¿Qué es la TIR? Explicada en 5 minutos con un ejemplo simple
+- **Título:** ¿Qué es la TIR (IRR)? Explicada en 5 minutos con un ejemplo simple
 - **Alternativa:** Dos inversiones ganan lo mismo, pero una es 6 veces mejor: la TIR explicada
 - **Descripción:**
-  La TIR (tasa interna de retorno) es el número que permite comparar inversiones que ganan lo mismo en plazos distintos. En este video: qué mide, cómo se calcula en Excel o Google Sheets, cómo se aplica a los bonos y cuáles son sus tres limitaciones.
+  La TIR (tasa interna de retorno; en inglés, IRR o *internal rate of return*) es el número que permite comparar inversiones que ganan lo mismo en plazos distintos. En este video: qué mide, cómo se calcula en Excel o Google Sheets, cómo se aplica a los bonos y cuáles son sus tres limitaciones.
 
   00:00 Dos inversiones, la misma ganancia
   00:42 El valor del dinero en el tiempo
@@ -82,5 +83,5 @@ Volvamos al principio. Las inversiones A y B ganaban lo mismo, pero ahora sabes 
 
   Contenido educativo. No constituye una recomendación de inversión.
 
-  #finanzas #TIR #inversiones #educacionfinanciera #bonos
+  #finanzas #TIR #IRR #inversiones #educacionfinanciera #bonos
 - Los minutos de los capítulos se ajustan cuando esté la voz definitiva.
