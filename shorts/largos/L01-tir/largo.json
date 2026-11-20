@@ -207,9 +207,9 @@
      "t": "cuánto pones · cuánto recibes · cuándo",
      "tam": 46,
      "color": [
-      0.55,
-      0.6,
-      0.68
+      0.8,
+      0.85,
+      0.94
      ],
      "en": 2
     },
@@ -450,9 +450,9 @@
        "t": "Bono que paga $100 en un año",
        "en": 2,
        "color": [
-        0.55,
-        0.6,
-        0.68
+        0.8,
+        0.85,
+        0.94
        ],
        "tam": 40
       },
@@ -489,9 +489,9 @@
        "t": "El mismo bono, más barato",
        "en": 3,
        "color": [
-        0.55,
-        0.6,
-        0.68
+        0.8,
+        0.85,
+        0.94
        ],
        "tam": 40
       },
@@ -606,9 +606,9 @@
     {
      "t": "Contenido educativo, no es recomendación",
      "color": [
-      0.55,
-      0.6,
-      0.68
+      0.8,
+      0.85,
+      0.94
      ],
      "tam": 40,
      "en": 3

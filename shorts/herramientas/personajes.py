@@ -309,6 +309,23 @@ def _peinado_y_sombrero(cr, est, hx, hy, r):
         cr.rectangle(hx - r - 12, hy - 30, 60, 150)
         cr.set_source_rgb(*pelo)
         cr.fill()
+    elif est["peinado"] == "rulos":
+        # rulos: racimo de círculos sobre la cabeza, con brillo más claro en algunos
+        claro = tuple(min(1, c * 1.45 + 0.04) for c in pelo)
+        n = 11
+        for capa, (rad, rr) in enumerate(((r + 4, r * 0.34), (r * 0.62, r * 0.36))):
+            for i in range(n - capa * 4):
+                a = math.pi * (1.0 + 1.0 * i / (n - capa * 4 - 1))
+                cr.new_path()
+                cr.arc(hx + rad * math.cos(a), hy + rad * math.sin(a) + (6 if capa == 0 else -2), rr, 0, 2 * math.pi)
+                cr.set_source_rgb(*pelo)
+                cr.fill()
+        for i in range(1, n - 1, 2):
+            a = math.pi * (1.0 + 1.0 * i / (n - 1))
+            cr.new_path()
+            cr.arc(hx + (r + 6) * math.cos(a), hy + (r + 6) * math.sin(a) + 4, r * 0.13, 0, 2 * math.pi)
+            cr.set_source_rgb(*claro)
+            cr.fill()
     elif est["peinado"] == "rapado":
         cr.arc(hx, hy, r + 1, math.pi * 1.1, math.pi * 1.9)
         cr.close_path()

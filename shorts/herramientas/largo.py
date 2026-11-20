@@ -13,6 +13,7 @@ La duración de cada frase se calcula por cantidad de palabras, a ritmo de lectu
 import json
 import math
 import os
+import random
 import shutil
 import subprocess
 import sys
@@ -26,14 +27,15 @@ import personajes  # noqa: E402
 from motion import (AZUL, BLANCO, DORADO, FONDO1, GRIS, OSCURO, ROJO, VERDE, ancho_texto, clamp,  # noqa: E402
                     ease_in_out, ease_out_back, ease_out_cubic, rellenar, rrect, texto)
 
+GRIS = (0.80, 0.85, 0.94)  # más claro que el de los Shorts: el fondo de los largos es más luminoso
 W, H, FPS = 1920, 1080, 30
 PALABRAS_POR_SEG = 2.5   # ritmo de lectura (unas 150 palabras por minuto)
 PAUSA = 0.45             # respiro entre frases
 CUENTA_REGRESIVA = 3.0   # solo en el video guía
 PISO = 880
 
-personajes.ESTILOS["presentador"] = {"ropa": (0.13, 0.2, 0.38), "pantalon": (0.1, 0.12, 0.2),
-                                     "pelo": (0.2, 0.13, 0.08), "peinado": "corto", "corbata": DORADO}
+personajes.ESTILOS["presentador"] = {"ropa": (0.16, 0.42, 0.95), "pantalon": (0.1, 0.12, 0.2),
+                                     "pelo": (0.2, 0.13, 0.08), "peinado": "rulos", "corbata": DORADO}
 
 
 def preparar():
@@ -91,10 +93,38 @@ def partir(cr, s, tam, ancho):
     return lineas + [actual]
 
 
+# Fondo de los videos largos: azul vivo con manchas de color que se mueven despacio.
+MANCHAS = [((0.10, 0.75, 0.80), 0.20, 0.25, 520), ((0.62, 0.30, 0.95), 0.85, 0.20, 600),
+           ((0.98, 0.45, 0.55), 0.75, 0.90, 480), ((0.20, 0.55, 1.00), 0.15, 0.85, 560)]
+
+
+def fondo_largo(cr, tg, n_esc=0):
+    g = cairo.LinearGradient(0, 0, W, H)
+    g.add_color_stop_rgb(0, 0.13, 0.22, 0.52)
+    g.add_color_stop_rgb(1, 0.20, 0.14, 0.46)
+    cr.set_source(g)
+    cr.paint()
+    for i, (col, fx, fy, rad) in enumerate(MANCHAS):
+        x = W * fx + 90 * math.sin(tg * 0.11 + i * 1.7 + n_esc)
+        y = H * fy + 70 * math.cos(tg * 0.09 + i * 2.3 + n_esc)
+        m = cairo.RadialGradient(x, y, 0, x, y, rad)
+        m.add_color_stop_rgba(0, *col, 0.34)
+        m.add_color_stop_rgba(1, *col, 0)
+        cr.set_source(m)
+        cr.paint()
+    rnd = random.Random(7)
+    for _ in range(36):
+        x0, y0 = rnd.uniform(0, W), rnd.uniform(0, H)
+        vel, r = rnd.uniform(8, 26), rnd.uniform(3, 7)
+        cr.new_path()
+        cr.arc(x0 + math.sin(tg * 0.5 + x0) * 12, (y0 - tg * vel) % H, r, 0, 2 * math.pi)
+        rellenar(cr, BLANCO, 0.10)
+
+
 def tarjeta(cr, x, y, w, h, borde=None, alfa=0.9):
     cr.new_path()
     rrect(cr, x, y, w, h, 30)
-    rellenar(cr, (0.09, 0.13, 0.21), alfa)
+    rellenar(cr, (0.07, 0.10, 0.26), alfa * 0.82)
     cr.new_path()
     rrect(cr, x, y, w, h, 30)
     cr.set_line_width(5)
@@ -522,10 +552,9 @@ def main(carpeta, modo="guia", voz=None):
             else:
                 k = max(i for i, e in enumerate(escenas) if e["_ini"] <= tg + 1e-6)
                 e = escenas[k]
-                motion.fondo(cr, tg)
+                fondo_largo(cr, tg, k)
                 ESCENAS[e["tipo"]](cr, e, tg - e["_ini"])
                 encabezado(cr, e, tg - e["_ini"])
-                motion.vineta(cr)
                 for c in cortes:
                     motion.transicion(cr, tg - c)
                 if guia:
