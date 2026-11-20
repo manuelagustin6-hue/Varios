@@ -35,7 +35,8 @@ CUENTA_REGRESIVA = 3.0   # solo en el video guía
 PISO = 880
 
 personajes.ESTILOS["presentador"] = {"ropa": (0.16, 0.42, 0.95), "pantalon": (0.1, 0.12, 0.2),
-                                     "pelo": (0.2, 0.13, 0.08), "peinado": "rulos", "corbata": DORADO}
+                                     "pelo": (0.2, 0.13, 0.08), "peinado": "rulos", "corbata": DORADO,
+                                     "brazo_atras_oculto": True}
 
 
 def preparar():

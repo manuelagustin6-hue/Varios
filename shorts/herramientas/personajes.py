@@ -395,7 +395,10 @@ def personaje(cr, estilo, x, y, escala, mira, nombre_pose, t, objeto=None):
     _miembro(cr, -8, cadera[1], *p["piernaT"], 112, 112, 38, _sombra(pant), fin=(0.12, 0.1, 0.1), fin_r=22, zapato=True)
     cr.save()
     cr.rotate(math.radians(p["torso"]))
-    _miembro(cr, -20, hombro_y + 12, *p["brazoT"], 98, 92, 30, _sombra(ropa), fin=_sombra(piel, 0.9), fin_r=17)
+    # Con el brazo de atrás colgando, solo asomaría la mano bajo el saco (parece una mancha):
+    # los estilos con "brazo_atras_oculto" no lo dibujan mientras está en reposo.
+    if not (est.get("brazo_atras_oculto") and abs(p["brazoT"][0]) < 30):
+        _miembro(cr, -20, hombro_y + 12, *p["brazoT"], 98, 92, 30, _sombra(ropa), fin=_sombra(piel, 0.9), fin_r=17)
     cr.restore()
     _miembro(cr, 8, cadera[1], *p["piernaD"], 112, 112, 38, pant, fin=(0.12, 0.1, 0.1), fin_r=22, zapato=True)
     # torso
