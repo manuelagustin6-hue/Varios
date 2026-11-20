@@ -369,8 +369,83 @@ def esc_planilla(cr, e, t):
                   alfa=clamp(d / 0.3))
 
 
+def esc_precio(cr, e, t):
+    """Gráfico de precio que se dibuja por tramos: `puntos` [[fecha, valor]], `inicio` (índice ya
+    dibujado al empezar), `tramos` [{hasta, en, dur}] y `marcas` [{i, t, en, v, color, lado}]."""
+    pts = e["puntos"]
+    n = len(pts)
+    v_max = e.get("v_max", max(p[1] for p in pts) * 1.1)
+    x0, x1, y0, y1 = 260, W - 330, 800, 250
+    px = lambda i: x0 + (x1 - x0) * i / (n - 1)  # noqa: E731
+    py = lambda v: y0 + (y1 - y0) * v / v_max  # noqa: E731
+    paso = e.get("paso_eje", 100)
+    v = 0
+    while v <= v_max:
+        cr.new_path()
+        cr.rectangle(x0, py(v) - 1, x1 - x0, 2)
+        rellenar(cr, GRIS, 0.22)
+        texto(cr, f"${v:.0f}", x0 - 30, py(v), 32, GRIS, alinear="derecha")
+        v += paso
+    for i in range(0, n, max(1, e.get("cada", 4))):
+        texto(cr, pts[i][0], px(i), y0 + 45, 28, GRIS)
+    if e.get("nota"):
+        texto(cr, e["nota"], x0, 200, ajustar(cr, e["nota"], 30, x1 - x0), GRIS, alinear="izq")
+    # hasta dónde está dibujada la línea
+    pos = float(e.get("inicio", 0))
+    for tr in e.get("tramos", []):
+        d = desde(e, tr.get("en", 0), t)
+        if d >= 0:
+            pos = pos + (tr["hasta"] - pos) * ease_in_out(d / tr.get("dur", 2.5))
+    val = lambda q: pts[int(q)][1] + (pts[min(n - 1, int(q) + 1)][1] - pts[int(q)][1]) * (q - int(q))  # noqa: E731
+    if pos > 0:
+        cr.new_path()
+        cr.move_to(px(0), py(pts[0][1]))
+        for i in range(1, int(pos) + 1):
+            cr.line_to(px(i), py(pts[i][1]))
+        cr.line_to(px(pos), py(val(pos)))
+        camino = cr.copy_path()
+        cr.line_to(px(pos), y0)
+        cr.line_to(px(0), y0)
+        cr.close_path()
+        sube = val(pos) >= pts[0][1]
+        col = VERDE if e.get("color", "auto") == "auto" and sube else ROJO if e.get("color", "auto") == "auto" else tuple(e["color"])
+        rellenar(cr, col, 0.16)
+        cr.new_path()
+        cr.append_path(camino)
+        cr.set_line_width(9)
+        cr.set_line_join(cairo.LINE_JOIN_ROUND)
+        cr.set_line_cap(cairo.LINE_CAP_ROUND)
+        cr.set_source_rgb(*col)
+        cr.stroke()
+    # punto actual con su precio
+    cr.new_path()
+    cr.arc(px(pos), py(val(pos)), 16, 0, 2 * math.pi)
+    rellenar(cr, BLANCO)
+    cr.save()
+    cr.translate(min(px(pos) + 150, W - 170), max(py(val(pos)) - 10, y1))
+    cr.new_path()
+    rrect(cr, -110, -42, 220, 84, 16)
+    rellenar(cr, DORADO)
+    texto(cr, f"${val(pos):.0f}", 0, 0, 50, OSCURO)
+    cr.restore()
+    for m in e.get("marcas", []):
+        d = desde(e, m.get("en", 0), t)
+        if d < 0:
+            continue
+        k = ease_out_back(d / 0.4)
+        mv = m.get("v", pts[m["i"]][1])
+        col = tuple(m.get("color", BLANCO))
+        cr.new_path()
+        cr.arc(px(m["i"]), py(mv), 14 * k, 0, 2 * math.pi)
+        rellenar(cr, col)
+        lado = m.get("lado", "izq")
+        dx = -30 if lado == "izq" else 30
+        texto(cr, m["t"], px(m["i"]) + dx + m.get("dx", 0), py(mv) + m.get("dy", -10), m.get("tam", 36), col,
+              alinear="derecha" if lado == "izq" else "izq", alfa=clamp(d / 0.3))
+
+
 ESCENAS = {"presentador": esc_presentador, "comparar": esc_comparar, "flujos": esc_flujos,
-           "curva": esc_curva, "planilla": esc_planilla}
+           "curva": esc_curva, "planilla": esc_planilla, "precio": esc_precio}
 
 
 # ---------- guía de lectura ----------
