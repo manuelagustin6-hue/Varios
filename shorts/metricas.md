@@ -90,3 +90,9 @@ Comparar a los 7 días: vistas promedio, porcentaje visto completo y likes por v
 - 99 % espectadores nuevos; público principal: hombres de 25 a 34 años. 0 comentarios.
 - Los Shorts de 1.100 a 1.500 vistas tienen títulos con marca u objeto muy conocido + cifra chica. Los dos más recientes todavía pueden crecer.
 - Todas estas son las versiones originales (imágenes generadas). Las animadas en YouTube empiezan con 010–013.
+
+## Revisión 3 — 21/11 (TikTok y primer video largo)
+
+- **008 Google, historia animada con personajes** (`produccion/008/video-historia.mp4`): **2.000 reproducciones** en TikTok. Es el mejor resultado del canal en esa red (antes: 519 del 002 Kodak y 214 del 001 ilustrado).
+- **L01 «¿Qué es la TIR?»** (primer video largo, YouTube): sin vistas en las primeras horas. Esperable con 18 suscriptores; se agregó miniatura propia y se recomienda enlazarlo como «Video relacionado» desde los Shorts más vistos.
+- Lectura: el formato de historia animada es el que mejor rinde en TikTok. Falta el dato del 006 y el 007 (prueba de programación) para saber si programar afecta las vistas.
