@@ -34,8 +34,10 @@
 ## Fuentes a verificar
 -
 
-## Videos largos con voz propia
+## Videos largos
 
-- Los guiones de los videos largos (`guiones/largos/`) que graba el dueño del canal se escriben en **voseo** («ponés», «recibís», «mirá»), que es como lee con naturalidad. Los Shorts con voz de IA siguen en tuteo neutro.
+- **Voz:** la misma de los Shorts (Brian, ElevenLabs), para que todo el canal suene igual. Los guiones van en **tuteo neutro**.
+- Excepción: `L01-tir` se publicó con la voz del dueño del canal y queda así, como el original.
+- La narración se genera en partes de unos 1.800 caracteres, una sola toma de cada una; después se transcribe y se alinea con `herramientas/alinear_voz.py`.
 - Se mantienen los ejemplos en dólares y los conceptos válidos para cualquier país.
 - Paleta de los largos: violeta, rojo y blanco. **Nunca combinar azul con amarillo.**
