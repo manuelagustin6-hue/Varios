@@ -96,3 +96,16 @@ Comparar a los 7 días: vistas promedio, porcentaje visto completo y likes por v
 - **008 Google, historia animada con personajes** (`produccion/008/video-historia.mp4`): **2.000 reproducciones** en TikTok. Es el mejor resultado del canal en esa red (antes: 519 del 002 Kodak y 214 del 001 ilustrado).
 - **L01 «¿Qué es la TIR?»** (primer video largo, YouTube): sin vistas en las primeras horas. Esperable con 18 suscriptores; se agregó miniatura propia y se recomienda enlazarlo como «Video relacionado» desde los Shorts más vistos.
 - Lectura: el formato de historia animada es el que mejor rinde en TikTok. Falta el dato del 006 y el 007 (prueba de programación) para saber si programar afecta las vistas.
+
+### TikTok al 21/11, 10:40 (captura de TikTok Studio)
+
+| Publicado | Video | Formato | Cómo se subió | Vistas | Me gusta | Me gusta / vistas |
+|---|---|---|---|---|---|---|
+| 20/11 23:34 | 008 Google | Historia con personajes | A mano | 2.000 | 144 | 7,2 % |
+| 20/11 08:57 | 007 Logo de Nike | Ilustrado | A mano | 838 | 34 | 4,1 % |
+| 19/11 20:00 | 006 Torre Eiffel | Historia con personajes | Programado | 367 | 24 | 6,5 % |
+| 18/11 19:34 | 005 Apple | Historia con personajes | A mano | 761 | 60 | 7,9 % |
+
+- **Prueba de programación:** el único programado (006) tuvo 367 vistas, no cero. Programar no bloquea la distribución. Fue el más bajo de los cuatro, pero esa historia también es de las más bajas en YouTube (471), así que la diferencia se explica mejor por el tema que por la programación. Un solo caso: no es concluyente.
+- **Todos los animados reciben vistas** (367 a 2.000). Los ceros anteriores correspondían a las versiones con imágenes realistas generadas.
+- **Las historias con personajes gustan más:** 6,5 % a 7,9 % de me gusta, contra 4,1 % de la versión ilustrada.
