@@ -1,7 +1,7 @@
 # L02 — GameStop: internet contra Wall Street (video largo, horizontal)
 
 - **Formato:** 1920x1080, animado con código (`herramientas/largo.py`), con gráfico de precio animado.
-- **Duración:** unos 6,7 minutos.
+- **Duración:** 5 min 9 s (voz de Brian).
 - **Carpeta de producción:** `largos/L02-gamestop/` (`largo.json` tiene las escenas y las frases).
 - **Público:** hispanohablante general. Conceptos que se explican: venta en corto y *short squeeze*.
 - **Carácter:** educativo e informativo. No es una recomendación de inversión.
@@ -72,7 +72,21 @@ Sin compradores nuevos, el precio se dio vuelta. El jueves veintiocho la acción
 - **Descripción:**
   En enero de 2021, la acción de GameStop pasó de 17 a 483 dólares en menos de un mes. En este video: qué es vender en corto, por qué la pérdida puede ser ilimitada, cómo funciona un *short squeeze* y quiénes ganaron y perdieron.
 
+  00:00 Internet contra Wall Street
+  00:18 Una empresa en problemas
+  00:41 Qué es vender en corto
+  01:02 El riesgo de cada apuesta
+  01:23 Una apuesta demasiado grande
+  01:45 El inversor que vio otra cosa
+  02:24 Enero de 2021: empieza la subida
+  02:37 Qué es un short squeeze
+  02:58 La semana de la locura
+  03:24 Se bloquean las compras
+  03:53 La caída
+  04:11 Quién ganó y quién perdió
+  04:38 Tres lecciones
+
   Contenido educativo e informativo. No constituye una recomendación de inversión.
 
   #gamestop #wallstreet #bolsa #shortsqueeze #finanzas #educacionfinanciera
-- Los capítulos se agregan cuando esté la voz definitiva.
+- Video final: `largos/L02-gamestop/video.mp4` (voz de Brian, 5 min 9 s). Miniatura: `miniatura.png`. La versión con voz propia quedó como `video-voz-propia.mp4`.
