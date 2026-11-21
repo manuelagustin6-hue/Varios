@@ -1,0 +1,233 @@
+{
+ "audio": "../../audios/015/voz-final.mp3",
+ "reemplazos": {
+  "un millón de dólares": "1 millón de dólares",
+  "tres mil millones": "3.000 millones",
+  "cinco mil": "5.000",
+  "cuarenta mil millones": "40.000 millones",
+  "cinco mil millones": "5.000 millones",
+  "dos billones": "2 billones"
+ },
+ "bucle": true,
+ "v2": true,
+ "paleta": "roja",
+ "salida": "video-historia.mp4",
+ "escenas": [
+  {
+   "tipo": "historia",
+   "titulo": "YAHOO PUDO COMPRAR\nGOOGLE POR $1 MILLÓN",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "ejecutivo",
+     "x": 330,
+     "pose": "pensar"
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "navegador",
+     "x": 790,
+     "y": 700,
+     "escala": 0.5
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "titulo": "STANFORD, 1998",
+   "decorado": "aula",
+   "personajes": [
+    {
+     "estilo": "joven1",
+     "x": [
+      -150,
+      300,
+      0.3,
+      1.6
+     ],
+     "pose": "caminar",
+     "poses": [
+      [
+       1.6,
+       "dar"
+      ]
+     ],
+     "objeto": "papel"
+    },
+    {
+     "estilo": "joven2",
+     "x": [
+      -300,
+      560,
+      0.6,
+      2.0
+     ],
+     "pose": "caminar",
+     "poses": [
+      [
+       2.0,
+       "sonreir"
+      ]
+     ]
+    }
+   ],
+   "desde": "dos estudiantes de Stanford"
+  },
+  {
+   "tipo": "sello",
+   "desde": "Yahoo no quiso",
+   "texto": "NO",
+   "base": {
+    "tipo": "historia",
+    "titulo": "YAHOO DIJO QUE NO",
+    "decorado": "oficina",
+    "personajes": [
+     {
+      "estilo": "ejecutivo",
+      "x": 540,
+      "pose": "hablar"
+     }
+    ]
+   }
+  },
+  {
+   "tipo": "barras",
+   "desde": "Cuatro años después",
+   "titulo": "4 AÑOS DESPUÉS",
+   "prefijo": "$",
+   "sufijo": " M",
+   "barras": [
+    [
+     "YAHOO OFRECE",
+     3000,
+     [
+      0.75,
+      0.72,
+      0.8
+     ]
+    ],
+    [
+     "GOOGLE PIDE",
+     5000,
+     [
+      0.24,
+      0.86,
+      0.52
+     ]
+    ]
+   ]
+  },
+  {
+   "tipo": "sello",
+   "desde": "y Yahoo volvió",
+   "texto": "NO",
+   "base": {
+    "tipo": "historia",
+    "titulo": "OTRA VEZ NO",
+    "decorado": "oficina",
+    "personajes": [
+     {
+      "estilo": "ejecutivo",
+      "x": 540,
+      "pose": "tapar_cara"
+     }
+    ]
+   }
+  },
+  {
+   "tipo": "cifra",
+   "desde": "Microsoft quiso comprar",
+   "titulo": "OFERTA DE MICROSOFT",
+   "de": 0,
+   "a": 44600,
+   "prefijo": "$",
+   "unidad": "MILLONES",
+   "icono": "maletin"
+  },
+  {
+   "tipo": "sello",
+   "desde": "También lo rechazó",
+   "texto": "RECHAZADO",
+   "base": {
+    "tipo": "historia",
+    "titulo": "YAHOO LO RECHAZÓ",
+    "decorado": "oficina",
+    "personajes": [
+     {
+      "estilo": "ejecutivo2",
+      "x": 300,
+      "pose": "dar",
+      "objeto": "maletin"
+     },
+     {
+      "estilo": "ejecutivo",
+      "x": 780,
+      "pose": "hablar",
+      "mira": -1
+     }
+    ]
+   }
+  },
+  {
+   "tipo": "barras",
+   "desde": "Al final",
+   "titulo": "EL FINAL DE YAHOO",
+   "prefijo": "$",
+   "sufijo": " M",
+   "barras": [
+    [
+     "LE OFRECIERON",
+     44600,
+     [
+      0.75,
+      0.72,
+      0.8
+     ]
+    ],
+    [
+     "SE VENDIÓ POR",
+     4480,
+     [
+      1.0,
+      0.3,
+      0.36
+     ]
+    ]
+   ]
+  },
+  {
+   "tipo": "icono",
+   "desde": "Hoy Google vale",
+   "titulo": "GOOGLE HOY",
+   "icono": "dinero",
+   "pie": "más de 2 billones de dólares",
+   "color_pie": [
+    0.24,
+    0.86,
+    0.52
+   ]
+  },
+  {
+   "tipo": "historia",
+   "titulo": "YAHOO PUDO COMPRAR\nGOOGLE POR $1 MILLÓN",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "ejecutivo",
+     "x": 330,
+     "pose": "pensar"
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "navegador",
+     "x": 790,
+     "y": 700,
+     "escala": 0.5
+    }
+   ],
+   "desde": "Y todo empezó porque"
+  }
+ ]
+}

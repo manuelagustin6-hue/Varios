@@ -41,6 +41,18 @@ ROJO = (1.0, 0.3, 0.3)
 VERDE = (0.24, 0.86, 0.52)
 AZUL = (0.25, 0.55, 1.0)
 OSCURO = (0.08, 0.1, 0.16)
+TITULAR_FONDO = TITULAR_TEXTO = None  # si no se definen, cartel dorado con letras oscuras
+
+
+def paleta_roja():
+    """Paleta del canal desde el video 014: fondo vino, cartel rojo con letras blancas y resaltado
+    durazno. Regla: nunca combinar azul con amarillo."""
+    global FONDO1, FONDO2, DORADO, TITULAR_FONDO, TITULAR_TEXTO, ROJO
+    FONDO1, FONDO2 = (0.22, 0.08, 0.24), (0.09, 0.03, 0.11)
+    DORADO = (1.0, 0.72, 0.50)
+    ROJO = (1.0, 0.30, 0.36)
+    TITULAR_FONDO, TITULAR_TEXTO = (0.86, 0.10, 0.16), (1, 1, 1)
+    render.AMARILLO = "&H0080B8FF&"  # durazno, para la palabra resaltada del subtítulo
 
 
 # ---------- utilidades ----------
@@ -117,10 +129,10 @@ def titular(cr, s, t, y=300):
     cr.translate(W / 2, y)
     cr.scale(esc, esc)
     rrect(cr, -ancho / 2, -alto / 2, ancho, alto, 18)
-    rellenar(cr, DORADO)
+    rellenar(cr, TITULAR_FONDO or DORADO)
     for i, l in enumerate(lineas):
         yy = -alto / 2 + 20 + tam * 1.25 * (i + 0.5)
-        texto(cr, l, 0, yy, tam, OSCURO)
+        texto(cr, l, 0, yy, tam, TITULAR_TEXTO or OSCURO)
     cr.restore()
 
 
@@ -1277,6 +1289,8 @@ def pista_sonido(eventos, duracion, ruta):
 def main(carpeta, archivo="motion.json"):
     global V2, FUENTE, PESO
     cfg = json.load(open(os.path.join(carpeta, archivo)))
+    if cfg.get("paleta") == "roja":
+        paleta_roja()
     if cfg.get("v2"):
         V2 = True
         personajes.DETALLE = True

@@ -1,0 +1,177 @@
+{
+ "audio": "../../audios/016/voz-final.mp3",
+ "reemplazos": {
+  "diecinueve mil millones": "19.000 millones",
+  "tres mil millones": "3.000 millones"
+ },
+ "bucle": true,
+ "v2": true,
+ "paleta": "roja",
+ "salida": "video-historia.mp4",
+ "escenas": [
+  {
+   "tipo": "historia",
+   "titulo": "FACEBOOK NO LO\nCONTRATÓ",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "programador",
+     "x": 320,
+     "pose": "triste"
+    },
+    {
+     "estilo": "ejecutivo",
+     "x": 790,
+     "pose": "hablar",
+     "mira": -1
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "titulo": "BRIAN ACTON, 2009",
+   "decorado": "cuarto",
+   "personajes": [
+    {
+     "estilo": "programador",
+     "x": 360,
+     "pose": "pensar"
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "lista",
+     "x": 790,
+     "y": 700,
+     "escala": 0.5
+    }
+   ],
+   "desde": "el programador Brian Acton"
+  },
+  {
+   "tipo": "sello",
+   "desde": "Twitter lo rechazó",
+   "texto": "RECHAZADO",
+   "base": {
+    "tipo": "historia",
+    "titulo": "TWITTER",
+    "decorado": "oficina",
+    "personajes": [
+     {
+      "estilo": "programador",
+      "x": 300,
+      "pose": "dar",
+      "objeto": "papel"
+     },
+     {
+      "estilo": "ejecutivo2",
+      "x": 780,
+      "pose": "hablar",
+      "mira": -1
+     }
+    ]
+   }
+  },
+  {
+   "tipo": "sello",
+   "desde": "Facebook también",
+   "texto": "RECHAZADO",
+   "base": {
+    "tipo": "historia",
+    "titulo": "FACEBOOK",
+    "decorado": "oficina",
+    "personajes": [
+     {
+      "estilo": "programador",
+      "x": 300,
+      "pose": "dar",
+      "objeto": "papel"
+     },
+     {
+      "estilo": "ejecutivo",
+      "x": 780,
+      "pose": "hablar",
+      "mira": -1
+     }
+    ]
+   }
+  },
+  {
+   "tipo": "historia",
+   "titulo": "SIN ENOJO",
+   "decorado": "cuarto",
+   "personajes": [
+    {
+     "estilo": "programador",
+     "x": 420,
+     "pose": "sonreir",
+     "globo": [
+      "¡A la próxima aventura!",
+      0.6,
+      6.0
+     ]
+    }
+   ],
+   "desde": "Él lo contó"
+  },
+  {
+   "tipo": "historia",
+   "titulo": "NACE WHATSAPP",
+   "decorado": "garaje",
+   "personajes": [
+    {
+     "estilo": "programador",
+     "x": 300,
+     "pose": "celebrar"
+    },
+    {
+     "estilo": "joven2",
+     "x": 760,
+     "pose": "celebrar",
+     "mira": -1
+    }
+   ],
+   "desde": "Esa aventura fue"
+  },
+  {
+   "tipo": "cifra",
+   "desde": "la misma empresa",
+   "titulo": "FACEBOOK COMPRA WHATSAPP",
+   "de": 0,
+   "a": 19000,
+   "prefijo": "$",
+   "unidad": "MILLONES",
+   "icono": "dinero",
+   "cuenta": 2.5
+  },
+  {
+   "tipo": "cifra",
+   "desde": "La parte de Acton",
+   "titulo": "LA PARTE DE ACTON",
+   "de": 0,
+   "a": 3000,
+   "prefijo": "+$",
+   "unidad": "MILLONES",
+   "icono": "maletin"
+  },
+  {
+   "tipo": "historia",
+   "titulo": "FACEBOOK NO LO\nCONTRATÓ",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "programador",
+     "x": 320,
+     "pose": "triste"
+    },
+    {
+     "estilo": "ejecutivo",
+     "x": 790,
+     "pose": "hablar",
+     "mira": -1
+    }
+   ],
+   "desde": "Y todo empezó porque"
+  }
+ ]
+}
