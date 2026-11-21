@@ -12,6 +12,10 @@ import cairo
 # ---------- estilos de personaje ----------
 
 PIEL = (0.96, 0.8, 0.68)
+# Ganchos de extensión: un video puede sumar arte propio sin tocar este archivo (ver motion.cargar_extension).
+DECORADOS_EXTRA = {}   # nombre -> f(cr, t, W, H, dibujar_icono): dibuja el fondo por encima del piso
+OBJETOS_EXTRA = {}     # nombre -> f(cr, x, y): objeto en la mano de adelante
+POSES_EXTRA = {}       # nombre -> f(t) -> dict con los campos de la pose que cambian
 DETALLE = False  # True: personajes con más detalle (ojos, nariz, cuello, zapatos, sombreado)
 ESTILOS = {
     "lustig":     {"ropa": (0.28, 0.3, 0.38), "pantalon": (0.2, 0.21, 0.27), "pelo": (0.18, 0.12, 0.08),
@@ -73,7 +77,9 @@ def pose(nombre, t):
          "cabeza": 0, "torso": 0, "salto": 0, "boca": "neutra", "cejas": 0, "rubor": False, "temblor": 0}
     resp = math.sin(t * 2.5) * 2
     p["torso"] = resp * 0.5
-    if nombre == "caminar":
+    if nombre in POSES_EXTRA:
+        p.update(POSES_EXTRA[nombre](t))
+    elif nombre == "caminar":
         f = t * 7
         s = math.sin(f)
         p.update(piernaD=(28 * s, -25 * max(0, -s)), piernaT=(-28 * s, -25 * max(0, s)),
@@ -151,7 +157,10 @@ def _miembro(cr, x, y, ang1, ang2, l1, l2, ancho, color, fin=None, fin_r=0, zapa
 
 def _objeto(cr, nombre, x, y):
     cr.new_path()
-    if nombre == "maletin":
+    if nombre in OBJETOS_EXTRA:
+        OBJETOS_EXTRA[nombre](cr, x, y)
+        cr.new_path()
+    elif nombre == "maletin":
         cr.rectangle(x - 45, y, 90, 65)
         cr.set_source_rgb(0.45, 0.28, 0.15)
         cr.fill()
@@ -582,7 +591,10 @@ def _farol(cr, x, prendido=True):
 def decorado(cr, nombre, t, W, H, dibujar_icono):
     rnd = random.Random(nombre)
     cr.new_path()
-    if nombre in ("calle_paris", "calle", "calle_noche"):
+    if nombre in DECORADOS_EXTRA:
+        DECORADOS_EXTRA[nombre](cr, t, W, H, dibujar_icono)
+        cr.new_path()
+    elif nombre in ("calle_paris", "calle", "calle_noche"):
         noche = nombre == "calle_noche"
         g = cairo.LinearGradient(0, 0, 0, PISO)
         if noche:

@@ -1310,7 +1310,21 @@ def pista_sonido(eventos, duracion, ruta):
 
 # ---------- armado del video ----------
 
-def main(carpeta, archivo="motion.json"):
+def cargar_extension(ruta):
+    """Carga el arte propio de un video: un archivo .py con `registrar(m, pj)`, donde `m` es este
+    módulo y `pj` es `personajes`. Ahí se pueden sumar entradas a m.ICONOS, m.ESCENAS, pj.ESTILOS,
+    pj.DECORADOS_EXTRA, pj.OBJETOS_EXTRA y pj.POSES_EXTRA sin tocar los archivos compartidos.
+    Los colores se leen en el momento de dibujar (m.DORADO, m.ROJO…), porque la paleta puede cambiar."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("extension_video", ruta)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    mod.registrar(sys.modules[__name__], personajes)
+
+
+def preparar(carpeta, archivo="motion.json"):
+    """Lee la configuración y deja todo listo para dibujar. Devuelve un dict con cfg, palabras,
+    duración, inicio del audio e inicio de cada escena (segundos)."""
     global V2, FUENTE, PESO
     cfg = json.load(open(os.path.join(carpeta, archivo)))
     if cfg.get("paleta") == "roja":
@@ -1325,7 +1339,9 @@ def main(carpeta, archivo="motion.json"):
             if f.endswith(".ttf"):
                 shutil.copy(os.path.join(DIR_FUENTES_V2, f), destino)
         subprocess.run(["fc-cache", "-f"], check=False)
-    palabras = render.cargar_palabras(os.path.join(carpeta, "palabras.json"))
+    if cfg.get("extension"):
+        cargar_extension(os.path.normpath(os.path.join(carpeta, cfg["extension"])))
+    palabras = render.cargar_palabras(os.path.normpath(os.path.join(carpeta, cfg.get("palabras", "palabras.json"))))
     audio = os.path.normpath(os.path.join(carpeta, cfg["audio"]))
     duracion = float(subprocess.check_output(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", audio]))
@@ -1345,6 +1361,27 @@ def main(carpeta, archivo="motion.json"):
             continue
         cursor = render.buscar(palabras, e["desde"], cursor)
         inicios.append(palabras[cursor]["start"])
+    return {"cfg": cfg, "palabras": palabras, "audio": audio, "duracion": duracion,
+            "inicio_audio": inicio_audio, "inicios": inicios}
+
+
+def dibujar_cuadro(cr, pre, tg):
+    """Dibuja el cuadro del segundo `tg` (sin subtítulos: esos los agrega ffmpeg al final)."""
+    cfg, inicios = pre["cfg"], pre["inicios"]
+    k = max(i for i, s in enumerate(inicios) if s <= tg + 1e-6)
+    e = cfg["escenas"][k]
+    fondo(cr, tg)
+    ESCENAS[e["tipo"]](cr, tg - inicios[k], e)
+    if V2:
+        vineta(cr)
+        for c in inicios[1:]:
+            transicion(cr, tg - c)
+
+
+def main(carpeta, archivo="motion.json"):
+    pre = preparar(carpeta, archivo)
+    cfg, palabras, audio = pre["cfg"], pre["palabras"], pre["audio"]
+    duracion, inicio_audio, inicios = pre["duracion"], pre["inicio_audio"], pre["inicios"]
 
     tmp = tempfile.mkdtemp(prefix="motion_")
     try:
@@ -1355,16 +1392,8 @@ def main(carpeta, archivo="motion.json"):
         sup = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
         total = int(math.ceil(duracion * FPS))
         for f in range(total):
-            tg = f / FPS
-            k = max(i for i, s in enumerate(inicios) if s <= tg + 1e-6)
-            e = cfg["escenas"][k]
             cr = cairo.Context(sup)
-            fondo(cr, tg)
-            ESCENAS[e["tipo"]](cr, tg - inicios[k], e)
-            if V2:
-                vineta(cr)
-                for c in inicios[1:]:
-                    transicion(cr, tg - c)
+            dibujar_cuadro(cr, pre, f / FPS)
             sup.flush()
             ff.stdin.write(bytes(sup.get_data()))
         ff.stdin.close()
@@ -1373,13 +1402,18 @@ def main(carpeta, archivo="motion.json"):
         subs = render.aplicar_reemplazos(palabras, cfg.get("reemplazos", {}))
         ass = os.path.join(tmp, "subs.ass")
         if V2:
-            render.generar_ass(subs, [], duracion, ass, y_sub=1350, fuente=FUENTE, tam_base=98)
+            render.generar_ass(subs, [], duracion, ass, y_sub=cfg.get("y_sub", 1350), fuente=FUENTE, tam_base=98)
         else:
-            render.generar_ass(subs, [], duracion, ass, y_sub=1350)
+            render.generar_ass(subs, [], duracion, ass, y_sub=cfg.get("y_sub", 1350))
         salida = os.path.join(carpeta, cfg.get("salida", "video-motion.mp4"))
         if V2:
             wav = os.path.join(tmp, "efectos.wav")
-            pista_sonido(eventos_sonido(cfg, inicios), duracion, wav)
+            eventos = eventos_sonido(cfg, inicios)
+            # sonidos puntuales: [nombre, "frase donde suena", desfase en segundos (opcional)]
+            for son in cfg.get("sonidos", []):
+                idx = render.buscar(palabras, son[1])
+                eventos.append((son[0], palabras[idx]["start"] + (son[2] if len(son) > 2 else 0.0)))
+            pista_sonido(eventos, duracion, wav)
             audio_args = ["-i", wav, "-filter_complex",
                           f"[0:v]ass={ass}:fontsdir={DIR_FUENTES_V2}[v];[1:a]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,apad[voz];"
                           "[2:a]aresample=48000,apad[fx];"
@@ -1398,4 +1432,5 @@ def main(carpeta, archivo="motion.json"):
 
 
 if __name__ == "__main__":
+    sys.modules.setdefault("motion", sys.modules["__main__"])  # que «import motion» sea este mismo módulo
     main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else "motion.json")
