@@ -1118,6 +1118,30 @@ def esc_transformar(cr, t, p):
         texto(cr, p["pie"], W / 2, 980, 58, GRIS)
 
 
+def ic_cereal(cr, t, **kw):
+    """Caja de cereal con un tazón dibujado en el frente."""
+    cr.save()
+    cr.rotate(math.sin(t * 2) * 0.04)
+    cr.new_path()
+    rrect(cr, -130, -190, 260, 380, 18)
+    rellenar(cr, (0.90, 0.16, 0.20))
+    cr.new_path()
+    cr.rectangle(-130, -190, 260, 70)
+    rellenar(cr, (0.98, 0.98, 0.98))
+    texto(cr, "CEREAL", 0, -153, 44, (0.90, 0.16, 0.20))
+    cr.new_path()
+    cr.arc(0, 60, 95, 0, math.pi)
+    cr.close_path()
+    rellenar(cr, (0.98, 0.98, 0.98))
+    rnd = random.Random(3)
+    for _ in range(9):
+        cr.new_path()
+        cr.arc(rnd.uniform(-75, 75), 50 - rnd.uniform(0, 30), 15, 0, 2 * math.pi)
+        rellenar(cr, (1.0, 0.75, 0.35))
+    cr.restore()
+
+
+ICONOS["cereal"] = ic_cereal
 ESCENAS.update({"barras": esc_barras, "transformar": esc_transformar})
 
 

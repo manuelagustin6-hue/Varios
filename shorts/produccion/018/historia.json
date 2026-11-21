@@ -22,7 +22,7 @@
    ],
    "elementos": [
     {
-     "icono": "caja",
+     "icono": "cereal",
      "x": 790,
      "y": 700,
      "escala": 0.5
@@ -109,7 +109,7 @@
    ],
    "elementos": [
     {
-     "icono": "caja",
+     "icono": "cereal",
      "x": 860,
      "y": 700,
      "escala": 0.42
@@ -125,7 +125,7 @@
    "a": 40,
    "prefijo": "$",
    "unidad": "DÓLARES",
-   "icono": "caja",
+   "icono": "cereal",
    "cuenta": 0.8
   },
   {
@@ -162,7 +162,7 @@
    ],
    "elementos": [
     {
-     "icono": "caja",
+     "icono": "cereal",
      "x": 540,
      "y": 760,
      "escala": 0.36
@@ -174,7 +174,7 @@
    "tipo": "icono",
    "desde": "Hoy Airbnb vale",
    "titulo": "AIRBNB HOY",
-   "icono": "casa",
+   "icono": "dinero",
    "pie": "decenas de miles de millones",
    "color_pie": [
     0.24,
@@ -195,7 +195,7 @@
    ],
    "elementos": [
     {
-     "icono": "caja",
+     "icono": "cereal",
      "x": 790,
      "y": 700,
      "escala": 0.5
