@@ -1,0 +1,345 @@
+{
+ "audio": "../../audios/026/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda3_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {
+  "ocho mil bitcoins": "8.000 bitcoins"
+ },
+ "escenas": [
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "howells",
+     "x": 290,
+     "pose": "dar"
+    }
+   ],
+   "titulo": "TIRÓ UN DISCO DURO\nCON 8.000 BITCOINS",
+   "elementos": [
+    {
+     "icono": "tacho",
+     "x": 800,
+     "y": 1070,
+     "escala": 0.5,
+     "sin_tarjeta": true
+    },
+    {
+     "icono": "disco_duro",
+     "x": 800,
+     "y": 720,
+     "escala": 0.4
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "howells",
+     "x": 300,
+     "pose": "hablar",
+     "poses": [
+      [
+       {
+        "en": "hizo limpieza"
+       },
+       "pensar"
+      ]
+     ]
+    }
+   ],
+   "desde": "En 2013",
+   "titulos": [
+    [
+     0,
+     "2013: JAMES HOWELLS,\nINFORMÁTICO DE GALES"
+    ],
+    [
+     {
+      "en": "hizo limpieza"
+     },
+     "LIMPIEZA DE OFICINA"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "tacho",
+     "x": 800,
+     "y": 1070,
+     "escala": 0.5,
+     "sin_tarjeta": true
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "desde": "Tenía dos discos",
+   "titulos": [
+    [
+     0,
+     "DOS DISCOS IGUALES"
+    ],
+    [
+     {
+      "en": "Tiró el equivocado"
+     },
+     "TIRÓ EL EQUIVOCADO"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "disco_duro",
+     "x": 290,
+     "y": 800,
+     "escala": 0.62,
+     "sin_tarjeta": true
+    },
+    {
+     "icono": "disco_duro",
+     "x": 790,
+     "y": 800,
+     "escala": 0.62,
+     "sin_tarjeta": true
+    },
+    {
+     "icono": "bitcoin",
+     "x": 790,
+     "y": 580,
+     "escala": 0.22,
+     "sin_tarjeta": true,
+     "entra": {
+      "en": "de los bitcoins"
+     }
+    }
+   ],
+   "placas": [
+    {
+     "texto": "VACÍO",
+     "x": 290,
+     "y": 1000,
+     "tam": 50,
+     "entra": {
+      "en": "uno vacío"
+     }
+    },
+    {
+     "texto": "8.000 BITCOINS",
+     "x": 790,
+     "y": 1000,
+     "tam": 44,
+     "entra": {
+      "en": "y otro con"
+     }
+    }
+   ],
+   "textos": [
+    {
+     "t": "CUANDO NO VALÍAN CASI NADA",
+     "x": 540,
+     "y": 1110,
+     "tam": 40,
+     "entra": {
+      "en": "cuando no valían"
+     },
+     "sale": {
+      "en": "Tiró el equivocado"
+     }
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "A LA BASURA",
+     "entra": {
+      "en": "Tiró el equivocado",
+      "mas": 0.2
+     },
+     "x": 790,
+     "y": 800,
+     "tam": 58
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "basurero",
+   "personajes": [
+    {
+     "estilo": "howells",
+     "x": 250,
+     "pose": "sorpresa",
+     "poses": [
+      [
+       {
+        "en": "el disco ya"
+       },
+       "tapar_cara"
+      ]
+     ]
+    }
+   ],
+   "desde": "Cuando se dio cuenta",
+   "titulos": [
+    [
+     0,
+     "CUANDO SE DIO CUENTA…"
+    ],
+    [
+     {
+      "en": "el disco ya"
+     },
+     "…YA ESTABA EN\nEL BASURERO"
+    ]
+   ],
+   "textos": [
+    {
+     "t": "BAJO MILES DE TONELADAS",
+     "x": 600,
+     "y": 640,
+     "tam": 46,
+     "entra": {
+      "en": "bajo miles"
+     }
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "disco_duro",
+     "x": 800,
+     "y": 1040,
+     "escala": 0.2,
+     "entra": {
+      "en": "el disco ya"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "howells",
+     "x": 300,
+     "pose": "dar",
+     "objeto": "papel",
+     "poses": [
+      [
+       {
+        "en": "Siempre le dijeron"
+       },
+       "triste"
+      ]
+     ]
+    },
+    {
+     "estilo": "ejecutivo",
+     "x": 790,
+     "pose": "escuchar",
+     "mira": -1,
+     "poses": [
+      [
+       {
+        "en": "Siempre le dijeron"
+       },
+       "hablar"
+      ]
+     ]
+    }
+   ],
+   "desde": "Desde entonces",
+   "titulos": [
+    [
+     0,
+     "PIDE PERMISO\nPARA EXCAVAR"
+    ],
+    [
+     {
+      "en": "y hasta ofreció"
+     },
+     "OFRECIÓ COMPARTIR\nEL TESORO"
+    ],
+    [
+     {
+      "en": "Siempre le dijeron"
+     },
+     "SIEMPRE LE DIJERON\nQUE NO"
+    ]
+   ],
+   "placas": [
+    {
+     "texto": "MUNICIPIO",
+     "x": 290,
+     "y": 565,
+     "tam": 46
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "NO",
+     "entra": {
+      "en": "Siempre le dijeron",
+      "mas": 0.3
+     },
+     "x": 540,
+     "y": 900,
+     "tam": 110
+    }
+   ]
+  },
+  {
+   "tipo": "icono",
+   "desde": "En 2025",
+   "titulo": "2025: UN JUEZ\nCERRÓ EL CASO",
+   "icono": "mazo"
+  },
+  {
+   "tipo": "icono",
+   "desde": "Hoy esos bitcoins",
+   "titulo": "HOY ESOS BITCOINS VALEN",
+   "icono": "bitcoin",
+   "pie": "cientos de millones de dólares",
+   "color_pie": [
+    0.24,
+    0.86,
+    0.52
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "howells",
+     "x": 290,
+     "pose": "dar"
+    }
+   ],
+   "titulo": "TIRÓ UN DISCO DURO\nCON 8.000 BITCOINS",
+   "desde": "y todo porque",
+   "elementos": [
+    {
+     "icono": "tacho",
+     "x": 800,
+     "y": 1070,
+     "escala": 0.5,
+     "sin_tarjeta": true
+    },
+    {
+     "icono": "disco_duro",
+     "x": 800,
+     "y": 720,
+     "escala": 0.4
+    }
+   ]
+  }
+ ]
+}

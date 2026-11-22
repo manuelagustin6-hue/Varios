@@ -1,0 +1,291 @@
+{
+ "audio": "../../audios/022/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda3_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {},
+ "escenas": [
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "LA NUTELLA NACIÓ\nPORQUE FALTABA CACAO",
+   "elementos": [
+    {
+     "icono": "frasco",
+     "x": 540,
+     "y": 880,
+     "escala": 0.95,
+     "sin_tarjeta": true,
+     "args": {
+      "etiqueta": "NUTELLA"
+     }
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "SIN CACAO",
+     "entra": {
+      "en": "no alcanzaba"
+     },
+     "x": 540,
+     "y": 580,
+     "tam": 76
+    }
+   ]
+  },
+  {
+   "tipo": "icono",
+   "titulo": "POSGUERRA: EL CHOCOLATE\nERA UN LUJO",
+   "icono": "cacao",
+   "desde": "Después de la Segunda"
+  },
+  {
+   "tipo": "sello",
+   "desde": "El cacao escaseaba",
+   "texto": "ESCASO",
+   "base": {
+    "tipo": "icono",
+    "titulo": "EL CACAO ESCASEABA",
+    "icono": "cacao",
+    "pie": "costaba una fortuna",
+    "color_pie": [
+     1.0,
+     0.3,
+     0.36
+    ]
+   }
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pasteleria",
+   "personajes": [
+    {
+     "estilo": "pietro",
+     "x": 280,
+     "pose": "pensar",
+     "poses": [
+      [
+       {
+        "en": "y muchas avellanas"
+       },
+       "señalar"
+      ]
+     ]
+    }
+   ],
+   "desde": "Pietro Ferrero",
+   "titulos": [
+    [
+     0,
+     "PIETRO FERRERO,\nPASTELERO"
+    ],
+    [
+     {
+      "en": "y muchas avellanas"
+     },
+     "LE SOBRABAN\nAVELLANAS"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "avellanas",
+     "x": 760,
+     "y": 900,
+     "escala": 0.6,
+     "sin_tarjeta": true,
+     "entra": {
+      "en": "y muchas avellanas"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "versus",
+   "desde": "Así que mezcló",
+   "titulo": "LA MEZCLA",
+   "izq": {
+    "icono": "cacao",
+    "texto": "POCO CACAO"
+   },
+   "der": {
+    "icono": "avellanas",
+    "texto": "+ AVELLANAS"
+   }
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pasteleria",
+   "personajes": [
+    {
+     "estilo": "pietro",
+     "x": 260,
+     "pose": "dar",
+     "poses": [
+      [
+       {
+        "en": "Fue un éxito"
+       },
+       "celebrar"
+      ]
+     ]
+    }
+   ],
+   "desde": "y creó una pasta",
+   "titulos": [
+    [
+     0,
+     "UNA PASTA DULCE\nY BARATA"
+    ],
+    [
+     {
+      "en": "Fue un éxito"
+     },
+     "FUE UN ÉXITO"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "barra",
+     "x": 740,
+     "y": 930,
+     "escala": 0.7,
+     "sin_tarjeta": true
+    }
+   ],
+   "placas": [
+    {
+     "texto": "EN BARRA, PARA REBANAR",
+     "x": 740,
+     "y": 1100,
+     "tam": 36,
+     "entra": {
+      "en": "en barra"
+     }
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "ÉXITO",
+     "entra": {
+      "en": "Fue un éxito"
+     },
+     "x": 740,
+     "y": 760,
+     "tam": 84,
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "AÑOS DESPUÉS: CREMOSA,\nPARA UNTAR",
+   "desde": "Años después",
+   "elementos": [
+    {
+     "icono": "frasco",
+     "x": 540,
+     "y": 880,
+     "escala": 0.9,
+     "sin_tarjeta": true
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "michele",
+     "x": 300,
+     "pose": "pensar",
+     "poses": [
+      [
+       2.0,
+       "celebrar"
+      ]
+     ]
+    }
+   ],
+   "titulo": "1964: SU HIJO MICHELE",
+   "desde": "y en 1964",
+   "elementos": [
+    {
+     "icono": "frasco",
+     "x": 790,
+     "y": 880,
+     "escala": 0.5
+    }
+   ],
+   "placas": [
+    {
+     "texto": "NUEVA RECETA Y NUEVO NOMBRE",
+     "x": 540,
+     "y": 470,
+     "tam": 36,
+     "entra": {
+      "en": "le cambió"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "desde": "Nutella",
+   "titulos": [
+    [
+     0,
+     "EL NOMBRE NUEVO"
+    ],
+    [
+     {
+      "en": "Hoy se vende"
+     },
+     "HOY: EN TODO EL MUNDO"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "frasco",
+     "x": 540,
+     "y": 880,
+     "escala": 0.95,
+     "sin_tarjeta": true,
+     "args": {
+      "etiqueta": "NUTELLA"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "LA NUTELLA NACIÓ\nPORQUE FALTABA CACAO",
+   "desde": "Y pensar que",
+   "elementos": [
+    {
+     "icono": "frasco",
+     "x": 540,
+     "y": 880,
+     "escala": 0.95,
+     "sin_tarjeta": true,
+     "args": {
+      "etiqueta": "NUTELLA"
+     }
+    }
+   ]
+  }
+ ]
+}

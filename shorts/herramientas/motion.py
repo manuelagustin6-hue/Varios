@@ -307,6 +307,13 @@ def dibujar_icono(cr, nombre, t, x, y, escala, **kw):
 
 # ---------- tipos de escena ----------
 
+def ajustar_tam(cr, s, tam, ancho, minimo=30):
+    """Tamaño de letra más grande (hasta `tam`) con el que `s` entra en `ancho`."""
+    while ancho_texto(cr, s, tam) > ancho and tam > minimo:
+        tam -= 2
+    return tam
+
+
 def esc_icono(cr, t, p):
     titular(cr, p.get("titulo", ""), t)
     a = ease_out_back(t / 0.45)
@@ -318,8 +325,8 @@ def esc_icono(cr, t, p):
         kw["color"] = tuple(p["color"])
     dibujar_icono(cr, p["icono"], t, W / 2, 840 + flot, 1.05 * a, **kw)
     if p.get("pie"):
-        texto(cr, p["pie"], W / 2, 1225, 58, p.get("color_pie") and tuple(p["color_pie"]) or GRIS,
-              alfa=ease_out_cubic((t - 0.3) / 0.3))
+        texto(cr, p["pie"], W / 2, 1225, ajustar_tam(cr, p["pie"], 58, W - 100),
+              p.get("color_pie") and tuple(p["color_pie"]) or GRIS, alfa=ease_out_cubic((t - 0.3) / 0.3))
 
 
 def esc_cifra(cr, t, p):
@@ -395,7 +402,10 @@ def esc_linea_tiempo(cr, t, p):
         rellenar(cr, tuple(color) if vis else GRIS)
         texto(cr, str(anio), x, y - 120, 96, BLANCO if vis else GRIS)
         if vis and etiqueta:
-            texto(cr, etiqueta, x, y + 120, 66, tuple(color), alfa=ease_out_cubic((prog - f) / 0.2 + 0.3))
+            tam_e = ajustar_tam(cr, etiqueta, 66, W / 2 - 70)
+            w_e = ancho_texto(cr, etiqueta, tam_e)
+            x_e = min(max(x, w_e / 2 + 50), W - w_e / 2 - 50)
+            texto(cr, etiqueta, x_e, y + 120, tam_e, tuple(color), alfa=ease_out_cubic((prog - f) / 0.2 + 0.3))
 
 
 def esc_versus(cr, t, p):
@@ -406,7 +416,7 @@ def esc_versus(cr, t, p):
             continue
         x = W / 2 + lado * 260
         dibujar_icono(cr, s["icono"], t, x, 820, 0.55 * a, **s.get("args", {}))
-        texto(cr, s["texto"], x, 1080, 56, tuple(s.get("color", BLANCO)))
+        texto(cr, s["texto"], x, 1080, ajustar_tam(cr, s["texto"], 56, 470), tuple(s.get("color", BLANCO)))
     texto(cr, "VS", W / 2, 820, 90, DORADO, alfa=ease_out_cubic((t - 0.4) / 0.3))
 
 

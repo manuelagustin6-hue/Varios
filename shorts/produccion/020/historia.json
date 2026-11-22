@@ -1,0 +1,392 @@
+{
+ "audio": "../../audios/020/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda3_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {
+  "setenta y nueve días": "79 días",
+  "doscientas mil": "200.000"
+ },
+ "escenas": [
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "COCA-COLA CAMBIÓ\nSU FÓRMULA",
+   "elementos": [
+    {
+     "icono": "botella",
+     "x": 540,
+     "y": 860,
+     "escala": 1.0,
+     "sin_tarjeta": true
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "79 DÍAS",
+     "entra": {
+      "en": "setenta y nueve"
+     },
+     "x": 540,
+     "y": 1150,
+     "tam": 84
+    }
+   ],
+   "textos": [
+    {
+     "t": "…Y DIO MARCHA ATRÁS",
+     "x": 540,
+     "y": 540,
+     "tam": 50,
+     "entra": {
+      "en": "dar marcha"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "desde": "En 1985",
+   "titulo": "1985: PEPSI\nGANABA TERRENO",
+   "decorado": "pedestal",
+   "personajes": [],
+   "elementos": [
+    {
+     "icono": "botella",
+     "x": 310,
+     "y": 860,
+     "escala": 0.85,
+     "sin_tarjeta": true
+    },
+    {
+     "icono": "botella",
+     "x": 770,
+     "y": 860,
+     "escala": 0.85,
+     "sin_tarjeta": true,
+     "entra": {
+      "en": "Pepsi"
+     },
+     "args": {
+      "etiqueta": [
+       0.2,
+       0.35,
+       0.75
+      ],
+      "texto": "PEPSI"
+     }
+    }
+   ],
+   "placas": [
+    {
+     "texto": "COCA-COLA",
+     "x": 310,
+     "y": 1100,
+     "tam": 44
+    },
+    {
+     "texto": "PEPSI",
+     "x": 770,
+     "y": 1100,
+     "tam": 44,
+     "entra": {
+      "en": "Pepsi"
+     }
+    }
+   ],
+   "textos": [
+    {
+     "t": "VS",
+     "x": 540,
+     "y": 860,
+     "tam": 110,
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "entra": {
+      "en": "Pepsi",
+      "mas": 0.2
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "titulo": "PRUEBAS DE SABOR",
+   "de": 0,
+   "a": 200000,
+   "unidad": "PERSONAS",
+   "icono": "personas",
+   "cuenta": 2.2,
+   "desde": "Coca-Cola probó"
+  },
+  {
+   "tipo": "historia",
+   "desde": "y la mayoría",
+   "titulo": "LA MAYORÍA PREFIRIÓ\nLA RECETA NUEVA",
+   "decorado": "pedestal",
+   "personajes": [],
+   "elementos": [
+    {
+     "icono": "botella",
+     "x": 540,
+     "y": 860,
+     "escala": 0.95,
+     "sin_tarjeta": true,
+     "args": {
+      "etiqueta": [
+       0.14,
+       0.62,
+       0.38
+      ],
+      "texto": "NUEVA"
+     }
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "PREFERIDA",
+     "entra": 0.25,
+     "x": 800,
+     "y": 760,
+     "tam": 60,
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "RETIRÓ LA ORIGINAL",
+   "desde": "Así que retiró",
+   "elementos": [
+    {
+     "icono": "botella",
+     "x": 310,
+     "y": 840,
+     "escala": 0.8,
+     "sin_tarjeta": true
+    },
+    {
+     "icono": "botella",
+     "x": 770,
+     "y": 840,
+     "escala": 0.8,
+     "sin_tarjeta": true,
+     "entra": {
+      "en": "y lanzó"
+     },
+     "args": {
+      "etiqueta": [
+       0.14,
+       0.62,
+       0.38
+      ],
+      "texto": "NUEVA"
+     }
+    }
+   ],
+   "placas": [
+    {
+     "texto": "ORIGINAL",
+     "x": 310,
+     "y": 1090,
+     "tam": 44
+    },
+    {
+     "texto": "NUEVA",
+     "x": 770,
+     "y": 1090,
+     "tam": 44,
+     "entra": {
+      "en": "y lanzó"
+     }
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "RETIRADA",
+     "entra": {
+      "en": "retiró",
+      "mas": 0.3
+     },
+     "x": 310,
+     "y": 820,
+     "tam": 60
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "vecina",
+     "x": 230,
+     "pose": "nervioso",
+     "globo": [
+      "¡Devuélvanla!",
+      {
+       "en": "Miles de personas"
+      },
+      9
+     ]
+    },
+    {
+     "estilo": "ferruccio",
+     "x": 540,
+     "pose": "hablar"
+    },
+    {
+     "estilo": "joven1",
+     "x": 850,
+     "pose": "nervioso",
+     "mira": -1
+    }
+   ],
+   "desde": "Fue un desastre",
+   "titulos": [
+    [
+     0,
+     "FUE UN DESASTRE"
+    ],
+    [
+     {
+      "en": "Miles de personas"
+     },
+     "MILES DE QUEJAS"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "sobre",
+     "x": 820,
+     "y": 620,
+     "escala": 0.3,
+     "entra": {
+      "en": "y escribieron"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "iconos",
+   "desde": "Algunos acapararon",
+   "titulo": "ACAPARARON BOTELLAS",
+   "icono": "botella",
+   "cantidad": 8,
+   "columnas": 4,
+   "escala": 0.5
+  },
+  {
+   "tipo": "icono",
+   "desde": "No era solo",
+   "titulo": "NO ERA SOLO EL SABOR",
+   "icono": "corazon",
+   "pie": "les quitaron algo propio",
+   "color_pie": [
+    1.0,
+    0.72,
+    0.5
+   ],
+   "args": {
+    "texto": ""
+   }
+  },
+  {
+   "tipo": "cifra",
+   "titulo": "MARCHA ATRÁS",
+   "de": 0,
+   "a": 79,
+   "unidad": "DÍAS DESPUÉS",
+   "cuenta": 1.0,
+   "color": [
+    1.0,
+    0.72,
+    0.5
+   ],
+   "desde": "A los setenta"
+  },
+  {
+   "tipo": "historia",
+   "desde": "la empresa trajo",
+   "titulo": "VOLVIÓ LA\nFÓRMULA ORIGINAL",
+   "decorado": "pedestal",
+   "personajes": [],
+   "elementos": [
+    {
+     "icono": "botella",
+     "x": 540,
+     "y": 860,
+     "escala": 0.95,
+     "sin_tarjeta": true
+    }
+   ],
+   "placas": [
+    {
+     "texto": "ORIGINAL",
+     "x": 540,
+     "y": 1100,
+     "tam": 46
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "DE VUELTA",
+     "entra": 0.3,
+     "x": 800,
+     "y": 760,
+     "tam": 60,
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "grafico",
+   "desde": "y las ventas",
+   "titulo": "LAS VENTAS REPUNTARON",
+   "valores": [
+    6,
+    5,
+    4,
+    3.5,
+    4.5,
+    6.5,
+    9
+   ],
+   "dibujo": 1.2,
+   "pie": "tras el regreso de la fórmula original"
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "COCA-COLA CAMBIÓ\nSU FÓRMULA",
+   "desde": "Todo porque",
+   "elementos": [
+    {
+     "icono": "botella",
+     "x": 540,
+     "y": 860,
+     "escala": 1.0,
+     "sin_tarjeta": true
+    }
+   ]
+  }
+ ]
+}
