@@ -10,3 +10,8 @@ Generar con la voz Brian (`U9TSK9KHMlMU2qkeXlQP`, Eleven v4) cuando se renueven 
 | 013 | «Hoy, la marca Jordan factura miles de millones al año. Todo empezó con un "no".» | «Hoy, la marca Jordan factura miles de millones al año. Y pensar que…» → «Adidas pudo tener a Michael Jordan…» |
 
 Después: transcribir, poner `"bucle": true` en `produccion/NNN/config.json`, mover la última escena (imagen 1) a la frase del bucle y volver a montar.
+
+## Estado (22/11)
+
+- **011, 012 y 013:** hechos. Voz nueva con bucle (`audios/NNN/voz-bucle.mp3`) y video rehecho (`produccion/NNN/video-ultra.mp4`).
+- **010:** sigue pendiente (se publicó con la versión anterior, sin bucle).

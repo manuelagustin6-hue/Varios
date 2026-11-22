@@ -1,0 +1,478 @@
+{
+ "audio": "../../audios/012/voz-bucle.mp3",
+ "palabras": "palabras-bucle.json",
+ "extension": "ext_ultra.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-ultra.mp4",
+ "reemplazos": {
+  "allan penn": "Alan Penn"
+ },
+ "sonidos": [
+  [
+   "pop",
+   "velas",
+   0.25
+  ],
+  [
+   "pop",
+   "vasos",
+   0.25
+  ],
+  [
+   "pop",
+   "bolsas",
+   0.25
+  ],
+  [
+   "pop",
+   "peluches",
+   0.25
+  ]
+ ],
+ "escenas": [
+  {
+   "tipo": "historia",
+   "titulo": "¿POR QUÉ COMPRAS\nDE MÁS EN IKEA?",
+   "decorado": "tienda_frente",
+   "placas": [
+    {
+     "texto": "IKEA",
+     "x": 770,
+     "y": 600,
+     "tam": 96
+    }
+   ],
+   "personajes": [
+    {
+     "estilo": "clienta",
+     "x": 300,
+     "pose": "dar",
+     "poses": [
+      [
+       1.6,
+       "sorpresa"
+      ]
+     ],
+     "globo": [
+      "¡Solo venía por\nuna lámpara!",
+      {
+       "en": "con cosas"
+      },
+      3.9
+     ]
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "carro",
+     "x": 640,
+     "y": 1010,
+     "escala": 0.92,
+     "sin_tarjeta": true,
+     "args": {
+      "items": [
+       [
+        "caja",
+        0.15
+       ],
+       [
+        "lampara",
+        0.41000000000000003
+       ],
+       [
+        "vela",
+        0.67
+       ],
+       [
+        "planta",
+        0.93
+       ],
+       [
+        "bolsa",
+        1.19
+       ],
+       [
+        "peluche",
+        1.45
+       ],
+       [
+        "vaso",
+        1.71
+       ],
+       [
+        "cojin",
+        1.97
+       ],
+       [
+        "vela",
+        2.23
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "i_mapa",
+   "desde": "Muchas de sus tiendas",
+   "titulo": "UN RECORRIDO LARGO\nY SERPENTEANTE",
+   "avance": [
+    0.4,
+    {
+     "en": "llegar a la caja",
+     "mas": 0.6
+    }
+   ],
+   "cuenta": 14
+  },
+  {
+   "tipo": "historia",
+   "desde": "Allan Penn",
+   "titulo": "ALAN PENN, PROFESOR\nDE ARQUITECTURA",
+   "decorado": "aula",
+   "personajes": [
+    {
+     "estilo": "penn",
+     "x": 300,
+     "pose": "hablar",
+     "poses": [
+      [
+       {
+        "en": "lo explica"
+       },
+       "señalar"
+      ]
+     ]
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "mapa_mini",
+     "x": 780,
+     "y": 800,
+     "escala": 0.62
+    }
+   ],
+   "placas": [
+    {
+     "texto": "ESTUDIÓ ESE DISEÑO",
+     "x": 770,
+     "y": 1080,
+     "tam": 40,
+     "entra": {
+      "en": "que estudió"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "desde": "cuando un recorrido",
+   "decorado": "pasillo",
+   "titulos": [
+    [
+     0,
+     "SI EL RECORRIDO\nTE DESORIENTA…"
+    ],
+    [
+     {
+      "en": "te llevas"
+     },
+     "…TE LLEVAS TODO\nAPENAS LO VES"
+    ]
+   ],
+   "personajes": [
+    {
+     "estilo": "clienta",
+     "x": 300,
+     "pose": "nervioso",
+     "poses": [
+      [
+       {
+        "en": "te llevas"
+       },
+       "dar"
+      ]
+     ],
+     "globo": [
+      "¡Me lo llevo,\npor las dudas!",
+      {
+       "en": "por si después"
+      },
+      9
+     ]
+    }
+   ],
+   "textos": [
+    {
+     "t": "?",
+     "x": 190,
+     "y": 560,
+     "tam": 120,
+     "color": [
+      0.86,
+      0.1,
+      0.16
+     ],
+     "entra": 0.5,
+     "sale": {
+      "en": "te llevas"
+     }
+    },
+    {
+     "t": "?",
+     "x": 420,
+     "y": 520,
+     "tam": 90,
+     "color": [
+      0.86,
+      0.1,
+      0.16
+     ],
+     "entra": 0.9,
+     "sale": {
+      "en": "te llevas"
+     }
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "carro",
+     "x": 760,
+     "y": 1010,
+     "escala": 0.8,
+     "sin_tarjeta": true,
+     "args": {
+      "items": [
+       [
+        "caja",
+        {
+         "en": "te llevas",
+         "mas": 0.2
+        }
+       ],
+       [
+        "lampara",
+        {
+         "en": "las cosas",
+         "mas": 0.2
+        }
+       ],
+       [
+        "planta",
+        {
+         "en": "apenas",
+         "mas": 0.2
+        }
+       ],
+       [
+        "cojin",
+        {
+         "en": "por si después",
+         "mas": 0.2
+        }
+       ],
+       [
+        "vaso",
+        {
+         "en": "vuelves",
+         "mas": 0.1
+        }
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "desde": "Y en el camino",
+   "decorado": "pasillo",
+   "personajes": [],
+   "titulos": [
+    [
+     0,
+     "EN EL CAMINO:\nPRODUCTOS BARATOS"
+    ],
+    [
+     {
+      "en": "fáciles"
+     },
+     "FÁCILES DE SUMAR\nAL CARRITO"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "carro",
+     "x": 540,
+     "y": 960,
+     "escala": 1.15,
+     "sin_tarjeta": true,
+     "args": {
+      "items": [
+       [
+        "vela",
+        {
+         "en": "velas"
+        }
+       ],
+       [
+        "vaso",
+        {
+         "en": "vasos"
+        }
+       ],
+       [
+        "bolsa",
+        {
+         "en": "bolsas"
+        }
+       ],
+       [
+        "peluche",
+        {
+         "en": "peluches"
+        }
+       ]
+      ]
+     }
+    }
+   ],
+   "placas": [
+    {
+     "texto": "+ VELAS",
+     "x": 250,
+     "y": 560,
+     "tam": 52,
+     "entra": {
+      "en": "velas"
+     }
+    },
+    {
+     "texto": "+ VASOS",
+     "x": 830,
+     "y": 560,
+     "tam": 52,
+     "entra": {
+      "en": "vasos"
+     }
+    },
+    {
+     "texto": "+ BOLSAS",
+     "x": 250,
+     "y": 660,
+     "tam": 52,
+     "entra": {
+      "en": "bolsas"
+     }
+    },
+    {
+     "texto": "+ PELUCHES",
+     "x": 830,
+     "y": 660,
+     "tam": 52,
+     "entra": {
+      "en": "peluches"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "i_mapa",
+   "desde": "No es magia",
+   "completo": true,
+   "titulos": [
+    [
+     0,
+     "NO ES MAGIA…"
+    ],
+    [
+     {
+      "en": "es diseño"
+     },
+     "…ES DISEÑO"
+    ],
+    [
+     {
+      "en": "La próxima"
+     },
+     "LLEVA UNA LISTA…"
+    ],
+    [
+     {
+      "en": "y busca"
+     },
+     "…Y BUSCA LOS ATAJOS"
+    ]
+   ],
+   "sellos": [
+    {
+     "texto": "ES DISEÑO",
+     "entra": {
+      "en": "es diseño"
+     },
+     "sale": {
+      "en": "La próxima"
+     },
+     "y": 840,
+     "tam": 120
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "lista",
+     "x": 250,
+     "y": 1010,
+     "escala": 0.42,
+     "entra": {
+      "en": "lleva una lista"
+     },
+     "sale": {
+      "en": "y busca",
+      "mas": 0.2
+     }
+    }
+   ],
+   "atajos": {
+    "entra": {
+     "en": "los atajos"
+    }
+   }
+  },
+  {
+   "tipo": "historia",
+   "titulo": "¿POR QUÉ COMPRAS\nDE MÁS EN IKEA?",
+   "decorado": "tienda_frente",
+   "placas": [
+    {
+     "texto": "IKEA",
+     "x": 770,
+     "y": 600,
+     "tam": 96
+    }
+   ],
+   "desde": "Y si todavía",
+   "personajes": [
+    {
+     "estilo": "clienta",
+     "x": 300,
+     "pose": "dar"
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "carro",
+     "x": 640,
+     "y": 1010,
+     "escala": 0.92,
+     "sin_tarjeta": true,
+     "args": {
+      "items": []
+     }
+    }
+   ]
+  }
+ ]
+}

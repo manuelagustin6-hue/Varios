@@ -1180,6 +1180,50 @@ def _valor_en(v, t):
     return a + (b - a) * ease_in_out((t - t0) / max(0.01, t1 - t0))
 
 
+def placa(cr, s, x, y, tam, k=1.0, fondo=None, color=None):
+    """Cartel claro con texto (nombres de marcas o lugares, sin logotipos). `k` = escala de entrada."""
+    if k <= 0.001:
+        return
+    w = ancho_texto(cr, s, tam) + tam * 0.9
+    h = tam * 1.5
+    cr.save()
+    cr.translate(x, y)
+    cr.scale(k, k)
+    cr.new_path()
+    rrect(cr, -w / 2 + 5, -h / 2 + 7, w, h, 12)
+    rellenar(cr, (0, 0, 0), 0.28)
+    cr.new_path()
+    rrect(cr, -w / 2, -h / 2, w, h, 12)
+    rellenar(cr, fondo or (0.97, 0.96, 0.94))
+    texto(cr, s, 0, 2, tam, color or OSCURO)
+    cr.restore()
+
+
+def sello_en(cr, s, x, y, t, tam=96, color=None, giro=-0.16):
+    """Sello inclinado que cae de golpe en (x, y); t = segundos desde que aparece."""
+    if t < 0:
+        return
+    col = color or ROJO
+    a = clamp(t / 0.18)
+    esc = 2.2 - 1.2 * ease_out_cubic(a)
+    cr.save()
+    cr.translate(x, y)
+    cr.rotate(giro)
+    cr.scale(esc, esc)
+    w = ancho_texto(cr, s, tam) + tam * 0.7
+    h = tam * 1.7
+    cr.new_path()
+    rrect(cr, -w / 2, -h / 2, w, h, 18)
+    rellenar(cr, (0.06, 0.05, 0.08), 0.78 * a)
+    cr.new_path()
+    rrect(cr, -w / 2, -h / 2, w, h, 18)
+    cr.set_line_width(tam * 0.13)
+    cr.set_source_rgba(*col, a)
+    cr.stroke()
+    texto(cr, s, 0, 2, tam, col, alfa=a)
+    cr.restore()
+
+
 def esc_historia(cr, t, p):
     if V2:  # cámara: acercamiento lento con un leve paneo
         z = 1 + min(0.08, 0.012 * t)
@@ -1189,9 +1233,12 @@ def esc_historia(cr, t, p):
         cr.translate(-W / 2, -personajes.PISO)
     personajes.decorado(cr, p.get("decorado", "calle_paris"), t, W, H, dibujar_icono)
     for el in p.get("elementos", []):
-        if V2:  # tarjeta de fondo para que el elemento no se mezcle con el escenario
+        te = t - el.get("entra", 0)
+        if te < 0 or t > el.get("sale", 1e9):
+            continue
+        if V2 and not el.get("sin_tarjeta"):  # tarjeta de fondo para que el elemento no se mezcle con el escenario
             m = 290 * el.get("escala", 1.0)
-            k = ease_out_back(t / 0.4)
+            k = ease_out_back(te / 0.4)
             cr.new_path()
             rrect(cr, el["x"] - m * k, el["y"] - m * k, 2 * m * k, 2 * m * k, 40)
             rellenar(cr, FONDO1, 0.92)
@@ -1200,7 +1247,15 @@ def esc_historia(cr, t, p):
             cr.set_line_width(8)
             cr.set_source_rgb(*DORADO)
             cr.stroke()
-        dibujar_icono(cr, el["icono"], t, el["x"], el["y"], el.get("escala", 1.0), **el.get("args", {}))
+        dibujar_icono(cr, el["icono"], te, el["x"], el["y"],
+                      el.get("escala", 1.0) * (ease_out_back(te / 0.4) if el.get("entra") else 1.0),
+                      **el.get("args", {}))
+    for pl in p.get("placas", []):  # carteles del escenario (detrás de los personajes)
+        te = t - pl.get("entra", 0)
+        if te < 0 or t > pl.get("sale", 1e9):
+            continue
+        placa(cr, pl["texto"], pl["x"], pl["y"], pl.get("tam", 52), ease_out_back(te / 0.35) if pl.get("entra") else 1.0,
+              tuple(pl["fondo"]) if pl.get("fondo") else None, tuple(pl["color"]) if pl.get("color") else None)
     for pj in p["personajes"]:
         te = t - pj.get("entra", 0)
         if te < 0 or t > pj.get("sale", 1e9):
@@ -1218,9 +1273,27 @@ def esc_historia(cr, t, p):
             globo(cr, g[0], x + 40 * pj.get("mira", 1), personajes.PISO - 640 * esc, t - g[1])
     if p.get("rejas"):
         personajes.rejas(cr, t, W)
+    for tx in p.get("textos", []):  # textos sueltos sobre la escena
+        te = t - tx.get("entra", 0)
+        if te < 0 or t > tx.get("sale", 1e9):
+            continue
+        k = ease_out_back(te / 0.3)
+        tam = tx.get("tam", 60) * (0.6 + 0.4 * k)
+        col = tuple(tx.get("color", BLANCO))
+        cr.new_path()
+        texto(cr, tx["t"], tx["x"] + 4, tx["y"] + 4, tam, (0, 0, 0), alfa=0.55 * clamp(te / 0.2))
+        texto(cr, tx["t"], tx["x"], tx["y"], tam, col, alfa=clamp(te / 0.2))
+    for se in p.get("sellos", []):
+        if t <= se.get("sale", 1e9):
+            sello_en(cr, se["texto"], se.get("x", W / 2), se.get("y", 820), t - se.get("entra", 0), se.get("tam", 96),
+                     tuple(se["color"]) if se.get("color") else None, se.get("giro", -0.16))
     if V2:
         cr.restore()
-    titular(cr, p.get("titulo", ""), t)
+    if p.get("titulos"):  # el título cambia dentro de la escena: [[segundo, texto], ...]
+        ti, txt = max((x for x in p["titulos"] if x[0] <= t), key=lambda x: x[0], default=p["titulos"][0])
+        titular(cr, txt, max(0.0, t - ti))
+    else:
+        titular(cr, p.get("titulo", ""), t)
 
 
 ESCENAS["historia"] = esc_historia
@@ -1260,6 +1333,11 @@ def eventos_sonido(cfg, inicios):
             ev.append(("golpe", ini + 0.16))
         if base["tipo"] == "cifra" or base.get("icono") == "dinero":
             ev.append(("caja", ini + 0.35))
+        for se in base.get("sellos", []):
+            ev.append(("golpe", ini + se.get("entra", 0) + 0.12))
+        for pl in base.get("placas", []):
+            if pl.get("entra"):
+                ev.append(("pop", ini + pl["entra"]))
         for pj in base.get("personajes", []):
             if pj.get("globo"):
                 ev.append(("pop", ini + pj["globo"][1]))
@@ -1361,6 +1439,24 @@ def preparar(carpeta, archivo="motion.json"):
             continue
         cursor = render.buscar(palabras, e["desde"], cursor)
         inicios.append(palabras[cursor]["start"])
+    # Tiempos dados por frase: {"en": "frase", "mas": 0.2} vale «segundos desde el comienzo de la escena
+    # hasta que la voz dice esa frase» (más un desfase opcional). Sirve en cualquier campo de tiempo.
+    indices = [0]
+    c = 0
+    for e in cfg["escenas"][1:]:
+        c = render.buscar(palabras, e["desde"], c)
+        indices.append(c)
+
+    def resolver(v, k):
+        if isinstance(v, dict):
+            if "en" in v and set(v) <= {"en", "mas"}:
+                idx = render.buscar(palabras, v["en"], indices[k])
+                return round(palabras[idx]["start"] - inicios[k] + v.get("mas", 0.0), 3)
+            return {kk: resolver(vv, k) for kk, vv in v.items()}
+        if isinstance(v, list):
+            return [resolver(x, k) for x in v]
+        return v
+    cfg["escenas"] = [resolver(e, k) for k, e in enumerate(cfg["escenas"])]
     return {"cfg": cfg, "palabras": palabras, "audio": audio, "duracion": duracion,
             "inicio_audio": inicio_audio, "inicios": inicios}
 

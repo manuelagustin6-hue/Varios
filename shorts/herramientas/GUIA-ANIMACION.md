@@ -58,6 +58,18 @@ La primera escena empieza en 0. Cada una de las demás lleva `"desde": "frase"`:
 | `versus` | `titulo`, `izq` y `der`: `{icono, texto, color, args}` |
 | `transformar` | `titulo`, `de`, `a` (texto que se transforma letra por letra), `espera`, `pie` |
 
+### Tiempos atados a la voz
+
+En cualquier campo de tiempo se puede escribir, en lugar de un número, `{"en": "frase", "mas": 0.2}`: vale los segundos desde el comienzo de la escena hasta que la voz dice esa frase (más un desfase opcional). Ejemplos: `"poses": [[{"en": "y ganó"}, "celebrar"]]`, `"entra": {"en": "un corcho"}`. La frase se busca a partir del comienzo de la escena; si no está, el motor avisa y se detiene (en la escena final del bucle hay que usar números).
+
+### Más campos de `historia`
+
+- `titulos`: `[[segundo, texto], ...]` cambia el cartel dentro de la escena.
+- `placas`: `[{texto, x, y, tam, entra, sale}]` carteles claros con texto oscuro, detrás de los personajes. Para nombres de marcas y lugares (nunca logotipos).
+- `textos`: `[{t, x, y, tam, color, entra, sale}]` textos sueltos sobre la escena.
+- `sellos`: `[{texto, entra, sale, x, y, tam, color}]` sellos inclinados que caen de golpe (con sonido).
+- En `elementos`: `entra` y `sale` (aparece con rebote) y `sin_tarjeta` (sin la tarjeta de fondo).
+
 Personaje (dentro de `historia`):
 
 ```json
