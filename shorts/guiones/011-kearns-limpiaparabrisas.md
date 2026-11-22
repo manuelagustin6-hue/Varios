@@ -38,6 +38,12 @@ No usar como dato: «21 millones» ni «31 millones» cobrados (las fuentes no c
 - **TikTok / Instagram:** El profesor que inventó el limpiaparabrisas intermitente y terminó cobrándoles unos 30 millones de dólares a Ford y a Chrysler.
 - **Hashtags:** #datomillonario #ford #chrysler #inventos #historiasreales #negocios #curiosidades
 
+## Animación
+
+- **Versión final:** `produccion/011/video-ultra.mp4` (escenas en `historia-ultra.json`, arte propio en `ext_ultra.py`). Historia con personajes: Kearns aparece en todas las escenas y envejece durante los doce años de juicio.
+- **Versión alternativa:** `produccion/011/ultra/B/video.mp4`, más gráfica (cifras gigantes, ojo y limpiaparabrisas en paralelo, línea de tiempo y suma final de 28,9 millones).
+- Las dos se hicieron con el mismo audio; sirven para comparar formatos en TikTok.
+
 ## Versión anterior (noviembre)
 
 Locución sin bucle, con gancho «Un profesor universitario les ganó a Ford y a Chrysler…». Archivos: `audios/011/voz-final.mp3`, `produccion/011/video.mp4`, `video-motion.mp4` y `video-historia.mp4`.

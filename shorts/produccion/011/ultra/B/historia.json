@@ -1,0 +1,264 @@
+{
+  "audio": "../../../../audios/011/voz-bucle.mp3",
+  "palabras": "../../palabras-bucle.json",
+  "extension": "ext.py",
+  "salida": "video.mp4",
+  "v2": true,
+  "paleta": "roja",
+  "bucle": true,
+  "reemplazos": {
+    "treinta millones": "30 millones",
+    "seis años": "6 años",
+    "doce años": "12 años",
+    "diez millones": "10 millones",
+    "diecinueve millones": "19 millones"
+  },
+  "sonidos": [
+    [
+      "whoosh",
+      "Ford y Chrysler",
+      0.25
+    ],
+    [
+      "caja",
+      "treinta millones",
+      -0.05
+    ],
+    [
+      "pop",
+      "al inventor",
+      0.05
+    ],
+    [
+      "pop",
+      "enseñaba",
+      -0.02
+    ],
+    [
+      "pop",
+      "en Detroit",
+      -0.06
+    ],
+    [
+      "pop",
+      "un corcho",
+      0.14
+    ],
+    [
+      "golpe",
+      "dañó un ojo",
+      0.0
+    ],
+    [
+      "pop",
+      "parpadea",
+      -0.02
+    ],
+    [
+      "whoosh",
+      "Así inventó",
+      0.5
+    ],
+    [
+      "whoosh",
+      "limpiaparabrisas intermitente",
+      0.58
+    ],
+    [
+      "whoosh",
+      "intermitente",
+      0.66
+    ],
+    [
+      "golpe",
+      "pero no hubo",
+      0.4
+    ],
+    [
+      "pop",
+      "Ford lanzó",
+      0.05
+    ],
+    [
+      "pop",
+      "Luego",
+      0.6
+    ],
+    [
+      "golpe",
+      "demandó",
+      0.27
+    ],
+    [
+      "golpe",
+      "demandó",
+      0.55
+    ],
+    [
+      "caja",
+      "aceptó pagarle",
+      0.1
+    ],
+    [
+      "golpe",
+      "ganó",
+      0.06
+    ],
+    [
+      "golpe",
+      "La justicia",
+      0.36
+    ],
+    [
+      "caja",
+      "a pagarle casi",
+      0.0
+    ],
+    [
+      "caja",
+      "casi diecinueve",
+      0.9
+    ]
+  ],
+  "escenas": [
+    {
+      "tipo": "gancho",
+      "cartel": "LE PAGARON UNOS",
+      "cifra": "$30",
+      "etiqueta": "AL INVENTOR DE ESTO"
+    },
+    {
+      "tipo": "ficha",
+      "desde": "Robert",
+      "titulo": "ROBERT KEARNS",
+      "estilo": "kearns",
+      "dato1": "PROFESOR DE INGENIERÍA",
+      "dato2": "DETROIT"
+    },
+    {
+      "tipo": "corcho",
+      "desde": "Según contaba",
+      "titulo": "NOCHE DE BODAS, 1953",
+      "fuente": "SEGÚN CONTABA ÉL",
+      "globo": "¡AY!",
+      "sale": 2.26,
+      "pega": 3.22
+    },
+    {
+      "tipo": "ojo",
+      "desde": "Años después notó",
+      "titulo": "AÑOS DESPUÉS, NOTÓ ALGO",
+      "titulo2": "TU OJO PARPADEA",
+      "pie": "CADA POCOS SEGUNDOS",
+      "parpadeos": [
+        0.62,
+        1.96,
+        3.12
+      ],
+      "pie_en": 2.4
+    },
+    {
+      "tipo": "paralelo",
+      "desde": "Así inventó",
+      "titulo": "UN LIMPIAPARABRISAS\nQUE PARPADEA",
+      "ciclos": [
+        0.5,
+        1.42,
+        2.34
+      ]
+    },
+    {
+      "tipo": "reunion",
+      "desde": "Se lo mostró",
+      "anio": "1963",
+      "cartel": "SE LO MOSTRÓ A FORD",
+      "sello": "SIN ACUERDO",
+      "sello_en": 1.28
+    },
+    {
+      "tipo": "lanzamiento",
+      "desde": "Unos seis años",
+      "cartel0": "6 AÑOS DESPUÉS",
+      "cartel1": "FORD LANZÓ EL SUYO",
+      "luego": "DESPUÉS",
+      "cartel2": "CHRYSLER TAMBIÉN",
+      "ford_en": 1.3,
+      "chrysler_en": 2.96
+    },
+    {
+      "tipo": "patente",
+      "desde": "tenía la patente",
+      "titulo": "TENÍA LA PATENTE",
+      "titulo2": "DEMANDÓ A LAS DOS",
+      "anio_patente": "1967",
+      "demandas": [
+        [
+          "FORD",
+          "1978"
+        ],
+        [
+          "CHRYSLER",
+          "1982"
+        ]
+      ],
+      "demanda_en": 1.0
+    },
+    {
+      "tipo": "doce",
+      "desde": "Tras doce años",
+      "titulo": "EN TRIBUNALES",
+      "desde_anio": 1978,
+      "hasta_anio": 1990
+    },
+    {
+      "tipo": "pago",
+      "desde": "Ford aceptó",
+      "anio": "1990",
+      "cartel": "FORD ACEPTÓ PAGAR",
+      "monto": 10.2,
+      "leyenda": "CADA PILA = 1 MILLÓN"
+    },
+    {
+      "tipo": "tribunal",
+      "desde": "Contra",
+      "titulo": "CONTRA CHRYSLER",
+      "titulo2": "SU PROPIO ABOGADO",
+      "sello": "GANÓ",
+      "sello_en": 3.12
+    },
+    {
+      "tipo": "pago",
+      "desde": "La justicia",
+      "placa": "CHRYSLER",
+      "cartel": "CONDENADA A PAGAR",
+      "monto": 18.7,
+      "inicio": 0.35,
+      "cuenta": 1.1,
+      "leyenda": "CADA PILA = 1 MILLÓN"
+    },
+    {
+      "tipo": "suma",
+      "desde": "casi diecinueve",
+      "titulo": "EN TOTAL",
+      "filas": [
+        [
+          "FORD",
+          "$10,2 M"
+        ],
+        [
+          "CHRYSLER",
+          "$18,7 M"
+        ]
+      ],
+      "total": "$28,9 M"
+    },
+    {
+      "tipo": "gancho",
+      "desde": "Así fue como",
+      "desfase": -0.8,
+      "cartel": "LE PAGARON UNOS",
+      "cifra": "$30",
+      "etiqueta": "AL INVENTOR DE ESTO"
+    }
+  ]
+}
