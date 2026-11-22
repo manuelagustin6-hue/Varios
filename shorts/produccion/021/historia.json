@@ -1,0 +1,356 @@
+{
+ "audio": "../../audios/021/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda3_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {},
+ "escenas": [
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "ferruccio",
+     "x": 300,
+     "pose": "nervioso"
+    },
+    {
+     "estilo": "enzo",
+     "x": 790,
+     "pose": "hablar",
+     "mira": -1
+    }
+   ],
+   "titulo": "LAMBORGHINI NACIÓ\nDE UNA PELEA",
+   "placas": [
+    {
+     "texto": "LAMBORGHINI",
+     "x": 290,
+     "y": 565,
+     "tam": 46
+    },
+    {
+     "texto": "FERRARI",
+     "x": 800,
+     "y": 565,
+     "tam": 46
+    }
+   ],
+   "textos": [
+    {
+     "t": "VS",
+     "x": 545,
+     "y": 900,
+     "tam": 110,
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "campo",
+   "personajes": [
+    {
+     "estilo": "ferruccio",
+     "x": 230,
+     "pose": "sonreir"
+    }
+   ],
+   "titulo": "FERRUCCIO LAMBORGHINI\nVENDÍA TRACTORES",
+   "desde": "Ferruccio Lamborghini",
+   "elementos": [
+    {
+     "icono": "tractor",
+     "x": 700,
+     "y": 1010,
+     "escala": 0.95,
+     "sin_tarjeta": true
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "cochera",
+   "personajes": [
+    {
+     "estilo": "ferruccio",
+     "x": 220,
+     "pose": "sonreir",
+     "poses": [
+      [
+       {
+        "en": "pero el embrague"
+       },
+       "nervioso"
+      ]
+     ]
+    }
+   ],
+   "desde": "Con ese dinero",
+   "titulos": [
+    [
+     0,
+     "SE COMPRABA\nAUTOS DEPORTIVOS"
+    ],
+    [
+     {
+      "en": "pero el embrague"
+     },
+     "…Y SE LE ROMPÍAN"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "deportivo",
+     "x": 720,
+     "y": 1090,
+     "escala": 1.1,
+     "sin_tarjeta": true
+    }
+   ],
+   "placas": [
+    {
+     "texto": "FERRARI",
+     "x": 720,
+     "y": 930,
+     "tam": 46,
+     "entra": {
+      "en": "varios Ferrari"
+     }
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "EMBRAGUE ROTO",
+     "entra": {
+      "en": "se le rompía"
+     },
+     "x": 700,
+     "y": 790,
+     "tam": 56
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "ferruccio",
+     "x": 300,
+     "pose": "hablar",
+     "globo": [
+      "¡El embrague\nfalla!",
+      {
+       "en": "fue a quejarse"
+      },
+      {
+       "en": "y Ferrari le"
+      }
+     ],
+     "poses": [
+      [
+       {
+        "en": "y Ferrari le"
+       },
+       "escuchar"
+      ],
+      [
+       {
+        "en": "no tenía nada"
+       },
+       "sorpresa"
+      ]
+     ]
+    },
+    {
+     "estilo": "enzo",
+     "x": 790,
+     "pose": "escuchar",
+     "mira": -1,
+     "poses": [
+      [
+       {
+        "en": "y Ferrari le"
+       },
+       "hablar"
+      ]
+     ],
+     "globo": [
+      "Usted sabe de tractores,\nno de autos",
+      {
+       "en": "le respondió"
+      },
+      12
+     ]
+    }
+   ],
+   "desde": "Según contaba",
+   "titulos": [
+    [
+     0,
+     "SEGÚN CONTABA ÉL MISMO…"
+    ],
+    [
+     {
+      "en": "y Ferrari le"
+     },
+     "LA RESPUESTA DE FERRARI"
+    ]
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "cochera",
+   "personajes": [
+    {
+     "estilo": "ferruccio",
+     "x": 540,
+     "pose": "pensar",
+     "poses": [
+      [
+       0.9,
+       "celebrar"
+      ]
+     ],
+     "globo": [
+      "¡Lo hago yo!",
+      0.9,
+      4
+     ]
+    }
+   ],
+   "titulo": "DECIDIÓ CONSTRUIR\nUNO MEJOR",
+   "desde": "Lamborghini decidió"
+  },
+  {
+   "tipo": "linea_tiempo",
+   "desde": "En 1963",
+   "titulo": "DE TRACTORES\nA DEPORTIVOS",
+   "anios": [
+    [
+     1963,
+     "FÁBRICA",
+     [
+      1.0,
+      0.72,
+      0.5
+     ]
+    ],
+    [
+     1964,
+     "PRIMER AUTO",
+     [
+      0.24,
+      0.86,
+      0.52
+     ]
+    ]
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "1964: SU PRIMER AUTO",
+   "desde": "presentó su primer",
+   "elementos": [
+    {
+     "icono": "deportivo",
+     "x": 540,
+     "y": 960,
+     "escala": 1.05,
+     "sin_tarjeta": true,
+     "args": {
+      "color": [
+       0.96,
+       0.56,
+       0.16
+      ]
+     }
+    }
+   ],
+   "placas": [
+    {
+     "texto": "LAMBORGHINI",
+     "x": 540,
+     "y": 640,
+     "tam": 56
+    }
+   ]
+  },
+  {
+   "tipo": "versus",
+   "desde": "Hoy es uno",
+   "titulo": "RIVALES HASTA HOY",
+   "izq": {
+    "icono": "deportivo",
+    "texto": "FERRARI"
+   },
+   "der": {
+    "icono": "deportivo",
+    "texto": "LAMBORGHINI",
+    "args": {
+     "color": [
+      0.96,
+      0.56,
+      0.16
+     ]
+    }
+   }
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "ferruccio",
+     "x": 300,
+     "pose": "nervioso"
+    },
+    {
+     "estilo": "enzo",
+     "x": 790,
+     "pose": "hablar",
+     "mira": -1
+    }
+   ],
+   "titulo": "LAMBORGHINI NACIÓ\nDE UNA PELEA",
+   "desde": "Y pensar que",
+   "placas": [
+    {
+     "texto": "LAMBORGHINI",
+     "x": 290,
+     "y": 565,
+     "tam": 46
+    },
+    {
+     "texto": "FERRARI",
+     "x": 800,
+     "y": 565,
+     "tam": 46
+    }
+   ],
+   "textos": [
+    {
+     "t": "VS",
+     "x": 545,
+     "y": 900,
+     "tam": 110,
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ]
+    }
+   ]
+  }
+ ]
+}

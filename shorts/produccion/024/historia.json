@@ -1,0 +1,371 @@
+{
+ "audio": "../../audios/024/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda3_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {
+  "cinco mil ciento veintiséis": "5.126",
+  "cinco mil ciento veintisiete": "5.127"
+ },
+ "escenas": [
+  {
+   "tipo": "cifra",
+   "titulo": "EL CREADOR DE DYSON\nFRACASÓ",
+   "de": 5000,
+   "a": 5126,
+   "unidad": "VECES",
+   "color": [
+    1.0,
+    0.3,
+    0.36
+   ],
+   "cuenta": 1.6,
+   "icono": "aspiradora",
+   "args": {
+    "tipo": "ciclon"
+   }
+  },
+  {
+   "tipo": "historia",
+   "decorado": "casa",
+   "personajes": [
+    {
+     "estilo": "dyson",
+     "x": 280,
+     "pose": "nervioso",
+     "poses": [
+      [
+       {
+        "en": "Se le ocurrió"
+       },
+       "pensar"
+      ]
+     ],
+     "globo": [
+      "¿Y si no\ntuviera bolsa?",
+      {
+       "en": "Se le ocurrió"
+      },
+      10
+     ]
+    }
+   ],
+   "desde": "James Dyson",
+   "titulos": [
+    [
+     0,
+     "JAMES DYSON, HARTO\nDE SU ASPIRADORA"
+    ],
+    [
+     {
+      "en": "Cuando la bolsa"
+     },
+     "BOLSA LLENA:\nDEJA DE ASPIRAR"
+    ],
+    [
+     {
+      "en": "Se le ocurrió"
+     },
+     "LA IDEA: SIN BOLSA"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "aspiradora",
+     "x": 740,
+     "y": 1020,
+     "escala": 0.8,
+     "sin_tarjeta": true,
+     "args": {
+      "tipo": "bolsa"
+     }
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "NO ASPIRA",
+     "entra": {
+      "en": "dejaba de aspirar"
+     },
+     "sale": {
+      "en": "Se le ocurrió"
+     },
+     "x": 740,
+     "y": 830,
+     "tam": 60
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "cochera",
+   "personajes": [
+    {
+     "estilo": "dyson",
+     "x": 270,
+     "pose": "dar",
+     "poses": [
+      [
+       {
+        "en": "No funcionó"
+       },
+       "triste"
+      ],
+      [
+       {
+        "en": "Construyó otro"
+       },
+       "dar"
+      ]
+     ]
+    }
+   ],
+   "desde": "Se encerró",
+   "titulos": [
+    [
+     0,
+     "UN TALLER DETRÁS\nDE SU CASA"
+    ],
+    [
+     {
+      "en": "No funcionó"
+     },
+     "NO FUNCIONÓ"
+    ],
+    [
+     {
+      "en": "Construyó otro"
+     },
+     "CONSTRUYÓ OTRO…\nY OTRO"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "aspiradora",
+     "x": 740,
+     "y": 1020,
+     "escala": 0.8,
+     "sin_tarjeta": true,
+     "entra": {
+      "en": "y construyó"
+     },
+     "args": {
+      "tipo": "prototipo"
+     }
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "FALLÓ",
+     "entra": {
+      "en": "No funcionó"
+     },
+     "sale": {
+      "en": "Construyó otro"
+     },
+     "x": 740,
+     "y": 880,
+     "tam": 80
+    }
+   ],
+   "placas": [
+    {
+     "texto": "PROTOTIPO 1",
+     "x": 740,
+     "y": 760,
+     "tam": 44,
+     "entra": {
+      "en": "y construyó"
+     },
+     "sale": {
+      "en": "Construyó otro"
+     }
+    },
+    {
+     "texto": "PROTOTIPO 2",
+     "x": 740,
+     "y": 760,
+     "tam": 44,
+     "entra": {
+      "en": "Construyó otro"
+     },
+     "sale": {
+      "en": "y otro"
+     }
+    },
+    {
+     "texto": "PROTOTIPO 3…",
+     "x": 740,
+     "y": 760,
+     "tam": 44,
+     "entra": {
+      "en": "y otro"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "casa",
+   "personajes": [
+    {
+     "estilo": "dyson",
+     "x": 290,
+     "pose": "triste"
+    },
+    {
+     "estilo": "mujer",
+     "x": 770,
+     "pose": "dar",
+     "mira": -1,
+     "objeto": "billetes",
+     "entra": {
+      "en": "y del sueldo"
+     }
+    }
+   ],
+   "desde": "Durante años",
+   "titulos": [
+    [
+     0,
+     "AÑOS DE DEUDAS"
+    ],
+    [
+     {
+      "en": "y del sueldo"
+     },
+     "…Y EL SUELDO\nDE SU ESPOSA"
+    ]
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": "El prototipo",
+   "titulo": "EL PROTOTIPO",
+   "de": 5100,
+   "a": 5127,
+   "unidad": "¡FUNCIONÓ!",
+   "color": [
+    0.24,
+    0.86,
+    0.52
+   ],
+   "cuenta": 1.3,
+   "icono": "aspiradora",
+   "args": {
+    "tipo": "ciclon"
+   }
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "dyson",
+     "x": 300,
+     "pose": "dar",
+     "objeto": "papel",
+     "poses": [
+      [
+       {
+        "en": "así que"
+       },
+       "celebrar"
+      ]
+     ]
+    },
+    {
+     "estilo": "ejecutivo",
+     "x": 790,
+     "pose": "hablar",
+     "mira": -1
+    }
+   ],
+   "desde": "Ninguna gran marca",
+   "titulos": [
+    [
+     0,
+     "NINGUNA MARCA\nLA QUISO"
+    ],
+    [
+     {
+      "en": "así que"
+     },
+     "LA FABRICÓ ÉL MISMO"
+    ]
+   ],
+   "sellos": [
+    {
+     "texto": "NO",
+     "entra": 0.7,
+     "sale": {
+      "en": "así que"
+     },
+     "x": 540,
+     "y": 900,
+     "tam": 110
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "HOY: EN TODO EL MUNDO",
+   "desde": "Hoy Dyson",
+   "elementos": [
+    {
+     "icono": "aspiradora",
+     "x": 540,
+     "y": 900,
+     "escala": 0.95,
+     "sin_tarjeta": true,
+     "args": {
+      "tipo": "ciclon"
+     }
+    }
+   ],
+   "placas": [
+    {
+     "texto": "DYSON",
+     "x": 540,
+     "y": 560,
+     "tam": 60
+    }
+   ]
+  },
+  {
+   "tipo": "icono",
+   "desde": "y su fundador",
+   "titulo": "SU FUNDADOR",
+   "icono": "dinero",
+   "pie": "entre los más ricos del Reino Unido",
+   "color_pie": [
+    0.24,
+    0.86,
+    0.52
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "titulo": "EL CREADOR DE DYSON\nFRACASÓ",
+   "de": 5000,
+   "a": 5000,
+   "unidad": "VECES",
+   "color": [
+    1.0,
+    0.3,
+    0.36
+   ],
+   "cuenta": 3.2,
+   "icono": "aspiradora",
+   "args": {
+    "tipo": "ciclon"
+   },
+   "desde": "Y pensar que"
+  }
+ ]
+}

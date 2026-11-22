@@ -1,0 +1,325 @@
+{
+ "audio": "../../audios/025/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda3_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {
+  "tres mil millones": "3.000 millones",
+  "años treinta": "años 30"
+ },
+ "escenas": [
+  {
+   "tipo": "historia",
+   "decorado": "pared",
+   "personajes": [],
+   "titulo": "SE INVENTÓ PARA\nLIMPIAR PAREDES",
+   "elementos": [
+    {
+     "icono": "lata_masa",
+     "x": 540,
+     "y": 880,
+     "escala": 1.0,
+     "sin_tarjeta": true,
+     "args": {
+      "texto": "PLAY-DOH"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pared",
+   "personajes": [
+    {
+     "estilo": "vecina",
+     "x": 280,
+     "pose": "escuchar",
+     "poses": [
+      [
+       {
+        "en": "y el hollín"
+       },
+       "nervioso"
+      ]
+     ]
+    }
+   ],
+   "desde": "En los años treinta",
+   "titulos": [
+    [
+     0,
+     "AÑOS 30: CALEFACCIÓN\nA CARBÓN"
+    ],
+    [
+     {
+      "en": "y el hollín"
+     },
+     "EL HOLLÍN MANCHABA\nLAS PAREDES"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "estufa",
+     "x": 770,
+     "y": 1000,
+     "escala": 0.75,
+     "sin_tarjeta": true
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pared",
+   "personajes": [
+    {
+     "estilo": "vecina",
+     "x": 300,
+     "pose": "dar",
+     "objeto": "masa"
+    }
+   ],
+   "titulo": "UNA MASA PARA\nLIMPIARLAS",
+   "desde": "Una empresa",
+   "elementos": [
+    {
+     "icono": "masa",
+     "x": 770,
+     "y": 800,
+     "escala": 0.5
+    }
+   ],
+   "placas": [
+    {
+     "texto": "LIMPIADOR DE PAREDES",
+     "x": 770,
+     "y": 1010,
+     "tam": 36,
+     "entra": 0.8
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pared_limpia",
+   "personajes": [
+    {
+     "estilo": "vecina",
+     "x": 300,
+     "pose": "celebrar"
+    }
+   ],
+   "desde": "Pero después de la guerra",
+   "titulos": [
+    [
+     0,
+     "LLEGÓ LA CALEFACCIÓN\nA GAS"
+    ],
+    [
+     {
+      "en": "Las paredes dejaron"
+     },
+     "LAS PAREDES YA\nNO SE ENSUCIABAN"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "masa",
+     "x": 770,
+     "y": 860,
+     "escala": 0.5
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "YA NO HACE FALTA",
+     "entra": {
+      "en": "Las paredes dejaron",
+      "mas": 0.5
+     },
+     "x": 720,
+     "y": 860,
+     "tam": 48
+    }
+   ]
+  },
+  {
+   "tipo": "grafico",
+   "desde": "y la empresa quedó",
+   "titulo": "AL BORDE DE LA QUIEBRA",
+   "valores": [
+    9,
+    8.5,
+    7,
+    5,
+    3,
+    1.5,
+    0.8
+   ],
+   "color": [
+    1.0,
+    0.3,
+    0.36
+   ],
+   "dibujo": 1.5,
+   "pie": "ventas del limpiador"
+  },
+  {
+   "tipo": "historia",
+   "decorado": "aula",
+   "personajes": [
+    {
+     "estilo": "maestra",
+     "x": 250,
+     "pose": "sonreir",
+     "poses": [
+      [
+       {
+        "en": "descubrió"
+       },
+       "sorpresa"
+      ]
+     ]
+    },
+    {
+     "estilo": "nina",
+     "x": 650,
+     "pose": "celebrar",
+     "mira": -1,
+     "escala": 0.6
+    },
+    {
+     "estilo": "nino",
+     "x": 860,
+     "pose": "sonreir",
+     "mira": -1,
+     "escala": 0.6,
+     "objeto": "masa"
+    }
+   ],
+   "desde": "Hasta que una maestra",
+   "titulos": [
+    [
+     0,
+     "UNA MAESTRA\nDE PREESCOLAR…"
+    ],
+    [
+     {
+      "en": "descubrió"
+     },
+     "…SUS ALUMNOS LA USABAN\nPARA MODELAR"
+    ]
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "desde": "La empresa le quitó",
+   "titulos": [
+    [
+     0,
+     "LE QUITÓ EL DETERGENTE"
+    ],
+    [
+     {
+      "en": "le agregó"
+     },
+     "LE AGREGÓ COLORES"
+    ],
+    [
+     {
+      "en": "y le puso"
+     },
+     "UN NOMBRE NUEVO…"
+    ],
+    [
+     {
+      "en": "Play-Doh"
+     },
+     "…PLAY-DOH"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "masa",
+     "x": 540,
+     "y": 880,
+     "escala": 0.8,
+     "sin_tarjeta": true,
+     "sale": {
+      "en": "le agregó"
+     }
+    },
+    {
+     "icono": "masa",
+     "x": 540,
+     "y": 880,
+     "escala": 0.8,
+     "sin_tarjeta": true,
+     "entra": {
+      "en": "le agregó"
+     },
+     "sale": {
+      "en": "Play-Doh"
+     },
+     "args": {
+      "colores": true
+     }
+    },
+    {
+     "icono": "lata_masa",
+     "x": 540,
+     "y": 900,
+     "escala": 0.85,
+     "sin_tarjeta": true,
+     "entra": {
+      "en": "Play-Doh"
+     },
+     "args": {
+      "texto": "PLAY-DOH"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": "Desde entonces",
+   "titulo": "SE VENDIERON MÁS DE",
+   "de": 0,
+   "a": 3000,
+   "unidad": "MILLONES DE LATAS",
+   "color": [
+    0.24,
+    0.86,
+    0.52
+   ],
+   "cuenta": 1.6,
+   "icono": "lata_masa",
+   "args": {
+    "texto": "PLAY-DOH"
+   }
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pared",
+   "personajes": [],
+   "titulo": "SE INVENTÓ PARA\nLIMPIAR PAREDES",
+   "desde": "y todo empezó porque",
+   "elementos": [
+    {
+     "icono": "lata_masa",
+     "x": 540,
+     "y": 880,
+     "escala": 1.0,
+     "sin_tarjeta": true,
+     "args": {
+      "texto": "PLAY-DOH"
+     }
+    }
+   ]
+  }
+ ]
+}

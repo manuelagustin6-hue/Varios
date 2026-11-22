@@ -1,0 +1,981 @@
+{
+ "titulo": "GameStop: internet contra Wall Street",
+ "escenas": [
+  {
+   "tipo": "presentador",
+   "titulo": "INTERNET CONTRA WALL STREET",
+   "pose": "hablar",
+   "poses": {
+    "2": "señalar"
+   },
+   "frases": [
+    "Un grupo de usuarios de internet le hizo perder miles de millones de dólares a Wall Street... con una tienda de videojuegos.",
+    "En menos de un mes, una acción que valía diecisiete dólares llegó a tocar cuatrocientos ochenta y tres.",
+    "Esta es la historia de GameStop, y de cómo funciona una de las jugadas más riesgosas de la bolsa."
+   ],
+   "lineas": [
+    {
+     "t": "INTERNET VS. WALL STREET",
+     "tam": 72,
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "en": 0
+    },
+    {
+     "t": "DE $17 A $483",
+     "tam": 140,
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "en": 1
+    },
+    {
+     "t": "en menos de un mes",
+     "tam": 50,
+     "color": [
+      0.88,
+      0.84,
+      0.92
+     ],
+     "en": 1
+    }
+   ]
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "UNA EMPRESA EN PROBLEMAS",
+   "pose": "hablar",
+   "frases": [
+    "GameStop es una cadena de tiendas de videojuegos de Estados Unidos, con miles de locales.",
+    "Pero en dos mil veinte el negocio iba mal: los juegos se compraban cada vez más por descarga, y la pandemia vació los centros comerciales.",
+    "La empresa perdía dinero, y su acción llegó a valer menos de cinco dólares.",
+    "Para muchos fondos de inversión, la conclusión era obvia: GameStop iba camino a desaparecer."
+   ],
+   "iconos": [
+    {
+     "icono": "tienda",
+     "x": 1230,
+     "y": 430,
+     "escala": 0.75,
+     "en": 0
+    }
+   ],
+   "puntos": []
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "¿QUÉ ES VENDER EN CORTO?",
+   "pose": "hablar",
+   "poses": {
+    "4": "señalar"
+   },
+   "frases": [
+    "Y esos fondos no solo evitaban la acción: apostaban en su contra. Eso se llama vender en corto.",
+    "Funciona así. Pides prestada una acción y la vendes hoy, por ejemplo, a veinte dólares.",
+    "Esperas a que el precio baje.",
+    "Si cae a cinco, la compras de nuevo, la devuelves a quien te la prestó, y te quedas con la diferencia: quince dólares.",
+    "Es decir: ganas cuando la acción cae."
+   ],
+   "puntos": [
+    {
+     "t": "Vender en corto = apostar a que baja",
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "en": 0
+    },
+    {
+     "t": "1. Pides prestada la acción y la vendes a $20",
+     "en": 1
+    },
+    {
+     "t": "2. Esperas a que el precio baje",
+     "en": 2
+    },
+    {
+     "t": "3. La recompras a $5 y la devuelves",
+     "en": 3
+    },
+    {
+     "t": "Ganancia: $15 por acción",
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "en": 3
+    }
+   ]
+  },
+  {
+   "tipo": "comparar",
+   "titulo": "EL RIESGO DE CADA APUESTA",
+   "frases": [
+    "Pero hay un detalle clave.",
+    "Cuando compras una acción, lo máximo que puedes perder es lo que pusiste: si pagas veinte dólares, pierdes veinte como mucho.",
+    "Cuando vendes en corto es al revés. Si la acción sube a cien, pierdes ochenta. Si sube a quinientos, pierdes cuatrocientos ochenta.",
+    "Como un precio no tiene techo, la pérdida posible es ilimitada."
+   ],
+   "columnas": [
+    {
+     "titulo": "COMPRAR",
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "en": 1,
+     "filas": [
+      {
+       "t": "Pagas: $20",
+       "en": 1
+      },
+      {
+       "t": "Peor caso: baja a $0",
+       "en": 1
+      },
+      {
+       "t": "Pérdida máxima: $20",
+       "color": [
+        1.0,
+        0.72,
+        0.5
+       ],
+       "en": 1
+      }
+     ]
+    },
+    {
+     "titulo": "VENDER EN CORTO",
+     "color": [
+      1.0,
+      0.3,
+      0.36
+     ],
+     "en": 2,
+     "filas": [
+      {
+       "t": "Vendes a: $20",
+       "en": 2
+      },
+      {
+       "t": "Sube a $100: pierdes $80",
+       "en": 2
+      },
+      {
+       "t": "Sube a $500: pierdes $480",
+       "en": 2
+      },
+      {
+       "t": "Pérdida máxima: ILIMITADA",
+       "color": [
+        1.0,
+        0.3,
+        0.36
+       ],
+       "en": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "UNA APUESTA DEMASIADO GRANDE",
+   "pose": "hablar",
+   "poses": {
+    "1": "señalar"
+   },
+   "frases": [
+    "Con GameStop, la apuesta en contra era enorme.",
+    "Las acciones vendidas en corto equivalían a cerca del ciento cuarenta por ciento de las acciones disponibles en el mercado.",
+    "Parece imposible, pero ocurre cuando una misma acción se presta y se vende más de una vez.",
+    "Eso significaba una cosa: si el precio subía, muchos iban a necesitar comprar al mismo tiempo, y no habría acciones para todos."
+   ],
+   "lineas": [
+    {
+     "t": "ACCIONES VENDIDAS EN CORTO",
+     "tam": 54,
+     "color": [
+      0.88,
+      0.84,
+      0.92
+     ],
+     "en": 0
+    },
+    {
+     "t": "140 %",
+     "tam": 230,
+     "color": [
+      1.0,
+      0.3,
+      0.36
+     ],
+     "en": 1
+    },
+    {
+     "t": "de las acciones disponibles",
+     "tam": 50,
+     "color": [
+      1,
+      1,
+      1
+     ],
+     "en": 1
+    }
+   ]
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "EL INVERSOR QUE VIO OTRA COSA",
+   "personaje": "programador",
+   "pose": "pensar",
+   "poses": {
+    "1": "hablar",
+    "3": "señalar"
+   },
+   "frases": [
+    "Mientras tanto, un inversor particular pensaba distinto.",
+    "Se llama Keith Gill, y en internet se lo conocía como Roaring Kitty.",
+    "Desde dos mil diecinueve publicaba su análisis: creía que GameStop valía más de lo que decía el mercado.",
+    "Había invertido unos cincuenta y tres mil dólares, y mostraba sus resultados en un foro de Reddit llamado WallStreetBets."
+   ],
+   "puntos": [
+    {
+     "t": "Keith Gill, alias «Roaring Kitty»",
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "en": 1
+    },
+    {
+     "t": "Sostenía que la acción estaba barata",
+     "en": 2
+    },
+    {
+     "t": "Su inversión: unos $53.000",
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "en": 3
+    },
+    {
+     "t": "Foro: WallStreetBets (Reddit)",
+     "en": 3
+    }
+   ]
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "EL FORO SE SUMA",
+   "pose": "hablar",
+   "poses": {
+    "2": "señalar"
+   },
+   "frases": [
+    "A fines de dos mil veinte, cada vez más usuarios del foro empezaron a mirar los mismos números.",
+    "Además, un empresario conocido, Ryan Cohen, había comprado una parte importante de la empresa y en enero entró a su directorio.",
+    "Y muchos notaron lo mismo: si suficientes personas compraban, los fondos que apostaban en contra iban a quedar atrapados."
+   ],
+   "iconos": [
+    {
+     "icono": "personas",
+     "x": 1230,
+     "y": 430,
+     "escala": 0.75,
+     "en": 0,
+     "pie": "Millones de pequeños inversores",
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ]
+    }
+   ],
+   "puntos": []
+  },
+  {
+   "tipo": "precio",
+   "titulo": "ENERO DE 2021: EMPIEZA LA SUBIDA",
+   "frases": [
+    "El cuatro de enero de dos mil veintiuno, la acción cerró a diecisiete dólares.",
+    "El trece de enero saltó a treinta y uno.",
+    "Y el veintidós ya valía sesenta y cinco: casi cuatro veces más en tres semanas."
+   ],
+   "puntos": [
+    [
+     "04/01",
+     17.25
+    ],
+    [
+     "05/01",
+     17.37
+    ],
+    [
+     "06/01",
+     18.36
+    ],
+    [
+     "07/01",
+     18.08
+    ],
+    [
+     "08/01",
+     17.69
+    ],
+    [
+     "11/01",
+     19.94
+    ],
+    [
+     "12/01",
+     19.95
+    ],
+    [
+     "13/01",
+     31.4
+    ],
+    [
+     "14/01",
+     39.91
+    ],
+    [
+     "15/01",
+     35.5
+    ],
+    [
+     "19/01",
+     39.36
+    ],
+    [
+     "20/01",
+     39.12
+    ],
+    [
+     "21/01",
+     43.03
+    ],
+    [
+     "22/01",
+     65.01
+    ],
+    [
+     "25/01",
+     76.79
+    ],
+    [
+     "26/01",
+     147.98
+    ],
+    [
+     "27/01",
+     347.51
+    ],
+    [
+     "28/01",
+     193.6
+    ],
+    [
+     "29/01",
+     325.0
+    ],
+    [
+     "01/02",
+     225.0
+    ],
+    [
+     "02/02",
+     90.0
+    ],
+    [
+     "03/02",
+     92.41
+    ],
+    [
+     "04/02",
+     53.5
+    ]
+   ],
+   "v_max": 520,
+   "inicio": 0,
+   "tramos": [
+    {
+     "hasta": 6,
+     "en": 0,
+     "dur": 2.5
+    },
+    {
+     "hasta": 7,
+     "en": 1,
+     "dur": 1.2
+    },
+    {
+     "hasta": 13,
+     "en": 2,
+     "dur": 2.5
+    }
+   ],
+   "marcas": [
+    {
+     "i": 0,
+     "t": "4/1: $17",
+     "en": 0,
+     "lado": "der",
+     "dy": -45
+    },
+    {
+     "i": 13,
+     "t": "22/1: $65",
+     "en": 2,
+     "lado": "izq",
+     "dy": -45,
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ]
+    }
+   ],
+   "nota": "GameStop (GME) · cierre en dólares · valores previos al desdoblamiento de 2022",
+   "cada": 3
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "¿QUÉ ES UN «SHORT SQUEEZE»?",
+   "pose": "hablar",
+   "poses": {
+    "3": "señalar"
+   },
+   "frases": [
+    "Ahí empezó lo que en inglés se llama short squeeze: un estrangulamiento de los vendedores en corto.",
+    "Cuando el precio sube, quienes vendieron en corto acumulan pérdidas.",
+    "Para dejar de perder tienen que cerrar su apuesta, y la única forma de cerrarla es comprar la acción.",
+    "Pero esas compras empujan el precio todavía más arriba, y obligan a otros a comprar también. Es un círculo que se alimenta solo."
+   ],
+   "puntos": [
+    {
+     "t": "Short squeeze: el círculo que se alimenta solo",
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "en": 0
+    },
+    {
+     "t": "1. El precio sube",
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "en": 1
+    },
+    {
+     "t": "2. Los vendedores en corto pierden",
+     "color": [
+      1.0,
+      0.3,
+      0.36
+     ],
+     "en": 1
+    },
+    {
+     "t": "3. Compran para cerrar su apuesta",
+     "en": 2
+    },
+    {
+     "t": "4. Esas compras suben más el precio",
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "en": 3
+    }
+   ]
+  },
+  {
+   "tipo": "precio",
+   "titulo": "LA SEMANA DE LA LOCURA",
+   "frases": [
+    "La última semana de enero, el círculo se disparó.",
+    "El lunes veinticinco la acción cerró a setenta y seis dólares. El martes, a ciento cuarenta y siete.",
+    "Esa noche, Elon Musk publicó una sola palabra con un enlace al foro: Gamestonk.",
+    "El miércoles veintisiete cerró a trescientos cuarenta y siete dólares: veinte veces más que a comienzos de mes.",
+    "Y el jueves veintiocho, durante la mañana, llegó a tocar cuatrocientos ochenta y tres."
+   ],
+   "puntos": [
+    [
+     "04/01",
+     17.25
+    ],
+    [
+     "05/01",
+     17.37
+    ],
+    [
+     "06/01",
+     18.36
+    ],
+    [
+     "07/01",
+     18.08
+    ],
+    [
+     "08/01",
+     17.69
+    ],
+    [
+     "11/01",
+     19.94
+    ],
+    [
+     "12/01",
+     19.95
+    ],
+    [
+     "13/01",
+     31.4
+    ],
+    [
+     "14/01",
+     39.91
+    ],
+    [
+     "15/01",
+     35.5
+    ],
+    [
+     "19/01",
+     39.36
+    ],
+    [
+     "20/01",
+     39.12
+    ],
+    [
+     "21/01",
+     43.03
+    ],
+    [
+     "22/01",
+     65.01
+    ],
+    [
+     "25/01",
+     76.79
+    ],
+    [
+     "26/01",
+     147.98
+    ],
+    [
+     "27/01",
+     347.51
+    ],
+    [
+     "28/01",
+     193.6
+    ],
+    [
+     "29/01",
+     325.0
+    ],
+    [
+     "01/02",
+     225.0
+    ],
+    [
+     "02/02",
+     90.0
+    ],
+    [
+     "03/02",
+     92.41
+    ],
+    [
+     "04/02",
+     53.5
+    ]
+   ],
+   "v_max": 520,
+   "inicio": 13,
+   "tramos": [
+    {
+     "hasta": 15,
+     "en": 1,
+     "dur": 3.0
+    },
+    {
+     "hasta": 16,
+     "en": 3,
+     "dur": 2.0
+    }
+   ],
+   "marcas": [
+    {
+     "i": 15,
+     "t": "26/1: $147",
+     "en": 1,
+     "lado": "izq",
+     "dy": -30
+    },
+    {
+     "i": 16,
+     "t": "27/1: $347",
+     "en": 3,
+     "lado": "izq",
+     "dy": -20,
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ]
+    },
+    {
+     "i": 17,
+     "v": 483,
+     "t": "28/1: llegó a tocar $483",
+     "en": 4,
+     "lado": "izq",
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "tam": 44
+    }
+   ],
+   "nota": "GameStop (GME) · cierre en dólares · valores previos al desdoblamiento de 2022",
+   "cada": 3
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "SE BLOQUEAN LAS COMPRAS",
+   "pose": "hablar",
+   "poses": {
+    "1": "señalar",
+    "3": "hablar",
+    "4": "pensar"
+   },
+   "frases": [
+    "Ese mismo jueves pasó algo que nadie esperaba.",
+    "Robinhood, la aplicación que usaban muchos de los pequeños inversores, bloqueó la compra de acciones de GameStop. Solo permitía vender.",
+    "La explicación de la empresa fue técnica: la cámara que garantiza las operaciones le exigió un depósito de miles de millones de dólares, que no tenía disponible.",
+    "Muchos usuarios lo vieron como una maniobra para proteger a los fondos.",
+    "Las investigaciones oficiales posteriores no lo comprobaron, pero la polémica llegó hasta el Congreso de Estados Unidos."
+   ],
+   "iconos": [
+    {
+     "icono": "candado",
+     "x": 1230,
+     "y": 430,
+     "escala": 0.75,
+     "en": 1,
+     "pie": "Comprar: BLOQUEADO  ·  Vender: permitido",
+     "color": [
+      1.0,
+      0.3,
+      0.36
+     ]
+    }
+   ],
+   "puntos": []
+  },
+  {
+   "tipo": "precio",
+   "titulo": "LA CAÍDA",
+   "frases": [
+    "Sin compradores nuevos, el precio se dio vuelta.",
+    "El jueves veintiocho la acción cerró a ciento noventa y tres dólares.",
+    "Rebotó un día más, pero en la primera semana de febrero se derrumbó: el cuatro de febrero cerró a cincuenta y tres dólares y medio.",
+    "Quien compró cerca del máximo perdió casi el noventa por ciento en una semana."
+   ],
+   "puntos": [
+    [
+     "04/01",
+     17.25
+    ],
+    [
+     "05/01",
+     17.37
+    ],
+    [
+     "06/01",
+     18.36
+    ],
+    [
+     "07/01",
+     18.08
+    ],
+    [
+     "08/01",
+     17.69
+    ],
+    [
+     "11/01",
+     19.94
+    ],
+    [
+     "12/01",
+     19.95
+    ],
+    [
+     "13/01",
+     31.4
+    ],
+    [
+     "14/01",
+     39.91
+    ],
+    [
+     "15/01",
+     35.5
+    ],
+    [
+     "19/01",
+     39.36
+    ],
+    [
+     "20/01",
+     39.12
+    ],
+    [
+     "21/01",
+     43.03
+    ],
+    [
+     "22/01",
+     65.01
+    ],
+    [
+     "25/01",
+     76.79
+    ],
+    [
+     "26/01",
+     147.98
+    ],
+    [
+     "27/01",
+     347.51
+    ],
+    [
+     "28/01",
+     193.6
+    ],
+    [
+     "29/01",
+     325.0
+    ],
+    [
+     "01/02",
+     225.0
+    ],
+    [
+     "02/02",
+     90.0
+    ],
+    [
+     "03/02",
+     92.41
+    ],
+    [
+     "04/02",
+     53.5
+    ]
+   ],
+   "v_max": 520,
+   "inicio": 16,
+   "tramos": [
+    {
+     "hasta": 17,
+     "en": 1,
+     "dur": 1.5
+    },
+    {
+     "hasta": 22,
+     "en": 2,
+     "dur": 3.5
+    }
+   ],
+   "marcas": [
+    {
+     "i": 17,
+     "v": 483,
+     "t": "Máximo: $483",
+     "en": 0,
+     "lado": "izq",
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ]
+    },
+    {
+     "i": 22,
+     "t": "−89 % desde el máximo",
+     "en": 3,
+     "lado": "izq",
+     "dy": -265,
+     "color": [
+      1.0,
+      0.3,
+      0.36
+     ],
+     "tam": 50,
+     "dx": -600
+    }
+   ],
+   "nota": "GameStop (GME) · cierre en dólares · valores previos al desdoblamiento de 2022",
+   "cada": 3,
+   "color": [
+    1.0,
+    0.3,
+    0.36
+   ]
+  },
+  {
+   "tipo": "comparar",
+   "titulo": "¿QUIÉN GANÓ Y QUIÉN PERDIÓ?",
+   "frases": [
+    "¿Quién ganó y quién perdió?",
+    "Del lado de Wall Street, el caso más conocido fue el fondo Melvin Capital: perdió alrededor de la mitad de su dinero en enero.",
+    "Recibió una inyección de casi tres mil millones de dólares de otros fondos, y terminó cerrando en dos mil veintidós.",
+    "Del lado del foro, la inversión de Keith Gill llegó a valer cerca de cuarenta y ocho millones de dólares en el punto más alto.",
+    "Pero muchos pequeños inversores entraron tarde, compraron caro y perdieron gran parte de su dinero."
+   ],
+   "columnas": [
+    {
+     "titulo": "WALL STREET",
+     "color": [
+      1.0,
+      0.3,
+      0.36
+     ],
+     "en": 1,
+     "filas": [
+      {
+       "t": "Melvin Capital: −53 % en enero",
+       "en": 1
+      },
+      {
+       "t": "Rescate: $2.750 millones",
+       "en": 2
+      },
+      {
+       "t": "Cerró en 2022",
+       "color": [
+        1.0,
+        0.3,
+        0.36
+       ],
+       "en": 2
+      }
+     ]
+    },
+    {
+     "titulo": "EL FORO",
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "en": 3,
+     "filas": [
+      {
+       "t": "Keith Gill: de $53.000…",
+       "en": 3
+      },
+      {
+       "t": "…a unos $48 millones",
+       "color": [
+        0.24,
+        0.86,
+        0.52
+       ],
+       "en": 3
+      },
+      {
+       "t": "Los que entraron tarde:",
+       "en": 4
+      },
+      {
+       "t": "grandes pérdidas",
+       "color": [
+        1.0,
+        0.3,
+        0.36
+       ],
+       "en": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "TRES LECCIONES",
+   "pose": "hablar",
+   "poses": {
+    "3": "pensar",
+    "4": "sonreir",
+    "5": "señalar"
+   },
+   "frases": [
+    "¿Qué deja esta historia? Tres lecciones.",
+    "Primera: vender en corto es una apuesta con pérdida ilimitada. Ni los fondos más grandes están a salvo.",
+    "Segunda: cuando un precio sube por euforia y no por los resultados de la empresa, puede caer con la misma velocidad.",
+    "Tercera: en una subida así, lo que gana el que vende a tiempo sale del bolsillo del que compró tarde.",
+    "Este video es educativo y no es una recomendación de inversión.",
+    "Si te gustó la historia, suscríbete: cada semana contamos un caso real y el concepto de finanzas que hay detrás."
+   ],
+   "puntos": [
+    {
+     "t": "1. Vender en corto: pérdida ilimitada",
+     "en": 1
+    },
+    {
+     "t": "2. La euforia sube rápido… y cae rápido",
+     "en": 2
+    },
+    {
+     "t": "3. Lo que gana uno lo pierde el que llega tarde",
+     "en": 3
+    },
+    {
+     "t": "Contenido educativo, no es recomendación",
+     "color": [
+      0.88,
+      0.84,
+      0.92
+     ],
+     "tam": 40,
+     "en": 4
+    },
+    {
+     "t": "SUSCRÍBETE · un caso real cada semana",
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "tam": 46,
+     "en": 5
+    }
+   ]
+  }
+ ]
+}

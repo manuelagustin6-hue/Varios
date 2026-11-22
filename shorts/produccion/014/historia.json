@@ -1,0 +1,202 @@
+{
+ "audio": "../../audios/014/voz-final.mp3",
+ "reemplazos": {
+  "diecisiete dólares": "17 dólares",
+  "cuatrocientos ochenta y tres": "483",
+  "tres mil millones": "3.000 millones"
+ },
+ "bucle": true,
+ "v2": true,
+ "paleta": "roja",
+ "salida": "video-historia.mp4",
+ "escenas": [
+  {
+   "tipo": "historia",
+   "titulo": "INTERNET VS.\nWALL STREET",
+   "decorado": "oficina_noche",
+   "personajes": [
+    {
+     "estilo": "ejecutivo",
+     "x": 300,
+     "pose": "nervioso"
+    },
+    {
+     "estilo": "programador",
+     "x": 800,
+     "pose": "celebrar",
+     "mira": -1
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "titulo": "GAMESTOP, 2021",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "ejecutivo",
+     "x": 300,
+     "pose": "señalar",
+     "globo": [
+      "¡Va a caer!",
+      1.0,
+      6.0
+     ]
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "tienda",
+     "x": 790,
+     "y": 700,
+     "escala": 0.5
+    }
+   ],
+   "desde": "GameStop era una empresa"
+  },
+  {
+   "tipo": "iconos",
+   "desde": "Pero en un foro",
+   "titulo": "WALLSTREETBETS",
+   "icono": "personas",
+   "cantidad": 12,
+   "columnas": 4,
+   "escala": 0.3
+  },
+  {
+   "tipo": "cifra",
+   "desde": "había más acciones",
+   "titulo": "APOSTADO EN CONTRA",
+   "de": 0,
+   "a": 140,
+   "sufijo": " %",
+   "unidad": "DE LAS ACCIONES",
+   "color": [
+    1.0,
+    0.3,
+    0.36
+   ]
+  },
+  {
+   "tipo": "grafico",
+   "desde": "Empezaron a comprar",
+   "titulo": "DE $17 A $483",
+   "valores": [
+    17,
+    17,
+    18,
+    18,
+    18,
+    20,
+    20,
+    31,
+    40,
+    36,
+    39,
+    39,
+    43,
+    65,
+    77,
+    148,
+    348,
+    483
+   ],
+   "dibujo": 6.5,
+   "pie": "Acción de GameStop · enero de 2021"
+  },
+  {
+   "tipo": "historia",
+   "titulo": "OBLIGADOS A COMPRAR",
+   "decorado": "oficina_noche",
+   "personajes": [
+    {
+     "estilo": "ejecutivo",
+     "x": 330,
+     "pose": "nervioso"
+    },
+    {
+     "estilo": "ejecutivo2",
+     "x": 780,
+     "pose": "tapar_cara",
+     "mira": -1
+    }
+   ],
+   "desde": "Los fondos que apostaban"
+  },
+  {
+   "tipo": "cifra",
+   "desde": "Uno de ellos",
+   "titulo": "RESCATE A MELVIN CAPITAL",
+   "de": 0,
+   "a": 2750,
+   "prefijo": "$",
+   "unidad": "MILLONES",
+   "icono": "dinero"
+  },
+  {
+   "tipo": "sello",
+   "desde": "hasta que algunas",
+   "texto": "BLOQUEADO",
+   "base": {
+    "tipo": "historia",
+    "titulo": "COMPRAS BLOQUEADAS",
+    "decorado": "cuarto",
+    "personajes": [
+     {
+      "estilo": "programador",
+      "x": 330,
+      "pose": "sorpresa"
+     }
+    ],
+    "elementos": [
+     {
+      "icono": "candado",
+      "x": 790,
+      "y": 700,
+      "escala": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "tipo": "grafico",
+   "desde": "y el precio se desplomó",
+   "titulo": "SE DESPLOMÓ",
+   "valores": [
+    483,
+    194,
+    325,
+    225,
+    90,
+    92,
+    54
+   ],
+   "dibujo": 1.6,
+   "color": [
+    1.0,
+    0.3,
+    0.36
+   ],
+   "pie": "De $483 a $54 en una semana"
+  },
+  {
+   "tipo": "historia",
+   "titulo": "INTERNET VS.\nWALL STREET",
+   "decorado": "oficina_noche",
+   "personajes": [
+    {
+     "estilo": "ejecutivo",
+     "x": 300,
+     "pose": "nervioso"
+    },
+    {
+     "estilo": "programador",
+     "x": 800,
+     "pose": "celebrar",
+     "mira": -1
+    }
+   ],
+   "desde": "Y todo empezó porque"
+  }
+ ]
+}

@@ -1,0 +1,629 @@
+{
+ "titulo": "¿Qué es la TIR?",
+ "escenas": [
+  {
+   "tipo": "presentador",
+   "titulo": "¿QUÉ ES LA TIR?",
+   "pose": "hablar",
+   "poses": {
+    "2": "señalar"
+   },
+   "frases": [
+    "Dos inversiones te prometen exactamente la misma ganancia: quinientos dólares.",
+    "Pero una es casi seis veces mejor que la otra.",
+    "Y la forma de saberlo tiene solo tres letras: TIR."
+   ],
+   "lineas": [
+    {
+     "t": "MISMA GANANCIA: $500",
+     "tam": 76,
+     "en": 0
+    },
+    {
+     "t": "UNA ES CASI 6 VECES MEJOR",
+     "tam": 64,
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "en": 1
+    },
+    {
+     "t": "TIR",
+     "tam": 230,
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "en": 2
+    }
+   ]
+  },
+  {
+   "tipo": "comparar",
+   "titulo": "DOS INVERSIONES",
+   "frases": [
+    "Mira estas dos opciones.",
+    "En la inversión A pones mil dólares hoy y dentro de un año recibes mil quinientos.",
+    "En la inversión B también pones mil dólares y también recibes mil quinientos... pero dentro de cinco años.",
+    "Las dos ganan quinientos dólares. Entonces, ¿son iguales?",
+    "No. Porque en la A recuperas tu dinero cuatro años antes, y en ese tiempo puedes volver a invertirlo."
+   ],
+   "columnas": [
+    {
+     "titulo": "INVERSIÓN A",
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "en": 1,
+     "filas": [
+      {
+       "t": "Pones: $1.000",
+       "en": 1
+      },
+      {
+       "t": "Recibes: $1.500",
+       "en": 1
+      },
+      {
+       "t": "En 1 año",
+       "color": [
+        0.24,
+        0.86,
+        0.52
+       ],
+       "en": 1
+      },
+      {
+       "t": "Ganancia: $500",
+       "color": [
+        1.0,
+        0.72,
+        0.5
+       ],
+       "en": 3
+      }
+     ]
+    },
+    {
+     "titulo": "INVERSIÓN B",
+     "color": [
+      0.74,
+      0.58,
+      1.0
+     ],
+     "en": 2,
+     "filas": [
+      {
+       "t": "Pones: $1.000",
+       "en": 2
+      },
+      {
+       "t": "Recibes: $1.500",
+       "en": 2
+      },
+      {
+       "t": "En 5 años",
+       "color": [
+        1.0,
+        0.3,
+        0.36
+       ],
+       "en": 2
+      },
+      {
+       "t": "Ganancia: $500",
+       "color": [
+        1.0,
+        0.72,
+        0.5
+       ],
+       "en": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "EL VALOR DEL DINERO EN EL TIEMPO",
+   "pose": "hablar",
+   "poses": {
+    "2": "señalar"
+   },
+   "frases": [
+    "Esta es la idea más importante de las finanzas: el dinero vale distinto según cuándo lo recibes.",
+    "Cien dólares hoy valen más que cien dólares dentro de un año, porque los de hoy los puedes poner a trabajar.",
+    "Por eso, para comparar inversiones no alcanza con mirar cuánto ganas. Hay que mirar cuánto ganas por año."
+   ],
+   "iconos": [
+    {
+     "icono": "reloj",
+     "x": 980,
+     "y": 430,
+     "escala": 0.6,
+     "en": 0,
+     "args": {
+      "seg": 8
+     }
+    },
+    {
+     "icono": "dinero",
+     "x": 1500,
+     "y": 430,
+     "escala": 0.6,
+     "en": 1,
+     "pie": "$100 HOY  >  $100 EN UN AÑO",
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ]
+    }
+   ],
+   "puntos": []
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "TASA INTERNA DE RETORNO",
+   "pose": "hablar",
+   "poses": {
+    "3": "señalar"
+   },
+   "frases": [
+    "Y eso es lo que mide la TIR, la tasa interna de retorno.",
+    "En inglés la verás como IRR, internal rate of return: es exactamente lo mismo.",
+    "Es el rendimiento anual de una inversión, teniendo en cuenta todo lo que pones, todo lo que recibes y, sobre todo, cuándo.",
+    "En nuestro ejemplo, la inversión A tiene una TIR del cincuenta por ciento anual.",
+    "La B, de apenas ocho coma cuatro por ciento anual.",
+    "Misma ganancia, rendimientos muy distintos."
+   ],
+   "lineas": [
+    {
+     "t": "TIR = RENDIMIENTO ANUAL",
+     "tam": 72,
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "en": 0
+    },
+    {
+     "t": "En inglés: IRR (Internal Rate of Return)",
+     "tam": 44,
+     "color": [
+      1,
+      1,
+      1
+     ],
+     "en": 1
+    },
+    {
+     "t": "cuánto pones · cuánto recibes · cuándo",
+     "tam": 46,
+     "color": [
+      0.88,
+      0.84,
+      0.92
+     ],
+     "en": 2
+    },
+    {
+     "t": "INVERSIÓN A: 50 % anual",
+     "tam": 70,
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "en": 3
+    },
+    {
+     "t": "INVERSIÓN B: 8,4 % anual",
+     "tam": 70,
+     "color": [
+      0.74,
+      0.58,
+      1.0
+     ],
+     "en": 4
+    }
+   ]
+  },
+  {
+   "tipo": "flujos",
+   "titulo": "UN CASO CON VARIOS COBROS",
+   "frases": [
+    "Ahora veamos un caso más real, con varios cobros.",
+    "Inviertes mil dólares hoy.",
+    "Y recibes cuatrocientos dólares al final de cada año, durante tres años.",
+    "En total cobras mil doscientos. ¿Cuál es el rendimiento anual?",
+    "No es veinte por ciento, ni siete por ciento. La cuenta no es tan directa, porque cada cobro llega en un momento distinto."
+   ],
+   "barras": [
+    {
+     "etq": "HOY",
+     "v": -1000,
+     "en": 1
+    },
+    {
+     "etq": "AÑO 1",
+     "v": 400,
+     "en": 2
+    },
+    {
+     "etq": "AÑO 2",
+     "v": 400,
+     "en": 2
+    },
+    {
+     "etq": "AÑO 3",
+     "v": 400,
+     "en": 2
+    }
+   ],
+   "notas": [
+    {
+     "t": "Cobras $1.200 en total. ¿Cuánto rinde por año?",
+     "y": 210,
+     "tam": 50,
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "en": 3
+    }
+   ]
+  },
+  {
+   "tipo": "curva",
+   "titulo": "¿A QUÉ TASA LA CUENTA DA CERO?",
+   "flujos": [
+    -1000,
+    400,
+    400,
+    400
+   ],
+   "en_curva": 0,
+   "frases": [
+    "Para resolverlo, se hace una pregunta: ¿a qué tasa tendría que descontar esos cobros futuros para que valgan exactamente los mil dólares que puse hoy?",
+    "Si uso una tasa del cinco por ciento, los cobros valen más de mil: la inversión me deja ganancia extra.",
+    "Si uso una tasa del quince por ciento, valen menos de mil: salgo perdiendo.",
+    "En algún punto intermedio, la cuenta da exactamente cero. Esa tasa es la TIR.",
+    "En este caso, nueve coma siete por ciento anual."
+   ],
+   "marcas": [
+    {
+     "r": 0.05,
+     "t": "Tasa 5 %",
+     "en": 1
+    },
+    {
+     "r": 0.15,
+     "t": "Tasa 15 %",
+     "en": 2
+    }
+   ],
+   "tir": {
+    "r": 0.097,
+    "t": "TIR: 9,7 %",
+    "en": 3
+   },
+   "r_max": 0.19
+  },
+  {
+   "tipo": "planilla",
+   "titulo": "CÓMO SE CALCULA",
+   "frases": [
+    "La buena noticia es que no tienes que calcularla a mano.",
+    "En Excel o en Google Sheets escribes los flujos en una columna: la inversión en negativo y los cobros en positivo.",
+    "Y usas la función TIR. El resultado aparece al instante."
+   ],
+   "filas": [
+    [
+     "Hoy",
+     "−1.000",
+     1
+    ],
+    [
+     "Año 1",
+     "400",
+     1
+    ],
+    [
+     "Año 2",
+     "400",
+     1
+    ],
+    [
+     "Año 3",
+     "400",
+     1
+    ]
+   ],
+   "formula": "=TIR(B1:B4)",
+   "en_formula": 2,
+   "en_resultado": 99,
+   "resultado": "9,7 %",
+   "notas": [
+    {
+     "t": "En inglés:",
+     "y": 420,
+     "tam": 38,
+     "en": 2
+    },
+    {
+     "t": "=IRR(B1:B4)",
+     "y": 480,
+     "tam": 46,
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "en": 2
+    }
+   ]
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "¿PARA QUÉ SIRVE?",
+   "pose": "hablar",
+   "poses": {
+    "2": "señalar"
+   },
+   "frases": [
+    "¿Y para qué sirve ese número? Para comparar.",
+    "Si tienes una alternativa segura que rinde doce por ciento anual, un proyecto con TIR de nueve coma siete no te conviene.",
+    "La regla general es simple: una inversión es atractiva cuando su TIR supera el rendimiento mínimo que tú le exiges."
+   ],
+   "puntos": [
+    {
+     "t": "Sirve para COMPARAR",
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "en": 0
+    },
+    {
+     "t": "Alternativa segura: 12 % anual",
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "en": 1
+    },
+    {
+     "t": "Proyecto con TIR de 9,7 %: no conviene",
+     "color": [
+      1.0,
+      0.3,
+      0.36
+     ],
+     "en": 1
+    },
+    {
+     "t": "Regla: TIR > rendimiento mínimo exigido",
+     "en": 2
+    }
+   ]
+  },
+  {
+   "tipo": "comparar",
+   "titulo": "LA TIR DE UN BONO",
+   "frases": [
+    "La TIR también es el número clave de los bonos.",
+    "La TIR de un bono es el rendimiento anual que obtienes si lo compras al precio de hoy y lo mantienes hasta el vencimiento, cobrando todos los pagos.",
+    "Imagina un bono que paga cien dólares dentro de un año. Si lo compras a noventa, tu TIR es de alrededor del once por ciento.",
+    "Si el precio baja a ochenta, la TIR sube a veinticinco por ciento.",
+    "Por eso se dice que el precio y la TIR de un bono se mueven al revés: cuando uno baja, la otra sube."
+   ],
+   "pie": {
+    "t": "TIR de un bono = rendimiento anual si lo mantienes hasta el vencimiento",
+    "color": [
+     1.0,
+     0.72,
+     0.5
+    ],
+    "en": 0
+   },
+   "columnas": [
+    {
+     "titulo": "LO COMPRAS A $90",
+     "color": [
+      0.74,
+      0.58,
+      1.0
+     ],
+     "en": 0,
+     "filas": [
+      {
+       "t": "Bono que paga $100 en un año",
+       "en": 2,
+       "color": [
+        0.88,
+        0.84,
+        0.92
+       ],
+       "tam": 40
+      },
+      {
+       "t": "Cobras: $100",
+       "en": 2
+      },
+      {
+       "t": "Ganas: $10",
+       "en": 2
+      },
+      {
+       "t": "TIR: cerca de 11 %",
+       "color": [
+        1.0,
+        0.72,
+        0.5
+       ],
+       "tam": 70,
+       "en": 2
+      }
+     ]
+    },
+    {
+     "titulo": "LO COMPRAS A $80",
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "en": 0,
+     "filas": [
+      {
+       "t": "El mismo bono, más barato",
+       "en": 3,
+       "color": [
+        0.88,
+        0.84,
+        0.92
+       ],
+       "tam": 40
+      },
+      {
+       "t": "Cobras: $100",
+       "en": 3
+      },
+      {
+       "t": "Ganas: $20",
+       "en": 3
+      },
+      {
+       "t": "TIR = 25 %",
+       "color": [
+        1.0,
+        0.72,
+        0.5
+       ],
+       "tam": 70,
+       "en": 3
+      },
+      {
+       "t": "Baja el precio, sube la TIR",
+       "color": [
+        0.24,
+        0.86,
+        0.52
+       ],
+       "en": 4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "LAS 3 TRAMPAS DE LA TIR",
+   "pose": "hablar",
+   "poses": {
+    "0": "señalar",
+    "1": "hablar",
+    "3": "pensar"
+   },
+   "frases": [
+    "Pero cuidado: la TIR tiene tres trampas.",
+    "Primera: supone que cada cobro lo reinviertes a esa misma tasa, y eso no siempre es posible.",
+    "Segunda: no te dice el tamaño. Una TIR de cincuenta por ciento sobre cien dólares deja menos dinero que una de veinte por ciento sobre cien mil.",
+    "Tercera, y la más importante: no mide el riesgo. Una TIR muy alta suele significar que el mercado duda de que te paguen."
+   ],
+   "puntos": [
+    {
+     "t": "1. Supone reinvertir a la misma tasa",
+     "en": 1
+    },
+    {
+     "t": "2. No dice el tamaño de la inversión",
+     "en": 2
+    },
+    {
+     "t": "3. No mide el riesgo",
+     "color": [
+      1.0,
+      0.3,
+      0.36
+     ],
+     "en": 3
+    },
+    {
+     "t": "TIR muy alta = señal de alerta",
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "en": 3
+    }
+   ]
+  },
+  {
+   "tipo": "presentador",
+   "titulo": "EN RESUMEN",
+   "pose": "hablar",
+   "poses": {
+    "3": "sonreir",
+    "4": "señalar"
+   },
+   "frases": [
+    "Volvamos al principio. Las inversiones A y B ganaban lo mismo, pero ahora sabes por qué la A es mucho mejor: te devuelve el dinero antes.",
+    "La TIR resume eso en un solo número: cuánto rinde tu dinero por año.",
+    "Úsala para comparar, pero nunca sola: mira también el plazo, el monto y el riesgo.",
+    "Este video es educativo y no es una recomendación de inversión.",
+    "Si te sirvió, suscríbete: en el próximo vemos cómo se analiza un bono paso a paso."
+   ],
+   "puntos": [
+    {
+     "t": "A: 50 % anual   ·   B: 8,4 % anual",
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ],
+     "en": 0
+    },
+    {
+     "t": "TIR = cuánto rinde tu dinero por año",
+     "en": 1
+    },
+    {
+     "t": "Mira también plazo, monto y riesgo",
+     "en": 2
+    },
+    {
+     "t": "Contenido educativo, no es recomendación",
+     "color": [
+      0.88,
+      0.84,
+      0.92
+     ],
+     "tam": 40,
+     "en": 3
+    },
+    {
+     "t": "SUSCRÍBETE · Próximo: cómo analizar un bono",
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "tam": 46,
+     "en": 4
+    }
+   ]
+  }
+ ]
+}

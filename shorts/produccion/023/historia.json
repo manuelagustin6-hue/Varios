@@ -1,0 +1,377 @@
+{
+ "audio": "../../audios/023/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda3_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {},
+ "escenas": [
+  {
+   "tipo": "historia",
+   "decorado": "pueblo_rio",
+   "personajes": [
+    {
+     "estilo": "rudolf",
+     "x": 210,
+     "pose": "nervioso"
+    },
+    {
+     "estilo": "adi",
+     "x": 870,
+     "pose": "nervioso",
+     "mira": -1
+    }
+   ],
+   "titulo": "ADIDAS Y PUMA NACIERON\nDE UNA PELEA",
+   "placas": [
+    {
+     "texto": "PUMA",
+     "x": 210,
+     "y": 590,
+     "tam": 56
+    },
+    {
+     "texto": "ADIDAS",
+     "x": 870,
+     "y": 590,
+     "tam": 56
+    }
+   ],
+   "textos": [
+    {
+     "t": "VS",
+     "x": 540,
+     "y": 800,
+     "tam": 110,
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "cochera",
+   "personajes": [
+    {
+     "estilo": "adi",
+     "x": 300,
+     "pose": "sonreir"
+    },
+    {
+     "estilo": "rudolf",
+     "x": 780,
+     "pose": "sonreir",
+     "mira": -1
+    }
+   ],
+   "titulo": "LOS HERMANOS DASSLER",
+   "desde": "Adolf y Rudolf",
+   "elementos": [
+    {
+     "icono": "zapatilla",
+     "x": 540,
+     "y": 900,
+     "escala": 0.3
+    }
+   ],
+   "placas": [
+    {
+     "texto": "ADOLF",
+     "x": 300,
+     "y": 585,
+     "tam": 40
+    },
+    {
+     "texto": "RUDOLF",
+     "x": 780,
+     "y": 585,
+     "tam": 40
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "cochera",
+   "personajes": [
+    {
+     "estilo": "adi",
+     "x": 300,
+     "pose": "celebrar",
+     "poses": [
+      [
+       {
+        "en": "pero se llevaban"
+       },
+       "nervioso"
+      ]
+     ]
+    },
+    {
+     "estilo": "rudolf",
+     "x": 780,
+     "pose": "celebrar",
+     "mira": -1,
+     "poses": [
+      [
+       {
+        "en": "pero se llevaban"
+       },
+       "hablar"
+      ]
+     ]
+    }
+   ],
+   "desde": "Empezaron en 1924",
+   "titulos": [
+    [
+     0,
+     "1924: EMPIEZAN JUNTOS"
+    ],
+    [
+     {
+      "en": "pero se llevaban"
+     },
+     "…PERO SE LLEVABAN\nCADA VEZ PEOR"
+    ]
+   ]
+  },
+  {
+   "tipo": "historia",
+   "desde": "En 1948",
+   "decorado": "cochera",
+   "titulos": [
+    [
+     0,
+     "1948: SE SEPARAN\nPARA SIEMPRE"
+    ],
+    [
+     {
+      "en": "y dividieron"
+     },
+     "DIVIDEN LA FÁBRICA"
+    ]
+   ],
+   "personajes": [
+    {
+     "estilo": "adi",
+     "x": 300,
+     "pose": "nervioso",
+     "mira": -1
+    },
+    {
+     "estilo": "rudolf",
+     "x": 780,
+     "pose": "nervioso",
+     "mira": 1
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "SEPARADOS",
+     "entra": {
+      "en": "se separaron"
+     },
+     "x": 540,
+     "y": 1010,
+     "tam": 84
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pueblo_rio",
+   "personajes": [
+    {
+     "estilo": "rudolf",
+     "x": 210,
+     "pose": "celebrar"
+    },
+    {
+     "estilo": "adi",
+     "x": 870,
+     "pose": "celebrar",
+     "mira": -1,
+     "entra": {
+      "en": "Adolf al que"
+     }
+    }
+   ],
+   "desde": "Rudolf fundó",
+   "titulos": [
+    [
+     0,
+     "RUDOLF FUNDÓ PUMA"
+    ],
+    [
+     {
+      "en": "Adolf al que"
+     },
+     "ADI FUNDÓ ADIDAS"
+    ]
+   ],
+   "placas": [
+    {
+     "texto": "PUMA",
+     "x": 210,
+     "y": 590,
+     "tam": 56,
+     "entra": 0.4
+    },
+    {
+     "texto": "ADIDAS",
+     "x": 870,
+     "y": 590,
+     "tam": 56,
+     "entra": {
+      "en": "fundó Adidas"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pueblo_rio",
+   "personajes": [
+    {
+     "estilo": "pietro",
+     "x": 130,
+     "pose": "hablar"
+    },
+    {
+     "estilo": "vecina",
+     "x": 320,
+     "pose": "nervioso"
+    },
+    {
+     "estilo": "joven1",
+     "x": 760,
+     "pose": "nervioso",
+     "mira": -1
+    },
+    {
+     "estilo": "mujer",
+     "x": 950,
+     "pose": "hablar",
+     "mira": -1
+    }
+   ],
+   "desde": "El pueblo entero",
+   "titulos": [
+    [
+     0,
+     "EL PUEBLO SE PARTIÓ EN DOS"
+    ],
+    [
+     {
+      "en": "Había bares"
+     },
+     "BARES, TIENDAS\nY EQUIPOS DE FÚTBOL"
+    ]
+   ],
+   "placas": [
+    {
+     "texto": "PUMA",
+     "x": 210,
+     "y": 590,
+     "tam": 56
+    },
+    {
+     "texto": "ADIDAS",
+     "x": 870,
+     "y": 590,
+     "tam": 56
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "cementerio",
+   "personajes": [],
+   "desde": "Los hermanos nunca",
+   "titulos": [
+    [
+     0,
+     "NUNCA SE RECONCILIARON"
+    ],
+    [
+     {
+      "en": "Están enterrados"
+     },
+     "ENTERRADOS EN\nEXTREMOS OPUESTOS"
+    ]
+   ],
+   "placas": [
+    {
+     "texto": "RUDOLF",
+     "x": 170,
+     "y": 900,
+     "tam": 40,
+     "entra": {
+      "en": "Están enterrados"
+     }
+    },
+    {
+     "texto": "ADI",
+     "x": 910,
+     "y": 900,
+     "tam": 40,
+     "entra": {
+      "en": "Están enterrados",
+      "mas": 0.4
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pueblo_rio",
+   "personajes": [
+    {
+     "estilo": "rudolf",
+     "x": 210,
+     "pose": "nervioso"
+    },
+    {
+     "estilo": "adi",
+     "x": 870,
+     "pose": "nervioso",
+     "mira": -1
+    }
+   ],
+   "titulo": "ADIDAS Y PUMA NACIERON\nDE UNA PELEA",
+   "desde": "Y pensar que",
+   "placas": [
+    {
+     "texto": "PUMA",
+     "x": 210,
+     "y": 590,
+     "tam": 56
+    },
+    {
+     "texto": "ADIDAS",
+     "x": 870,
+     "y": 590,
+     "tam": 56
+    }
+   ],
+   "textos": [
+    {
+     "t": "VS",
+     "x": 540,
+     "y": 800,
+     "tam": 110,
+     "color": [
+      1.0,
+      0.72,
+      0.5
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,176 @@
+{
+ "audio": "../../audios/017/voz-final.mp3",
+ "reemplazos": {
+  "Trece personas": "13 personas",
+  "mil millones de dólares": "1.000 millones de dólares",
+  "veinticinco mil": "25.000",
+  "treinta millones": "30 millones",
+  "trece empleados": "13 empleados"
+ },
+ "bucle": true,
+ "v2": true,
+ "paleta": "roja",
+ "salida": "video-historia.mp4",
+ "escenas": [
+  {
+   "tipo": "historia",
+   "titulo": "13 PERSONAS,\n$1.000 MILLONES",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "joven1",
+     "x": 240,
+     "pose": "celebrar"
+    },
+    {
+     "estilo": "mujer",
+     "x": 540,
+     "pose": "celebrar"
+    },
+    {
+     "estilo": "joven2",
+     "x": 840,
+     "pose": "celebrar",
+     "mira": -1
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "titulo": "KEVIN SYSTROM, 2010",
+   "decorado": "cuarto",
+   "personajes": [
+    {
+     "estilo": "joven1",
+     "x": 360,
+     "pose": "escuchar",
+     "poses": [
+      [
+       2.5,
+       "sonreir"
+      ]
+     ]
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "navegador",
+     "x": 790,
+     "y": 700,
+     "escala": 0.5
+    }
+   ],
+   "desde": "Kevin Systrom lanzó"
+  },
+  {
+   "tipo": "cifra",
+   "desde": "El primer día",
+   "titulo": "PRIMER DÍA",
+   "de": 0,
+   "a": 25000,
+   "unidad": "DESCARGAS",
+   "icono": "personas"
+  },
+  {
+   "tipo": "cifra",
+   "desde": "Un año y medio",
+   "titulo": "UN AÑO Y MEDIO DESPUÉS",
+   "de": 0,
+   "a": 30,
+   "unidad": "MILLONES DE USUARIOS",
+   "icono": "personas"
+  },
+  {
+   "tipo": "icono",
+   "desde": "y ni un dólar",
+   "titulo": "INGRESOS",
+   "icono": "duda",
+   "pie": "$0",
+   "color_pie": [
+    1.0,
+    0.3,
+    0.36
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": "Facebook pagó",
+   "titulo": "FACEBOOK PAGÓ",
+   "de": 0,
+   "a": 1000,
+   "prefijo": "$",
+   "unidad": "MILLONES",
+   "icono": "dinero"
+  },
+  {
+   "tipo": "cifra",
+   "desde": "La empresa tenía",
+   "titulo": "LA EMPRESA TENÍA",
+   "de": 0,
+   "a": 13,
+   "unidad": "EMPLEADOS",
+   "icono": "personas",
+   "cuenta": 0.8
+  },
+  {
+   "tipo": "historia",
+   "titulo": "¿UNA LOCURA?",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "ejecutivo",
+     "x": 320,
+     "pose": "hablar",
+     "globo": [
+      "¡Es una locura!",
+      0.4,
+      5.0
+     ]
+    },
+    {
+     "estilo": "ejecutivo2",
+     "x": 780,
+     "pose": "sorpresa",
+     "mira": -1
+    }
+   ],
+   "desde": "Muchos dijeron"
+  },
+  {
+   "tipo": "icono",
+   "desde": "Hoy se estima",
+   "titulo": "INSTAGRAM HOY",
+   "icono": "dinero",
+   "pie": "cientos de miles de millones",
+   "color_pie": [
+    0.24,
+    0.86,
+    0.52
+   ]
+  },
+  {
+   "tipo": "historia",
+   "titulo": "13 PERSONAS,\n$1.000 MILLONES",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "joven1",
+     "x": 240,
+     "pose": "celebrar"
+    },
+    {
+     "estilo": "mujer",
+     "x": 540,
+     "pose": "celebrar"
+    },
+    {
+     "estilo": "joven2",
+     "x": 840,
+     "pose": "celebrar",
+     "mira": -1
+    }
+   ],
+   "desde": "Y todo empezó porque"
+  }
+ ]
+}

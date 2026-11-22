@@ -1,0 +1,438 @@
+{
+ "audio": "../../audios/013/voz-bucle.mp3",
+ "palabras": "palabras-bucle.json",
+ "extension": "ext_ultra.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-ultra.mp4",
+ "reemplazos": {
+  "tres millones": "3 millones",
+  "cuatro años": "4 años",
+  "ciento veintiséis millones": "126 millones"
+ },
+ "escenas": [
+  {
+   "tipo": "historia",
+   "titulo": "ADIDAS DEJÓ IR\nA MICHAEL JORDAN",
+   "decorado": "dos_puertas",
+   "placas": [
+    {
+     "texto": "ADIDAS",
+     "x": 270,
+     "y": 568,
+     "tam": 66
+    },
+    {
+     "texto": "NIKE",
+     "x": 810,
+     "y": 568,
+     "tam": 66
+    }
+   ],
+   "personajes": [
+    {
+     "estilo": "adidas_ej",
+     "x": 240,
+     "pose": "hablar",
+     "poses": [
+      [
+       {
+        "en": "y lo dejó"
+       },
+       "triste"
+      ]
+     ]
+    },
+    {
+     "estilo": "jordan",
+     "x": [
+      450,
+      700,
+      {
+       "en": "y lo dejó"
+      },
+      {
+       "en": "a Nike",
+       "mas": 0.35
+      }
+     ],
+     "pose": "escuchar",
+     "objeto": "pelota",
+     "poses": [
+      [
+       {
+        "en": "y lo dejó"
+       },
+       "caminar"
+      ],
+      [
+       {
+        "en": "a Nike",
+        "mas": 0.35
+       },
+       "celebrar"
+      ]
+     ]
+    },
+    {
+     "estilo": "nike_ej",
+     "x": 905,
+     "mira": -1,
+     "pose": "escuchar",
+     "poses": [
+      [
+       {
+        "en": "a Nike",
+        "mas": 0.2
+       },
+       "celebrar"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "desde": "En 1984",
+   "titulo": "1984: RUMBO A LA NBA",
+   "decorado": "cancha",
+   "personajes": [
+    {
+     "estilo": "jordan",
+     "x": [
+      -150,
+      470,
+      0,
+      1.5
+     ],
+     "pose": "correr",
+     "objeto": "pelota",
+     "poses": [
+      [
+       1.5,
+       "celebrar"
+      ]
+     ],
+     "escala": 1.0
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "desde": "Su marca favorita",
+   "titulos": [
+    [
+     0,
+     "SU MARCA FAVORITA:\nADIDAS"
+    ],
+    [
+     {
+      "en": "pero Adidas"
+     },
+     "NO HUBO OFERTA\nA LA ALTURA"
+    ]
+   ],
+   "decorado": "oficina",
+   "placas": [
+    {
+     "texto": "ADIDAS",
+     "x": 290,
+     "y": 565,
+     "tam": 60
+    }
+   ],
+   "personajes": [
+    {
+     "estilo": "jordan",
+     "x": 330,
+     "pose": "hablar",
+     "globo": [
+      "¡Quiero firmar\ncon ustedes!",
+      {
+       "en": "quería firmar"
+      },
+      {
+       "en": "pero Adidas"
+      }
+     ],
+     "poses": [
+      [
+       {
+        "en": "pero Adidas",
+        "mas": 0.5
+       },
+       "triste"
+      ]
+     ]
+    },
+    {
+     "estilo": "adidas_ej",
+     "x": 770,
+     "mira": -1,
+     "pose": "escuchar",
+     "poses": [
+      [
+       {
+        "en": "pero Adidas"
+       },
+       "pensar"
+      ]
+     ]
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "SIN OFERTA",
+     "entra": {
+      "en": "no le hizo",
+      "mas": 0.3
+     },
+     "x": 540,
+     "y": 930,
+     "tam": 84
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "desde": "Según se cuenta",
+   "titulo": "SEGÚN SE CUENTA, PREFERÍAN\nJUGADORES MÁS ALTOS",
+   "decorado": "medidor",
+   "personajes": [
+    {
+     "estilo": "pivot1",
+     "x": 280,
+     "escala": 1.1,
+     "pose": "sonreir"
+    },
+    {
+     "estilo": "pivot2",
+     "x": 540,
+     "escala": 1.15,
+     "pose": "parado",
+     "mira": -1
+    },
+    {
+     "estilo": "jordan",
+     "x": 830,
+     "mira": -1,
+     "pose": "pensar",
+     "escala": 0.84
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "desde": "Nike que entonces",
+   "titulos": [
+    [
+     0,
+     "NIKE IBA ATRÁS\nEN EL BÁSQUET"
+    ],
+    [
+     {
+      "en": "se la jugó"
+     },
+     "NIKE SE LA JUGÓ"
+    ]
+   ],
+   "decorado": "oficina",
+   "placas": [
+    {
+     "texto": "NIKE",
+     "x": 290,
+     "y": 565,
+     "tam": 60
+    }
+   ],
+   "personajes": [
+    {
+     "estilo": "nike_ej",
+     "x": 330,
+     "pose": "pensar",
+     "poses": [
+      [
+       {
+        "en": "se la jugó"
+       },
+       "señalar"
+      ]
+     ]
+    },
+    {
+     "estilo": "jordan",
+     "x": 770,
+     "mira": -1,
+     "pose": "escuchar",
+     "poses": [
+      [
+       {
+        "en": "se la jugó",
+        "mas": 0.5
+       },
+       "sorpresa"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "desde": "Le ofreció",
+   "titulo": "LA OFERTA DE NIKE",
+   "decorado": "vitrina",
+   "personajes": [],
+   "elementos": [
+    {
+     "icono": "zapatilla",
+     "x": 540,
+     "y": 830,
+     "escala": 1.0,
+     "sin_tarjeta": true,
+     "args": {
+      "color": [
+       0.85,
+       0.15,
+       0.18
+      ]
+     }
+    }
+   ],
+   "placas": [
+    {
+     "texto": "CON SU NOMBRE",
+     "x": 540,
+     "y": 560,
+     "tam": 50,
+     "entra": {
+      "en": "con su nombre"
+     }
+    }
+   ],
+   "textos": [
+    {
+     "t": "+ UN % POR CADA PAR VENDIDO",
+     "x": 540,
+     "y": 1100,
+     "tam": 54,
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ],
+     "entra": {
+      "en": "un porcentaje"
+     }
+    },
+    {
+     "t": "CASI INÉDITO EN ESA ÉPOCA",
+     "x": 540,
+     "y": 1180,
+     "tam": 40,
+     "color": [
+      1,
+      1,
+      1
+     ],
+     "entra": {
+      "en": "algo casi"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": "Nike esperaba",
+   "titulo": "NIKE ESPERABA VENDER",
+   "de": 0,
+   "a": 3,
+   "prefijo": "$",
+   "unidad": "MILLONES EN 4 AÑOS",
+   "cuenta": 0.7,
+   "color": [
+    0.75,
+    0.72,
+    0.8
+   ]
+  },
+  {
+   "tipo": "barras",
+   "desde": "En el primer año",
+   "titulo": "META VS. REALIDAD",
+   "prefijo": "$",
+   "sufijo": " M",
+   "barras": [
+    [
+     "META",
+     3,
+     [
+      0.75,
+      0.72,
+      0.8
+     ]
+    ],
+    [
+     "AÑO 1",
+     126,
+     [
+      0.24,
+      0.86,
+      0.52
+     ]
+    ]
+   ]
+  },
+  {
+   "tipo": "icono",
+   "desde": "Hoy la marca",
+   "titulo": "LA MARCA JORDAN HOY",
+   "icono": "dinero",
+   "pie": "miles de millones al año",
+   "color_pie": [
+    0.24,
+    0.86,
+    0.52
+   ]
+  },
+  {
+   "tipo": "historia",
+   "titulo": "ADIDAS DEJÓ IR\nA MICHAEL JORDAN",
+   "decorado": "dos_puertas",
+   "placas": [
+    {
+     "texto": "ADIDAS",
+     "x": 270,
+     "y": 568,
+     "tam": 66
+    },
+    {
+     "texto": "NIKE",
+     "x": 810,
+     "y": 568,
+     "tam": 66
+    }
+   ],
+   "desde": "Y pensar que",
+   "personajes": [
+    {
+     "estilo": "adidas_ej",
+     "x": 240,
+     "pose": "hablar"
+    },
+    {
+     "estilo": "jordan",
+     "x": 450,
+     "pose": "escuchar",
+     "objeto": "pelota"
+    },
+    {
+     "estilo": "nike_ej",
+     "x": 905,
+     "mira": -1,
+     "pose": "escuchar"
+    }
+   ]
+  }
+ ]
+}

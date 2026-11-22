@@ -1,0 +1,207 @@
+{
+ "audio": "../../audios/018/voz-final.mp3",
+ "reemplazos": {
+  "cuarenta dólares": "40 dólares",
+  "treinta mil dólares": "30.000 dólares"
+ },
+ "bucle": true,
+ "v2": true,
+ "paleta": "roja",
+ "salida": "video-historia.mp4",
+ "escenas": [
+  {
+   "tipo": "historia",
+   "titulo": "AIRBNB SE SALVÓ\nVENDIENDO CEREAL",
+   "decorado": "cuarto",
+   "personajes": [
+    {
+     "estilo": "joven1",
+     "x": 330,
+     "pose": "celebrar"
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "cereal",
+     "x": 790,
+     "y": 700,
+     "escala": 0.5
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "titulo": "2008: ENDEUDADOS",
+   "decorado": "cuarto",
+   "personajes": [
+    {
+     "estilo": "joven1",
+     "x": 300,
+     "pose": "triste"
+    },
+    {
+     "estilo": "joven2",
+     "x": 560,
+     "pose": "tapar_cara"
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "tarjeta",
+     "x": 860,
+     "y": 700,
+     "escala": 0.4
+    }
+   ],
+   "desde": "sus fundadores estaban"
+  },
+  {
+   "tipo": "sello",
+   "desde": "y ningún inversor",
+   "texto": "NO",
+   "base": {
+    "tipo": "historia",
+    "titulo": "NADIE INVERTÍA",
+    "decorado": "oficina",
+    "personajes": [
+     {
+      "estilo": "joven1",
+      "x": 300,
+      "pose": "dar",
+      "objeto": "papel"
+     },
+     {
+      "estilo": "ejecutivo",
+      "x": 780,
+      "pose": "hablar",
+      "mira": -1
+     }
+    ]
+   }
+  },
+  {
+   "tipo": "historia",
+   "titulo": "LA IDEA",
+   "decorado": "garaje",
+   "personajes": [
+    {
+     "estilo": "joven1",
+     "x": 300,
+     "pose": "pensar",
+     "poses": [
+      [
+       3.0,
+       "celebrar"
+      ]
+     ]
+    },
+    {
+     "estilo": "joven2",
+     "x": 560,
+     "pose": "escuchar",
+     "poses": [
+      [
+       3.0,
+       "sorpresa"
+      ]
+     ]
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "cereal",
+     "x": 860,
+     "y": 700,
+     "escala": 0.42
+    }
+   ],
+   "desde": "Era año de elecciones"
+  },
+  {
+   "tipo": "cifra",
+   "desde": "Las vendieron",
+   "titulo": "CADA CAJA",
+   "de": 0,
+   "a": 40,
+   "prefijo": "$",
+   "unidad": "DÓLARES",
+   "icono": "cereal",
+   "cuenta": 0.8
+  },
+  {
+   "tipo": "cifra",
+   "desde": "y juntaron",
+   "titulo": "JUNTARON",
+   "de": 0,
+   "a": 30000,
+   "prefijo": "$",
+   "unidad": "DÓLARES",
+   "icono": "dinero"
+  },
+  {
+   "tipo": "historia",
+   "titulo": "UN INVERSOR VIO LAS CAJAS",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "joven1",
+     "x": 280,
+     "pose": "dar"
+    },
+    {
+     "estilo": "ejecutivo",
+     "x": 800,
+     "pose": "sorpresa",
+     "mira": -1,
+     "globo": [
+      "¡Invierto!",
+      2.5,
+      9.0
+     ]
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "cereal",
+     "x": 540,
+     "y": 760,
+     "escala": 0.36
+    }
+   ],
+   "desde": "Y un inversor"
+  },
+  {
+   "tipo": "icono",
+   "desde": "Hoy Airbnb vale",
+   "titulo": "AIRBNB HOY",
+   "icono": "dinero",
+   "pie": "decenas de miles de millones",
+   "color_pie": [
+    0.24,
+    0.86,
+    0.52
+   ]
+  },
+  {
+   "tipo": "historia",
+   "titulo": "AIRBNB SE SALVÓ\nVENDIENDO CEREAL",
+   "decorado": "cuarto",
+   "personajes": [
+    {
+     "estilo": "joven1",
+     "x": 330,
+     "pose": "celebrar"
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "cereal",
+     "x": 790,
+     "y": 700,
+     "escala": 0.5
+    }
+   ],
+   "desde": "Y todo empezó porque"
+  }
+ ]
+}

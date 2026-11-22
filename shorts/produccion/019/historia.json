@@ -1,0 +1,161 @@
+{
+ "audio": "../../audios/019/voz-final.mp3",
+ "reemplazos": {
+  "sesenta y cinco años": "65 años",
+  "ciento cinco dólares": "105 dólares",
+  "setenta y tres años": "73 años",
+  "dos millones de dólares": "2 millones de dólares"
+ },
+ "bucle": true,
+ "v2": true,
+ "paleta": "roja",
+ "salida": "video-historia.mp4",
+ "escenas": [
+  {
+   "tipo": "historia",
+   "titulo": "EMPEZÓ A LOS 65\nCON $105",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "coronel",
+     "x": 540,
+     "pose": "celebrar"
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "titulo": "HARLAND SANDERS",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "coronel",
+     "x": 330,
+     "pose": "sonreir"
+    },
+    {
+     "estilo": "compradora",
+     "x": [
+      1300,
+      760,
+      0.5,
+      2.2
+     ],
+     "pose": "caminar",
+     "mira": -1,
+     "poses": [
+      [
+       2.2,
+       "sonreir"
+      ]
+     ]
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "tienda",
+     "x": 790,
+     "y": 640,
+     "escala": 0.45
+    }
+   ],
+   "desde": "Harland Sanders tenía"
+  },
+  {
+   "tipo": "historia",
+   "titulo": "LLEGÓ LA AUTOPISTA",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "coronel",
+     "x": 360,
+     "pose": "triste"
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "auto",
+     "x": 790,
+     "y": 700,
+     "escala": 0.45
+    }
+   ],
+   "desde": "pero construyeron"
+  },
+  {
+   "tipo": "cifra",
+   "desde": "Le quedó su receta",
+   "titulo": "SU JUBILACIÓN",
+   "de": 0,
+   "a": 105,
+   "prefijo": "$",
+   "unidad": "DÓLARES AL MES",
+   "icono": "lista",
+   "cuenta": 0.9
+  },
+  {
+   "tipo": "historia",
+   "titulo": "A RECORRER EL PAÍS",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "coronel",
+     "x": [
+      -150,
+      1250,
+      0.2,
+      9.0
+     ],
+     "pose": "caminar",
+     "objeto": "papel"
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "auto",
+     "x": 790,
+     "y": 640,
+     "escala": 0.42
+    }
+   ],
+   "desde": "subió a su auto"
+  },
+  {
+   "tipo": "cifra",
+   "desde": "Según la leyenda",
+   "titulo": "SEGÚN LA LEYENDA",
+   "de": 0,
+   "a": 1009,
+   "unidad": "RECHAZOS",
+   "color": [
+    1.0,
+    0.3,
+    0.36
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": "A los setenta",
+   "titulo": "A LOS 73 AÑOS LA VENDIÓ",
+   "de": 0,
+   "a": 2,
+   "prefijo": "$",
+   "unidad": "MILLONES",
+   "icono": "dinero",
+   "cuenta": 0.6
+  },
+  {
+   "tipo": "historia",
+   "titulo": "EMPEZÓ A LOS 65\nCON $105",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "coronel",
+     "x": 540,
+     "pose": "celebrar"
+    }
+   ],
+   "desde": "Y todo empezó porque"
+  }
+ ]
+}

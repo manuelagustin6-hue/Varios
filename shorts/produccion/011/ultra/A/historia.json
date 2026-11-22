@@ -1,0 +1,232 @@
+{
+ "audio": "../../../../audios/011/voz-bucle.mp3",
+ "palabras": "../../palabras-bucle.json",
+ "extension": "ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video.mp4",
+ "reemplazos": {
+  "treinta millones": "30 millones",
+  "seis años": "6 años",
+  "doce años": "12 años",
+  "diez millones": "10 millones",
+  "diecinueve millones": "19 millones"
+ },
+ "sonidos": [
+  [
+   "caja",
+   "treinta millones",
+   0.0
+  ],
+  [
+   "pop",
+   "corcho",
+   0.0
+  ],
+  [
+   "pop",
+   "champán",
+   0.0
+  ],
+  [
+   "golpe",
+   "dañó",
+   0.0
+  ],
+  [
+   "pop",
+   "tu ojo",
+   0.0
+  ],
+  [
+   "pop",
+   "intermitente",
+   0.0
+  ],
+  [
+   "golpe",
+   "no hubo",
+   0.2
+  ],
+  [
+   "pop",
+   "Ford lanzó",
+   0.0
+  ],
+  [
+   "pop",
+   "Chrysler también",
+   0.0
+  ],
+  [
+   "golpe",
+   "a ambas",
+   0.05
+  ],
+  [
+   "golpe",
+   "empresas",
+   0.0
+  ],
+  [
+   "caja",
+   "pagarle más",
+   0.1
+  ],
+  [
+   "golpe",
+   "y ganó",
+   0.1
+  ],
+  [
+   "golpe",
+   "condenó",
+   0.02
+  ],
+  [
+   "caja",
+   "diecinueve",
+   0.0
+  ]
+ ],
+ "escenas": [
+  {
+   "tipo": "k_gancho",
+   "fase": 0.8,
+   "titulo": "FORD Y CHRYSLER\nLE PAGARON",
+   "antes": "UNOS",
+   "cifra": "$30 MILLONES"
+  },
+  {
+   "tipo": "k_aula",
+   "desde": "Robert",
+   "titulo": "ROBERT KEARNS",
+   "pizarron": "INGENIERÍA",
+   "banderin": "DETROIT"
+  },
+  {
+   "tipo": "k_boda",
+   "desde": "Según contaba",
+   "titulo": "NOCHE DE BODAS, 1953",
+   "globo": "¡MI OJO!",
+   "pop": "¡POP!"
+  },
+  {
+   "tipo": "k_ojo",
+   "desde": "Años después notó",
+   "titulos": [
+    [
+     0,
+     "AÑOS DESPUÉS…"
+    ],
+    [
+     1.54,
+     "TU OJO PARPADEA"
+    ]
+   ],
+   "parpadea": "PARPADEA = BARRE",
+   "pausa": "PAUSA"
+  },
+  {
+   "tipo": "k_taller",
+   "desde": "Así inventó",
+   "titulo": "LIMPIAPARABRISAS\nINTERMITENTE",
+   "globo": "¡FUNCIONA!",
+   "barre": "BARRE",
+   "pausa": "PAUSA"
+  },
+  {
+   "tipo": "k_ford",
+   "desde": "Se lo mostró",
+   "titulo": "1963: SE LO MOSTRÓ A FORD",
+   "cartel": "FORD",
+   "sello": "SIN ACUERDO"
+  },
+  {
+   "tipo": "k_autos",
+   "desde": "Unos seis años",
+   "titulos": [
+    [
+     0,
+     "6 AÑOS DESPUÉS…"
+    ],
+    [
+     1.5,
+     "FORD LANZÓ UNO PROPIO"
+    ]
+   ],
+   "placa1": "FORD",
+   "cartel1": "FORD · 1969",
+   "placa2": "CHRYSLER",
+   "cartel2": "CHRYSLER TAMBIÉN",
+   "globo1": "¿¡QUÉ!?",
+   "globo2": "¿¡OTRO!?"
+  },
+  {
+   "tipo": "k_patente",
+   "desde": "tenía la patente",
+   "titulos": [
+    [
+     0,
+     "TENÍA LA PATENTE"
+    ],
+    [
+     1.06,
+     "DEMANDÓ A AMBAS"
+    ]
+   ],
+   "doc": "PATENTE",
+   "doc_anio": "1967",
+   "empresa1": "FORD",
+   "empresa2": "CHRYSLER",
+   "demanda1": "DEMANDA\n1978",
+   "demanda2": "DEMANDA\n1982"
+  },
+  {
+   "tipo": "k_pleito",
+   "desde": "Tras doce años",
+   "titulos": [
+    [
+     0,
+     "12 AÑOS EN TRIBUNALES"
+    ],
+    [
+     1.86,
+     "FORD ACEPTÓ PAGAR"
+    ]
+   ],
+   "desde_anio": 1978,
+   "hasta_anio": 1990,
+   "cal": "AÑO",
+   "paga": "FORD",
+   "anio": "ACUERDO · 1990",
+   "monto": 10.2,
+   "unidad": "MILLONES",
+   "para": "PARA: ROBERT KEARNS"
+  },
+  {
+   "tipo": "k_juicio",
+   "desde": "Contra",
+   "titulo": "CONTRA CHRYSLER:\nSU PROPIO ABOGADO",
+   "mesa": "CHRYSLER",
+   "sello": "GANÓ",
+   "globo": "SU SEÑORÍA…"
+  },
+  {
+   "tipo": "k_condena",
+   "desde": "La justicia",
+   "titulo": "CONDENA A CHRYSLER",
+   "monto": 18.7,
+   "unidad": "MILLONES"
+  },
+  {
+   "tipo": "k_gancho",
+   "desde": "Así fue como",
+   "fase": 0.0,
+   "titulo": "FORD Y CHRYSLER\nLE PAGARON",
+   "antes": "UNOS",
+   "cifra": "$30 MILLONES"
+  }
+ ]
+}

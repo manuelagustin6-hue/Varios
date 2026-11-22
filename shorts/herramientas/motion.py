@@ -41,6 +41,18 @@ ROJO = (1.0, 0.3, 0.3)
 VERDE = (0.24, 0.86, 0.52)
 AZUL = (0.25, 0.55, 1.0)
 OSCURO = (0.08, 0.1, 0.16)
+TITULAR_FONDO = TITULAR_TEXTO = None  # si no se definen, cartel dorado con letras oscuras
+
+
+def paleta_roja():
+    """Paleta del canal desde el video 014: fondo vino, cartel rojo con letras blancas y resaltado
+    durazno. Regla: nunca combinar azul con amarillo."""
+    global FONDO1, FONDO2, DORADO, TITULAR_FONDO, TITULAR_TEXTO, ROJO
+    FONDO1, FONDO2 = (0.22, 0.08, 0.24), (0.09, 0.03, 0.11)
+    DORADO = (1.0, 0.72, 0.50)
+    ROJO = (1.0, 0.30, 0.36)
+    TITULAR_FONDO, TITULAR_TEXTO = (0.86, 0.10, 0.16), (1, 1, 1)
+    render.AMARILLO = "&H0080B8FF&"  # durazno, para la palabra resaltada del subtítulo
 
 
 # ---------- utilidades ----------
@@ -117,10 +129,10 @@ def titular(cr, s, t, y=300):
     cr.translate(W / 2, y)
     cr.scale(esc, esc)
     rrect(cr, -ancho / 2, -alto / 2, ancho, alto, 18)
-    rellenar(cr, DORADO)
+    rellenar(cr, TITULAR_FONDO or DORADO)
     for i, l in enumerate(lineas):
         yy = -alto / 2 + 20 + tam * 1.25 * (i + 0.5)
-        texto(cr, l, 0, yy, tam, OSCURO)
+        texto(cr, l, 0, yy, tam, TITULAR_TEXTO or OSCURO)
     cr.restore()
 
 
@@ -295,6 +307,13 @@ def dibujar_icono(cr, nombre, t, x, y, escala, **kw):
 
 # ---------- tipos de escena ----------
 
+def ajustar_tam(cr, s, tam, ancho, minimo=30):
+    """Tamaño de letra más grande (hasta `tam`) con el que `s` entra en `ancho`."""
+    while ancho_texto(cr, s, tam) > ancho and tam > minimo:
+        tam -= 2
+    return tam
+
+
 def esc_icono(cr, t, p):
     titular(cr, p.get("titulo", ""), t)
     a = ease_out_back(t / 0.45)
@@ -306,8 +325,8 @@ def esc_icono(cr, t, p):
         kw["color"] = tuple(p["color"])
     dibujar_icono(cr, p["icono"], t, W / 2, 840 + flot, 1.05 * a, **kw)
     if p.get("pie"):
-        texto(cr, p["pie"], W / 2, 1225, 58, p.get("color_pie") and tuple(p["color_pie"]) or GRIS,
-              alfa=ease_out_cubic((t - 0.3) / 0.3))
+        texto(cr, p["pie"], W / 2, 1225, ajustar_tam(cr, p["pie"], 58, W - 100),
+              p.get("color_pie") and tuple(p["color_pie"]) or GRIS, alfa=ease_out_cubic((t - 0.3) / 0.3))
 
 
 def esc_cifra(cr, t, p):
@@ -383,7 +402,10 @@ def esc_linea_tiempo(cr, t, p):
         rellenar(cr, tuple(color) if vis else GRIS)
         texto(cr, str(anio), x, y - 120, 96, BLANCO if vis else GRIS)
         if vis and etiqueta:
-            texto(cr, etiqueta, x, y + 120, 66, tuple(color), alfa=ease_out_cubic((prog - f) / 0.2 + 0.3))
+            tam_e = ajustar_tam(cr, etiqueta, 66, W / 2 - 70)
+            w_e = ancho_texto(cr, etiqueta, tam_e)
+            x_e = min(max(x, w_e / 2 + 50), W - w_e / 2 - 50)
+            texto(cr, etiqueta, x_e, y + 120, tam_e, tuple(color), alfa=ease_out_cubic((prog - f) / 0.2 + 0.3))
 
 
 def esc_versus(cr, t, p):
@@ -394,7 +416,7 @@ def esc_versus(cr, t, p):
             continue
         x = W / 2 + lado * 260
         dibujar_icono(cr, s["icono"], t, x, 820, 0.55 * a, **s.get("args", {}))
-        texto(cr, s["texto"], x, 1080, 56, tuple(s.get("color", BLANCO)))
+        texto(cr, s["texto"], x, 1080, ajustar_tam(cr, s["texto"], 56, 470), tuple(s.get("color", BLANCO)))
     texto(cr, "VS", W / 2, 820, 90, DORADO, alfa=ease_out_cubic((t - 0.4) / 0.3))
 
 
@@ -1106,6 +1128,30 @@ def esc_transformar(cr, t, p):
         texto(cr, p["pie"], W / 2, 980, 58, GRIS)
 
 
+def ic_cereal(cr, t, **kw):
+    """Caja de cereal con un tazón dibujado en el frente."""
+    cr.save()
+    cr.rotate(math.sin(t * 2) * 0.04)
+    cr.new_path()
+    rrect(cr, -130, -190, 260, 380, 18)
+    rellenar(cr, (0.90, 0.16, 0.20))
+    cr.new_path()
+    cr.rectangle(-130, -190, 260, 70)
+    rellenar(cr, (0.98, 0.98, 0.98))
+    texto(cr, "CEREAL", 0, -153, 44, (0.90, 0.16, 0.20))
+    cr.new_path()
+    cr.arc(0, 60, 95, 0, math.pi)
+    cr.close_path()
+    rellenar(cr, (0.98, 0.98, 0.98))
+    rnd = random.Random(3)
+    for _ in range(9):
+        cr.new_path()
+        cr.arc(rnd.uniform(-75, 75), 50 - rnd.uniform(0, 30), 15, 0, 2 * math.pi)
+        rellenar(cr, (1.0, 0.75, 0.35))
+    cr.restore()
+
+
+ICONOS["cereal"] = ic_cereal
 ESCENAS.update({"barras": esc_barras, "transformar": esc_transformar})
 
 
@@ -1144,6 +1190,50 @@ def _valor_en(v, t):
     return a + (b - a) * ease_in_out((t - t0) / max(0.01, t1 - t0))
 
 
+def placa(cr, s, x, y, tam, k=1.0, fondo=None, color=None):
+    """Cartel claro con texto (nombres de marcas o lugares, sin logotipos). `k` = escala de entrada."""
+    if k <= 0.001:
+        return
+    w = ancho_texto(cr, s, tam) + tam * 0.9
+    h = tam * 1.5
+    cr.save()
+    cr.translate(x, y)
+    cr.scale(k, k)
+    cr.new_path()
+    rrect(cr, -w / 2 + 5, -h / 2 + 7, w, h, 12)
+    rellenar(cr, (0, 0, 0), 0.28)
+    cr.new_path()
+    rrect(cr, -w / 2, -h / 2, w, h, 12)
+    rellenar(cr, fondo or (0.97, 0.96, 0.94))
+    texto(cr, s, 0, 2, tam, color or OSCURO)
+    cr.restore()
+
+
+def sello_en(cr, s, x, y, t, tam=96, color=None, giro=-0.16):
+    """Sello inclinado que cae de golpe en (x, y); t = segundos desde que aparece."""
+    if t < 0:
+        return
+    col = color or ROJO
+    a = clamp(t / 0.18)
+    esc = 2.2 - 1.2 * ease_out_cubic(a)
+    cr.save()
+    cr.translate(x, y)
+    cr.rotate(giro)
+    cr.scale(esc, esc)
+    w = ancho_texto(cr, s, tam) + tam * 0.7
+    h = tam * 1.7
+    cr.new_path()
+    rrect(cr, -w / 2, -h / 2, w, h, 18)
+    rellenar(cr, (0.06, 0.05, 0.08), 0.78 * a)
+    cr.new_path()
+    rrect(cr, -w / 2, -h / 2, w, h, 18)
+    cr.set_line_width(tam * 0.13)
+    cr.set_source_rgba(*col, a)
+    cr.stroke()
+    texto(cr, s, 0, 2, tam, col, alfa=a)
+    cr.restore()
+
+
 def esc_historia(cr, t, p):
     if V2:  # cámara: acercamiento lento con un leve paneo
         z = 1 + min(0.08, 0.012 * t)
@@ -1153,9 +1243,12 @@ def esc_historia(cr, t, p):
         cr.translate(-W / 2, -personajes.PISO)
     personajes.decorado(cr, p.get("decorado", "calle_paris"), t, W, H, dibujar_icono)
     for el in p.get("elementos", []):
-        if V2:  # tarjeta de fondo para que el elemento no se mezcle con el escenario
+        te = t - el.get("entra", 0)
+        if te < 0 or t > el.get("sale", 1e9):
+            continue
+        if V2 and not el.get("sin_tarjeta"):  # tarjeta de fondo para que el elemento no se mezcle con el escenario
             m = 290 * el.get("escala", 1.0)
-            k = ease_out_back(t / 0.4)
+            k = ease_out_back(te / 0.4)
             cr.new_path()
             rrect(cr, el["x"] - m * k, el["y"] - m * k, 2 * m * k, 2 * m * k, 40)
             rellenar(cr, FONDO1, 0.92)
@@ -1164,7 +1257,15 @@ def esc_historia(cr, t, p):
             cr.set_line_width(8)
             cr.set_source_rgb(*DORADO)
             cr.stroke()
-        dibujar_icono(cr, el["icono"], t, el["x"], el["y"], el.get("escala", 1.0), **el.get("args", {}))
+        dibujar_icono(cr, el["icono"], te, el["x"], el["y"],
+                      el.get("escala", 1.0) * (ease_out_back(te / 0.4) if el.get("entra") else 1.0),
+                      **el.get("args", {}))
+    for pl in p.get("placas", []):  # carteles del escenario (detrás de los personajes)
+        te = t - pl.get("entra", 0)
+        if te < 0 or t > pl.get("sale", 1e9):
+            continue
+        placa(cr, pl["texto"], pl["x"], pl["y"], pl.get("tam", 52), ease_out_back(te / 0.35) if pl.get("entra") else 1.0,
+              tuple(pl["fondo"]) if pl.get("fondo") else None, tuple(pl["color"]) if pl.get("color") else None)
     for pj in p["personajes"]:
         te = t - pj.get("entra", 0)
         if te < 0 or t > pj.get("sale", 1e9):
@@ -1182,9 +1283,27 @@ def esc_historia(cr, t, p):
             globo(cr, g[0], x + 40 * pj.get("mira", 1), personajes.PISO - 640 * esc, t - g[1])
     if p.get("rejas"):
         personajes.rejas(cr, t, W)
+    for tx in p.get("textos", []):  # textos sueltos sobre la escena
+        te = t - tx.get("entra", 0)
+        if te < 0 or t > tx.get("sale", 1e9):
+            continue
+        k = ease_out_back(te / 0.3)
+        tam = tx.get("tam", 60) * (0.6 + 0.4 * k)
+        col = tuple(tx.get("color", BLANCO))
+        cr.new_path()
+        texto(cr, tx["t"], tx["x"] + 4, tx["y"] + 4, tam, (0, 0, 0), alfa=0.55 * clamp(te / 0.2))
+        texto(cr, tx["t"], tx["x"], tx["y"], tam, col, alfa=clamp(te / 0.2))
+    for se in p.get("sellos", []):
+        if t <= se.get("sale", 1e9):
+            sello_en(cr, se["texto"], se.get("x", W / 2), se.get("y", 820), t - se.get("entra", 0), se.get("tam", 96),
+                     tuple(se["color"]) if se.get("color") else None, se.get("giro", -0.16))
     if V2:
         cr.restore()
-    titular(cr, p.get("titulo", ""), t)
+    if p.get("titulos"):  # el título cambia dentro de la escena: [[segundo, texto], ...]
+        ti, txt = max((x for x in p["titulos"] if x[0] <= t), key=lambda x: x[0], default=p["titulos"][0])
+        titular(cr, txt, max(0.0, t - ti))
+    else:
+        titular(cr, p.get("titulo", ""), t)
 
 
 ESCENAS["historia"] = esc_historia
@@ -1224,6 +1343,11 @@ def eventos_sonido(cfg, inicios):
             ev.append(("golpe", ini + 0.16))
         if base["tipo"] == "cifra" or base.get("icono") == "dinero":
             ev.append(("caja", ini + 0.35))
+        for se in base.get("sellos", []):
+            ev.append(("golpe", ini + se.get("entra", 0) + 0.12))
+        for pl in base.get("placas", []):
+            if pl.get("entra"):
+                ev.append(("pop", ini + pl["entra"]))
         for pj in base.get("personajes", []):
             if pj.get("globo"):
                 ev.append(("pop", ini + pj["globo"][1]))
@@ -1274,9 +1398,25 @@ def pista_sonido(eventos, duracion, ruta):
 
 # ---------- armado del video ----------
 
-def main(carpeta, archivo="motion.json"):
+def cargar_extension(ruta):
+    """Carga el arte propio de un video: un archivo .py con `registrar(m, pj)`, donde `m` es este
+    módulo y `pj` es `personajes`. Ahí se pueden sumar entradas a m.ICONOS, m.ESCENAS, pj.ESTILOS,
+    pj.DECORADOS_EXTRA, pj.OBJETOS_EXTRA y pj.POSES_EXTRA sin tocar los archivos compartidos.
+    Los colores se leen en el momento de dibujar (m.DORADO, m.ROJO…), porque la paleta puede cambiar."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("extension_video", ruta)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    mod.registrar(sys.modules[__name__], personajes)
+
+
+def preparar(carpeta, archivo="motion.json"):
+    """Lee la configuración y deja todo listo para dibujar. Devuelve un dict con cfg, palabras,
+    duración, inicio del audio e inicio de cada escena (segundos)."""
     global V2, FUENTE, PESO
     cfg = json.load(open(os.path.join(carpeta, archivo)))
+    if cfg.get("paleta") == "roja":
+        paleta_roja()
     if cfg.get("v2"):
         V2 = True
         personajes.DETALLE = True
@@ -1287,7 +1427,9 @@ def main(carpeta, archivo="motion.json"):
             if f.endswith(".ttf"):
                 shutil.copy(os.path.join(DIR_FUENTES_V2, f), destino)
         subprocess.run(["fc-cache", "-f"], check=False)
-    palabras = render.cargar_palabras(os.path.join(carpeta, "palabras.json"))
+    if cfg.get("extension"):
+        cargar_extension(os.path.normpath(os.path.join(carpeta, cfg["extension"])))
+    palabras = render.cargar_palabras(os.path.normpath(os.path.join(carpeta, cfg.get("palabras", "palabras.json"))))
     audio = os.path.normpath(os.path.join(carpeta, cfg["audio"]))
     duracion = float(subprocess.check_output(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", audio]))
@@ -1307,6 +1449,45 @@ def main(carpeta, archivo="motion.json"):
             continue
         cursor = render.buscar(palabras, e["desde"], cursor)
         inicios.append(palabras[cursor]["start"])
+    # Tiempos dados por frase: {"en": "frase", "mas": 0.2} vale «segundos desde el comienzo de la escena
+    # hasta que la voz dice esa frase» (más un desfase opcional). Sirve en cualquier campo de tiempo.
+    indices = [0]
+    c = 0
+    for e in cfg["escenas"][1:]:
+        c = render.buscar(palabras, e["desde"], c)
+        indices.append(c)
+
+    def resolver(v, k):
+        if isinstance(v, dict):
+            if "en" in v and set(v) <= {"en", "mas"}:
+                idx = render.buscar(palabras, v["en"], indices[k])
+                return round(palabras[idx]["start"] - inicios[k] + v.get("mas", 0.0), 3)
+            return {kk: resolver(vv, k) for kk, vv in v.items()}
+        if isinstance(v, list):
+            return [resolver(x, k) for x in v]
+        return v
+    cfg["escenas"] = [resolver(e, k) for k, e in enumerate(cfg["escenas"])]
+    return {"cfg": cfg, "palabras": palabras, "audio": audio, "duracion": duracion,
+            "inicio_audio": inicio_audio, "inicios": inicios}
+
+
+def dibujar_cuadro(cr, pre, tg):
+    """Dibuja el cuadro del segundo `tg` (sin subtítulos: esos los agrega ffmpeg al final)."""
+    cfg, inicios = pre["cfg"], pre["inicios"]
+    k = max(i for i, s in enumerate(inicios) if s <= tg + 1e-6)
+    e = cfg["escenas"][k]
+    fondo(cr, tg)
+    ESCENAS[e["tipo"]](cr, tg - inicios[k], e)
+    if V2:
+        vineta(cr)
+        for c in inicios[1:]:
+            transicion(cr, tg - c)
+
+
+def main(carpeta, archivo="motion.json"):
+    pre = preparar(carpeta, archivo)
+    cfg, palabras, audio = pre["cfg"], pre["palabras"], pre["audio"]
+    duracion, inicio_audio, inicios = pre["duracion"], pre["inicio_audio"], pre["inicios"]
 
     tmp = tempfile.mkdtemp(prefix="motion_")
     try:
@@ -1317,16 +1498,8 @@ def main(carpeta, archivo="motion.json"):
         sup = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
         total = int(math.ceil(duracion * FPS))
         for f in range(total):
-            tg = f / FPS
-            k = max(i for i, s in enumerate(inicios) if s <= tg + 1e-6)
-            e = cfg["escenas"][k]
             cr = cairo.Context(sup)
-            fondo(cr, tg)
-            ESCENAS[e["tipo"]](cr, tg - inicios[k], e)
-            if V2:
-                vineta(cr)
-                for c in inicios[1:]:
-                    transicion(cr, tg - c)
+            dibujar_cuadro(cr, pre, f / FPS)
             sup.flush()
             ff.stdin.write(bytes(sup.get_data()))
         ff.stdin.close()
@@ -1335,13 +1508,18 @@ def main(carpeta, archivo="motion.json"):
         subs = render.aplicar_reemplazos(palabras, cfg.get("reemplazos", {}))
         ass = os.path.join(tmp, "subs.ass")
         if V2:
-            render.generar_ass(subs, [], duracion, ass, y_sub=1350, fuente=FUENTE, tam_base=98)
+            render.generar_ass(subs, [], duracion, ass, y_sub=cfg.get("y_sub", 1350), fuente=FUENTE, tam_base=98)
         else:
-            render.generar_ass(subs, [], duracion, ass, y_sub=1350)
+            render.generar_ass(subs, [], duracion, ass, y_sub=cfg.get("y_sub", 1350))
         salida = os.path.join(carpeta, cfg.get("salida", "video-motion.mp4"))
         if V2:
             wav = os.path.join(tmp, "efectos.wav")
-            pista_sonido(eventos_sonido(cfg, inicios), duracion, wav)
+            eventos = eventos_sonido(cfg, inicios)
+            # sonidos puntuales: [nombre, "frase donde suena", desfase en segundos (opcional)]
+            for son in cfg.get("sonidos", []):
+                idx = render.buscar(palabras, son[1])
+                eventos.append((son[0], palabras[idx]["start"] + (son[2] if len(son) > 2 else 0.0)))
+            pista_sonido(eventos, duracion, wav)
             audio_args = ["-i", wav, "-filter_complex",
                           f"[0:v]ass={ass}:fontsdir={DIR_FUENTES_V2}[v];[1:a]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,apad[voz];"
                           "[2:a]aresample=48000,apad[fx];"
@@ -1360,4 +1538,5 @@ def main(carpeta, archivo="motion.json"):
 
 
 if __name__ == "__main__":
+    sys.modules.setdefault("motion", sys.modules["__main__"])  # que «import motion» sea este mismo módulo
     main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else "motion.json")

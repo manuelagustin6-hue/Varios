@@ -12,6 +12,10 @@ import cairo
 # ---------- estilos de personaje ----------
 
 PIEL = (0.96, 0.8, 0.68)
+# Ganchos de extensión: un video puede sumar arte propio sin tocar este archivo (ver motion.cargar_extension).
+DECORADOS_EXTRA = {}   # nombre -> f(cr, t, W, H, dibujar_icono): dibuja el fondo por encima del piso
+OBJETOS_EXTRA = {}     # nombre -> f(cr, x, y): objeto en la mano de adelante
+POSES_EXTRA = {}       # nombre -> f(t) -> dict con los campos de la pose que cambian
 DETALLE = False  # True: personajes con más detalle (ojos, nariz, cuello, zapatos, sombreado)
 ESTILOS = {
     "lustig":     {"ropa": (0.28, 0.3, 0.38), "pantalon": (0.2, 0.21, 0.27), "pelo": (0.18, 0.12, 0.08),
@@ -46,6 +50,9 @@ ESTILOS = {
                    "peinado": "corto", "corbata": (0.6, 0.1, 0.15)},
     "ejecutivo2": {"ropa": (0.35, 0.25, 0.18), "pantalon": (0.25, 0.18, 0.12), "pelo": (0.2, 0.14, 0.08),
                    "peinado": "corto", "corbata": (0.9, 0.75, 0.2), "bigote": True},
+    "coronel":    {"ropa": (0.96, 0.96, 0.97), "pantalon": (0.9, 0.9, 0.92), "pelo": (0.95, 0.95, 0.96),
+                   "peinado": "corto", "anteojos": True, "bigote": True, "barba": "corta",
+                   "corbata": (0.1, 0.1, 0.12)},
     "profesor":   {"ropa": (0.4, 0.42, 0.5), "pantalon": (0.28, 0.28, 0.32), "pelo": (0.78, 0.78, 0.8),
                    "peinado": "calvo", "anteojos": True, "corbata": (0.5, 0.2, 0.2)},
     "juez":       {"ropa": (0.08, 0.08, 0.1), "pantalon": (0.08, 0.08, 0.1), "pelo": (0.75, 0.75, 0.78),
@@ -70,7 +77,9 @@ def pose(nombre, t):
          "cabeza": 0, "torso": 0, "salto": 0, "boca": "neutra", "cejas": 0, "rubor": False, "temblor": 0}
     resp = math.sin(t * 2.5) * 2
     p["torso"] = resp * 0.5
-    if nombre == "caminar":
+    if nombre in POSES_EXTRA:
+        p.update(POSES_EXTRA[nombre](t))
+    elif nombre == "caminar":
         f = t * 7
         s = math.sin(f)
         p.update(piernaD=(28 * s, -25 * max(0, -s)), piernaT=(-28 * s, -25 * max(0, s)),
@@ -148,7 +157,10 @@ def _miembro(cr, x, y, ang1, ang2, l1, l2, ancho, color, fin=None, fin_r=0, zapa
 
 def _objeto(cr, nombre, x, y):
     cr.new_path()
-    if nombre == "maletin":
+    if nombre in OBJETOS_EXTRA:
+        OBJETOS_EXTRA[nombre](cr, x, y)
+        cr.new_path()
+    elif nombre == "maletin":
         cr.rectangle(x - 45, y, 90, 65)
         cr.set_source_rgb(0.45, 0.28, 0.15)
         cr.fill()
@@ -251,7 +263,22 @@ def _cara(cr, est, p, t, hx, hy):
             cr.set_source_rgba(1, 0.35, 0.35, 0.55)
             cr.fill()
     my = hy + 22
-    if est.get("barba"):
+    if est.get("barba") == "corta":
+        # barba corta: sombra semitransparente en la mandíbula, sin tapar la boca
+        cr.save()
+        cr.new_path()
+        cr.arc(hx, hy, 66, 0, 2 * math.pi)   # recorte: la barba no se sale de la cabeza
+        cr.clip()
+        cr.new_path()
+        cr.rectangle(hx - 22, hy + 28, 120, 70)
+        cr.set_source_rgba(*est["pelo"], 0.38)
+        cr.fill()
+        cr.restore()
+        cr.new_path()
+        cr.arc(hx + 25, my + 4, 15, 0, 2 * math.pi)
+        cr.set_source_rgb(*_sombra(est.get("piel", PIEL), 0.97))
+        cr.fill()
+    elif est.get("barba"):
         cr.new_path()
         cr.arc(hx + 18, hy + 18, 50, 0.05 * math.pi, 0.95 * math.pi)
         cr.close_path()
@@ -309,6 +336,24 @@ def _peinado_y_sombrero(cr, est, hx, hy, r):
         cr.rectangle(hx - r - 12, hy - 30, 60, 150)
         cr.set_source_rgb(*pelo)
         cr.fill()
+    elif est["peinado"] == "rulos":
+        # rulos: racimo de círculos sobre la cabeza. Del lado de la cara (mira a la derecha) el pelo
+        # termina arriba de la frente para no tapar los ojos; por detrás baja hasta la nuca.
+        claro = tuple(min(1, c * 1.45 + 0.04) for c in pelo)
+        a0, a1 = math.pi * 0.92, math.pi * 1.72
+        for rad, rr, n, fin, sube in ((r + 5, r * 0.33, 10, a1, 0), (r * 0.7, r * 0.34, 6, math.pi * 1.6, r * 0.22)):
+            for i in range(n):
+                a = a0 + (fin - a0) * i / (n - 1)
+                cr.new_path()
+                cr.arc(hx + rad * math.cos(a), hy + rad * math.sin(a) - sube, rr, 0, 2 * math.pi)
+                cr.set_source_rgb(*pelo)
+                cr.fill()
+        for i in range(1, 9, 2):
+            a = a0 + (a1 - a0) * i / 9
+            cr.new_path()
+            cr.arc(hx + (r + 8) * math.cos(a), hy + (r + 8) * math.sin(a), r * 0.12, 0, 2 * math.pi)
+            cr.set_source_rgb(*claro)
+            cr.fill()
     elif est["peinado"] == "rapado":
         cr.arc(hx, hy, r + 1, math.pi * 1.1, math.pi * 1.9)
         cr.close_path()
@@ -377,7 +422,10 @@ def personaje(cr, estilo, x, y, escala, mira, nombre_pose, t, objeto=None):
     _miembro(cr, -8, cadera[1], *p["piernaT"], 112, 112, 38, _sombra(pant), fin=(0.12, 0.1, 0.1), fin_r=22, zapato=True)
     cr.save()
     cr.rotate(math.radians(p["torso"]))
-    _miembro(cr, -20, hombro_y + 12, *p["brazoT"], 98, 92, 30, _sombra(ropa), fin=_sombra(piel, 0.9), fin_r=17)
+    # Con el brazo de atrás colgando, solo asomaría la mano bajo el saco (parece una mancha):
+    # los estilos con "brazo_atras_oculto" no lo dibujan mientras está en reposo.
+    if not (est.get("brazo_atras_oculto") and abs(p["brazoT"][0]) < 30):
+        _miembro(cr, -20, hombro_y + 12, *p["brazoT"], 98, 92, 30, _sombra(ropa), fin=_sombra(piel, 0.9), fin_r=17)
     cr.restore()
     _miembro(cr, 8, cadera[1], *p["piernaD"], 112, 112, 38, pant, fin=(0.12, 0.1, 0.1), fin_r=22, zapato=True)
     # torso
@@ -419,6 +467,41 @@ def personaje(cr, estilo, x, y, escala, mira, nombre_pose, t, objeto=None):
             cr.close_path()
             cr.set_source_rgb(0.96, 0.96, 0.98)
             cr.fill()
+        elif est.get("cuello"):
+            # camisa de cuello abierto: escote con piel y dos solapas claras
+            cr.new_path()
+            cr.move_to(-8, hombro_y - 12)
+            cr.line_to(44, hombro_y - 12)
+            cr.line_to(18, hombro_y + 44)
+            cr.close_path()
+            cr.set_source_rgb(*_sombra(piel, 0.88))
+            cr.fill()
+            for x_a, x_b in ((-22, 14), (58, 22)):
+                cr.new_path()
+                cr.move_to(x_a, hombro_y - 16)
+                cr.line_to(18, hombro_y - 16)
+                cr.line_to(x_b, hombro_y + 34)
+                cr.close_path()
+                cr.set_source_rgb(*est["cuello"])
+                cr.fill()
+            if est.get("cordones"):
+                # buzo con capucha: bolsillo canguro y dos cordones
+                for x_c in (6, 30):
+                    cr.new_path()
+                    cr.move_to(x_c, hombro_y + 30)
+                    cr.line_to(x_c + (-3 if x_c < 18 else 3), hombro_y + 105)
+                    cr.set_line_width(5)
+                    cr.set_line_cap(cairo.LINE_CAP_ROUND)
+                    cr.set_source_rgb(*est["cordones"]) if isinstance(est["cordones"], tuple) else cr.set_source_rgb(0.97, 0.97, 0.99)
+                    cr.stroke()
+                cr.new_path()
+                cr.move_to(-38, cadera[1] - 70)
+                cr.line_to(50, cadera[1] - 70)
+                cr.line_to(60, cadera[1] - 12)
+                cr.line_to(-50, cadera[1] - 12)
+                cr.close_path()
+                cr.set_source_rgba(0, 0, 0, 0.12)
+                cr.fill()
         elif not est.get("falda"):
             cr.new_path()
             cr.rectangle(-68, cadera[1] + 4, 136, 14)
@@ -508,7 +591,10 @@ def _farol(cr, x, prendido=True):
 def decorado(cr, nombre, t, W, H, dibujar_icono):
     rnd = random.Random(nombre)
     cr.new_path()
-    if nombre in ("calle_paris", "calle", "calle_noche"):
+    if nombre in DECORADOS_EXTRA:
+        DECORADOS_EXTRA[nombre](cr, t, W, H, dibujar_icono)
+        cr.new_path()
+    elif nombre in ("calle_paris", "calle", "calle_noche"):
         noche = nombre == "calle_noche"
         g = cairo.LinearGradient(0, 0, 0, PISO)
         if noche:
