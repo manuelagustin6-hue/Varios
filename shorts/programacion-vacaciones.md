@@ -31,11 +31,11 @@ En TikTok: el título seguido de los hashtags, sin `#shorts`.
 ### 027 — Nokia
 
 ```
-Nokia vendía 1 de cada 2 celulares… y casi desapareció 📱
+Nokia vendía 4 de cada 10 celulares… y casi desapareció 📱
 ```
 
 ```
-En 2007, Nokia tenía cerca de la mitad del mercado mundial de celulares. Ese año llegó el iPhone, y la empresa tardó en reaccionar. En 2013 vendió su negocio de teléfonos a Microsoft por unos 7.200 millones de dólares.
+En 2007, Nokia vendía casi 4 de cada 10 celulares del mundo. Ese año llegó el iPhone, y la empresa tardó en reaccionar. En 2013 vendió su negocio de teléfonos a Microsoft por unos 7.200 millones de dólares.
 
 ¿Cuál fue tu primer celular? 👇
 

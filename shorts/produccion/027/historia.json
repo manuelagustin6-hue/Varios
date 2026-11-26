@@ -7,14 +7,15 @@
  "bucle": true,
  "salida": "video-historia.mp4",
  "reemplazos": {
-  "7 mil millones": "7.000 millones"
+  "7 mil millones": "7.000 millones",
+  "cuatro de cada 10": "4 de cada 10"
  },
  "escenas": [
   {
    "tipo": "historia",
    "decorado": "pedestal",
    "personajes": [],
-   "titulo": "NOKIA: 1 DE CADA 2\nCELULARES DEL MUNDO",
+   "titulo": "NOKIA: 4 DE CADA 10\nCELULARES DEL MUNDO",
    "elementos": [
     {
      "icono": "celular",
@@ -52,7 +53,7 @@
    "barras": [
     [
      "NOKIA",
-     49,
+     38,
      [
       0.24,
       0.86,
@@ -61,7 +62,7 @@
     ],
     [
      "EL RESTO",
-     51,
+     62,
      [
       0.75,
       0.72,
@@ -256,7 +257,7 @@
    "tipo": "historia",
    "decorado": "pedestal",
    "personajes": [],
-   "titulo": "NOKIA: 1 DE CADA 2\nCELULARES DEL MUNDO",
+   "titulo": "NOKIA: 4 DE CADA 10\nCELULARES DEL MUNDO",
    "desde": "Y pensar que",
    "elementos": [
     {
