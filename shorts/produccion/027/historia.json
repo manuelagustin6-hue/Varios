@@ -1,0 +1,280 @@
+{
+ "audio": "../../audios/027/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda4_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {
+  "7 mil millones": "7.000 millones"
+ },
+ "escenas": [
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "NOKIA: 1 DE CADA 2\nCELULARES DEL MUNDO",
+   "elementos": [
+    {
+     "icono": "celular",
+     "x": 540,
+     "y": 860,
+     "escala": 0.95,
+     "sin_tarjeta": true
+    }
+   ],
+   "placas": [
+    {
+     "texto": "NOKIA",
+     "x": 540,
+     "y": 560,
+     "tam": 60
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "CASI DESAPARECIÓ",
+     "entra": {
+      "en": "casi desapareció"
+     },
+     "x": 540,
+     "y": 1130,
+     "tam": 64
+    }
+   ]
+  },
+  {
+   "tipo": "barras",
+   "desde": "En 2007",
+   "titulo": "2007: LA REINA\nDEL MERCADO",
+   "sufijo": " %",
+   "barras": [
+    [
+     "NOKIA",
+     49,
+     [
+      0.24,
+      0.86,
+      0.52
+     ]
+    ],
+    [
+     "EL RESTO",
+     51,
+     [
+      0.75,
+      0.72,
+      0.8
+     ]
+    ]
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "FAMOSOS POR DURAR\nPARA SIEMPRE",
+   "desde": "y sus teléfonos",
+   "elementos": [
+    {
+     "icono": "celular",
+     "x": 540,
+     "y": 860,
+     "escala": 0.95,
+     "sin_tarjeta": true
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "INDESTRUCTIBLE",
+     "entra": 0.5,
+     "x": 540,
+     "y": 1130,
+     "tam": 60,
+     "color": [
+      0.24,
+      0.86,
+      0.52
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "desde": "Ese mismo año",
+   "titulos": [
+    [
+     0,
+     "2007: LLEGA EL IPHONE"
+    ],
+    [
+     {
+      "en": "una pantalla"
+     },
+     "PANTALLA TÁCTIL,\nSIN TECLADO"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "celular",
+     "x": 540,
+     "y": 860,
+     "escala": 0.95,
+     "sin_tarjeta": true,
+     "args": {
+      "tipo": "tactil"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "ejecutivo",
+     "x": 300,
+     "pose": "hablar",
+     "globo": [
+      "Es caro… y la\nbatería no dura",
+      {
+       "en": "Era caro"
+      },
+      9
+     ]
+    },
+    {
+     "estilo": "ejecutivo2",
+     "x": 790,
+     "pose": "sonreir",
+     "mira": -1
+    }
+   ],
+   "desde": "Muchos en la industria",
+   "titulos": [
+    [
+     0,
+     "MUCHOS LO SUBESTIMARON"
+    ]
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "desde": "Pero la gente",
+   "titulos": [
+    [
+     0,
+     "LA GENTE QUERÍA MÁS\nQUE LLAMAR"
+    ],
+    [
+     {
+      "en": "quería internet"
+     },
+     "INTERNET Y APLICACIONES"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "celular",
+     "x": 310,
+     "y": 860,
+     "escala": 0.8,
+     "sin_tarjeta": true
+    },
+    {
+     "icono": "celular",
+     "x": 770,
+     "y": 860,
+     "escala": 0.8,
+     "sin_tarjeta": true,
+     "args": {
+      "tipo": "tactil"
+     }
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "VIEJO",
+     "entra": {
+      "en": "quería internet"
+     },
+     "x": 310,
+     "y": 1120,
+     "tam": 56
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "ejecutivo",
+     "x": 540,
+     "pose": "pensar",
+     "poses": [
+      [
+       {
+        "en": "apostó"
+       },
+       "tapar_cara"
+      ]
+     ]
+    }
+   ],
+   "desde": "Nokia tardó",
+   "titulos": [
+    [
+     0,
+     "NOKIA TARDÓ\nEN REACCIONAR"
+    ],
+    [
+     {
+      "en": "apostó"
+     },
+     "APOSTÓ POR UN SISTEMA\nQUE CASI NADIE ELIGIÓ"
+    ]
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": "En 2013",
+   "titulo": "2013: VENDE SUS CELULARES\nA MICROSOFT",
+   "de": 0,
+   "a": 7200,
+   "prefijo": "$",
+   "unidad": "MILLONES",
+   "icono": "dinero",
+   "cuenta": 1.6
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "NOKIA: 1 DE CADA 2\nCELULARES DEL MUNDO",
+   "desde": "Y pensar que",
+   "elementos": [
+    {
+     "icono": "celular",
+     "x": 540,
+     "y": 860,
+     "escala": 0.95,
+     "sin_tarjeta": true
+    }
+   ],
+   "placas": [
+    {
+     "texto": "NOKIA",
+     "x": 540,
+     "y": 560,
+     "tam": 60
+    }
+   ]
+  }
+ ]
+}

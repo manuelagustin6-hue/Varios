@@ -1,0 +1,258 @@
+{
+ "audio": "../../audios/032/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda4_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {},
+ "escenas": [
+  {
+   "tipo": "historia",
+   "decorado": "desierto",
+   "personajes": [
+    {
+     "estilo": "musa",
+     "x": 300,
+     "pose": "señalar"
+    }
+   ],
+   "titulo": "TAN RICO QUE HIZO CAER\nEL PRECIO DEL ORO",
+   "elementos": [
+    {
+     "icono": "oro",
+     "x": 760,
+     "y": 1040,
+     "escala": 0.7,
+     "sin_tarjeta": true
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "desierto",
+   "personajes": [
+    {
+     "estilo": "musa",
+     "x": 300,
+     "pose": "hablar"
+    }
+   ],
+   "desde": "Se llamaba",
+   "titulos": [
+    [
+     0,
+     "MANSA MUSA"
+    ],
+    [
+     {
+      "en": "y gobernaba"
+     },
+     "REY DEL IMPERIO\nDE MALÍ"
+    ],
+    [
+     {
+      "en": "dueño"
+     },
+     "MINAS DE ORO"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "oro",
+     "x": 760,
+     "y": 1040,
+     "escala": 0.7,
+     "sin_tarjeta": true,
+     "entra": {
+      "en": "dueño"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "desierto",
+   "personajes": [
+    {
+     "estilo": "musa",
+     "x": [
+      -150,
+      540,
+      0,
+      3.0
+     ],
+     "pose": "caminar",
+     "poses": [
+      [
+       3.0,
+       "señalar"
+      ]
+     ]
+    }
+   ],
+   "desde": "En 1324",
+   "titulos": [
+    [
+     0,
+     "1324: VIAJE A LA MECA"
+    ],
+    [
+     {
+      "en": "con una caravana"
+     },
+     "DECENAS DE MILES\nDE PERSONAS"
+    ],
+    [
+     {
+      "en": "y camellos"
+     },
+     "CAMELLOS CARGADOS\nDE ORO"
+    ]
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "desierto",
+   "personajes": [
+    {
+     "estilo": "musa",
+     "x": 300,
+     "pose": "dar"
+    },
+    {
+     "estilo": "vecina",
+     "x": 700,
+     "pose": "celebrar",
+     "mira": -1
+    },
+    {
+     "estilo": "pietro",
+     "x": 900,
+     "pose": "celebrar",
+     "mira": -1
+    }
+   ],
+   "desde": "Al pasar",
+   "titulos": [
+    [
+     0,
+     "AL PASAR POR EL CAIRO…"
+    ],
+    [
+     {
+      "en": "repartió tanto"
+     },
+     "…REPARTIÓ ORO"
+    ]
+   ],
+   "placas": [
+    {
+     "texto": "EL CAIRO",
+     "x": 800,
+     "y": 560,
+     "tam": 50
+    }
+   ],
+   "elementos": [
+    {
+     "icono": "oro",
+     "x": 500,
+     "y": 1100,
+     "escala": 0.3,
+     "sin_tarjeta": true,
+     "entra": {
+      "en": "repartió tanto"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "grafico",
+   "desde": "que el oro perdió",
+   "titulo": "EL ORO PERDIÓ VALOR",
+   "valores": [
+    10,
+    9.8,
+    8.6,
+    8,
+    7.8,
+    7.9
+   ],
+   "color": [
+    1.0,
+    0.3,
+    0.36
+   ],
+   "dibujo": 1.2,
+   "pie": "precio del oro en El Cairo"
+  },
+  {
+   "tipo": "cifra",
+   "desde": "Según los cronistas",
+   "titulo": "SEGÚN LOS CRONISTAS,\nTARDÓ EN RECUPERARSE",
+   "de": 0,
+   "a": 10,
+   "prefijo": "+",
+   "unidad": "AÑOS",
+   "cuenta": 1.0
+  },
+  {
+   "tipo": "historia",
+   "decorado": "desierto",
+   "personajes": [
+    {
+     "estilo": "musa",
+     "x": 540,
+     "pose": "sonreir"
+    }
+   ],
+   "titulo": "PUSO A MALÍ EN LOS MAPAS\nDE EUROPA",
+   "desde": "Su viaje",
+   "placas": [
+    {
+     "texto": "MALÍ",
+     "x": 540,
+     "y": 580,
+     "tam": 70,
+     "entra": 0.5
+    }
+   ]
+  },
+  {
+   "tipo": "icono",
+   "desde": "Muchos lo consideran",
+   "titulo": "¿EL MÁS RICO\nDE LA HISTORIA?",
+   "icono": "oro",
+   "pie": "nadie puede calcularlo",
+   "color_pie": [
+    1.0,
+    0.72,
+    0.5
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "desierto",
+   "personajes": [
+    {
+     "estilo": "musa",
+     "x": 300,
+     "pose": "señalar"
+    }
+   ],
+   "titulo": "TAN RICO QUE HIZO CAER\nEL PRECIO DEL ORO",
+   "desde": "Y pensar que",
+   "elementos": [
+    {
+     "icono": "oro",
+     "x": 760,
+     "y": 1040,
+     "escala": 0.7,
+     "sin_tarjeta": true
+    }
+   ]
+  }
+ ]
+}

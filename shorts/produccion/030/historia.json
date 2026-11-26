@@ -1,0 +1,302 @@
+{
+ "audio": "../../audios/030/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda4_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {
+  "9 mil millones": "9.000 millones"
+ },
+ "escenas": [
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "ANALIZAR TU SANGRE\nCON UNA SOLA GOTA",
+   "elementos": [
+    {
+     "icono": "gota",
+     "x": 540,
+     "y": 860,
+     "escala": 0.8,
+     "sin_tarjeta": true
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "ERA MENTIRA",
+     "entra": {
+      "en": "y era mentira"
+     },
+     "x": 540,
+     "y": 1130,
+     "tam": 76
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "aula",
+   "personajes": [
+    {
+     "estilo": "holmes",
+     "x": 300,
+     "pose": "hablar",
+     "poses": [
+      [
+       {
+        "en": "para fundar"
+       },
+       "celebrar"
+      ]
+     ]
+    }
+   ],
+   "desde": "Elizabeth Holmes",
+   "titulos": [
+    [
+     0,
+     "ELIZABETH HOLMES"
+    ],
+    [
+     {
+      "en": "dejó la universidad"
+     },
+     "DEJÓ LA UNIVERSIDAD\nA LOS 19 AÑOS"
+    ],
+    [
+     {
+      "en": "para fundar"
+     },
+     "FUNDÓ THERANOS"
+    ]
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "holmes",
+     "x": 300,
+     "pose": "señalar"
+    }
+   ],
+   "desde": "Su promesa",
+   "titulos": [
+    [
+     0,
+     "SU PROMESA"
+    ],
+    [
+     {
+      "en": "cientos de análisis"
+     },
+     "CIENTOS DE ANÁLISIS\nCON UN PINCHAZO"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "gota",
+     "x": 780,
+     "y": 820,
+     "escala": 0.45
+    }
+   ],
+   "placas": [
+    {
+     "texto": "RÁPIDOS Y BARATOS",
+     "x": 780,
+     "y": 1070,
+     "tam": 38,
+     "entra": {
+      "en": "rápidos"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "holmes",
+     "x": 300,
+     "pose": "sonreir"
+    },
+    {
+     "estilo": "ejecutivo",
+     "x": 720,
+     "pose": "dar",
+     "mira": -1,
+     "objeto": "billetes"
+    },
+    {
+     "estilo": "ejecutivo2",
+     "x": 900,
+     "pose": "dar",
+     "mira": -1,
+     "objeto": "billetes"
+    }
+   ],
+   "titulo": "INVERSORES FAMOSOS",
+   "desde": "Inversores famosos"
+  },
+  {
+   "tipo": "cifra",
+   "desde": "y la empresa llegó",
+   "titulo": "LA EMPRESA LLEGÓ A VALER",
+   "de": 0,
+   "a": 9000,
+   "prefijo": "$",
+   "unidad": "MILLONES",
+   "icono": "dinero",
+   "cuenta": 1.4
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "EN LAS TAPAS\nDE LAS REVISTAS",
+   "desde": "Ella aparecía",
+   "elementos": [
+    {
+     "icono": "revista",
+     "x": 540,
+     "y": 870,
+     "escala": 0.9,
+     "sin_tarjeta": true
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "desde": "pero la máquina",
+   "titulos": [
+    [
+     0,
+     "LA MÁQUINA\nNO FUNCIONABA"
+    ],
+    [
+     {
+      "en": "Muchos análisis"
+     },
+     "USABAN EQUIPOS\nDE OTRAS MARCAS"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "gota",
+     "x": 540,
+     "y": 860,
+     "escala": 0.8,
+     "sin_tarjeta": true
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "NO FUNCIONA",
+     "entra": 0.5,
+     "sale": {
+      "en": "Muchos análisis"
+     },
+     "x": 540,
+     "y": 1130,
+     "tam": 64
+    },
+    {
+     "texto": "EN SECRETO",
+     "entra": {
+      "en": "en secreto"
+     },
+     "x": 540,
+     "y": 1130,
+     "tam": 64
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "periodista",
+     "x": 540,
+     "pose": "dar",
+     "objeto": "papel"
+    }
+   ],
+   "desde": "En 2015",
+   "titulos": [
+    [
+     0,
+     "2015: UN PERIODISTA\nLO PUBLICA"
+    ],
+    [
+     {
+      "en": "y todo se"
+     },
+     "TODO SE DERRUMBÓ"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "diario",
+     "x": 800,
+     "y": 800,
+     "escala": 0.4
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "carcel",
+   "personajes": [
+    {
+     "estilo": "holmes",
+     "x": 540,
+     "pose": "triste"
+    }
+   ],
+   "titulo": "2022: CONDENADA\nPOR FRAUDE",
+   "desde": "En 2022",
+   "rejas": true,
+   "textos": [
+    {
+     "t": "MÁS DE 11 AÑOS",
+     "x": 540,
+     "y": 560,
+     "tam": 70,
+     "color": [
+      1,
+      1,
+      1
+     ],
+     "entra": {
+      "en": "a más de"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "ANALIZAR TU SANGRE\nCON UNA SOLA GOTA",
+   "desde": "Y todo porque",
+   "elementos": [
+    {
+     "icono": "gota",
+     "x": 540,
+     "y": 860,
+     "escala": 0.8,
+     "sin_tarjeta": true
+    }
+   ]
+  }
+ ]
+}

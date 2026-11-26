@@ -1,0 +1,275 @@
+{
+ "audio": "../../audios/028/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda4_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {},
+ "escenas": [
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "LEGO ESTUVO A PUNTO\nDE QUEBRAR",
+   "elementos": [
+    {
+     "icono": "ladrillos",
+     "x": 540,
+     "y": 900,
+     "escala": 1.0,
+     "sin_tarjeta": true
+    }
+   ],
+   "placas": [
+    {
+     "texto": "LEGO",
+     "x": 540,
+     "y": 560,
+     "tam": 60
+    }
+   ],
+   "sellos": [
+    {
+     "texto": "CASI QUIEBRA",
+     "entra": {
+      "en": "a punto"
+     },
+     "x": 540,
+     "y": 1140,
+     "tam": 64
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "cuarto",
+   "personajes": [
+    {
+     "estilo": "nino",
+     "x": 300,
+     "pose": "sonreir",
+     "escala": 0.7
+    }
+   ],
+   "titulo": "LOS NIÑOS PREFERÍAN\nLOS VIDEOJUEGOS",
+   "desde": "A comienzos",
+   "elementos": [
+    {
+     "icono": "pantalla",
+     "x": 760,
+     "y": 760,
+     "escala": 0.5
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "LEGO QUISO SER DE TODO",
+   "desde": "ropa relojes",
+   "elementos": [
+    {
+     "icono": "ladrillo",
+     "x": 540,
+     "y": 900,
+     "escala": 0.7,
+     "sin_tarjeta": true
+    }
+   ],
+   "placas": [
+    {
+     "texto": "ROPA",
+     "x": 250,
+     "y": 560,
+     "tam": 50,
+     "entra": 0.1
+    },
+    {
+     "texto": "RELOJES",
+     "x": 820,
+     "y": 560,
+     "tam": 50,
+     "entra": {
+      "en": "relojes"
+     }
+    },
+    {
+     "texto": "PARQUES",
+     "x": 250,
+     "y": 680,
+     "tam": 50,
+     "entra": {
+      "en": "parques"
+     }
+    },
+    {
+     "texto": "VIDEOJUEGOS",
+     "x": 800,
+     "y": 680,
+     "tam": 46,
+     "entra": {
+      "en": "videojuegos"
+     }
+    },
+    {
+     "texto": "MILES DE PIEZAS",
+     "x": 540,
+     "y": 1100,
+     "tam": 50,
+     "entra": {
+      "en": "y miles"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "icono",
+   "desde": "Cada novedad",
+   "titulo": "CADA NOVEDAD COSTABA\nMÁS DE LO QUE DEJABA",
+   "icono": "dinero",
+   "pie": "gastaba más de lo que ganaba",
+   "color_pie": [
+    1.0,
+    0.3,
+    0.36
+   ]
+  },
+  {
+   "tipo": "grafico",
+   "desde": "En 2003",
+   "titulo": "2003: LAS VENTAS CAEN\nCERCA DE 30 %",
+   "valores": [
+    10,
+    9.6,
+    9,
+    8,
+    7.2,
+    7
+   ],
+   "color": [
+    1.0,
+    0.3,
+    0.36
+   ],
+   "dibujo": 2.0,
+   "pie": "y perdía dinero cada día"
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "director",
+     "x": 540,
+     "pose": "hablar"
+    }
+   ],
+   "desde": "Entonces puso",
+   "titulos": [
+    [
+     0,
+     "UN DIRECTOR NUEVO,\nDE 35 AÑOS"
+    ],
+    [
+     {
+      "en": "el primero"
+     },
+     "EL PRIMERO FUERA\nDE LA FAMILIA"
+    ]
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "SU PLAN:\nVOLVER AL LADRILLO",
+   "desde": "Su plan",
+   "elementos": [
+    {
+     "icono": "ladrillo",
+     "x": 540,
+     "y": 880,
+     "escala": 1.0,
+     "sin_tarjeta": true
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "director",
+     "x": 300,
+     "pose": "señalar"
+    }
+   ],
+   "desde": "Vendió lo que",
+   "titulos": [
+    [
+     0,
+     "VENDIÓ LO QUE SOBRABA"
+    ],
+    [
+     {
+      "en": "redujo"
+     },
+     "MENOS PIEZAS"
+    ],
+    [
+     {
+      "en": "y escuchó"
+     },
+     "ESCUCHÓ A LOS FANÁTICOS"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "ladrillos",
+     "x": 780,
+     "y": 860,
+     "escala": 0.5
+    }
+   ]
+  },
+  {
+   "tipo": "icono",
+   "desde": "10 años después",
+   "titulo": "10 AÑOS DESPUÉS",
+   "icono": "ladrillos",
+   "pie": "la mayor empresa de juguetes del mundo",
+   "color_pie": [
+    0.24,
+    0.86,
+    0.52
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "titulo": "LEGO ESTUVO A PUNTO\nDE QUEBRAR",
+   "desde": "Y pensar que",
+   "elementos": [
+    {
+     "icono": "ladrillos",
+     "x": 540,
+     "y": 900,
+     "escala": 1.0,
+     "sin_tarjeta": true
+    }
+   ],
+   "placas": [
+    {
+     "texto": "LEGO",
+     "x": 540,
+     "y": 560,
+     "tam": 60
+    }
+   ]
+  }
+ ]
+}

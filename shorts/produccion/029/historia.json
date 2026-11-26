@@ -1,0 +1,258 @@
+{
+ "audio": "../../audios/029/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda4_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {},
+ "escenas": [
+  {
+   "tipo": "historia",
+   "decorado": "casa",
+   "personajes": [
+    {
+     "estilo": "magie",
+     "x": 300,
+     "pose": "señalar"
+    }
+   ],
+   "titulo": "EL MONOPOLY LO INVENTÓ\nUNA MUJER",
+   "elementos": [
+    {
+     "icono": "tablero",
+     "x": 760,
+     "y": 860,
+     "escala": 0.6
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "casa",
+   "personajes": [
+    {
+     "estilo": "magie",
+     "x": 300,
+     "pose": "hablar"
+    }
+   ],
+   "desde": "Se llamaba",
+   "titulos": [
+    [
+     0,
+     "ELIZABETH MAGIE"
+    ],
+    [
+     {
+      "en": "en 1904"
+     },
+     "1904: PATENTA\n«EL JUEGO DEL PROPIETARIO»"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "contrato",
+     "x": 770,
+     "y": 860,
+     "escala": 0.5,
+     "entra": {
+      "en": "patentó"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "desde": "Quería mostrar",
+   "titulos": [
+    [
+     0,
+     "QUERÍA MOSTRAR ALGO"
+    ],
+    [
+     {
+      "en": "cuando uno"
+     },
+     "UNO SE QUEDA CON TODO…"
+    ],
+    [
+     {
+      "en": "los demás"
+     },
+     "…Y LOS DEMÁS, EN LA RUINA"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "tablero",
+     "x": 540,
+     "y": 880,
+     "escala": 0.95,
+     "sin_tarjeta": true
+    }
+   ]
+  },
+  {
+   "tipo": "iconos",
+   "desde": "El juego se fue",
+   "titulo": "SE COPIÓ DE MANO EN MANO\nDURANTE 30 AÑOS",
+   "icono": "tablero",
+   "cantidad": 6,
+   "columnas": 3,
+   "escala": 0.34
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "darrow",
+     "x": 300,
+     "pose": "pensar",
+     "poses": [
+      [
+       {
+        "en": "la presentó"
+       },
+       "dar"
+      ]
+     ]
+    },
+    {
+     "estilo": "ejecutivo",
+     "x": 790,
+     "pose": "escuchar",
+     "mira": -1,
+     "entra": {
+      "en": "la presentó"
+     },
+     "poses": [
+      [
+       {
+        "en": "y la vendió"
+       },
+       "celebrar"
+      ]
+     ]
+    }
+   ],
+   "desde": "hasta que un vendedor",
+   "titulos": [
+    [
+     0,
+     "CHARLES DARROW,\nVENDEDOR DESEMPLEADO"
+    ],
+    [
+     {
+      "en": "aprendió"
+     },
+     "APRENDIÓ UNA VERSIÓN…"
+    ],
+    [
+     {
+      "en": "la presentó"
+     },
+     "…LA PRESENTÓ COMO PROPIA"
+    ],
+    [
+     {
+      "en": "y la vendió"
+     },
+     "…Y LA VENDIÓ"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "tablero",
+     "x": 545,
+     "y": 700,
+     "escala": 0.3,
+     "entra": {
+      "en": "aprendió"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "darrow",
+     "x": 540,
+     "pose": "celebrar",
+     "objeto": "billetes"
+    }
+   ],
+   "titulo": "SE HIZO MILLONARIO",
+   "desde": "Se hizo millonario"
+  },
+  {
+   "tipo": "cifra",
+   "desde": "A Magie",
+   "titulo": "A MAGIE LE PAGARON",
+   "de": 0,
+   "a": 500,
+   "prefijo": "$",
+   "unidad": "DÓLARES POR SU PATENTE",
+   "color": [
+    1.0,
+    0.3,
+    0.36
+   ],
+   "cuenta": 0.8
+  },
+  {
+   "tipo": "historia",
+   "decorado": "pedestal",
+   "personajes": [],
+   "desde": "El juego que criticaba",
+   "titulos": [
+    [
+     0,
+     "CRITICABA A LOS MONOPOLIOS…"
+    ],
+    [
+     {
+      "en": "se convirtió"
+     },
+     "…Y TERMINÓ CELEBRÁNDOLOS"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "tablero",
+     "x": 540,
+     "y": 880,
+     "escala": 0.95,
+     "sin_tarjeta": true
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "casa",
+   "personajes": [
+    {
+     "estilo": "magie",
+     "x": 300,
+     "pose": "señalar"
+    }
+   ],
+   "titulo": "EL MONOPOLY LO INVENTÓ\nUNA MUJER",
+   "desde": "Y pensar que",
+   "elementos": [
+    {
+     "icono": "tablero",
+     "x": 760,
+     "y": 860,
+     "escala": 0.6
+    }
+   ]
+  }
+ ]
+}

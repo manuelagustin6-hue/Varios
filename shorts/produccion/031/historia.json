@@ -1,0 +1,258 @@
+{
+ "audio": "../../audios/031/voz-final.mp3",
+ "palabras": "palabras.json",
+ "extension": "../tanda4_ext.py",
+ "v2": true,
+ "paleta": "roja",
+ "bucle": true,
+ "salida": "video-historia.mp4",
+ "reemplazos": {},
+ "escenas": [
+  {
+   "tipo": "historia",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "ponzi",
+     "x": 300,
+     "pose": "dar",
+     "objeto": "billetes"
+    }
+   ],
+   "titulo": "PROMETÍA DUPLICAR TU DINERO\nEN 90 DÍAS",
+   "elementos": [
+    {
+     "icono": "dinero",
+     "x": 790,
+     "y": 760,
+     "escala": 0.45
+    }
+   ],
+   "placas": [
+    {
+     "texto": "…Y LE DIO NOMBRE A UNA ESTAFA",
+     "x": 540,
+     "y": 1010,
+     "tam": 38,
+     "entra": {
+      "en": "y le dio"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "ponzi",
+     "x": 300,
+     "pose": "hablar"
+    }
+   ],
+   "desde": "En 1920",
+   "titulos": [
+    [
+     0,
+     "1920: CHARLES PONZI,\nBOSTON"
+    ],
+    [
+     {
+      "en": "aseguraba"
+     },
+     "UN «NEGOCIO INFALIBLE»"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "cupon",
+     "x": 780,
+     "y": 780,
+     "escala": 0.5,
+     "entra": {
+      "en": "con cupones"
+     }
+    }
+   ],
+   "placas": [
+    {
+     "texto": "CUPONES DE CORREO",
+     "x": 780,
+     "y": 1000,
+     "tam": 36,
+     "entra": {
+      "en": "con cupones"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "cifra",
+   "desde": "Ofrecía",
+   "titulo": "OFRECÍA",
+   "de": 0,
+   "a": 50,
+   "sufijo": " %",
+   "unidad": "EN 45 DÍAS",
+   "color": [
+    0.24,
+    0.86,
+    0.52
+   ],
+   "cuenta": 1.0
+  },
+  {
+   "tipo": "historia",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "ponzi",
+     "x": 300,
+     "pose": "dar",
+     "objeto": "billetes"
+    },
+    {
+     "estilo": "vecina",
+     "x": 760,
+     "pose": "celebrar",
+     "mira": -1
+    }
+   ],
+   "desde": "Y pagaba",
+   "titulos": [
+    [
+     0,
+     "Y PAGABA…"
+    ],
+    [
+     {
+      "en": "pero no había"
+     },
+     "…PERO NO HABÍA NEGOCIO"
+    ]
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "joven1",
+     "x": 880,
+     "pose": "dar",
+     "mira": -1,
+     "objeto": "billetes"
+    },
+    {
+     "estilo": "ponzi",
+     "x": 540,
+     "pose": "sonreir",
+     "poses": [
+      [
+       1.4,
+       "dar"
+      ]
+     ],
+     "objeto": "billetes"
+    },
+    {
+     "estilo": "vecina",
+     "x": 200,
+     "pose": "celebrar"
+    }
+   ],
+   "titulo": "PAGABA A LOS PRIMEROS\nCON EL DINERO DE LOS ÚLTIMOS",
+   "desde": "A los primeros"
+  },
+  {
+   "tipo": "cifra",
+   "desde": "En 8 meses",
+   "titulo": "EN 8 MESES JUNTÓ",
+   "de": 0,
+   "a": 15,
+   "prefijo": "$",
+   "unidad": "MILLONES",
+   "icono": "dinero",
+   "cuenta": 1.2
+  },
+  {
+   "tipo": "historia",
+   "decorado": "oficina",
+   "personajes": [
+    {
+     "estilo": "periodista",
+     "x": 300,
+     "pose": "pensar"
+    }
+   ],
+   "desde": "hasta que un diario",
+   "titulos": [
+    [
+     0,
+     "UN DIARIO HIZO\nLA CUENTA"
+    ],
+    [
+     {
+      "en": "No existían"
+     },
+     "NO EXISTÍAN TANTOS\nCUPONES EN EL MUNDO"
+    ]
+   ],
+   "elementos": [
+    {
+     "icono": "diario",
+     "x": 780,
+     "y": 820,
+     "escala": 0.5
+    }
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "carcel",
+   "personajes": [
+    {
+     "estilo": "ponzi",
+     "x": 540,
+     "pose": "triste"
+    }
+   ],
+   "desde": "Ponzi terminó",
+   "rejas": true,
+   "titulos": [
+    [
+     0,
+     "TERMINÓ PRESO"
+    ],
+    [
+     {
+      "en": "y desde entonces"
+     },
+     "HOY SE LLAMA\n«ESQUEMA PONZI»"
+    ]
+   ]
+  },
+  {
+   "tipo": "historia",
+   "decorado": "calle",
+   "personajes": [
+    {
+     "estilo": "ponzi",
+     "x": 300,
+     "pose": "dar",
+     "objeto": "billetes"
+    }
+   ],
+   "titulo": "PROMETÍA DUPLICAR TU DINERO\nEN 90 DÍAS",
+   "desde": "Todo porque",
+   "elementos": [
+    {
+     "icono": "dinero",
+     "x": 790,
+     "y": 760,
+     "escala": 0.45
+    }
+   ]
+  }
+ ]
+}
