@@ -12,7 +12,7 @@ Estado: 💡 idea · 📝 guion · 🎬 producido · ✅ publicado
 | A2 | Kodak y la cámara digital | «La empresa que inventó la cámara digital quebró por culpa de ella.» | Prototipo de 1975; quiebra 2012 | 📝 002 |
 | A3 | Ronald Wayne, el tercer fundador de Apple | «Fue dueño del 10 % de Apple y lo vendió por 800 dólares.» | Abril de 1976; 10 %; US$ 800 | 📝 005 |
 | A4 | Yahoo pudo comprar Google | «Yahoo pudo comprar Google por un millón de dólares.» | Oferta de 1998; rechazo de la oferta de Microsoft (2008); venta a Verizon (2017) | 🎬 015 |
-| A5 | Nokia, de dominar el mundo a desaparecer | «Uno de cada tres celulares del mundo era Nokia. Después llegó el iPhone.» | Participación de mercado ~2007; venta a Microsoft (2013) | 💡 |
+| A5 | Nokia, de dominar el mundo a desaparecer | «Uno de cada tres celulares del mundo era Nokia. Después llegó el iPhone.» | Participación de mercado ~2007; venta a Microsoft (2013) | 🎬 027 |
 | A6 | New Coke | «Coca-Cola cambió su fórmula y tuvo que dar marcha atrás en 79 días.» | Abril–julio de 1985 | 🎬 020 |
 | A7 | El disco duro con 8.000 bitcoins en la basura | «Tiró a la basura un disco duro que hoy vale cientos de millones.» | James Howells, Gales, 2013; cantidad de BTC | 🎬 026 |
 | A8 | Facebook rechazó a Brian Acton | «Facebook no lo contrató. Cinco años después le pagó 19.000 millones.» | Rechazo 2009; compra de WhatsApp en 2014 | 🎬 016 |
@@ -33,9 +33,9 @@ Estado: 💡 idea · 📝 guion · 🎬 producido · ✅ publicado
 
 | # | Tema | Gancho | Datos a verificar | Estado |
 |---|---|---|---|---|
-| C1 | Charles Ponzi | «El hombre que le puso nombre a la estafa más famosa del mundo.» | 1920; cupones postales internacionales | 💡 |
+| C1 | Charles Ponzi | «El hombre que le puso nombre a la estafa más famosa del mundo.» | 1920; cupones postales internacionales | 🎬 031 |
 | C2 | Bernie Madoff | «La mayor estafa piramidal de la historia la hizo un expresidente del Nasdaq.» | Monto declarado; condena de 150 años (2009) | 💡 |
-| C3 | Theranos | «Prometió analizar tu sangre con una gota. Era mentira.» | Valuación máxima; condena (2022) | 💡 |
+| C3 | Theranos | «Prometió analizar tu sangre con una gota. Era mentira.» | Valuación máxima; condena (2022) | 🎬 030 |
 | C4 | FTX y Sam Bankman-Fried | «De multimillonario a 25 años de prisión.» | Quiebra de 2022; condena de 2024 | 💡 |
 | C5 | El hombre que vendió la Torre Eiffel | «Vendió la Torre Eiffel… y después intentó venderla otra vez.» | Victor Lustig, 1925. La segunda venta fracasó | 📝 006 |
 
@@ -48,7 +48,7 @@ Estado: 💡 idea · 📝 guion · 🎬 producido · ✅ publicado
 | D1 | Post-it | «Un pegamento que no pegaba bien se convirtió en un éxito mundial.» | Spencer Silver y Art Fry, 3M | 📝 004 |
 | D2 | Plástico de burbujas | «El plástico de burbujas se inventó para empapelar paredes.» | 1957 | 💡 |
 | D3 | Play-Doh | «La plastilina más famosa era un limpiador de papel tapiz.» | Década de 1950 | 🎬 025 |
-| D4 | Monopoly | «El Monopoly se creó para criticar a los terratenientes.» | Elizabeth Magie, *The Landlord's Game*, 1904 | 💡 |
+| D4 | Monopoly | «El Monopoly se creó para criticar a los terratenientes.» | Elizabeth Magie, *The Landlord's Game*, 1904 | 🎬 029 |
 | D5 | Nutella | «La Nutella nació porque no alcanzaba el cacao.» | Pietro Ferrero, posguerra | 🎬 022 |
 | D6 | Chicles Wrigley's | «Los chicles Wrigley's empezaron como un regalo.» | Jabón y levadura, década de 1890 | 💡 |
 
@@ -56,10 +56,10 @@ Estado: 💡 idea · 📝 guion · 🎬 producido · ✅ publicado
 
 | # | Tema | Gancho | Datos a verificar | Estado |
 |---|---|---|---|---|
-| E1 | Mansa Musa | «Fue tan rico que hizo caer el precio del oro de una ciudad entera.» | Peregrinación de 1324; El Cairo | 💡 |
+| E1 | Mansa Musa | «Fue tan rico que hizo caer el precio del oro de una ciudad entera.» | Peregrinación de 1324; El Cairo | 🎬 032 |
 | E2 | Adidas y Puma | «Dos hermanos se pelearon y crearon Adidas y Puma.» | Hermanos Dassler, Herzogenaurach | 🎬 023 |
-| E3 | Lego casi quiebra | «Lego estuvo a punto de desaparecer.» | Crisis de 2003–2004 | 💡 |
+| E3 | Lego casi quiebra | «Lego estuvo a punto de desaparecer.» | Crisis de 2003–2004 | 🎬 028 |
 | E4 | Dyson y los 5.127 prototipos | «Fracasó 5.126 veces antes de hacerse millonario.» | Cantidad de prototipos | 🎬 024 |
 | E5 | La tulipomanía | «Hubo un tiempo en que un tulipán valía como una casa.» | Holanda, 1637. Aclarar que los historiadores discuten la magnitud | 💡 |
 
-**Total: 31 ideas.** Producidas: 20 (videos 001 a 026, incluidas historias del PDF de guiones). Pendientes: A5, B7, C1 a C4, D2, D4, D6, E1, E3 y E5.
+**Total: 31 ideas.** Producidas: 26 (videos 001 a 032, incluidas historias del PDF de guiones). Pendientes: B7 Mercado Libre, C2 Madoff, C4 FTX, D2 plástico de burbujas, D6 Wrigley's y E5 tulipomanía. El banco de historias de Argentina, México y el mundo hispano está en `ideas-hispanas.md`.
