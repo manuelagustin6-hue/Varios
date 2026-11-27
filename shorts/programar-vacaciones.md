@@ -2,7 +2,7 @@
 
 Todo a las **20:00 (hora de Argentina)**, un video por día. Archivos: `NNN_tema.mp4` (el mismo sirve para las dos redes).
 
-Supuesto: en YouTube ya están el largo y el Short de GameStop y el de Coca-Cola; en TikTok, hasta KFC. Si falta alguno, va primero y el resto se corre un día.
+Supuesto: en YouTube ya están el largo y el Short de GameStop y el de Coca-Cola; en TikTok, hasta Airbnb (KFC va hoy, 27/11). Si falta alguno, va primero y el resto se corre un día.
 
 **En cada video:** YouTube → «No es contenido para niños» y marcar «contenido alterado o sintético». TikTok → activar la etiqueta «Contenido generado por IA»; música al 5–10 %.
 
@@ -248,7 +248,14 @@ Sigue a @datomillonario: historias de negocios y dinero en menos de un minuto.
 #mansamusa #oro #historia #riqueza #curiosidades #datomillonario #shorts
 ```
 
-## TikTok (15 videos)
+## TikTok (16 videos)
+
+### vie 27/11 — `019_kfc.mp4` · música: «Sneaky Snitch»
+
+```
+Empezó a los 65 años con un cheque de 105 dólares 🍗
+#kfc #emprendimiento #negocios #motivacion #historia #datomillonario
+```
 
 ### sáb 28/11 — `017_instagram.mp4` · música: «Sneaky Snitch»
 
