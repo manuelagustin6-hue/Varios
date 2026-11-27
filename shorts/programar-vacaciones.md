@@ -2,11 +2,31 @@
 
 Todo a las **20:00 (hora de Argentina)**, un video por día. Archivos: `NNN_tema.mp4` (el mismo sirve para las dos redes).
 
-Supuesto: en YouTube ya están el largo y el Short de GameStop y el de Coca-Cola; en TikTok, hasta Airbnb (KFC va hoy, 27/11). Si falta alguno, va primero y el resto se corre un día.
+Supuesto: en YouTube ya están el largo y el Short de GameStop (Coca-Cola va hoy, 27/11); en TikTok, hasta Airbnb (KFC va hoy, 27/11). Si falta alguno, va primero y el resto se corre un día.
 
 **En cada video:** YouTube → «No es contenido para niños» y marcar «contenido alterado o sintético». TikTok → activar la etiqueta «Contenido generado por IA»; música al 5–10 %.
 
-## YouTube Studio (12 Shorts)
+## YouTube Studio (13 Shorts)
+
+### vie 27/11 — `020_coca-cola.mp4`
+
+Título:
+
+```
+Coca-Cola cambió su fórmula… y se arrepintió a los 79 días 🥤
+```
+
+Descripción:
+
+```
+En 1985, Coca-Cola reemplazó su receta por una más dulce que había ganado en pruebas de sabor con casi 200.000 personas. La reacción fue tan mala que, 79 días después, tuvo que traer de vuelta la fórmula original.
+
+¿Tú habrías notado la diferencia? 👇
+
+Sigue a @datomillonario: historias de negocios y dinero en menos de un minuto.
+
+#cocacola #pepsi #marketing #negocios #historia #datomillonario #shorts
+```
 
 ### sáb 28/11 — `026_bitcoin-basura.mp4`
 
