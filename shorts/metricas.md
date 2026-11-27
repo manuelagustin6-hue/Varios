@@ -109,3 +109,21 @@ Comparar a los 7 días: vistas promedio, porcentaje visto completo y likes por v
 - **Prueba de programación:** el único programado (006) tuvo 367 vistas, no cero. Programar no bloquea la distribución. Fue el más bajo de los cuatro, pero esa historia también es de las más bajas en YouTube (471), así que la diferencia se explica mejor por el tema que por la programación. Un solo caso: no es concluyente.
 - **Todos los animados reciben vistas** (367 a 2.000). Los ceros anteriores correspondían a las versiones con imágenes realistas generadas.
 - **Las historias con personajes gustan más:** 6,5 % a 7,9 % de me gusta, contra 4,1 % de la versión ilustrada.
+
+## Revisión 4 — 27/11 (YouTube Studio, Shorts, últimos 28 días)
+
+| Métrica | Valor | Antes |
+|---|---|---|
+| Vistas de Shorts | 18.100 | 8.908 (19/11) |
+| Vistas con interacción | 8.100 (45 % de las vistas) | 26 % en el primer Short (12/11) |
+| Siguieron mirando | 50,1 % | 26,7 % (12/11) |
+| Deslizaron | 49,9 % | 73,3 % (12/11) |
+
+- Shorts más vistos: 017 Instagram (animado, publicado el 25/11) 1.400 y 007 Logo de Nike 1.400.
+- Ritmo: unas 9.200 vistas en los últimos 7 a 8 días, alrededor de 1.200 a 1.300 por día (antes, 1.100). Unas 500 a 600 vistas con interacción por día.
+- Lectura:
+  - El gancho mejoró mucho: de 27 % a 50 % de «siguieron mirando». La evaluación del 27/11 había tomado el 27 % como base y fijó 55 % como umbral para seguir; estamos cerca.
+  - Las vistas con interacción son el 45 % del total, no el 26 % que se había supuesto: la distancia al umbral de monetización es menor que la calculada, aunque sigue siendo de unas 200 veces.
+  - Primera señal del formato animado en YouTube: el 017 igualó en dos días al mejor Short viejo.
+  - Lo que no cambió es la escala: ningún video superó las 1.500 vistas.
+- Falta: «siguieron mirando» por video (animados contra viejos), países de la audiencia y datos de los videos largos.

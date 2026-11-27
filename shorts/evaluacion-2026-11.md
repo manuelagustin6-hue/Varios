@@ -4,6 +4,8 @@ Panel de agentes evaluadores sobre el futuro de Dato Millonario, a dos semanas d
 
 **Alcance real del panel:** corrieron 4 de los 5 evaluadores (monetización, políticas y riesgos, crecimiento, contenido y competencia). El de operación, el verificador de datos, el abogado del diablo y el dictamen final no llegaron a correr porque se alcanzó el límite de uso. La síntesis la hizo el asistente principal, que volvió a verificar por su cuenta solo dos datos: el cambio de requisitos de YouTube y la cuota de mercado de Nokia. El resto son hallazgos de los evaluadores con sus fuentes, sin segunda verificación.
 
+> **Actualización del 27/11 (después del panel):** YouTube Studio muestra 18.100 vistas de Shorts en 28 días, 8.100 con interacción (45 %) y 50,1 % de «siguieron mirando». Los evaluadores trabajaron con 26 % y 27 %, que eran del primer Short. El gancho está mejor de lo que supusieron y el primer criterio de corte (55 %) queda cerca; la escala (unas 1.300 vistas por día) no cambió. Detalle en `metricas.md`, revisión 4.
+
 ## Veredicto
 
 - **Como negocio de anuncios de Shorts: no tiene futuro a 12 meses.** El ritmo actual está entre 100 y 200 veces por debajo del umbral, el umbral se duplica el 1/2/2027, y aun cumpliéndolo los Shorts pagarían entre 35 y 470 USD por mes con público latinoamericano.
