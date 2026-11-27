@@ -127,3 +127,39 @@ Comparar a los 7 días: vistas promedio, porcentaje visto completo y likes por v
   - Primera señal del formato animado en YouTube: el 017 igualó en dos días al mejor Short viejo.
   - Lo que no cambió es la escala: ningún video superó las 1.500 vistas.
 - Falta: «siguieron mirando» por video (animados contra viejos), países de la audiencia y datos de los videos largos.
+
+### Detalle por video y por país (capturas del 27/11, período 29/10 al 25/11)
+
+| Puesto | Short | Formato | Vistas |
+|---|---|---|---|
+| 1 | 017 Instagram | Animado | 1.400 |
+| 2 | 007 Logo de Nike | Viejo (imágenes generadas) | 1.400 |
+| 3 | 005 Apple | Viejo | 1.300 |
+| 4 | 016 WhatsApp | Animado | 1.300 |
+| 5 | 010 E.T. | Animado | 1.300 |
+| 6 | 002 Kodak | Viejo | 1.200 |
+| 7 | 004 Post-it | Viejo | 1.200 |
+| 8 | 013 Jordan | Animado | 1.200 |
+| 9 | 001 Blockbuster | Viejo | 1.200 |
+| 10 | 019 KFC | Animado | 1.100 |
+
+- **El techo no se movió:** los diez primeros están entre 1.100 y 1.400 vistas. Con unos 18 Shorts publicados, el promedio es de unas 1.000 vistas por video, igual que el 19/11 (990).
+- **Los viejos se frenaron:** 001, 002, 004, 005 y 007 sumaron menos de 100 vistas cada uno desde el 19/11.
+- **Los animados llegan al mismo techo más rápido:** 017, 016 y 019 alcanzaron entre 1.100 y 1.400 vistas en 1 a 3 días; los viejos necesitaron más de una semana. Todavía no se sabe si lo superan, porque tienen pocos días.
+- **El orden previsto no se cumplió:** 015 Yahoo y 018 Airbnb, que se habían puesto primero por repetir el patrón «marca conocida + cifra chica», no superan las 1.100 vistas; 017 y 016 rindieron más.
+
+| País | Vistas |
+|---|---|
+| Argentina | 32,5 % |
+| México | 20,1 % |
+| Perú | 6,1 % |
+| Colombia | 5,8 % |
+| Venezuela | 4,6 % |
+| Chile | 4,4 % |
+| España | 3,8 % |
+| Ecuador | 3,0 % |
+| Estados Unidos | 2,0 % |
+| Bolivia | 2,0 % |
+
+- Al menos el 78 % de las vistas es de América Latina; España y Estados Unidos suman 5,8 %. Argentina y México juntos pasan la mitad.
+- Consecuencia: el ingreso por mil vistas queda en la parte baja del rango estimado en la evaluación. También respalda probar primero historias de Argentina y México.
